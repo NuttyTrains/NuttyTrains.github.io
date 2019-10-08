@@ -1,0 +1,128 @@
+body {
+}
+
+.center {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Raleway;
+  width: 100%;
+  text-align: center;
+  z-index: 4;
+  padding 0 300px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Raleway;
+}
+
+a.hyp {
+  border-bottom-style: solid;
+  border-color: rgba(105, 254, 50, 0.5);
+  color: rgb(42, 55, 69);
+  font-style: italic;
+}
+
+#intro {
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  width: 50%;
+  font-family: Raleway;
+  color(51, 38, 31);
+}  
+
+table th, td,
+p {
+  font-family: Raleway;
+  color: rgb(42, 55, 69);
+  font-size: 1.5em;
+}
+
+strong {
+  color: rgba(105,254,50,1); 
+}
+
+th,td {
+  padding 30px 0px;
+  margin 30px 0;
+  padding: 15px;
+  text-align: center;
+}
+
+#center {
+  text-align: center;
+}
+
+.right {
+  width: 50%;
+  float: right;
+}
+
+#hidden {
+  visibility: hidden;
+}
+
+#hide {
+  display: none;
+}
+
+ol, ul {
+  font-family: Raleway;
+  font-size: 1.25em;
+  line-height: 200%;
+  color: rgb(42, 55, 69);
+}
+
+#more {
+  display: none;
+}
+
+button {
+  background-color: rgba(105,254,50,1); 
+  border: none;
+  color: rgb(42, 55, 69);
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1.5em;
+  width: 100%;
+  padding: 1% 0;
+}
+
+.preview-frame {
+  float: left;
+  height: 440px;
+  width: 50%;
+  border-width: 0;
+}
+
+canvas {
+  display: block;
+}
+ 
+.newP {
+  width: 100%;
+}
+ 
+.proj {
+  color: green;
+}
+
+.nobullet {
+  background-color: rgba(105,254,50,1); 
+}
+
+h6 {
+  color: rgba(112,128,144, 0.8);
+  font-family: Raleway;
+}
+
+#project {
+  background-color: rgba(105,254,50,0.4); 
+}
+
+.spacing {
+  padding: 3vh 0 0 0;
+}
