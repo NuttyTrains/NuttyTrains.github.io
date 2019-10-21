@@ -850,8 +850,76 @@ function StationNumber() {
 document.getElementById("StationNo").innerHTML = StationNumber();
 
     </script>
-<br>
+
+<br><br>
+<p id="TubeStationNo"></p>
+    <span id="tubedots"></span>
+ 
+    <button onclick="TubeMore()" id="TubeMoreBtn">Show Tube Station List</button>
+    <span id="tubemore">
+    <table id="TubeStations">
+    <tr>
+    <th> Station No. </th>
+    <th> Station Name </th>
+    <th> First Date </th>
+    <th> Line </th>
+    <th> Edition </th>
+    </tr>
+     <tr> 
+       <th> 1 </th>
+       <td> London Paddington </td>
+       <td> 05/12/2016 </td>
+       <td> Circle-District </td>
+       <td> α2 </td>
+     </tr>
+     <tr> 
+       <th> 2 </th>
+       <td> Notting Hill Gate </td>
+       <td> 05/12/2016 </td>
+       <td> Circle-District <br>
+	    Central </td>
+       <td> α2 <br>
+	    α2 </td>
+     </tr>
+     <tr>  
+       <th> 3 </th>
+       <td> Queensway </td>
+       <td> 05/12/2016 </td>
+       <td> Central </td>
+       <td> α2 </td>
+     </tr>
+     </table>
+     </span>
+
+<script>
+function TubeMore() {
+  var tubedots = document.getElementById("tubedots");
+  var tubemoreText = document.getElementById("tubemore");
+  var tubebtnText = document.getElementById("TubeMoreBtn");
+
+  if (tubedots.style.display === "none") {
+    tubedots.style.display = "inline";
+    tubebtnText.innerHTML = "Show Tube Station List"; 
+    tubemoreText.style.display = "none";
+  } else {
+    tubedots.style.display = "none";
+    tubebtnText.innerHTML = "Hide Tube Station List"; 
+    tubemoreText.style.display = "inline";
+  }
+}
+</script>
+<script>
+function TubeStationNumber() {
+  var x =document.getElementById("TubeStations").rows.length -1;
+    return "We have visited " + x + " Tube Stations";
+}
+document.getElementById("TubeStationNo").innerHTML = TubeStationNumber();
+
+    </script>
+
+<br><br>
+
 <-- Added West Wales Trip from memory: please check --> <br>
-<-- Proposal to split the Tube stations into a separate table in time for &#984;I (Not Urgent) -->
+<-- Please check my dodgy attempt at a Tube station list XD -->
   </body>
 </html>
