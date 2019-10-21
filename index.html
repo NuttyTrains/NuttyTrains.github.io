@@ -900,19 +900,19 @@ function TubeMore() {
   var tubebtnText = document.getElementById("TubeMoreBtn");
 
   if (tubedots.style.display === "none") {
-    tubedots.style.display = "none";
-    tubebtnText.innerHTML = "Show Tube Station List"; 
-    tubemoreText.style.display = "inline";
-  } else {
     tubedots.style.display = "inline";
-    tubebtnText.innerHTML = "Hide Tube Station List"; 
+    tubebtnText.innerHTML = "Show Tube Station List"; 
     tubemoreText.style.display = "none";
+  } else {
+    tubedots.style.display = "none";
+    tubebtnText.innerHTML = "Hide Tube Station List"; 
+    tubemoreText.style.display = "inline";
   }
 }
 </script>
 <script>
 function TubeStationNumber() {
-  var x =document.getElementById("TubeStations").rows.length -1;
+  var x = document.getElementById("TubeStations").rows.length -1;
     return "We have visited " + x + " Tube Stations";
 }
 document.getElementById("TubeStationNo").innerHTML = TubeStationNumber();
