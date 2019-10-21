@@ -900,13 +900,13 @@ function TubeMore() {
   var tubebtnText = document.getElementById("TubeMoreBtn");
 
   if (tubedots.style.display === "none") {
-    tubedots.style.display = "inline";
-    tubebtnText.innerHTML = "Show Tube Station List"; 
-    tubemoreText.style.display = "none";
-  } else {
     tubedots.style.display = "none";
-    tubebtnText.innerHTML = "Hide Tube Station List"; 
+    tubebtnText.innerHTML = "Show Tube Station List"; 
     tubemoreText.style.display = "inline";
+  } else {
+    tubedots.style.display = "inline";
+    tubebtnText.innerHTML = "Hide Tube Station List"; 
+    tubemoreText.style.display = "none";
   }
 }
 </script>
