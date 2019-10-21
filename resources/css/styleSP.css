@@ -80,6 +80,10 @@ ol, ul {
   display: none;
 }
 
+#tubemore {
+  display: none;
+}
+
 button {
   background-color: rgba(105,254,50,1); 
   border: none;
