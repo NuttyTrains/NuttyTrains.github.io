@@ -1,0 +1,26 @@
+{
+  "stations": {
+    "CardiffCentral": {
+	  "name": "Cardiff Central",
+	  "label": "Cardiff\nCentral",
+	  "position": {
+	    "lat": 51.4761,
+		"lon": 3.1790
+	  }
+	}
+  },
+  "lines": [
+    {
+		"name": "Rhonnda",
+		"colour": "#30c5b8",
+		"shiftCoords": [0, 0],
+		"nodes": [
+			{
+				"coords": [23, -4],
+				"name": "Cardiff Central",
+				"labelPos": "N"
+			}
+		]
+	}
+  ]
+}
