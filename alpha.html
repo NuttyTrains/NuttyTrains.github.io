@@ -8,6 +8,7 @@
     <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+  	<link rel="stylesheet" type="text/css" href="./resources/css/collapsible.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"/>
@@ -35,14 +36,17 @@
       </h1>
   </header>
   <body>
-    <h1 class= "spacing"> Trains </h1>
-    <p> The Alpha adventures were never intended to be Nutty Trains adventures at the time, but in hindsight, they formed the 
+	  <h1 class= "spacing"> Trains </h1>
+	  <div class="intro">
+<p>       The Alpha adventures were never intended to be Nutty Trains adventures at the time, but in hindsight, they formed the 
 	  basis and the inspiration for all our future adventures. The alpha adventures took place when we were both still in 
 	  school, as part of school trips. The first, α1, to Bath in December 2015, was James's first experience with trains, 
 	  and one of Matthew's first too. The second, α2, was the direct successor to that trip, to London in December 2016.
-    </p>
-	  <h1> α1: The 1<sup>st</sup> Bath Trip </h1>
-	  <p> Back in December 2015, a joint Business Studies & Latin school trip was organised to Bath, for the Latin students 
+</p>
+</div>
+<button type="button" class="collapsible"> α1: The 1<sup>st</sup> Bath Trip </button>
+<div class="content">
+<p>       Back in December 2015, a joint Business Studies & Latin school trip was organised to Bath, for the Latin students 
           to visit the Roman baths, and for the Business students to study the Christmas market. Both groups would then be given 
 	  time to explore the city (including Matthew visiting a 5* Indian Restaurant in a dodgy alleyway), before heading home. 
 	  However, the real highlight of the trip were the train journeys there and back. 
@@ -62,10 +66,13 @@
 	  <br><br>
 	  The journey back was less eventful, as night drew in. Once again, we changed at Newport onto a HST, and headed back to 
 	  Swansea (Matthew alighting at Neath). This adventure was the earliest precursor to our NT adventures, but it was also 
-	  an important component of the foundation of our friendship.</p>
+	  an important component of the foundation of our friendship.
+</p>
 	  <center><img src="./Bath Trip (Alpha1).jpg"></center>
-	  <h1> α2: The British Museum Trip </h1>
-	  <p> 1 year later, and after the success of the Bath trip, a follow-up school trip was planned, this time just for Latin 
+</div>
+<button type="button" class="collapsible"> α2: The British Museum Trip </button>
+<div class="content">
+<p>       1 year later, and after the success of the Bath trip, a follow-up school trip was planned, this time just for Latin 
 	  students, to the British Museum in London. Firstly, we had to arrive even earlier at Swansea station, to catch a GWR 
 	  HST all the way to Paddington. This was still one of James's first times on a train, as was the case for Matthew. 3 
 	  hours later, we arrived in Paddington, and James was absolutely gobsmacked by the size of the station. They don't make 
@@ -85,7 +92,25 @@
 	  We arrived back in Paddington to catch the GWR HST home. There was initially some resistance due to some of our reserved 
 	  seats being occupied, but after Reading, it was a very uneventful journey home. Matthew alighted at Neath, and James at 
 	  Swansea. It was this adventure more than anything else that converted James to love trains and formed the inspiration 
-	  for the β series of NT adventures.</p>
-	  
+	  for the β series of NT adventures.
+</p>
+</div>
+	
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 </body>
 </html>
