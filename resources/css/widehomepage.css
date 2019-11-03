@@ -1,0 +1,80 @@
+body {
+  margin: 2vw auto;
+  padding: 0;
+}
+
+h1 {
+  font-size: 7vw;
+  margin: 0 0;
+}
+
+.noOverlap {
+  display: block;
+  font-size: 3vh;
+}
+
+#scrollBtn {
+  width: 8vh;
+  height: 8vh;
+  background-color: rgba(105,254,50,0.7);
+  z-index: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 10vh;
+  padding: 1.5vh 1.5vh;
+  margin: 2vh 2vh;
+  display: block;
+}
+
+#scrollBtn{
+  display: block;
+}
+
+#scrollBtn img {
+  height: 100%;
+}
+
+p {
+  padding: 0 5vh 0 5vh;
+  font-size: 2vw;
+}
+
+h2 {
+  font-family: Raleway;
+  color: rgba(105,254,50,0.7);
+}
+
+.box{
+  width: 25%;
+  height: 10vw;
+  background-color: rgba(119, 136, 153, 1);
+  text-align: center;
+  padding: 2% 2%;
+  display: inline-block;
+  font-size: 5vh;
+  box-shadow: 2px 2px 1px #D3D3D3;
+  color: rgba(105,254,50,0.7);
+  border-radius: 1em;
+  overflow: hidden;
+  margin: 0 2%;
+}
+
+.btitle {
+  vertical-align: middle;
+}
+
+.binfo {
+  display: none;
+}
+
+footer td {
+  color: white;
+  padding: 1vh;
+  font-size: 1.5vw;
+  margin: 0 1vh;
+}
+
+.main {
+  width: 80%;
+}

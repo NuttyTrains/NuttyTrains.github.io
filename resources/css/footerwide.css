@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: table;
+}
+
+footer {
+  display: table-row;
+  height: 0;
+  background-color: rgba(119, 136, 153, 1);
+}
+
+footer td{
+  color: white;
+}
