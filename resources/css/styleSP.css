@@ -24,14 +24,12 @@ a.hyp {
   font-style: italic;
 }
 
-#intro {
-  display: block;
-  position: absolute;
-  top: 35%;
-  left: 5%;
-  width: 50%;
+.intro {
+  margin: 2vh 1vw;
+  padding: 0.1vh 0.5vw;
   font-family: Raleway;
-  color(51, 38, 31);
+  color: (51, 38, 31);
+  background-color: rgba(255, 255, 255, 0.7);
 }  
 
 table th, td,
@@ -89,7 +87,7 @@ button {
   border: none;
   color: rgb(42, 55, 69);
   text-align: center;
-  font-family: Raleway;
+  font-family: "Hammersmith One";
   font-size: 1.5em;
   width: 100%;
   padding: 1% 0;
