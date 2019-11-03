@@ -1,0 +1,40 @@
+body {
+  background: rgba(48,197,184, 0.25);
+}
+
+.collapsible {
+  background-color: rgba(42, 55, 69, 1);
+  color: rgba(105,254,50,1);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: "Hammersmith One";
+}
+
+.active, .collapsible:hover {
+  background-color: rgba(42, 55, 69, 0.9);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: rgba(105,254,50,1);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
