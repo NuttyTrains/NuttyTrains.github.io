@@ -8,9 +8,11 @@
     <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+  	<link rel="stylesheet" type="text/css" href="./resources/css/collapsible.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
   </head>
   <header>
       <h1>
@@ -35,17 +37,50 @@
   </header>
   <body>
     <h1 class= "spacing"> Trains </h1>
-    <p> Koppa Adventures: one foot each, coming soon to a tube platform near you! As mentioned on <a href="./index.html"> our 
+	  <div class="intro">
+<p>       Koppa Adventures: one foot each, coming soon to a tube platform near you! As mentioned on <a href="./index.html"> our 
 	  main page </a>, the Koppa (&#x3D9;) adventures on the tube/TfL network will follow different rules to usual. We have 
 	  only recently started university, so we have yet to undertake any adventures yet, but this has been planned for many 
 	  months. London is uniquely suited to NT adventures due to the frequency of services and density of stations, so our 
-	  first adventure here should be optime!</p>
-	  <h1>&#x3D9;1: Actually Coming Soon</h1>
-	  <p>We have actually yet to start the Koppa Adventures, because it turns out that maths degrees take a lot of time and 
-	  effort! Fortunately, James is coming to London on 16th Nov, meaning that we will have a chance to undertake NT &#x3D9;I, 
-	  and test out our new Tube Rules. I am not sure where his hackathon is, but it is likely we will start there, and mostly 
-	  cover the Circle-District line from there towards Temple, for we have the Twinings shop to pay a visit to! Unfortunately, 
-	  uni work will cut this first adventure reasonably short, but we will have enough time to navigate the our way around the 
-	  Tube, try some nice tea, and have a jolly good laugh. Hopefully.</p>
+	  first adventure here should be optime!
+</p>
+</div>
+<button type="button" class="collapsible">&#x3D9;1: Twinings & Westminster... probably?</button>
+<div class="content">
+<p>       We have actually yet to start the Koppa Adventures, because it turns out that maths degrees take a lot of time and 
+	  effort! Fortunately, James is coming to London on 17th Nov, meaning that we will have a chance to undertake NT &#x3D9;I, 
+	  and test out our new Tube Rules. We will most likely travel from Paddington on the old-fashioned Bakerloo line, then 
+	  cover the Circle-District line from there towards Temple, for we have the Twinings shop to pay a visit to! On the way 
+	  back, we intend to pay a visit to the Jubilee line station at Westminster. Unfortunately, uni work will cut this first 
+	  adventure reasonably short, but we will have enough time to navigate the our way around the Tube, try some nice tea, 
+	  and have a jolly good laugh. Hopefully.
+</p>
+</div>
+	  
+<button type="button" class="collapsible">&#x3D9;2: The purpose of this trip is left as an exercise to the reader</button>
+<div class="content">
+<p>       This second adventure is very much work in progress, as we will have to see how NT &#x3D9;1 works first, but James will 
+	  be returning to London in the lead up to Christmas, on 13th Dec, so we intend to squeeze in even more NT nuttiness into 
+	  2019. Cue more incoherent screaming from James about how busy amazing everything is, and more inaudible mutterings from 
+	  Matthew about how the Circle line is delayed again.
+</p>
+</div>
+	
+	<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>  
+	  
 </body>
 </html>

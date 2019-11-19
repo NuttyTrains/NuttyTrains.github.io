@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Trains</title>
-    <link rel="icon" type="image/png" href="./PacerCrop.png">
+    <title>Nutty Trains</title>
+    <link rel="icon" type="image/png" href="./resurces/photos/PacerCrop.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
   </head>
   <header>
       <h1>
@@ -35,6 +36,12 @@
   </header>
   <body>
     <h1 class= "spacing"> Trains </h1>
+	<div class="ParallaxVideo">
+		<video autoplay muted loop>
+		<source src="./resources/video/cynghordy.mp4" type="video/mp4">
+	</video>
+</div>
+<div class = "text">
     <p> We are self pronounced train addicts. James, after a trip to London on a HST and only having been on a train once before, was hooked. He was happy to see the introduction of the IET Class 800s and sad to see the end of the Pacers. Before he knew it he was mourning the loss of Arriva Trains Wales, Ave Arriva! Matthew, it was after his many adventures off on the trains and the call of the valleys, it was accentuated by seeing trains everyday going past at college, soon enough, he knew the patterns and told the time by what train went by and questioned descrepencies in the train timetable. What could this project possibly be? Well some people challenge themselves to go to every station in the UK. Together a little before summer 2018 we set off to do that very thing. Every station in the UK, visited by us in some time in the future! We set ourselves the following rules:</p>
     <ol>
       <li> To say we visited a station we must:
@@ -48,9 +55,7 @@
      <li> We are allowed to use public transport (other than trains), to arrive or leave a station, but not both. We must arrive or leave on a train. </li>
      <li> We are allowed to use parlimentary trains and heritage railways, aslong as we validly tick off the station. </li>
     </ol> 
-	  <br><br>
-	  <center><img src="./Nutty Trains I-VI.png" width="90%"></center>
-	  <br><br>
+	  
     <p id="StationNo"></p>
     <span id="dots"></span>
  
@@ -907,6 +912,7 @@ document.getElementById("StationNo").innerHTML = StationNumber();
      </tr>
      </table>
      </span>
+	 </div>
 
 <script>
 function TubeMore() {
@@ -933,6 +939,7 @@ function TubeStationNumber() {
 document.getElementById("TubeStationNo").innerHTML = TubeStationNumber();
 
     </script>
-
+ <br><br>
+	  <center><img src="./resources/photos/Nutty Trains I-VI.png" width="90%"></center>
 </body>
 </html>

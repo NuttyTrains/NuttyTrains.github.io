@@ -8,9 +8,11 @@
     <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+  	<link rel="stylesheet" type="text/css" href="./resources/css/collapsible.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
   </head>
   <header>
       <h1>
@@ -35,6 +37,40 @@
   </header>
   <body>
     <h1 class= "spacing"> Trains </h1>
-    <p> Beta Adventures: Coming soon </p>
+	  <div class="intro">
+  <p>Beta Adventures: Coming soon, when I can be bothered to write more than 1 line per adventure</p>
+  </div>
+<button type="button" class="collapsible">  β1: The 2<sup>nd</sup> Bath Trip  </button>
+<div class="content">
+  	  <p> Yes, we'd been to Bath before, but why not do it again? Rain. That's why.
+	   </p>
+</div>
+<button type="button" class="collapsible"> β2: Tenby </button>
+<div class="content">
+<p> Screw GWR with their functioning trains. It was time to head into Pacerland<sup>TM</sup> 
+	</p>
+</div>
+<button type="button" class="collapsible"> β3: Oystermouth Castle </button>
+<div class="content">
+	<p> But Oystermouth Castle is nowhere near a train station! So what -  Bu Hao Mao!
+	</p>
+</div>
+	 
+	  <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+	  
 </body>
 </html>

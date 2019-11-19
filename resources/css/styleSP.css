@@ -13,8 +13,8 @@ body {
   padding 0 300px;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: Raleway;
+h1, h2, h3, h4, h5, blockquote {
+  font-family: "Hammersmith One";
 }
 
 a.hyp {
@@ -24,14 +24,12 @@ a.hyp {
   font-style: italic;
 }
 
-#intro {
-  display: block;
-  position: absolute;
-  top: 35%;
-  left: 5%;
-  width: 50%;
+.intro {
+  margin: 2vh 1vw;
+  padding: 0.1vh 0.5vw;
   font-family: Raleway;
-  color(51, 38, 31);
+  color: (51, 38, 31);
+  background-color: rgba(255, 255, 255, 0.7);
 }  
 
 table th, td,
@@ -89,7 +87,7 @@ button {
   border: none;
   color: rgb(42, 55, 69);
   text-align: center;
-  font-family: Raleway;
+  font-family: "Hammersmith One";
   font-size: 1.5em;
   width: 100%;
   padding: 1% 0;
@@ -129,4 +127,28 @@ h6 {
 
 .spacing {
   padding: 3vh 0 0 0;
+}
+
+.text {
+  background-color: white;
+  padding: 1vh 1vw;
+}
+
+.ParallaxVideo{ 
+    height: 300px;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+  width: 100%;
+  position: fixed;
+  top:0;
+  z-index: -999;
+}
+.ParallaxVideo h1 {
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }

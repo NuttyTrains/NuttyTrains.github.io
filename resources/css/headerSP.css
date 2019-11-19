@@ -1,7 +1,7 @@
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(42, 55, 69, 1);
   font-family: Raleway;
   position: fixed;
   top: 0;
