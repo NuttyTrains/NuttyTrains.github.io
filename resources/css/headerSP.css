@@ -71,6 +71,6 @@
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+a.dropdown:hover .dropdown-content {
   display: block;
 }
