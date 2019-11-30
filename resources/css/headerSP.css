@@ -1,5 +1,5 @@
 /* Navbar container */
-ul.navbar {
+.navbar {
   overflow: hidden;
   background-color: rgba(42, 55, 69, 1);
   font-family: Raleway;
@@ -10,7 +10,7 @@ ul.navbar {
 }
 
 /* Links inside the navbar */
-li.navbar a {
+.navbar a {
   float: left;
   font-size: 3vw;
   color: white;
@@ -22,7 +22,7 @@ li.navbar a {
 }
 
 /* The dropdown container */
-li.dropdown {
+.dropdown {
   overflow: hidden;
   float: left;
   padding: 0vh 2vw;
@@ -30,7 +30,7 @@ li.dropdown {
 }
 
 /* Dropdown button */
-li.dropdown .dropbtn {
+.dropdown .dropbtn {
   font-size: 3vw; 
   border: none;
   outline: none;
@@ -42,7 +42,7 @@ li.dropdown .dropbtn {
 }
 
 /* Add a red background color to navbar links on hover */
-ul.navbar a:hover, li.dropdown:hover .dropbtn {
+navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
 
@@ -73,6 +73,6 @@ ul.navbar a:hover, li.dropdown:hover .dropbtn {
 }
 
 /* Show the dropdown menu on hover */
-li.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
 }
