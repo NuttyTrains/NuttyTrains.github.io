@@ -18,7 +18,6 @@
   padding: 3vh 2vw;
   text-decoration: none;
   margin: 0;
-  display: inline-block;
 }
 
 /* The dropdown container */
@@ -26,7 +25,6 @@
   overflow: hidden;
   float: left;
   padding: 0vh 2vw;
-  display: inline-block;
 }
 
 /* Dropdown button */
@@ -42,7 +40,7 @@
 }
 
 /* Add a red background color to navbar links on hover */
-navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
 
