@@ -47,7 +47,7 @@
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #f9f9f9;
   font-family: Raleway;
   min-width: 30vw;
