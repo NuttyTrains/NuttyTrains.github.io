@@ -132,6 +132,7 @@ h6 {
 .text {
   background-color: white;
   padding: 1vh 1vw;
+
 }
 
 .ParallaxVideo{ 
@@ -140,9 +141,10 @@ h6 {
     padding-top: 50px; 
 }
 .ParallaxVideo video{ 
-  width: 100%;
+  width: 101%;
   position: fixed;
   top:0;
+  left: 0;
   z-index: -999;
 }
 .ParallaxVideo h1 {
