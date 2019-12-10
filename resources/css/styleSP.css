@@ -147,6 +147,13 @@ h6 {
   left: 0;
   z-index: -999;
 }
+.ParallaxVideo img{ 
+  width: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: -999;
+}
 .ParallaxVideo h1 {
   color: #fff;
   font-size: 76px;
