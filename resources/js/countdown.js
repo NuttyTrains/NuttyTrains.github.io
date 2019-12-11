@@ -1,4 +1,4 @@
-var countDownDate = new Date("Dec 11, 2019 22:12:00").getTime();
+var countDownDate = new Date("Dec 13, 2019 14:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
@@ -10,22 +10,22 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (60)));
     
   if (distance > 7*86400) {
-        document.getElementById("countdown").innerHTML = "";
+        document.getElementById("countdown").innerHTML = "Welcome to NT";
   }
   
   else {
         if (distance > 0) {
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+        document.getElementById("countdown").innerHTML ="Welcome to NT! ϙ1 begins in: " days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
         }
   
         else {
               if (distance > -86400) {
-              document.getElementById("countdown").innerHTML = "<big><strong>It's NT Time!!! <i>不好猫!</i></strong></big>";
+              document.getElementById("countdown").innerHTML = "<big><big>It's NT Time!!! <i>不好猫!</i></big></big>";
               }
   
               else {
-                    document.getElementById("countdown").innerHTML = "";
+                    document.getElementById("countdown").innerHTML = "Welcome to NT";
               }
         }
   }
