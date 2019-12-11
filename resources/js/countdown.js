@@ -15,7 +15,7 @@ var x = setInterval(function() {
   
   else {
         if (distance > 0) {
-        document.getElementById("countdown").innerHTML ="Welcome to NT! ϙ1 begins in: " days + "d " + hours + "h "
+        document.getElementById("countdown").innerHTML ="Welcome to NT! ϙ1 begins in: " + days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
         }
   
