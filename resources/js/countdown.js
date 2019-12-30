@@ -9,7 +9,7 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (3600)) / (60));
   var seconds = Math.floor((distance % (60)));
     
-  if (distance > 7*86400) {
+  if (distance > 14*86400) {
         document.getElementById("countdown").innerHTML = "Welcome to NT";
   }
   
