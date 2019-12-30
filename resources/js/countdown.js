@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 var countDownDate = new Date("Jan 20, 2019 17:00:00").getTime();
+=======
+var countDownDate = new Date("Jan 10, 2020 17:00:00").getTime();
+>>>>>>> 199b7976057416103c83e20736275165736e33df
 
 var x = setInterval(function() {
   var now = new Date().getTime();
@@ -9,13 +13,13 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (3600)) / (60));
   var seconds = Math.floor((distance % (60)));
     
-  if (distance > 7*86400) {
+  if (distance > 14*86400) {
         document.getElementById("countdown").innerHTML = "Welcome to NT";
   }
   
   else {
         if (distance > 0) {
-        document.getElementById("countdown").innerHTML ="Welcome to NT! ϙ1 begins in: " + days + "d " + hours + "h "
+        document.getElementById("countdown").innerHTML ="Welcome to NT! ϙ2 begins in: " + days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
         }
   
