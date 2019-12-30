@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jan 10, 2019 17:00:00").getTime();
+var countDownDate = new Date("Jan 10, 2020 17:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
@@ -15,7 +15,7 @@ var x = setInterval(function() {
   
   else {
         if (distance > 0) {
-        document.getElementById("countdown").innerHTML ="Welcome to NT! ϙ1 begins in: " + days + "d " + hours + "h "
+        document.getElementById("countdown").innerHTML ="Welcome to NT! ϙ2 begins in: " + days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
         }
   
