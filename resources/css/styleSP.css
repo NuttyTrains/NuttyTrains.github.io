@@ -199,3 +199,11 @@ h6 {
   text-decoration: none;
   cursor: pointer;
 }
+
+.Flag {
+  visibility: hidden;
+}
+
+.Flag:hover {
+  visibility: visible;
+}
