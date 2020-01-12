@@ -200,7 +200,7 @@ h6 {
   cursor: pointer;
 }
 
-.Flag {
+#Flag {
   display:none;
   visibility: hidden;
 }
