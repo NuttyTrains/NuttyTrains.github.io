@@ -203,7 +203,3 @@ h6 {
 .Flag {
   visibility: hidden;
 }
-
-.Flag:hover {
-  visibility: visible;
-}
