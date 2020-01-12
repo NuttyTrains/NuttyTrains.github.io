@@ -201,10 +201,6 @@ h6 {
 }
 
 .Flag {
+  display:none;
   visibility: hidden;
-}
-
-button.showflag {
-background-color: rgba(0, 0, 0, 0.0);
-border-style: none;
 }
