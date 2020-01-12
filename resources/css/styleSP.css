@@ -203,3 +203,8 @@ h6 {
 .Flag {
   visibility: hidden;
 }
+
+button.showflag {
+background-color: rgba(0, 0, 0, 0.0);
+border-style: none;
+}
