@@ -1,5 +1,5 @@
 /* Navbar container */
-ul.navbar {
+.navbar {
   overflow: hidden;
   background-color: rgba(42, 55, 69, 1);
   font-family: Raleway;
@@ -10,7 +10,7 @@ ul.navbar {
 }
 
 /* Links inside the navbar */
-li.navbar a {
+.navbar a {
   float: left;
   font-size: 3vw;
   color: white;
@@ -18,19 +18,17 @@ li.navbar a {
   padding: 3vh 2vw;
   text-decoration: none;
   margin: 0;
-  display: inline-block;
 }
 
 /* The dropdown container */
-li.dropdown {
+.dropdown {
   overflow: hidden;
   float: left;
   padding: 0vh 2vw;
-  display: inline-block;
 }
 
 /* Dropdown button */
-li.dropdown .dropbtn {
+.dropdown .dropbtn {
   font-size: 3vw; 
   border: none;
   outline: none;
@@ -42,7 +40,7 @@ li.dropdown .dropbtn {
 }
 
 /* Add a red background color to navbar links on hover */
-ul.navbar a:hover, li.dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
 
@@ -55,6 +53,7 @@ ul.navbar a:hover, li.dropdown:hover .dropbtn {
   min-width: 30vw;
   box-shadow: 0.5em 0.2em 1em 0.5em rgba(0,0,0,0.2);
   z-index: 1;
+  font-size: 3vw; 
 }
 
 /* Links inside the dropdown */
@@ -73,6 +72,6 @@ ul.navbar a:hover, li.dropdown:hover .dropbtn {
 }
 
 /* Show the dropdown menu on hover */
-li.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
 }
