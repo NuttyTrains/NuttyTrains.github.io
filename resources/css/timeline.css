@@ -52,8 +52,21 @@
   position: relative;
 }
 
-.timeline .timeline-item .timeline-icon {
+.timeline .timeline-item{
   background-color: black;
+  border-radius: 50%;
+  height: 50px;
+  left: 50%;
+  margin-left: -23px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 50px;
+  z-index: -1;
+}
+
+.timeline-icon {
+  background-color: red;
   border-radius: 50%;
   height: 50px;
   left: 50%;
