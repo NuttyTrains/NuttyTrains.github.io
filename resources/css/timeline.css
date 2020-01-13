@@ -52,7 +52,7 @@
   position: relative;
 }
 
-.timeline .timeline-item .timeline-icon {
+.timeline-icon {
   background-color: black;
   border-radius: 50%;
   height: 50px;
