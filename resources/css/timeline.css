@@ -16,7 +16,7 @@
   position: relative;
   transition: all 0.5s ease-in;
   width: 100%;
-  z-index: -1;
+  z-index: -2;
 }
 
 .timeline::before {
@@ -52,7 +52,10 @@
   position: relative;
 }
 
-.timeline-icon-alpha, .timeline-icon-beta, .timeline-icon-sampi, .timeline-icon-koppa {
+.timeline .timeline-item .timeline-icon-alpha, 
+.timeline .timeline-item .timeline-icon-beta, 
+.timeline .timeline-item .timeline-icon-sampi, 
+.timeline .timeline-item .timeline-icon-koppa {
   border-radius: 50%;
   height: 50px;
   left: 50%;
@@ -64,23 +67,23 @@
   z-index: -1;
 }
 
-.timeline-icon-alpha{
+.timeline .timeline-item .timeline-icon-alpha {
   background-color: #19095e;
 }
 
-.timeline-icon-beta{
+.timeline .timeline-item .timeline-icon-beta {
   background-color: #ffc10f;
 }
 
-.timeline-icon-sampi{
+.timeline .timeline-item .timeline-icon-sampi {
   background-color: #55c8c3;
 }
 
-.timeline-icon-koppa{
+.timeline .timeline-item .timeline-icon-koppa {
   background-color: #dc241f;
 }
 
-.timeline-icon-aleph {
+.timeline .timeline-item .timeline-icon-aleph {
   background-color: black;
   border-radius: 50%;
   height: 30px;
