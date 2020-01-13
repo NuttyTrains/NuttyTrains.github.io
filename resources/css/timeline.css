@@ -52,8 +52,10 @@
   position: relative;
 }
 
-.timeline .timeline-item .timeline-icon {
-  background-color: black;
+.timeline .timeline-item .timeline-icon-alpha, 
+.timeline .timeline-item .timeline-icon-beta, 
+.timeline .timeline-item .timeline-icon-sampi, 
+.timeline .timeline-item .timeline-icon-koppa {
   border-radius: 50%;
   height: 50px;
   left: 50%;
@@ -62,7 +64,36 @@
   position: absolute;
   top: 0;
   width: 50px;
-  z-index: -1;
+  z-index: 1;
+}
+
+.timeline .timeline-item .timeline-icon-alpha {
+  background-color: #19095e;
+}
+
+.timeline .timeline-item .timeline-icon-beta {
+  background-color: #ffc10f;
+}
+
+.timeline .timeline-item .timeline-icon-sampi {
+  background-color: #55c8c3;
+}
+
+.timeline .timeline-item .timeline-icon-koppa {
+  background-color: #dc241f;
+}
+
+.timeline .timeline-item .timeline-icon-aleph {
+  background-color: black;
+  border-radius: 50%;
+  height: 30px;
+  left: 50%;
+  margin-left: -13px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 30px;
+  z-index: 1;
 }
 
 .timeline .timeline-item .timeline-icon img,
@@ -85,17 +116,17 @@
 }
 
 .timeline .timeline-item .timeline-content p {
-  color: black;
-}
-
-.timeline .timeline-item .timeline-content p {
-  font-size: 16px;
-  line-height: 1.4;
+  font-family: Raleway;
+  color: rgb(42, 55, 69);
+  font-size: 1.2em;
+  line-height: 130%;
   margin-bottom: 0;
 }
 
 .timeline .timeline-item .timeline-content .timeline-content-date {
-  font-size: 16px;
+  font-family: Raleway;
+  color: rgb(42, 55, 69);
+  font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 0;
 }
