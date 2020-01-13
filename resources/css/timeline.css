@@ -52,8 +52,7 @@
   position: relative;
 }
 
-.timeline .timeline-item .timeline-icon {
-  background-color: red;
+.timeline-icon-alpha, .timeline-icon-beta, .timeline-icon-sampi, .timeline-icon-koppa {
   border-radius: 50%;
   height: 50px;
   left: 50%;
@@ -62,6 +61,35 @@
   position: absolute;
   top: 0;
   width: 50px;
+  z-index: -1;
+}
+
+.timeline-icon-alpha{
+  background-color: #19095e;
+}
+
+.timeline-icon-beta{
+  background-color: #ffc10f;
+}
+
+.timeline-icon-sampi{
+  background-color: #55c8c3;
+}
+
+.timeline-icon-koppa{
+  background-color: #dc241f;
+}
+
+.timeline-icon-aleph {
+  background-color: black;
+  border-radius: 50%;
+  height: 30px;
+  left: 50%;
+  margin-left: -13px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 30px;
   z-index: -1;
 }
 
