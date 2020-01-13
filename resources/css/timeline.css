@@ -16,7 +16,7 @@
   position: relative;
   transition: all 0.5s ease-in;
   width: 100%;
-  z-index: -2;
+  z-index: -1;
 }
 
 .timeline::before {
@@ -64,7 +64,7 @@
   position: absolute;
   top: 0;
   width: 50px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .timeline .timeline-item .timeline-icon-alpha {
@@ -93,7 +93,7 @@
   position: absolute;
   top: 0;
   width: 30px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .timeline .timeline-item .timeline-icon img,
