@@ -18,13 +18,11 @@ var x = setInterval(function() {
         + minutes + "m " + seconds + "s ";
   }
   
-  else {
-        if (distance > -86400) {
-          document.getElementById("countdown").innerHTML = "<big><big>It's NT Time!!! <i>不好猫!</i></big></big>";
-        }
+  else if (distance > -86400) {
+        document.getElementById("countdown").innerHTML = "<big><big>It's NT Time!!! <i>不好猫!</i></big></big>";
+  }
   
-        else {
-              document.getElementById("countdown").innerHTML = "Welcome to NT";
-        }
+  else {
+        document.getElementById("countdown").innerHTML = "Welcome to NT";
   }
 },1000);
