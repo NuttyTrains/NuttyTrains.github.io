@@ -13,14 +13,20 @@ var x = setInterval(function() {
         document.getElementById("countdown").innerHTML = "Welcome to NT";
   }
   
-  else if (distance > 0) {
+  else {
+        if (distance > 0) {
         document.getElementById("countdown").innerHTML ="Welcome to NT! ϙ2 begins in: " + days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
-  }
+        }
   
-  else if (distance > -172800) {
+        else {
+              if (distance > -86400) {
               document.getElementById("countdown").innerHTML = "<big><big>It's NT Time!!! <i>不好猫!</i></big></big>";
-  }
+              }
   
-  else {document.getElementById("countdown").innerHTML = "Welcome to NT";
-  },1000;
+              else {
+                    document.getElementById("countdown").innerHTML = "Welcome to NT";
+              }
+        }
+  }
+},1000);
