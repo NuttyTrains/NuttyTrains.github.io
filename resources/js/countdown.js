@@ -13,10 +13,13 @@ var x = setInterval(function() {
         document.getElementById("countdown").innerHTML = "Welcome to NT";
   }
   
-  else if (distance > 0) {
-        document.getElementById("countdown").innerHTML ="Welcome to NT! ϙ2 begins in: " + hours + "h "
+  else if (distance > 4*3600) {
+        document.getElementById("countdown").innerHTML ="Welcome to NT! ϙ2 begins in: " + days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
   }
+  
+  else if (distance > 0) {
+        document.getElementById("countdown").innerHTML ="Welcome to NT! James is on his way, via Devil Country, Chocky Town and <i> spits </i> South London
   
   else if (distance > -86400) {
         document.getElementById("countdown").innerHTML = "<big><big>It's NT Time!!! <i>不好猫!</i></big></big>";
