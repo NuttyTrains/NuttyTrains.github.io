@@ -19,8 +19,7 @@ var x = setInterval(function() {
   }
   
   else if (distance > 0) {
-        document.getElementById("countdown").innerHTML ="Welcome to NT! James is on his way, via Devil Country, Chocky Town and <i> spits </i> South London. ϙ2 begins in: 
-        " + hours + "h " + minutes + "m " + seconds +"s ";
+        document.getElementById("countdown").innerHTML ="Welcome to NT! James is on his way, via Devil Country, Chocky Town and <i> spits </i> South London. ϙ2 begins in: " + hours + "h " + minutes + "m " + seconds + "s ";
   }
   
   else if (distance > -86400) {
