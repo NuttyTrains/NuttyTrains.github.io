@@ -11,16 +11,16 @@ var x = setInterval(function() {
     
   if (distance > 14*86400) {
         document.getElementById("countdown").innerHTML = "Welcome to NT";
-  },1000);
+  }
   
   else if (distance > 0) {
         document.getElementById("countdown").innerHTML ="Welcome to NT! ϙ2 begins in: " + days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
-  },1000);
+  }
   
   else if (distance > -172800) {
               document.getElementById("countdown").innerHTML = "<big><big>It's NT Time!!! <i>不好猫!</i></big></big>";
-  },1000);
+  }
   
   else {document.getElementById("countdown").innerHTML = "Welcome to NT";
-  },1000);
+  },1000;
