@@ -14,6 +14,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="./resources/js/parallax/parallax.min.js"></script>
+	<script src="./resources/js/stationstuff.js"></script>
   </head>
   <header>
       <h1>
@@ -1175,28 +1176,9 @@
     </span>
 
     <script>
-function More() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("MoreBtn");
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Show 不好猫"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Hide 不好猫"; 
-    moreText.style.display = "inline";
-  }
-}
-</script>
-<script>
-function StationNumber() {
-  var x =document.getElementById("Stations").rows.length -1;
-    return "不好猫 " + x + " stations";
-}
 document.getElementById("StationNo").innerHTML = StationNumber();
     </script>
+
 <br><br>
 	  <center><img src="./resources/photos/NT I-VIII Small.png" width="100%"></center>
 
