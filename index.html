@@ -1105,13 +1105,13 @@
      <tr>
        <th> 171 </th>
        <td> Imperial Wharf </td>
-       <td> 01/02/2020 </td>
+       <td> 02/02/2020 </td>
        <th> ϙ2 </th>
      </tr>
      <tr>
        <th> 172 </th>
        <td> Clapham Junction </td>
-       <td> 01/02/2020 </td>
+       <td> 02/02/2020 </td>
        <th> ϙ2 </th>
      </tr>
      <tr>
@@ -2075,6 +2075,93 @@ function TubeStationNumber() {
 document.getElementById("TubeStationNo").innerHTML = TubeStationNumber();
 
     </script>
+
+<br><br>
+<p> As the work from our degrees ramps up, our depression sets in, and the last dregs of our sanity get washed away in off-colour 
+1984-quote Twitter flame wars, we continue to acquire new traditions on our nutty train adventures. After our amazing attempt at 
+the #IKEAmeansIKEA challenge, we have decided to visit all the IKEAs in the UK. There are only 18 of them? How hard can it be?</p>
+    <ol>
+      <li> To get to an IKEA we must:
+	<ul> 
+	  <li> Use a train to arrive at the closest station to an IKEA </li>
+	  <li> Follow all above NT rules at the station </li>
+	  <li> Walk to the IKEA, no matter how impossible that may be </li>
+	</ul>
+     </li>
+      <li> To say we visited an IKEA we must:
+	<ul> 
+	  <li> Walk through all the showrooms - no shortcuts! </li>
+	  <li> Visit the restaurant </li>
+	  <li> Steal >1 pencil </li>
+	  <li> To say we visited the IKEA, we must purchase at least 1 item of random crap</li>
+	</ul>
+     </li>
+     <li> We are allowed to leave in the manner in which we arrived, or take the bus. That doesn't matter </li>
+    </ol>
+
+<p id="IkeaNo"></p>
+    <span id="ikeadots"></span>
+ 
+    <button onclick="IkeaMore()" id="IkeaMoreBtn">Show IKEA List</button>
+    <span id="ikeamore">
+    <table id="IKEA">
+    <tr>
+    <th> Ikea Name </th>
+    <th> Ikea No. </th>
+    <th> Station </th>
+    <th> Date </th>
+    <th> Edition </th>
+    <th> Random Crap </th>
+    </tr>
+     <tr> 
+       <th> Original IKEA </th>
+       <td> 1 </td>
+       <td> Grangetown </td>
+       <td> 10/08/2019 </td>
+       <td> &#993;4 </td>
+       <td> Chocolate Oat Milk <br>
+	    Gravy </td>
+     </tr>
+    <tr> 
+       <th> Meridian Premier IKEA Extra </th>
+       <td> 2 </td>
+       <td> Meridian Water </td>
+       <td> 01/02/2020 </td>
+       <td> ϙ2 </td>
+       <td> Tinsel Christmas Tree <br>
+	    Tin Can <br>
+	    Light Bulb <br>
+	    Blue Tealight Holder</td>
+     </tr>
+     </table>
+     </span>
+	 </div> 
+<script>
+function IkeaMore() {
+  var ikeadots = document.getElementById("ikeadots");
+  var ikeamoreText = document.getElementById("ikeamore");
+  var ikeabtnText = document.getElementById("IkeaMoreBtn");
+
+  if (ikeadots.style.display === "none") {
+    ikeadots.style.display = "inline";
+    ikeabtnText.innerHTML = "Show IKEA List"; 
+    ikeamoreText.style.display = "none";
+  } else {
+    ikeadots.style.display = "none";
+    ikeabtnText.innerHTML = "Hide IKEA List"; 
+    ikeamoreText.style.display = "inline";
+  }
+}
+</script>
+<script>
+function IkeaNumber() {
+  var x = document.getElementById("IKEA").rows.length -1;
+    return "We have visited " + x + " IKEAs";
+}
+document.getElementById("IkeaNo").innerHTML = IkeaNumber();
+
+    </script>
+ 
  <br><br>
 	  <center><img src="./resources/photos/NT I-VIII Small.png" width="100%"></center>
 
