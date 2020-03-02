@@ -1,26 +1,410 @@
 {
   "stations": {
-    "CardiffCentral": {
-	  "name": "Cardiff Central",
-	  "label": "Cardiff\nCentral",
-	  "position": {
-	    "lat": 51.4761,
-		"lon": 3.1790
-	  }
-	}
+    "Anchor": {
+      "name": "Anchor",
+      "label": "Anchor",
+      "place_id": "hIJocwdyrxw2EcRnogp-KBkY_o",
+      "address": "Silver Street, Cambridge, CB3 9EL",
+      "website": "http://www.anchorcambridge.com",
+      "phone": "01223 353554",
+      "position": {
+        "lat": 52.201999,
+        "lon": 0.115758
+      }
+    "Architect": {
+      "name": "Architect",
+      "label": "Architect",
+      "place_id": "ChIJX3Dbo7hw2EcR4iVxgX74BlU",
+      "address": "43 Castle St, Cambridge, CB3 0AH",
+      "website": "http://www.thearchitectcambridge.co.uk/",
+      "phone": "01223 563779",
+      "position": {
+        "lat": 52.212078,
+        "lon": 0.113155
+      }
+    },
+    "BaronOfBeef": {
+      "name": "Baron of Beef",
+      "label": "Baron\nof Beef",
+      "place_id": "ChIJVeAxW75w2EcRkM91IuEN_oU",
+      "address": "19 Bridge St, Cambridge CB2 1UF",
+      "website": "http://www.baronofbeef-cambridge.co.uk/",
+      "phone": "01223 505022",
+      "position": {
+        "lat": 52.208893,
+        "lon": 0.118118
+      }
+    },
+    "BathHouse": {
+      "name": "Bath House",
+      "label": "Bath House",
+      "address": "3 Benet Street, Cambridge, CB2 3QN",
+      "website": "http://www.bathhouse-cambridge.co.uk/",
+      "phone": "01223 350969",
+      "position": {
+        "lat": 52.204073,
+        "lon": 0.118459
+      }
+    },
+    "BrewHouse": {
+      "name": "Brew House",
+      "label": "Brew\nHouse",
+      "address": "1 King St, Cambridge CB1 1LH",
+      "website": "http://www.thecambridgebrewhouse.com/",
+      "phone": "01223 855185",
+      "position": {
+        "lat": 52.207412,
+        "lon": 0.122225
+      }
+    },
+    "CarltonArms": {
+      "name": "Carlton Arms",
+      "label": "Carlton Arms",
+      "address": "Carlton Way, Cambridge CB4 2DF",
+      "website": "http://thecarltonarmscambridge.co.uk/",
+      "phone": "01223 367422",
+      "position": {
+        "lat": 52.222048,
+        "lon": 0.114374
+      }
+    },
+    "CarpentersArms": {
+      "name": "Carpenter's Arms",
+      "label": "Carpenter's Arms",
+      "address": "184-186 Victoria Rd, Cambridge, CB4 3DZ",
+      "website": "http://www.carpentersarmscambridge.co.uk/",
+      "phone": "01223 367050",
+      "position": {
+        "lat": 52.21576,
+        "lon": 0.114374
+      }
+    },
+    "CastleInn": {
+      "name": "Castle Inn",
+      "label": "Castle\nInn",
+      "place_id": "ChIJoccoXsdw2EcROG63agLdFi4",
+      "address": "38 Castle St, City Centre, Cambridge CB3 0AJ",
+      "website": "http://thecastleinncambridge.com/",
+      "phone": "01223 353194",
+      "position": {
+        "lat": 52.211945,
+        "lon": 0.113552
+      }
+    },
+    "ChampionOfTheThames": {
+      "name": "Champion of the Thames",
+      "label": "Champion\nof the\nThames",
+      "address": "68 King St, Cambridge CB1 1LN",
+      "position": {
+        "lat": 52.207328,
+        "lon": 0.124451
+      }
+    },
+    "ClarendonArms": {
+      "name": "Clarendon Arms",
+      "label": "Clarendon\nArms",
+      "address": "35-36 Clarendon St, Cambridge CB1 1JX",
+      "phone": "01223 778272",
+      "position": {
+        "lat": 52.20465,
+        "lon": 0.127679
+      }
+    },
+    "Eagle": {
+      "name": "Eagle",
+      "label": "Eagle",
+      "address": "8 Benet Street, Cambridge, CB2 3QN",
+      "website": "http://www.eagle-cambridge.co.uk/",
+      "phone": "01223 505020",
+      "position": {
+        "lat": 52.203974,
+        "lon": 0.118044
+      }
+    },
+    "Grapes": {
+      "name": "Grapes",
+      "label": "Grapes",
+      "address": "19 Histon Rd, Cambridge CB4 3JB",
+      "website": "http://www.thegrapescambridge.co.uk/",
+      "phone": "01223 511974",
+      "position": {
+        "lat": 52.214963,
+        "lon": 0.110773
+      }
+    },
+    "KingStreetRun": {
+      "name": "King Street Run",
+      "label": "King Street\nRun",
+      "address": "86 King St, Cambridge CB1 1LN",
+      "phone": "01223 328900",
+      "position": {
+        "lat": 52.20724,
+        "lon": 0.125199
+      }
+    },
+    "Mitre": {
+      "name": "Mitre",
+      "label": "Mitre",
+      "address": "17 Bridge St, Cambridge CB2 1UF",
+      "website":
+        "http://www.nicholsonspubs.co.uk/restaurants/eastofengland/themitrecambridge",
+      "phone": "01223 358403",
+      "position": {
+        "lat": 52.208852,
+        "lon": 0.118185
+      }
+    },
+    "Pickerel": {
+      "name": "Pickerel",
+      "label": "Pickerel",
+      "address": "30 Magdalene St, Cambridge CB3 0AF",
+      "website": "http://www.taylor-walker.co.uk/pub/pickerel-cambridge",
+      "phone": "01223 355068",
+      "position": {
+        "lat": 52.209955,
+        "lon": 0.116209
+      }
+    },
+    "Punter": {
+      "name": "Punter",
+      "label": "Punter",
+      "place_id": "ChIJIwqxlbhw2EcRQYT52kWYXhQ",
+      "address": "3 Pound Hill, Cambridge CB3 0AE",
+      "website": "http://www.thepuntercambridge.com/",
+      "phone": "01223 363322",
+      "position": {
+        "lat": 52.210552,
+        "lon": 0.113281
+      }
+    },
+    "Regal": {
+      "name": "Regal",
+      "label": "Regal",
+      "address": "38-39 St Andrew's St, Cambridge, Cambridgeshire CB2 3AR",
+      "website":
+        "https://www.jdwetherspoon.com/pubs/all-pubs/england/cambridgeshire/the-regal-cambridge",
+      "phone": "01223 366459",
+      "position": {
+        "lat": 52.202947,
+        "lon": 0.123806
+      }
+    },
+    "SirIsaacNewton": {
+      "name": "Sir Isaac Newton",
+      "label": "Sir Isaac Newton",
+      "address": "84 Castle St, Cambridge CB3 0AJ",
+      "website": "http://www.sirisaacnewton-cambridge.co.uk/",
+      "phone": "01223 305555",
+      "position": {
+        "lat": 52.213338,
+        "lon": 0.112072
+      }
+    },
+    "StRadegund": {
+      "name": "St Radegund",
+      "label": "St Radegund",
+      "address": "129 King St, Cambridge, CB1 1LD",
+      "phone": "01223 311794",
+      "position": {
+        "lat": 52.207616,
+        "lon": 0.126733
+      }
+    }
   },
   "lines": [
     {
-		"name": "Rhonnda",
-		"colour": "#30c5b8",
-		"shiftCoords": [0, 0],
-		"nodes": [
-			{
-				"coords": [23, -4],
-				"name": "Cardiff Central",
-				"labelPos": "N"
-			}
-		]
-	}
+      "name": "Town",
+      "label": "Town",
+      "color": "#FFD600",
+      "shiftCoords": [0, 0],
+      "nodes": [
+        {
+          "coords": [14, -4],
+          "name": "Mill",
+          "labelPos": "S"
+        },
+        {
+          "coords": [23, -4],
+          "marker": "interchange",
+          "name": "Regal",
+          "labelPos": "NW",
+          "shiftCoords": [0, 0],
+          "canonical": true
+        },
+        {
+          "coords": [30, -4]
+        },
+        {
+          "coords": [31, -3],
+          "dir": "E"
+        },
+        {
+          "coords": [31, 2],
+          "marker": "interchange",
+          "name": "ClarendonArms",
+          "labelPos": "E",
+          "hide": true
+        },
+        {
+          "coords": [31, 6],
+          "name": "StRadegund",
+          "labelPos": "E"
+        },
+        {
+          "coords": [31, 9]
+        },
+        {
+          "coords": [30, 10],
+          "dir": "N"
+        },
+        {
+          "coords": [28, 10],
+          "name": "KingStreetRun",
+          "labelPos": "N"
+        },
+        {
+          "coords": [27, 10],
+          "name": "ChampionOfTheThames",
+          "labelPos": "S"
+        },
+        {
+          "coords": [23, 10],
+          "marker": "interchange",
+          "name": "BrewHouse",
+          "labelPos": "SW",
+          "shiftCoords": [0, 0.5],
+          "canonical": true
+        },
+        {
+          "coords": [14, 10],
+          "name": "Mitre",
+          "labelPos": "N"
+        },
+        {
+          "coords": [12, 10],
+          "name": "BaronOfBeef",
+          "labelPos": "S",
+          "canonical": true
+        },
+        {
+          "coords": [10, 10]
+        },
+        {
+          "coords": [9, 9],
+          "dir": "W"
+        },
+        {
+          "coords": [9, 2],
+          "marker": "interchange",
+          "name": "Eagle",
+          "labelPos": "NW",
+          "hide": true
+        },
+        {
+          "coords": [9, -2],
+          "name": "Anchor",
+          "labelPos": "E"
+        },
+        {
+          "coords": [9, -3]
+        },
+        {
+          "coords": [10, -4],
+          "dir": "S"
+        },
+        {
+          "coords": [14, -4]
+        }
+      ]
+    },
+    {
+      "name": "Castle",
+      "label": "Castle",
+      "color": "#AB4800",
+      "shiftCoords": [0, 1],
+      "nodes": [
+        {
+          "coords": [10, 33],
+          "name": "CarltonArms",
+          "labelPos": "N"
+        },
+        {
+          "coords": [1, 33]
+        },
+        {
+          "coords": [-1, 32]
+        },
+        {
+          "coords": [-3, 30],
+          "name": "CarpentersArms",
+          "labelPos": "NW"
+        },
+        {
+          "coords": [-5, 28],
+          "name": "Grapes",
+          "labelPos": "NW"
+        },
+        {
+          "coords": [-7, 26]
+        },
+        {
+          "coords": [-8, 24]
+        },
+        {
+          "coords": [-8, 22]
+        },
+        {
+          "coords": [-8, 21]
+        },
+        {
+          "coords": [-7, 19],
+          "name": "SirIsaacNewton",
+          "labelPos": "SW"
+        },
+        {
+          "coords": [-5, 17],
+          "name": "Architect",
+          "labelPos": "SW"
+        },
+        {
+          "coords": [-3, 15],
+          "name": "CastleInn",
+          "labelPos": "NE"
+        },
+        {
+          "coords": [-1, 13],
+          "name": "Punter",
+          "labelPos": "SW"
+        },
+        {
+          "coords": [1, 11]
+        },
+        {
+          "coords": [3, 10],
+          "marker": "interchange",
+          "name": "Pickerel",
+          "labelPos": "SW"
+        },
+        {
+          "coords": [12, 10],
+          "marker": "interchange",
+          "name": "BaronOfBeef",
+          "labelPos": "NW"
+        },
+        {
+          "coords": [14, 10],
+          "name": "Mitre",
+          "labelPos": "N",
+          "canonical": true
+        },
+        {
+          "coords": [23, 10],
+          "marker": "interchange",
+          "name": "BrewHouse",
+          "labelPos": "W",
+          "hide": true
+        }
+      ]
+    }
   ]
 }
