@@ -3,7 +3,6 @@ var countDownDate = new Date("Mar 05, 2020 00:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = (countDownDate - now)/1000;
-  var distancetwo = (countDownDate - now);
     
   var days = Math.floor(distance / (86400));
   var hours = Math.floor((distance % (86400)) / (3600));
@@ -12,5 +11,5 @@ var x = setInterval(function() {
   
   var chock = Math.floor(10**(distancetwo/800000 +2));
     
-  document.getElementById("countdown").innerHTML = " The UK has " + distancetwo + " chock cases. We're all going to die. Reality is an illusion, the universe is a hologram, buy toilet roll!";
+  document.getElementById("countdown").innerHTML = " The UK has " + distance + " chock cases. We're all going to die. Reality is an illusion, the universe is a hologram, buy toilet roll!";
 },1000);
