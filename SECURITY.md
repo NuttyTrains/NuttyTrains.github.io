@@ -6,8 +6,7 @@ I just saw this on "list of files I haven't created", so I thought it would be f
 
 ## Supported Versions
 
-There is only one China
-I mean, there is only one version of the website (apart from the dodgy old forks that we each have one of).
+There is only one <s>China</s> version of the website (apart from the dodgy old forks that we each have one of).
 If you have a different version, then go home, yer drunk!
 
 ## Reporting a Vulnerability

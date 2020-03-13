@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Next Station is...</title>
+    <link rel="icon" type="image/png" href="./resources/photos/PacerCrop.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  	<link rel="stylesheet" type="text/css" href="./resources/css/collapsible.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
+  <script src="https://d3js.org/d3.v5.js"></script>
+<script src="./TubeMapCode/d3-tube-map.js"></script>
+  </head>
+  <header>
+      <h1>
+	  <div class="navbar">
+		<a href="./index.html">NuttyTrains.net</a>
+		<a href="./nuttytrains.cn.html"><small><strong>不好猫</strong></small></a>
+	 <div class="dropdown">
+		 <button class="dropbtn"><strong>Random Crap</strong></button>
+	    <div class="dropdown-content">
+	      <a href="./nexttrain.html">Next Train</a>
+	      <a href="./nextadventure.html">Next Adventure</a>
+	      <a href="./dictionary.html">Dictionary</a>
+	    </div>
+	  </div>
+	  <div class="dropdown">
+	  </div> 
+	</div>
+      </h1>
+  </header>
+  <body>
+    <h1 class= "spacing"> Trains </h1>
+	  <div class="intro">
+<p>       	The next station on this service is <a href="https://www.realtimetrains.co.uk/train/W16859/2020-01-31/detailed"> London Waterloo</a>, this service is from
+<a href="https://www.realtimetrains.co.uk/train/Y94063/2020-01-31">Camborne</a>. This is a NT KOPPA2 service to masochism.<br><br>
+
+This service is currently
+</p>
+<p id="delayed"> On Time</p>
+<p> The train is currently at <p>
+<p id="station"> Camborne </p>
+
+		  
+  <div id="tube-map">
+  </div>
+<script>
+  var container = d3.select('#tube-map');
+
+  var width = 1600;
+  var height = 1024;
+
+  var map = d3.tubeMap()
+    .width(width)
+    .height(height)
+    .margin({
+      top: height / 50,
+      right: width / 7,
+      bottom: height / 10,
+      left: width / 7,
+    });
+
+  d3.json("./TubeMapCode/stations.json").then(function(data)  {
+    container.datum(data).call(map);
+  });
+</script>
+
+</body>
+</html>
