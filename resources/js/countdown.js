@@ -12,5 +12,5 @@ var x = setInterval(function() {
   
   var chock = Math.floor(10**(distancetwo/800000 +2));
     
-  document.getElementById("countdown").innerHTML = " The UK has " + chock + " chock cases. We're all going to die. Reality is an illusion, the universe is a hologram, buy toilet roll!";
+  document.getElementById("countdown").innerHTML = " The UK has " + distancetwo + " chock cases. We're all going to die. Reality is an illusion, the universe is a hologram, buy toilet roll!";
 },1000);
