@@ -9,7 +9,7 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (3600)) / (60));
   var seconds = Math.floor((distance % (60)));
   
-  var chock = Math.floor(10**(distance/800000 +2));
+  var chock = Math.floor(10**(distance/700000 +2));
     
   document.getElementById("countdown").innerHTML = " The UK has " + chock + " chock cases. We're all going to die. Reality is an illusion, the universe is a hologram, buy toilet roll!";
 },1000);
