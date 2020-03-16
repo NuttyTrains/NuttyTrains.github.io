@@ -12,5 +12,5 @@ var x = setInterval(function() {
   var chock = Math.floor(10**(distance/750000 +2));
   var chock = Math.floor(289.8848724* Math.exp((152 * days)/1000));
 
-  document.getElementById("countdown").innerHTML = " The UK has " + chock + " chock cases. We're all going to die. Reality is an illusion, the universe is a hologram, buy toilet roll!";
+document.getElementById("countdown").innerHTML = " The UK has " + chock + " chock cases. We're all going to die. Reality is an illusion, the universe is a hologram, buy toilet roll!"; 
 },1000);
