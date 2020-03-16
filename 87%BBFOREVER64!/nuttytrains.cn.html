@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>不好猫</title>
+    <link rel="icon" type="image/png" href="./resources/photos/PacerCrop.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="./resources/js/parallax/parallax.min.js"></script>
+	<script src="./resources/js/stationstuff.js"></script>
+  </head>
+  <header>
+      <h1>
+	<div class="navbar">
+		<a href="./index.html">NuttyTrains.net</a>
+		<a href="./nuttytrains.cn.html"><small><strong>不好猫</strong></small></a>
+	 <div class="dropdown">
+		 <button class="dropbtn"><strong>Random Crap</strong></button>
+	    <div class="dropdown-content">
+	      <a href="./nexttrain.html">Next Train</a>
+	      <a href="./nextadventure.html">Next Adventure</a>
+	      <a href="./dictionary.html">Dictionary</a>
+	    </div>
+	  </div>
+	  <div class="dropdown">
+	  </div> 
+	</div>
+      </h1>
+  </header>
+  <body onload = "myFunction()">
+    <h1 class= "spacing"> Trains </h1>
+	<div class="ParallaxVideo">
+		<img src="./resources/photos/Winnie The Pooh.jpg">
+</div>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">不好猫 NT</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><big><big><big><big><big><big><big><big>不好猫</big></big></big></big></big></big></big></big></p>
+  </div>
+</div>
+
+<div class = "text">
+    <p> <big><big><big><big><big><big><big><big><big><big><big><big>不好猫</big></big></big></big></big></big></big></big></big></big></big></big><br><br>
+	    不好猫:</p>
+    <ol>
+      <li> 不好猫:
+	<ul> 
+	  <li> 不好猫 </li>
+	  <li> 不好猫 </li>
+          <li> 不好猫 </li>
+	  <li> (不好猫) 不好猫 (不好猫) </li>
+	</ul>
+     </li>
+     <li> 不好猫 (不好猫), 不好猫. 不好猫. </li>
+     <li> 不好猫, 不好猫. </li>
+    </ol> 
+	  
+    <p id="StationNo"></p>
+    <span id="dots"></span>
+ 
+    <button onclick="More()" id="MoreBtn">Show 不好猫</button>
+    <span id="more">
+    <table id="Stations">
+    <tr>
+    <th> Station No. </th>
+    <th> Station Name </th>
+    <th> 不好猫 </th>
+    <th> Date </th>
+    <th> Edition </th>
+    </tr>
+     <tr>
+       <th> 0 </th>
+       <td> Swansea </td>
+       <td>蛮屎忽 城市</td>
+       <td> 05/12/2016 </td>
+       <th> α2 </th>
+     </tr>
+     <tr> 
+       <th> 1 </th>
+       <td> London Paddington </td>
+       <td>大火车棚</td>
+       <td> 05/12/2016 </td>
+       <th> α2 </th>
+     </tr>
+     <tr>  
+       <th> 2 </th>
+       <td> Bath Spa </td>
+       <td>浴缸</td>
+       <td> 31/05/2018 </td>
+       <th> α1/β1 </th>
+     </tr> 
+     <tr>  
+       <th> 3 </th>
+       <td> Cardiff Queen Street </td>
+       <td>光荣领袖习近平街</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 4 </th>
+       <td> Cathays </td>
+       <td>猫干草</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 5 </th>
+       <td> Llandaf </td>
+       <td>达夫教堂</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 6 </th>
+       <td> Radyr </td>
+       <td>车手</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 7 </th>
+       <td> Taffs Well </td>
+       <td>太妃糖好</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 8 </th>
+       <td> Treforest </td>
+       <td>树森林</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 9 </th>
+       <td> Pontypridd </td>
+       <td>尖尖的</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 10 </th>
+       <td> Trehafod </td>
+       <td>树有奇数</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 11 </th>
+       <td> Porth </td>
+       <td>贫困</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 12 </th>
+       <td> Dinas Rhondda </td>
+       <td>迪恩屁股错了</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 13 </th>
+       <td> Tonypandy </td>
+       <td>消防员山姆</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 14 </th>
+       <td> Llwynypia </td>
+       <td>没有元音镇</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 15 </th>
+       <td> Ystrad Rhondda </td>
+       <td>错误搁浅</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 16 </th>
+       <td> Ton Pentre </td>
+       <td>吨悔改</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 17 </th>
+       <td> Treorchy </td>
+       <td>猪肉树</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 18 </th>
+       <td> Ynyswen </td>
+       <td>冰什么时候</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 19 </th>
+       <td> Treherbert </td>
+       <td>悲伤沮丧的山谷小镇</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 20 </th>
+       <td> Abercynon </td>
+       <td>山谷交界处</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 21 </th>
+       <td> Quakers Yard </td>
+       <td>宗教坚果盒堆场</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 22 </th>
+       <td>  Merthyr Vale</td>
+       <td>乐购谷</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 23 </th>
+       <td> Troed-y-Rhiw </td>
+       <td>无尽的联排别墅</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>  
+       <th> 24 </th>
+       <td> Pentre-bach </td>
+       <td>垃圾普利茅斯</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>
+       <th> 25 </th>
+       <td> Merthyr Tydfil </td>
+       <td>特斯科</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>
+       <th> 26 </th>
+       <td> Nantgarw <s>(Treforest Estate)</s> </td>
+       <td>传奇的</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>
+       <th> 27 </th>
+       <td> Cardiff Bay </td>
+       <td>运行轨道</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>
+       <th> 28 </th>
+       <td> Bridgend </td>
+       <td>队伍的尽头</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>
+       <th> 29 </th>
+       <td> Port Talbot Parkway </td>
+       <td>人间地狱</td>
+       <td> 19/12/2018 </td>
+       <th> &#993;I </th>
+     </tr>
+     <tr>
+       <th> 30 </th>
+       <td> Neath </td>
+       <td>恶心的</td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 31 </th>
+       <td> Heath High Level </td>
+       <td>危险楼梯</td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 32 </th>
+       <td> Llanishen </td>
+       <td></td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 33 </th>
+       <td> Lisvane & Thornhill </td>
+       <td></td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 34 </th>
+       <td> Caerphilly </td>
+       <td>污秽</td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 35 </th>
+       <td> Aber </td>
+       <td>河</td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 36 </th>
+       <td> Energlyn & Churchill Park </td>
+       <td></td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 37 </th>
+       <td> Llanbradach </td>
+       <td></td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 38 </th>
+       <td> Ystrad Mynach </td>
+       <td></td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 39 </th>
+       <td> Hengoed </td>
+       <td></td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 40 </th>
+       <td> Pengham </td>
+       <td></td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 41 </th>
+       <td> Bargoed </td>
+       <td></td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 42 </th>
+       <td> Brithdir </td>
+       <td></td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 43 </th>
+       <td> Tir-Phil </td>
+       <td>堆填区</td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 44 </th>
+       <td> Pontlottyn </td>
+       <td></td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 45 </th>
+       <td> Rhymney </td>
+       <td></td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 46 </th>
+       <td> *Running footsteps* Heath Low Level </td>
+       <td>狡猾的胡同</td>
+       <td> 29/12/2018 </td>
+       <th> &#993;II </th>
+     </tr>
+     <tr>
+       <th> 47 </th>
+       <td> Gowerton </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+     <tr>
+       <th> 48 </th>
+       <td> Llaneli </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+     <tr>
+       <th> 49 </th>
+       <td> Llangennech </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+     <tr>
+       <th> 50 </th>
+       <td> Pontarddulais </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+     <tr>
+       <th> 51 </th>
+       <td> Pantyffynnon </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+     <tr>
+       <th> 52 </th>
+       <td> Ammanford </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+     <tr>
+       <th> 53 </th>
+       <td> Llandybie </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+     <tr>
+       <th> 54 </th>
+       <td> Llandeilo </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 55 </th>
+       <td> Llangadog </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 56 </th>
+       <td> Llanwrda </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 57 </th>
+       <td> Llandovery </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 58 </th>
+       <td> Cynghordy </td>
+       <td>惊人的高架桥</td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 59 </th>
+       <td> <strong>Sugar Loaf</strong> </td>
+       <td>宁静</td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 60 </th>
+       <td> Llanwrtyd Wells </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 61 </th>
+       <td> Llangammarch Wells </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 62 </th>
+       <td> Builth Road </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 63 </th>
+       <td> Llandrindod </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 64 </th>
+       <td> Dolau </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 65 </th>
+       <td> Knucklas </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 66 </th>
+       <td> Knighton </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 67 </th>
+       <td> Bucknell </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 68 </th>
+       <td> Shrewsbury </td>
+       <td>多层停车场</td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 69 </th>
+       <td> Church Stretton </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 70 </th>
+       <td> Craven Arms </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 71 </th>
+       <td> Ludlow </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 72 </th>
+       <td> Leominster </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 73 </th>
+       <td> Hereford </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 74 </th>
+       <td> Abergavenny </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 75 </th>
+       <td> Pontypool & New Inn </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 76 </th>
+       <td> Cwnbr&acirc;n </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 77 </th>
+       <td> Pontyclun </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 78 </th>
+       <td> Llanharan </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 79 </th>
+       <td> Pencoed </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 80 </th>
+       <td> Pyle </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 81 </th>
+       <td> Baglan </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 82 </th>
+       <td> Briton Ferry </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+       <th> 83 </th>
+       <td> Skewen </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+     <tr>
+       <th> 84 </th>
+       <td> Llansamlet </td>
+       <td></td>
+       <td> 19/04/2019 </td>
+       <th> &#993;III </th>
+     </tr>
+     <tr>
+       <th> 85 </th>
+       <td> Wildmill </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 86 </th>
+       <td> Sarn </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 87 </th>
+       <td> Tondu </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 88 </th>
+       <td> Garth (Mid Glam) </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 89 </th>
+       <td> Maesteg Ewenny Road </td>
+       <td>不是阿斯达</td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 90 </th>
+       <td> Maesteg<em> Asda </em> </td>
+       <td>阿斯达</td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 91 </th>
+       <td> Llantwit Major </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 92 </th>
+       <td> Rhoose Cardiff Airport </td>
+       <td>邓小平纪念机场</td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 93 </th>
+       <td> Barry </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 94 </th>
+       <td> Barry Island </td>
+       <td>严重的忧郁症</td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 95 </th>
+       <td> Barry Docks </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 96 </th>
+       <td> Cadoxton </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 97 </th>
+       <td> Dinas Powys </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 98 </th>
+       <td> Eastbrook </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 99 </th>
+       <td> Cogan </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 100 </th>
+       <td> IKEA Station (Grangetown) </td>
+       <td>宜家</td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 101 </th>
+       <td> Dingle Road </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 102 </th>
+       <td> Penarth </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 103 </th>
+       <td> Cardiff Central </td>
+       <td>似曾相识</td>
+       <td> 10/08/2019 </td>
+       <th> &#993;I/&#993;IV </th>
+     </tr>
+     <tr>
+       <th> 104 </th>
+       <td> Penrhiwceiber </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 105 </th>
+       <td> Mountain Ash </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 106 </th>
+       <td> Fernhill </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 107 </th>
+       <td> Cwmbach </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 108 </th>
+       <td> Aberdare </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 109 </th>
+       <td> T&ycirc; Glas </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 110 </th>
+       <td> Birchgrove </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 111 </th>
+       <td> Rhiwbina </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 112 </th>
+       <td> Whitchurch </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 113 </th>
+       <td> Coryton </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 114 </th>
+       <td> Ninian Park </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 115 </th>
+       <td> Waun Gron Park </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 116 </th>
+       <td> Fairwater </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 117 </th>
+       <td> Danescourt </td>
+       <td></td>
+       <td> 10/08/2019 </td>
+       <th> &#993;IV </th>
+     </tr>
+     <tr>
+       <th> 118 </th>
+       <td> π &angrt; </td>
+       <td>三点一四一五九</td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 119 </th>
+       <td> Rogerstone </td>
+       <td></td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 120 </th>
+       <td> Risca & Pontymister </td>
+       <td>尖尖的先生</td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 121 </th>
+       <td> Crosskeys </td>
+       <td></td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 122 </th>
+       <td> Newbridge <em>Conti Fish Bar</em></td>
+       <td>鱼吧</td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 123 </th>
+       <td> Llanhilleth </td>
+       <td></td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 124 </th>
+       <td> Ebbw Vale Parkway </td>
+       <td></td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 125 </th>
+       <td> Ebbw Vale Town </td>
+       <td>他们付钱给你离开</td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 126 </th>
+       <td> Newport </td>
+       <td></td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 127 </th>
+       <td> Severn Tunnel Junction </td>
+       <td></td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 128 </th>
+       <td> Caldicot </td>
+       <td></td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 129 </th>
+       <td> Chepstow </td>
+       <td></td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 130 </th>
+       <td> Lydney </td>
+       <td>美味的辐射</td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 131 </th>
+       <td> Gloucester </td>
+       <td></td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 132 </th>
+       <td> <i>"Cheltenham"</i> Spa </td>
+       <td>老大哥在看着你</td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 133 </th>
+       <td> Bristol Parkway </td>
+       <td></td>
+       <td> 20/08/2019 </td>
+       <th> &#993;V </th>
+     </tr>
+     <tr>
+       <th> 134 </th>
+       <td> Pembrey & Burry Port </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 135 </th>
+       <td> Kidwelly </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 136 </th>
+       <td> Ferryside </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 137 </th>
+       <td> Carmarthen </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 138 </th>
+       <td> Whitland <em> West Wales Central </em> </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 139 </th>
+       <td> Narberth </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 140 </th>
+       <td> Kilgetty </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 141 </th>
+       <td> Tenby </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> β1/&#993;VI  </th>
+     </tr>
+     <tr>
+       <th> 142 </th>
+       <td> Penally </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI  </th>
+     </tr>
+     <tr>
+       <th> 143 </th>
+       <td> Manorbier </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 144 </th>
+       <td> Lamphey </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 145 </th>
+       <td> Pembroke </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 146 </th>
+       <td> Pembroke Dock <em> Millenium Falcon </em> </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 147 </th>
+       <td> Saundersfoot </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 148 </th>
+       <td> Clarbeston Road </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 149 </th>
+       <td> Haverfordwest </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 150 </th>
+       <td> Milford Haven <em> Nuclear Bunker </em> </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 151 </th>
+       <td> Johnston </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 152 </th>
+       <td> Clunderwen <em> Matthew's Initiation </em> </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 153 </th>
+       <td> Fishguard & Goodwick </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 154 </th>
+       <td> Fishguard Harbour </td>
+       <td></td>
+       <td> 05/09/2019 </td>
+       <th> &#993;VI </th>
+     </tr>
+     <tr>
+       <th> 155 </th>
+       <td> Acton Main Line </td>
+       <td></td>
+       <td> 13/12/2019 </td>
+       <th> ϙ1 </th>
+     </tr>
+     <tr>
+       <th> 156 </th>
+       <td> Ealing Broadway </td>
+       <td></td>
+       <td> 13/12/2019 </td>
+       <th> ϙ1 </th>
+     </tr>
+     <tr>
+       <th> 157 </th>
+       <td> West Brompton </td>
+       <td></td>
+       <td> 13/12/2019 </td>
+       <th> ϙ1 </th>
+     </tr>
+     <tr>
+       <th> 158 </th>
+       <td> Kensington (Olympia) </td>
+       <td></td>
+       <td> 13/12/2019 </td>
+       <th> ϙ1 </th>
+     </tr>
+     <tr>
+       <th> 159 </th>
+       <td> Shepherd's Bush </td>
+       <td></td>
+       <td> 13/12/2019 </td>
+       <th> ϙ1 </th>
+     </tr>
+    </table>
+    </span>
+
+    <script>
+document.getElementById("StationNo").innerHTML = StationNumber();
+    </script>
+
+<br><br>
+	  <center><img src="./resources/photos/NT I-VIII Small.png" width="100%"></center>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+function myFunction() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<audio autoplay loop>
+<source src="./resources/Chinese Anthem.mp3" type="audio/mp3"></audio>
+
+<center><div id="google_translate_element"></div></center>
+<script> 
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'zh-CN'
+  }, 'google_translate_element');
+}
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
