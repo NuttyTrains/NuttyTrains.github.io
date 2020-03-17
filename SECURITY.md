@@ -15,3 +15,7 @@ If something is wrong, fucking fix it.
 Keep edit warring with yourself until it kind-of, maybe works on alternating Tuesdays.
 If that fails, report it as an issue
 All issues must be include in the description "Sir, can I have some help, pwease?"
+
+## Self Isolation Policy
+
+If you feel something that doesn't feel right, don't speak to anybody and sort it out yourself. Feel it, keel over and die. 
