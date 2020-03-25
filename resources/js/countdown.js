@@ -12,7 +12,7 @@ var x = setInterval(function() {
   var a = 315.9848724;
   var b = 152/1000;
 
-  var chock = Math.floor(a * Math.exp(b * (days+1)));
+  var chock = Math.floor(a * Math.exp(b * (days+2)));
 
   var annarchy = Math.floor(((1000/52)*Math.log(0.8*(55980000)/a))/4) - days;
   
