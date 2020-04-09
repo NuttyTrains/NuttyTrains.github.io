@@ -1,32 +1,21 @@
-var countDownDate = new Date("Jan 31, 2020 17:00:00").getTime();
+var countDownDate = new Date("Mar 05, 2020 08:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
-  var distance = (countDownDate - now)/1000;
+  var distance = (now - countDownDate)/1000;
     
   var days = Math.floor(distance / (86400));
   var hours = Math.floor((distance % (86400)) / (3600));
   var minutes = Math.floor((distance % (3600)) / (60));
   var seconds = Math.floor((distance % (60)));
-    
-  if (distance > 14*86400) {
-        document.getElementById("countdown").innerHTML = "Welcome to NT";
-  }
+
+  var a = 315.9848724;
+  var b = 152/1000;
+
+  var chock = Math.floor(a * Math.exp(b * (days+2)));
+
+  var annarchy = Math.floor(((1000/52)*Math.log(0.8*(55980000)/a))/4) - days;
   
-  else if (distance > 4*3600) {
-        document.getElementById("countdown").innerHTML ="Welcome to NT! ϙ2 begins in: " + days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-  }
-  
-  else if (distance > 0) {
-        document.getElementById("countdown").innerHTML ="Welcome to NT! James is on his way, via Devil Country, Chocky Town and <i> spits </i> South London. ϙ2 begins in: " + hours + "h " + minutes + "m " + seconds + "s ";
-  }
-  
-  else if (distance > -86400) {
-        document.getElementById("countdown").innerHTML = "<big><big>It's NT Time!!! <i>不好猫!</i></big></big>";
-  }
-  
-  else {
-        document.getElementById("countdown").innerHTML = "Welcome to NT";
-  }
+
+document.getElementById("countdown").innerHTML = " The UK has " + chock + " chock cases. We're all going to die and turn to anarchy in " + annarchy + " days. Reality is an illusion, the universe is a hologram, buy toilet roll!"; 
 },1000);
