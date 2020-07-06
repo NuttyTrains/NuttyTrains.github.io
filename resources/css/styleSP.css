@@ -75,15 +75,7 @@ ol, ul {
   color: rgb(42, 55, 69);
 }
 
-#more {
-  display: none;
-}
-
-#tubemore {
-  display: none;
-}
-
-#ikeamore {
+#more, #tubemore, #ikeamore, #chockmore {
   display: none;
 }
 
