@@ -82,6 +82,6 @@ function ChockMore() {
 }
 
 function ChockNumber() {
-  var x = document.getElementById("ChockStations").rows.length -1;
+  var x = document.getElementById("Chock").rows.length -1;
     return "We have visited " + x + " Stations during The Chock<sup>TM</sup>";
 }
