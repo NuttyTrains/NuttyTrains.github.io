@@ -55,7 +55,8 @@
 .timeline .timeline-item .timeline-icon-alpha, 
 .timeline .timeline-item .timeline-icon-beta, 
 .timeline .timeline-item .timeline-icon-sampi, 
-.timeline .timeline-item .timeline-icon-koppa{
+.timeline .timeline-item .timeline-icon-koppa,
+.timeline .timeline-item .timeline-icon-r0{
   border-radius: 50%;
   height: 50px;
   left: 50%;
