@@ -16,31 +16,23 @@
 	<script src="./resources/js/parallax/parallax.min.js"></script>
 	<script src="./resources/js/countdown.js"></script>
 	<script src="./resources/js/stationstuff.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   </head>
   <header>
       <h1>
-	<div class="navbar">
-		<a href="./index.html">NuttyTrains.net</a>
-	 <div class="dropdown">
-		 <button class="dropbtn"><strong>Adventure Index</strong></button>
-	    <div class="dropdown-content">
-	      <a href="./adventures.html">Our Adventures</a>
-	      <a href="./alpha.html">The Alpha Adventures</a>
-  	      <a href="./beta.html">The Beta Adventures</a>
-	      <a href="./sampi.html">The Sampi Adventures</a>
-	      <a href="./koppa.html">The Koppa Adventures</a>
-	      <a href="./aleph.html">The Aleph Adventures</a>
-	      <a href="./r0.html">The R0 Adventures</a>
-	    </div>
-	  </div>
-		<a href="./us.html">About Us</a>
-	  <div class="dropdown">
-	  </div> 
-	</div>
+	<div id="nav-placeholder">
+	      </div>
       </h1>
   </header>
+	
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+	
   <body onload = "myFunction()">
-    <h1 class= "spacing"> Trains </h1>
+    <h1 class= "spacing"> Welcome to Nutty Trains! </h1>
 	<div class="ParallaxVideo">
 		<video autoplay muted loop>
 		<source src="./resources/video/cynghordy.mp4" type="video/mp4">
@@ -2096,7 +2088,7 @@ the #IKEAmeansIKEA challenge, we have decided to visit all the IKEAs in the UK. 
 	    Gravy <br>
 	    Dish Mat <br>
 	    Cookbook <br>
-	    Light-Up House
+	    Light-Up House <br>
 	    Shurikens </td>
      </tr>
     <tr> 
