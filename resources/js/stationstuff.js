@@ -63,3 +63,25 @@ function IkeaNumber() {
   var x = document.getElementById("IKEA").rows.length -1;
     return "We have visited " + x + " IKEAs";
 }
+
+function ChockMore() {
+  var chockdots = document.getElementById("chockdots");
+  var chockmoreText = document.getElementById("chockmore");
+  var chockbtnText = document.getElementById("ChockMoreBtn");
+
+  if (chockdots.style.display === "none") {
+    chockdots.style.display = "inline";
+    chockbtnText.innerHTML = "Show Chock Station List"; 
+    chockmoreText.style.display = "none";
+  } 
+  else {
+    chockdots.style.display = "none";
+    chockbtnText.innerHTML = "Hide Chock Station List"; 
+    chockmoreText.style.display = "inline";
+  }
+}
+
+function ChockNumber() {
+  var x = document.getElementById("Chock").rows.length -1;
+    return "We have visited " + x + " Stations during The Chock<sup>TM</sup>";
+}

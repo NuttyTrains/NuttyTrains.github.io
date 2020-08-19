@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The R0 Adventures</title>
+    <link rel="icon" type="image/png" href="./resources/photos/PacerCrop.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  	<link rel="stylesheet" type="text/css" href="./resources/css/collapsible.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
+  </head>
+  <header>
+      <h1>
+	<div class="navbar">
+		<a href="./index.html">NuttyTrains.net</a>
+	 <div class="dropdown">
+		 <button class="dropbtn"><strong>Adventure Index</strong></button>
+	    <div class="dropdown-content">
+	      <a href="./adventures.html">Our Adventures</a>
+	      <a href="./alpha.html">The Alpha Adventures</a>
+  	      <a href="./beta.html">The Beta Adventures</a>
+	      <a href="./sampi.html">The Sampi Adventures</a>
+	      <a href="./koppa.html">The Koppa Adventures</a>
+	      <a href="./aleph.html">The Aleph Adventures</a>
+	      <a href="./r0.html">The R0 Adventures</a>
+	    </div>
+	  </div>
+		<a href="./us.html">About Us</a>
+	  <div class="dropdown">
+	  </div> 
+	</div>
+      </h1>
+  </header>
+  <body>
+    <h1 class= "spacing"> Trains </h1>
+	  <div class="intro">
+<p>       IT'S CHOCKY TIME!!!  </p>
+<p> Thanks to the Covid-19 pandemic, we were unable to go on any adventures following Koppa 2 in Jan/Feb 2020 (the first case in the UK was recorded during that 
+adventure). However, by the end of July, James was brave enough to attempt using public transport, and quickly dragged Matthew along. Here is a once-in-a-lifetime 
+snapshot of our nuts experiences of public transport during a socially distanced world! Illi Vitae! </p>
+</div>
+
+<button type="button" class="collapsible">R<sub>0</sub>=1: "In Cornwall, a large tub is 3 scoops!"</button>
+<div class="content">
+<p>Back to basics in the lockdown - wandering through Neath for miles in the rain, and eating too much ice cream</p>
+</div>
+
+<button type="button" class="collapsible">R<sub>0</sub>=2: "That's awful! Awful is my word for amazing!"</button>
+<div class="content">
+<p>Get ready for a mask-wearing, socially-distanced foray to Cardiff, with video filming in IKEA thrown in! (Essential workers only, this is a pandemic, of course)</p>
+	<center><img src="./resources/photos/Grangetown.jpg" width="70%"></center>
+</div>
+
+<button type="button" class="collapsible">R<sub>0</sub>=3: "I like sniffing things, okay?"</button>
+<div class="content">
+<p>Getting tipsy in a pub next to a castle in the pouring rain? This seems like perfectly normal behaviour!</p>
+	<center><img src="./resources/photos/Pembroke.jpg" width="70%"></center>
+<p>And don't forget about Paul in the <a href="https://teatraders.co.uk/" target="_blank">tea shop!</a></p>
+</div>
+
+<button type="button" class="collapsible">R<sub>0</sub>=4: "This'll be the bliddy wasp adventure in a minute!"</button>
+<div class="content">
+<p>Being abandoned in a tiny rural village with only 2 trains a day, no sense of direction, a quest to find white woolly deer, a bunch of Karens and some illegal 
+heat? What a perfect idea!</p>
+	<center><img src="./resources/photos/Ffairfach.jpg" width="70%"></center>
+	<center><img src="./resources/photos/Llandeilo.jpg" width="70%"></center>
+</div>
+	  	
+	<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>  
+
+</body>
+</html>
