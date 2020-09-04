@@ -43,29 +43,7 @@ This service is currently
 <p> The train is currently at <p>
 <p id="station"> Camborne </p>
 
-		  
-  <div id="tube-map">
-  </div>
-<script>
-  var container = d3.select('#tube-map');
-
-  var width = 1600;
-  var height = 1024;
-
-  var map = d3.tubeMap()
-    .width(width)
-    .height(height)
-    .margin({
-      top: height / 50,
-      right: width / 7,
-      bottom: height / 10,
-      left: width / 7,
-    });
-
-  d3.json("./TubeMapCode/stations.json").then(function(data)  {
-    container.datum(data).call(map);
-  });
-</script>
+<iframe src="https://www.realtimetrains.co.uk/train/V23528/2020-09-05/detailed#detailpane" height="300px" width="95%"></iframe> 
 
 </body>
 	  
