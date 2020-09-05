@@ -42,6 +42,28 @@ function TubeStationNumber() {
     return "We have visited " + x + " Tube Stations";
 }
 
+function SteamMore() {
+  var steamdots = document.getElementById("steamdots");
+  var steammoreText = document.getElementById("steammore");
+  var steambtnText = document.getElementById("SteamMoreBtn");
+
+  if (steamdots.style.display === "none") {
+    steamdots.style.display = "inline";
+    steambtnText.innerHTML = "Show Heritage Station List"; 
+    steammoreText.style.display = "none";
+  } 
+  else {
+    steamdots.style.display = "none";
+    steambtnText.innerHTML = "Hide Heritage Station List"; 
+    steammoreText.style.display = "inline";
+  }
+}
+
+function SteamStationNumber() {
+  var x = document.getElementById("SteamStations").rows.length -1;
+    return "We have visited " + x + " Heritage Stations";
+}
+
 function IkeaMore() {
   var ikeadots = document.getElementById("ikeadots");
   var ikeamoreText = document.getElementById("ikeamore");
