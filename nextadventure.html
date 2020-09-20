@@ -13,27 +13,23 @@
     <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
-  </head>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+      
   <header>
       <h1>
-	<div class="navbar">
-		<a href="./index.html">NuttyTrains.net</a>
-		<a href="./nuttytrains.cn.html"><small><strong>不好猫</strong></small></a>
-	 <div class="dropdown">
-		 <button class="dropbtn"><strong>Random Crap</strong></button>
-	    <div class="dropdown-content">
-	      <a href="./nexttrain.html">Next Train</a>
-	      <a href="./nextadventure.html">Next Adventure</a>
-	      <a href="./dictionary.html">Dictionary</a>
-	    </div>
-	  </div>
-	  <div class="dropdown">
-	  </div> 
-	</div>
+	<div id="nav2-placeholder">
+	      </div>
       </h1>
   </header>
+	
+<script>
+$(function(){
+  $("#nav2-placeholder").load("nav2.html");
+});
+</script>
   <body>
-    <h1 class= "spacing"> Trains </h1>
+    <h1 class= "spacing"> How the fuck did you find this? </h1>
 	  <div class="intro">
 <p> We have decided to use different adventure class names for different regions, so here is a testing ground of such names:</p>
 <br><br>
@@ -118,4 +114,9 @@ In fact, it isn't even Chinese - it is the Kanji for Neko. As ever, using the wr
 </p>
 
 </body>
+	  
+	  <footer>
+		  <audio controls autoplay loop>
+<source src="./resources/audio/Tour de France - Kraftwerk 2.mp3" type="audio/mpeg"></audio>
+	  </footer>
 </html>

@@ -16,31 +16,23 @@
 	<script src="./resources/js/parallax/parallax.min.js"></script>
 	<script src="./resources/js/countdown.js"></script>
 	<script src="./resources/js/stationstuff.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   </head>
   <header>
       <h1>
-	<div class="navbar">
-		<a href="./index.html">NuttyTrains.net</a>
-	 <div class="dropdown">
-		 <button class="dropbtn"><strong>Adventure Index</strong></button>
-	    <div class="dropdown-content">
-	      <a href="./adventures.html">Our Adventures</a>
-	      <a href="./alpha.html">The Alpha Adventures</a>
-  	      <a href="./beta.html">The Beta Adventures</a>
-	      <a href="./sampi.html">The Sampi Adventures</a>
-	      <a href="./koppa.html">The Koppa Adventures</a>
-	      <a href="./aleph.html">The Aleph Adventures</a>
-	      <a href="./r0.html">The R0 Adventures</a>
-	    </div>
-	  </div>
-		<a href="./us.html">About Us</a>
-	  <div class="dropdown">
-	  </div> 
-	</div>
+	<div id="nav-placeholder">
+	      </div>
       </h1>
   </header>
+	
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+	
   <body onload = "myFunction()">
-    <h1 class= "spacing"> Trains </h1>
+    <h1 class= "spacing"> Welcome to Nutty Trains! </h1>
 	<div class="ParallaxVideo">
 		<video autoplay muted loop>
 		<source src="./resources/video/cynghordy.mp4" type="video/mp4">
@@ -1118,10 +1110,22 @@
        <th> ϙ2 </th>
      </tr>
      <tr>
-       <th class="LatestNRNo"> 173 </th>
-       <td class="LatestNR"> Putney </td>
+       <th> 173 </th>
+       <td> Putney </td>
        <td> 02/02/2020 </td>
-       <th class="LatestNRAdventure"> ϙ2 </th>
+       <th> ϙ2 </th>
+     </tr>
+     <tr>
+       <th> 174 </th>
+       <td> Ffairfach </td>
+       <td> 11/08/2020 </td>
+       <th> R<sub>0</sub>=4 </th>
+     </tr>
+     <tr>
+       <th class="LatestNRNo"> 175 </th>
+       <td class="LatestNR"> Bynea </td>
+       <td> 11/08/2020 </td>
+       <th class="LatestNRAdventure"> R<sub>0</sub>=4 </th>
      </tr>
     </table>
     </span>
@@ -2035,6 +2039,73 @@ document.getElementById("StationNo").innerHTML = StationNumber();
 document.getElementById("TubeStationNo").innerHTML = TubeStationNumber();
 </script>
 
+
+<br><br>
+<p>By the end of our second summer of NT, in the midst of the covid pandemic, we made our first visit to a heritage railway - the Dean Forest Railway in Lydney, 
+and quickly realised that heritage railways deserved their own list of stations too - after all, no-one has ever documented visiting all the heritage railways 
+before! But realistically, this is just an excuse to ride more steam trains!</p>
+    <ol>
+      <li> To visit a heritage railway station we must:
+	<ul> 
+          <li> Be on a heritage train which stops at the station </li>
+	  <li> Alight from the train </li>
+	  <li> Take a photo of the station sign </li>
+	</ul>
+     </li>
+	    <li> We must take a photo of our locomotive </li>
+	    <li> We must wave back at any people we see waving at us </li>
+	    <li> We have to run around having the time of our lives </li>
+    </ol>
+
+<p id="SteamNo"></p>
+    <span id="steamdots"></span>
+ 
+    <button onclick="SteamMore()" id="SteamMoreBtn">Show Heritage Station List</button>
+    <span id="steammore">
+    <table id="SteamStations">
+    <tr>
+    <th> Station Name </th>
+    <th> Station No. </th>
+    <th> Railway </th>
+    <th> Date </th>
+    <th> Adventure </th>
+    <th> Locomotive Type </th>
+    <th> Locomotive Name </th>
+    </tr>
+     <tr> 
+       <th> Norchard </th>
+       <td> 1 </td>
+       <td> Dean Forest Railway </td>
+       <td> 05/09/20 </td>
+       <td> R<sub>0</sub>=7 </td>
+       <td> Hunslet Austerity 0-6-0ST </td>
+       <td> WD 152 Rennes </td>
+     </tr>
+     <tr> 
+       <th> Parkend </th>
+       <td> 2 </td>
+       <td> Dean Forest Railway </td>
+       <td> 05/09/20 </td>
+       <td> R<sub>0</sub>=7 </td>
+       <td> Hunslet Austerity 0-6-0ST </td>
+       <td> WD 152 Rennes </td>
+     </tr>
+     <tr> 
+       <th> Lydney Junction </th>
+       <td> 3 </td>
+       <td> Dean Forest Railway </td>
+       <td> 05/09/20 </td>
+       <td> R<sub>0</sub>=7 </td>
+       <td> Hunslet Austerity 0-6-0ST </td>
+       <td> WD 152 Rennes </td>
+     </tr>
+     </table>
+     </span>
+
+<script>
+document.getElementById("SteamNo").innerHTML = SteamStationNumber();
+</script>
+
 <br><br>
 <p> As the work from our degrees ramps up, our depression sets in, and the last dregs of our sanity get washed away in off-colour 
 1984-quote Twitter flame wars, we continue to acquire new traditions on our nutty train adventures. After our amazing attempt at 
@@ -2084,7 +2155,7 @@ the #IKEAmeansIKEA challenge, we have decided to visit all the IKEAs in the UK. 
 	    Gravy <br>
 	    Dish Mat <br>
 	    Cookbook <br>
-	    Light-Up House
+	    Light-Up House <br>
 	    Shurikens </td>
      </tr>
     <tr> 
@@ -2178,6 +2249,118 @@ However, now that local, non-public-transport travel is once again permitted, I 
        <td> R<sub>0</sub>=1 </td>
        <td> Nope, just lung cancer </td>
      </tr>
+     <tr> 
+       <th> Pontrhydyfen </th>
+       <td> 5 </td>
+       <td> M </td>
+       <td> 23/08/20 </td>
+       <td> Cycling over a hill </td>
+       <td> There was no station to get chocked in </td>
+     </tr>
+     <tr> 
+       <th> Cynonville Halt </th>
+       <td> 6 </td>
+       <td> M </td>
+       <td> 23/08/20 </td>
+       <td> Fucking killing myself </td>
+       <td> Dying is coronavirus with fewer steps </td>
+     </tr>
+     <tr> 
+       <th> Dyffryn Rhondda Halt </th>
+       <td> 7 </td>
+       <td> M </td>
+       <td> 23/08/20 </td>
+       <td> Cycle up Cimla Hill, he said </td>
+       <td> It'll be fun, he said </td>
+     </tr>
+     <tr> 
+       <th> Cymmer </th>
+       <td> 8 </td>
+       <td> M </td>
+       <td> 23/08/20 </td>
+       <td> Why do I do this to myself? </td>
+       <td> I wish I had </td>
+     </tr>
+     <tr> 
+       <th> Lydney Town </th>
+       <td> 9 </td>
+       <td> J&M </td>
+       <td> 05/09/20 </td>
+       <td> Waved at the Steam Train! </td>
+       <td> We had plenty of waves back! </td>
+     </tr>
+     <tr> 
+       <th> St Mary's Halt </th>
+       <td> 10 </td>
+       <td> J&M </td>
+       <td> 05/09/20 </td>
+       <td> Walked from the Steam Train! </td>
+       <td> Nope! </td>
+     </tr>
+     <tr> 
+       <th> Neath Riverside </th>
+       <td> 11 </td>
+       <td> M </td>
+       <td> 09/09/20 </td>
+       <td> Walking </td>
+       <td> I hope not </td>
+     </tr>
+     <tr> 
+       <th> Neath Canalside </th>
+       <td> 12 </td>
+       <td> M </td>
+       <td> 09/09/20 </td>
+       <td> Walking </td>
+       <td> No? </td>
+     </tr>
+     <tr> 
+       <th> North Acton </th>
+       <td> 13 </td>
+       <td> M </td>
+       <td> 16/09/20 </td>
+       <td> Walking in boiling heat </td>
+       <td> No, only dehydration </td>
+     </tr>
+     <tr> 
+       <th> East Acton </th>
+       <td> 14 </td>
+       <td> M </td>
+       <td> 16/09/20 </td>
+       <td> Walking in boiling heat </td>
+       <td> No, only dehydration </td>
+     </tr>
+     <tr> 
+       <th> White City </th>
+       <td> 15 </td>
+       <td> M </td>
+       <td> 16/09/20 </td>
+       <td> Walking in boiling heat </td>
+       <td> No, only dehydration </td>
+     </tr>
+     <tr> 
+       <th> Wood Lane </th>
+       <td> 16 </td>
+       <td> M </td>
+       <td> 16/09/20 </td>
+       <td> Walking in boiling heat </td>
+       <td> No, only dehydration </td>
+     </tr>
+     <tr> 
+       <th> Shepherd's Bush </th>
+       <td> 17 </td>
+       <td> M </td>
+       <td> 16/09/20 </td>
+       <td> Walking in boiling heat </td>
+       <td> No, only dehydration </td>
+     </tr>
+     <tr> 
+       <th> Willesden Junction </th>
+       <td> 18 </td>
+       <td> M </td>
+       <td> 17/09/20 </td>
+       <td> Pure, unadulterated embarrassment </td>
+       <td> I hope not! </td>
+     </tr>
      </table>
      </span>
 	 </div> 
@@ -2186,7 +2369,7 @@ document.getElementById("ChockNo").innerHTML = ChockNumber();
 </script>
 
  <br><br>
-	  <center><img src="./resources/photos/NT I-VIII Small.png" width="100%"></center>
+	  <center><img src="./resources/photos/NT I-XV.png" width="100%"></center>
 
 <script>
 // Get the modal
