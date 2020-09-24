@@ -103,9 +103,9 @@ function PurpMore() {
   }
 }
 
-function TubeStationNumber() {
-  var x = document.getElementById("TubeStations").rows.length -1;
-    return "We have visited " + x + " Tube Stations";
+function PurpStationNumber() {
+  var x = document.getElementById("PurpStations").rows.length -1;
+    return "We have visited " + x + " Elizabeth Line Stations";
 }
 
 function SteamMore() {
