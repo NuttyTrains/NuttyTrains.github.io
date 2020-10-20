@@ -45,8 +45,8 @@ $(function(){
 
 <!-- Modal content -->
   <div class="modal-content">
-    <p>Am I back in action uWu?</p>
-    <span class="close">test</span>
+    <center><p><big><big><i id="CV">Would you like a cookie?</i></big></big></p>
+    <span class="close" id="CV2">不好猫</span></center>
   </div>
 </div>
 
@@ -1312,6 +1312,15 @@ span.onclick = function() {
 //    modal.style.display = "none";
 //  }
 //}
+</script>
+
+<script>
+document.getElementById("CV2").onmouseover = function() {fCV()};
+
+function fCV() { 
+document.getElementById("CV").innerHTML = "Would you like a <font color="red">virus?</font>";
+document.getElementById("CV2").innerHTML = "YES";
+}
 </script>
 
 <audio autoplay loop>
