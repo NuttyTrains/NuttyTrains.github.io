@@ -46,7 +46,7 @@ $(function(){
 <!-- Modal content -->
   <div class="modal-content">
     <center><p id="CV"><big><big><i>Would you like a cookie?</i></big></big></p>
-    <span class="close" id="CV2" onmousemove="fCV()">不好猫</span></center>
+    <span class="close" id="CV2">不好猫</span></center>
   </div>
 </div>
 
@@ -1302,6 +1302,10 @@ var span = document.getElementsByClassName("close")[0];
 function myFunction() {
   modal.style.display = "block";
 }
+span.mousemove = function() {
+document.getElementById("CV").innerHTML = "<big><big><i>Would you like a <font color="red">virus?</font></i></big></big>";
+document.getElementById("CV2").innerHTML = "YES";	
+}
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
@@ -1312,13 +1316,6 @@ span.onclick = function() {
 //    modal.style.display = "none";
 //  }
 //}
-</script>
-
-<script>
-function fCV() { 
-document.getElementById("CV").innerHTML = "<big><big><i>Would you like a <font color="red">virus?</font></i></big></big>";
-document.getElementById("CV2").innerHTML = "YES";
-}
 </script>
 
 <audio autoplay loop>
