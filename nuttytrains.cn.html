@@ -1308,9 +1308,13 @@ span.onclick = function() {
 }
 var CV = document.getElementById("CV");
 var CV2 = document.getElementById("CV2");
-CV2.onmousemove = function() {
+CV2.onmouseenter = function() {
 CV.innerHTML = "Would you like a virus?";
 CV2.innerHTML = "YES";	
+}
+CV2.onmouseleave = function() {
+CV.innerHTML = "Would you like a cookie?";
+CV2.innerHTML = "不好猫";	
 }
 // When the user clicks anywhere outside of the modal, close it
 //window.onclick = function(event) {
