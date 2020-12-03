@@ -19,5 +19,5 @@ var x = setInterval(function() {
   var anarchy = Math.floor(((1000/52)*Math.log(0.8*(55980000)/a))/4) - days;
   
 
-document.getElementById("countdown").innerHTML = " The UK has " + chock + " chock cases. We're all going to die and turn to anarchy in " + anarchy + " days. Reality is an illusion, the universe is a hologram, buy toilet roll!"; 
+document.getElementById("countdown").innerHTML = " The UK has " + chock2 + " quadrillion chock cases. We're all going to die and turn to anarchy in " + anarchy + " days. Reality is an illusion, the universe is a hologram, buy toilet roll!"; 
 },1000);
