@@ -46,6 +46,6 @@ var x = setInterval(function() {
 
   var anarchy = Math.ceil((290000/86400)*Math.log(68000000/66)) - days;
   
-
+// Fucking build properly, you useless piece of shite
 document.getElementById("countdown").innerHTML = " The UK has " + chock + " tredecillion chock cases. We're all going to die and turn to 不好猫 in " + anarchy + " days. Reality is an illusion, the universe is a hologram, buy toilet roll!"; 
 },1000);
