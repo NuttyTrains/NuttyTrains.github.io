@@ -44,8 +44,8 @@ var x = setInterval(function() {
   var chockTr = chockNV/1000;
   var chock = Math.floor(chockTD);
 
-  var anarchy = Math.floor(((1000/52)*Math.log(0.8*(55980000)/a))/4) - days;
+  var anarchy = Math.ceil((290000/86400)*Math.log(68000000/66)) - days;
   
 
-document.getElementById("countdown").innerHTML = " The UK has tredecillion chock cases. We're all going to die and turn to 不好猫 in " + anarchy + " days. Reality is an illusion, the universe is a hologram, buy toilet roll!"; 
+document.getElementById("countdown").innerHTML = " The UK has " + chock + " tredecillion chock cases. We're all going to die and turn to 不好猫 in " + anarchy + " days. Reality is an illusion, the universe is a hologram, buy toilet roll!"; 
 },1000);
