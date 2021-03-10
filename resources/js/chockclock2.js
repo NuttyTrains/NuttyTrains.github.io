@@ -48,4 +48,4 @@ var x = setInterval(function() {
   
 // Fucking build properly, you useless piece of shite
 document.getElementById("countdown").innerHTML = " The UK has " + chock + " tredecillion chock cases. We're all going to die and turn to 不好猫 in " + anarchy + " days. Reality is an illusion, the universe is a hologram, buy toilet roll!"; 
-},100);
+},1);
