@@ -29,6 +29,7 @@
 $(function(){
   $("#nav-placeholder").load("nav.html");
   $("#more").load("stations.html #Stations");
+  var StationCount = $('stations.html #Stations tr').length -1;
   $("#tubemore").load("tube.html #TubeStations");
   $("#dlrmore").load("dlr.html #DLRStations");
   $("#orangemore").load("orange.html #OrangeStations");
@@ -289,9 +290,8 @@ function myFunction() {
 }
 
 function StationNumber() {
-  var rowCount = $('stations.html #Stations tr').length -1;
   var x = document.getElementById("Stations").rows.length -1;
-    return "We have visited " + rowCount + " stations";
+    return "We have visited " + StationCount + " stations";
 }
 
 // When the user clicks on <span> (x), close the modal
