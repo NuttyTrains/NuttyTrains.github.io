@@ -16,7 +16,7 @@ function More() {
 }
 
 function StationNumber() {
-  var x =document.getElementById("Stations").rows.length -1;
+  var x = document.getElementById("Stations").rows.length -1;
     return "We have visited " + x + " stations";
 }
 
