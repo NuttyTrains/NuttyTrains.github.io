@@ -37,10 +37,6 @@ function TubeMore() {
   }
 }
 
-function TubeStationNumber() {
-  var x = document.getElementById("TubeStations").rows.length -1;
-    return "We have visited " + x + " Tube Stations";
-}
 
 function DLRMore() {
   var dlrdots = document.getElementById("dlrdots");
