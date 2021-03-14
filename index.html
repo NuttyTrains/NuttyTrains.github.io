@@ -288,6 +288,12 @@ function myFunction() {
   document.getElementById("ChockNo").innerHTML = ChockNumber();
 }
 
+function StationNumber() {
+  var rowCount = $('stations.html #Stations tr').length -1;
+  var x = document.getElementById("Stations").rows.length -1;
+    return "We have visited " + rowCount + " stations";
+}
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";

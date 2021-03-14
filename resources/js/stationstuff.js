@@ -15,11 +15,6 @@ function More() {
   }
 }
 
-function StationNumber() {
-  var rowCount = $('stations.html #Stations tr').length -1;
-  var x = document.getElementById("Stations").rows.length -1;
-    return "We have visited " + rowCount + " stations";
-}
 
 function TubeMore() {
   var tubedots = document.getElementById("tubedots");
