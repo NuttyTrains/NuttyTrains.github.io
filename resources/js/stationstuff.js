@@ -16,8 +16,9 @@ function More() {
 }
 
 function StationNumber() {
+  var rowCount = $('stations.html #Stations tr').length -1;
   var x = document.getElementById("Stations").rows.length -1;
-    return "We have visited " + x + " stations";
+    return "We have visited " + rowCount + " stations";
 }
 
 function TubeMore() {
@@ -37,6 +38,10 @@ function TubeMore() {
   }
 }
 
+function TubeStationNumber() {
+  var x = document.getElementById("TubeStations").rows.length -1;
+    return "We have visited " + x + " Tube Stations";
+}
 
 function DLRMore() {
   var dlrdots = document.getElementById("dlrdots");
