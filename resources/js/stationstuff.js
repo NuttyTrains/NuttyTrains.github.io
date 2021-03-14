@@ -15,6 +15,10 @@ function More() {
   }
 }
 
+function StationNumber() {
+  var x = document.getElementById("Stations").rows.length -1;
+    return "We have visited " + x + " stations";
+}
 
 function TubeMore() {
   var tubedots = document.getElementById("tubedots");

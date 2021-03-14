@@ -29,7 +29,6 @@
 $(function(){
   $("#nav-placeholder").load("nav.html");
   $("#more").load("stations.html #Stations");
-  var StationCount = $('stations.html #Stations tr').length -1;
   $("#tubemore").load("tube.html #TubeStations");
   $("#dlrmore").load("dlr.html #DLRStations");
   $("#orangemore").load("orange.html #OrangeStations");
@@ -94,7 +93,7 @@ $(function(){
      <li> We must take photos of ourselves in front of the station sign, when we arrive at notable stations (eg. termini) </li>
     </ol> 
 	  
-    <p id="StationNo" class="LatestNR"></p>
+    <p id="StationNo" class="LatestNR">We have visited 181 Stations</p>
     <span id="dots"></span>
  
     <button onclick="More()" id="MoreBtn">Show Station List</button>
@@ -132,10 +131,10 @@ $(function(){
      <li> Further explanation of the rules can be found <a href="./us.html#PAD">here.</a> </li>
     </ol> 
 
-<p id="TubeStationNo"></p>
-<p id="DLRStationNo"></p>
-<p id="OrangeStationNo"></p>
-<p id="PurpStationNo"></p>
+<p id="TubeStationNo">We have visited 107 Tube Stations</p>
+<p id="DLRStationNo">We have visited 45 DLR Stations</p>
+<p id="OrangeStationNo">We have visited 13 Stations</p>
+<p id="PurpStationNo">We have visited 3 Stations</p>
 
     <span id="tubedots"></span>
  
@@ -180,7 +179,7 @@ before! But realistically, this is just an excuse to ride more steam trains.</p>
 	    <li> We must also take a photo of our locomotive </li>
     </ol>
 
-<p id="SteamNo"></p>
+<p id="SteamNo">We have visited 3 Heritage Railway Stations</p>
     <span id="steamdots"></span>
  
     <button onclick="SteamMore()" id="SteamMoreBtn">Show Heritage Station List</button>
@@ -212,7 +211,7 @@ before! But realistically, this is just an excuse to ride more steam trains.</p>
      <li> We are allowed to leave in the manner in which we arrived, or take the bus. That doesn't matter </li>
     </ol>
 
-<p id="IkeaNo"></p>
+<p id="IkeaNo">We have visited 2 IKEAs</p>
     <span id="ikeadots"></span>
  
     <button onclick="IkeaMore()" id="IkeaMoreBtn">Show IKEA List</button>
@@ -249,7 +248,7 @@ However, now that local, non-public-transport travel is once again permitted, I 
      </li>
     </ol>
 
-<p id="ChockNo"></p>
+<p id="ChockNo">We have visited 59 ¬Stations</p>
     <span id="chockdots"></span>
  
     <button onclick="ChockMore()" id="ChockMoreBtn">Show Chock Station List</button>
@@ -279,19 +278,14 @@ var span = document.getElementsByClassName("close")[0];
 
 function myFunction() {
   modal.style.display = "block";
-  document.getElementById("StationNo").innerHTML = StationNumber();
-  document.getElementById("TubeStationNo").innerHTML = TubeStationNumber();
-  document.getElementById("DLRStationNo").innerHTML = DLRStationNumber();
-  document.getElementById("OrangeStationNo").innerHTML = OrangeStationNumber();
-  document.getElementById("PurpStationNo").innerHTML = PurpStationNumber();
-  document.getElementById("SteamNo").innerHTML = SteamStationNumber();
-  document.getElementById("IkeaNo").innerHTML = IkeaNumber();
-  document.getElementById("ChockNo").innerHTML = ChockNumber();
-}
-
-function StationNumber() {
-  var x = document.getElementById("Stations").rows.length -1;
-    return "We have visited " + StationCount + " stations";
+//  document.getElementById("StationNo").innerHTML = StationNumber();
+//  document.getElementById("TubeStationNo").innerHTML = TubeStationNumber();
+//  document.getElementById("DLRStationNo").innerHTML = DLRStationNumber();
+//  document.getElementById("OrangeStationNo").innerHTML = OrangeStationNumber();
+//  document.getElementById("PurpStationNo").innerHTML = PurpStationNumber();
+//  document.getElementById("SteamNo").innerHTML = SteamStationNumber();
+//  document.getElementById("IkeaNo").innerHTML = IkeaNumber();
+//  document.getElementById("ChockNo").innerHTML = ChockNumber();
 }
 
 // When the user clicks on <span> (x), close the modal
