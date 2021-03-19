@@ -1,96 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nutty Trains</title>
+    <title>The Official NT Dictionary!</title>
     <link rel="icon" type="image/png" href="./resources/photos/PacerCrop.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+  	<link rel="stylesheet" type="text/css" href="./resources/css/collapsible.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="./resources/js/parallax/parallax.min.js"></script>
-	<script src="./resources/js/countdown.js"></script>
-	<script src="./resources/js/stationstuff.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  </head>
+</head>
+      
   <header>
       <h1>
-	<div id="nav-placeholder">
+	<div id="nav2-placeholder">
 	      </div>
       </h1>
   </header>
 	
 <script>
 $(function(){
-  $("#nav-placeholder").load("nav.html");
-  $("#more").load("stations.html #Stations");
-  $("#tubemore").load("tube.html #TubeStations");
-  $("#dlrmore").load("dlr.html #DLRStations");
-  $("#orangemore").load("orange.html #OrangeStations");
-  $("#purpmore").load("purp.html #PurpStations");
-  $("#steammore").load("steam.html #SteamStations");
-  $("#ikeamore").load("ikea.html #IKEA");
-  $("#chockmore").load("¬stations.html #Chock");
+  $("#nav2-placeholder").load("nav2.html");
 });
 </script>
-	
-  <body onload = "myFunction()">
-    <h1 class= "spacing"> Welcome to Nutty Trains! </h1>
-	<div class="ParallaxVideo">
-		<video autoplay muted loop>
-		<source src="./resources/video/cynghordy.mp4" type="video/mp4">
-	</video>
-</div>
-<!-- Trigger/Open The Modal/ChockClock -->
-<button id="countdown"></button>
-
-<!-- The Modal 
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>I must note that we are NOT train spotters, but instead Railway enthusiasts</p>
-  </div>
-</div>-->
+  <body>
+    <h1 class= "spacing"> How the fuck did you find this? </h1>
+	  <div class="intro">
+<p> Why get chock when you can get food poisoning?</p>
+<br><br>
 
 <center>
-  <script type="text/javascript" src="https://widget.ratings.food.gov.uk/fhrswidget.jss?FHRSID=1033081&Culture=en-GB">
-  </script>                     
-</center>
-
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-function myFunction() {
-  modal.style.display = "block";
-//  document.getElementById("StationNo").innerHTML = StationNumber();
-//  document.getElementById("TubeStationNo").innerHTML = TubeStationNumber();
-//  document.getElementById("DLRStationNo").innerHTML = DLRStationNumber();
-//  document.getElementById("OrangeStationNo").innerHTML = OrangeStationNumber();
-//  document.getElementById("PurpStationNo").innerHTML = PurpStationNumber();
-//  document.getElementById("SteamNo").innerHTML = SteamStationNumber();
-//  document.getElementById("IkeaNo").innerHTML = IkeaNumber();
-//  document.getElementById("ChockNo").innerHTML = ChockNumber();
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+    <script type="text/javascript" src="https://widget.ratings.food.gov.uk/fhrswidget.jss?FHRSID=1033081&Culture=en-GB">
+    </script>                     
+  </center>
 
 </body>
 </html>
