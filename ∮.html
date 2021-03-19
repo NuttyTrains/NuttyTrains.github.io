@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The ∮ (Contour Integral/CI) Adventures</title>
+    <link rel="icon" type="image/png" href="./resources/photos/PacerCrop.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  	<link rel="stylesheet" type="text/css" href="./resources/css/collapsible.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"/>
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </head>
+  <header>
+      <h1>
+	<div id="nav-placeholder">
+	      </div>
+      </h1>
+  </header>
+	
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+	
+  <body>
+	  <h1 class= "spacing"> ∮ (Contour Integral/NTCI) </h1>
+	  <div class="intro">
+<p>     How the fuck did you get here? There should be no way whatsoever that you should have arrived here - the URL is 
+		literally a contour integral! Anyway, this is just a shell page until the summer until we start NTCI in Kernow.
+		For now, GO HOME YER DRUNK!
+</p>
+</div>
+<button type="button" class="collapsible"> ∮1dx: Coming Soon to a Kernow near you! </button>
+<div class="content">
+<p>       
+	</p>
+</div>
+	
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

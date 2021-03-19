@@ -75,7 +75,7 @@ ol, ul {
   color: rgb(42, 55, 69);
 }
 
-#more, #tubemore, #ikeamore, #chockmore {
+#more, #tubemore, #dlrmore, #orangemore, #purpmore, #ikeamore, #chockmore, #steammore {
   display: none;
 }
 
@@ -88,6 +88,11 @@ button {
   font-size: 1.5em;
   width: 100%;
   padding: 1% 0;
+}
+
+button.complete {
+  background-color: red; 
+  color: white;
 }
 
 .preview-frame {
@@ -184,15 +189,14 @@ h6 {
 
 /* The Close Button */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
+  color: black;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .close:hover, .close:focus {
-  color: black;
-  text-decoration: none;
+  color: red;
+  text-decoration: underline;
   cursor: pointer;
 }
 

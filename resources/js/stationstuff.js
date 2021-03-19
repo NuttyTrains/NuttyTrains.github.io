@@ -16,7 +16,7 @@ function More() {
 }
 
 function StationNumber() {
-  var x =document.getElementById("Stations").rows.length -1;
+  var x = document.getElementById("Stations").rows.length -1;
     return "We have visited " + x + " stations";
 }
 
@@ -40,6 +40,94 @@ function TubeMore() {
 function TubeStationNumber() {
   var x = document.getElementById("TubeStations").rows.length -1;
     return "We have visited " + x + " Tube Stations";
+}
+
+function DLRMore() {
+  var dlrdots = document.getElementById("dlrdots");
+  var dlrmoreText = document.getElementById("dlrmore");
+  var dlrbtnText = document.getElementById("DLRMoreBtn");
+
+  if (dlrdots.style.display === "none") {
+    dlrdots.style.display = "inline";
+    dlrbtnText.innerHTML = "Show DLR Station List"; 
+    dlrmoreText.style.display = "none";
+  } 
+  else {
+    dlrdots.style.display = "none";
+    dlrbtnText.innerHTML = "Hide DLR Station List"; 
+    dlrmoreText.style.display = "inline";
+  }
+}
+
+function DLRStationNumber() {
+  var x = document.getElementById("DLRStations").rows.length -1;
+    return "We have visited " + x + " DLR Stations";
+}
+
+function OrangeMore() {
+  var orangedots = document.getElementById("orangedots");
+  var orangemoreText = document.getElementById("orangemore");
+  var orangebtnText = document.getElementById("OrangeMoreBtn");
+
+  if (orangedots.style.display === "none") {
+    orangedots.style.display = "inline";
+    orangebtnText.innerHTML = "Show Overground Station List"; 
+    orangemoreText.style.display = "none";
+  } 
+  else {
+    orangedots.style.display = "none";
+    orangebtnText.innerHTML = "Hide Overground Station List"; 
+    orangemoreText.style.display = "inline";
+  }
+}
+
+function OrangeStationNumber() {
+  var x = document.getElementById("OrangeStations").rows.length -1;
+    return "We have visited " + x + " Overground Stations";
+}
+
+function PurpMore() {
+  var purpdots = document.getElementById("purpdots");
+  var purpmoreText = document.getElementById("purpmore");
+  var purpbtnText = document.getElementById("PurpMoreBtn");
+
+  if (purpdots.style.display === "none") {
+    purpdots.style.display = "inline";
+    purpbtnText.innerHTML = "Show Purple Station List"; 
+    purpmoreText.style.display = "none";
+  } 
+  else {
+    purpdots.style.display = "none";
+    purpbtnText.innerHTML = "Hide Purple Station List"; 
+    purpmoreText.style.display = "inline";
+  }
+}
+
+function PurpStationNumber() {
+  var x = document.getElementById("PurpStations").rows.length -1;
+    return "We have visited " + x + " Elizabeth Line Stations";
+}
+
+function SteamMore() {
+  var steamdots = document.getElementById("steamdots");
+  var steammoreText = document.getElementById("steammore");
+  var steambtnText = document.getElementById("SteamMoreBtn");
+
+  if (steamdots.style.display === "none") {
+    steamdots.style.display = "inline";
+    steambtnText.innerHTML = "Show Heritage Station List"; 
+    steammoreText.style.display = "none";
+  } 
+  else {
+    steamdots.style.display = "none";
+    steambtnText.innerHTML = "Hide Heritage Station List"; 
+    steammoreText.style.display = "inline";
+  }
+}
+
+function SteamStationNumber() {
+  var x = document.getElementById("SteamStations").rows.length -1;
+    return "We have visited " + x + " Heritage Stations";
 }
 
 function IkeaMore() {
