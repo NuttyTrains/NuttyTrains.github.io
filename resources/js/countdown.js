@@ -20,4 +20,4 @@ var x = setInterval(function() {
   
 
 document.getElementById("countdown").innerHTML = " The UK has " + chock2 + " sextillion chock cases. We're all going to die and turn to anarchy in " + anarchy + " days. Reality is an illusion, the universe is a hologram, buy toilet roll!"; 
-},1000);
+},1);
