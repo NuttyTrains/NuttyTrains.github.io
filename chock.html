@@ -31,19 +31,19 @@ $(function(){
   $("#chockmore").load("¬stations.html #Chock");
 });
 
-var rand = Math.random()
+var rand = Math.random();
 if (rand > 0.9) {
-document.getElementById("ParallaxVideo").innerHTML.replace("Seagull","Afon Towy");
+document.getElementById("vid").src = "./resources/video/Afon Towy.mp4";
 }
-else if (rand < 0.5) {
-document.getElementById("ParallaxVideo").innerHTML.replace("Seagull","White Woolly Deer");
+else if (rand > 0.5) {
+document.getElementById("vid").src = "./resources/video/White Woolly Deer.mp4";
 }
 </script>
 	
   <body onload = "myFunction()">
     <h1 class= "spacing"> Nutty CHOCK </h1>
 	<div class="ParallaxVideo">
-    <video autoplay loop><source src="./resources/video/Seagull.mp4" type="video/mp4"></video>
+    <video autoplay loop id="vid"><source src="./resources/video/Seagull.mp4" type="video/mp4"></video>
 </div>
 <!-- Trigger/Open The Modal/ChockClock -->
 <button id="countdown"></button>
