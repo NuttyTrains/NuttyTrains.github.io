@@ -1,15 +1,23 @@
-- name: Tweet action
+- name: Send Tweet Action
   # You may pin to the exact commit or the version.
-  # uses: snow-actions/tweet@d78243e356603937ebc80dd531d9f0e071adc3e3
-  uses: snow-actions/tweet@v1.1.0
+  # uses: ethomson/send-tweet-action@288f9339e0412e3038dce350e0da5ecdf12133a6
+  uses: ethomson/send-tweet-action@v1.0.0
   with:
-    # The text of the status update. URL encode as necessary. t.co link wrapping will affect character counts.
-    status: 
-    # Upload media path(s).
-Size restrictions for uploading via API
-  * Image 5MB
-  * GIF 15MB
-  * Video 15MB
+    # The status ("tweet") to post to twitter.
+    status:  ${{ github.event.head_commit.message }}
+    # optional
+    # Consumer API key, available in the "Keys and tokens" section of your application in the Twitter Developer site.
 
-    media_paths: # optional
-# James, I am in (you can delete this later, I just fancied committing for a laugh)
+    consumer-key: ${{ secrets.TWITTER_CK }}
+    # optional
+    # Consumer API secret key, available in the "Keys and tokens" section of your application in the Twitter Developer site.
+
+    consumer-secret: ${{ secrets.TWITTER_CS }}
+    # optional
+    # Application access token, available in the "Keys and tokens" section of your application in the Twitter Developer site.
+
+    access-token: ${{ secrets.TWITTER_CT }}
+    # optional
+    # Application access token secret, available in the "Keys and tokens" section of your application in the Twitter Developer site.
+
+    access-token-secret: # optional
