@@ -1,25 +1,19 @@
+name: NT-Tweet-pls
 on:
   push:
-  - name: Send Tweet Action
-  # You may pin to the exact commit or the version.
-  # uses: ethomson/send-tweet-action@288f9339e0412e3038dce350e0da5ecdf12133a6
-  uses: ethomson/send-tweet-action@v1.0.0
-  with:
-    # The status ("tweet") to post to twitter.
-    status:  ${{ github.event.head_commit.message }}
-    # optional
-    # Consumer API key, available in the "Keys and tokens" section of your application in the Twitter Developer site.
+    branches:    
+      - main
 
-    consumer-key: ${{ secrets.TWITTER_CK }}
-    # optional
-    # Consumer API secret key, available in the "Keys and tokens" section of your application in the Twitter Developer site.
-
-    consumer-secret: ${{ secrets.TWITTER_CS }}
-    # optional
-    # Application access token, available in the "Keys and tokens" section of your application in the Twitter Developer site.
-
-    access-token: ${{ secrets.TWITTER_AT }}
-    # optional
-    # Application access token secret, available in the "Keys and tokens" section of your application in the Twitter Developer site.
-
-    access-token-secret: ${{ secrets.TWITTER_AS }} # optional
+jobs:
+  tweet:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Send Tweet Action
+      uses: ethomson/send-tweet-action@v1.0.0
+      with:
+        # The status ("tweet") to post to twitter.
+        status: 'Welcome to NT Git Bot, where we bring you a load of good commit messages. Like, ${{ github.event.head_commit.message }}' 
+        consumer-key: ${{ secrets.TWITTER_CK }}
+        consumer-secret: ${{ secrets.TWITTER_CS }}
+        access-token: ${{ secrets.TWITTER_AT }}
+        access-token-secret: ${{ secrets.TWITTER_AS }} # optional
