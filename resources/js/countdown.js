@@ -25,31 +25,31 @@ var x = setInterval(function() {
   
 
   if (DG1 > 86400+43200) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " sextillion chock cases. Ϝ1 begins in " + daysDG1 + " days!"
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " sextillion chock cases. ϝ1 begins in " + daysDG1 + " days!"
   }
 
   else if (DG1 > 43200) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " sextillion chock cases. Ϝ1 is tomorrow!";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " sextillion chock cases. ϝ1 is tomorrow!";
   }
 
   else if (DG1 > 16200) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! Ϝ1 begins in: " + hoursDG1 + "h " + minutesDG1 + "m " + secondsDG1 + "s ";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! ϝ1 begins in: " + hoursDG1 + "h " + minutesDG1 + "m " + secondsDG1 + "s ";
   }
 
   else if (DG1 > 12600) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! Matthew is on his way to PAD and James is heading to CBN: Ϝ1 begins in: " + hoursDG1 + "h " + minutesDG1 + "m " + secondsDG1 + "s ";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! Matthew is on his way to PAD and James is heading to CBN: ϝ1 begins in: " + hoursDG1 + "h " + minutesDG1 + "m " + secondsDG1 + "s ";
   }
 
   else if (DG1 > 6600) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! We're off! Matthew is travelling to Brizzle and James to Plymouth! Ϝ1 begins in: " + hoursDG1 + "h " + minutesDG1 + "m " + secondsDG1 + "s ";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! We're off! Matthew is travelling to Brizzle and James to Plymouth! ϝ1 begins in: " + hoursDG1 + "h " + minutesDG1 + "m " + secondsDG1 + "s ";
   }
 
   else if (DG1 > 3600) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! Matthew is currently waiting in Brizzle and James is travelling to Exeter! Ϝ1 begins in: " + hoursDG1 + "h " + minutesDG1 + "m " + secondsDG1 + "s ";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! Matthew is currently waiting in Brizzle and James is travelling to Exeter! ϝ1 begins in: " + hoursDG1 + "h " + minutesDG1 + "m " + secondsDG1 + "s ";
   }
 
   else if (DG1 > 0) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! We are both closing in on Taunton! Ϝ1 begins in: " + minutesDG1 + "m " + secondsDG1 + "s!";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! We are both closing in on Taunton! ϝ1 begins in: " + minutesDG1 + "m " + secondsDG1 + "s!";
   }
 
   else if (DG1 > -4800) {
@@ -73,7 +73,7 @@ var x = setInterval(function() {
   }
 
   else if (DG1 > -36000) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! We are both travelling home from Ϝ1";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! We are both travelling home from ϝ1";
   }
 
   else {
