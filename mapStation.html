@@ -8,6 +8,7 @@
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
+        <script src="./resources/js/papaParse/papaparse.js"></script>
         <style>
             #mapid { height: 100%; }
         </style>
@@ -24,8 +25,15 @@
             id: 'mapbox/streets-v11',
             tileSize: 512,
             zoomOffset: -1,
-            accessToken: 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGxscnAwMXNhdDJ2cGtmdTM2MTdoMCJ9.L-zjZ-pU7Cd2C24ToaDscw'
+            accessToken: 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw'
         }).addTo(mymap);
+
+        stations = Papa.parse('./data/tubeStations.csv', {
+            download: true,
+            // rest of config ...
+        })
+        console.log(stations)
         var marker = L.marker([51.5, -0.09]).addTo(mymap);
+        
     </script>
 </html>
