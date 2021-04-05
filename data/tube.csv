@@ -1,65 +1,4 @@
-Station Name,Station No.,First Date,Line(s),Edition
-Abbey Road (DLR),26,23/09/2020,,ϙ3
-All Saints (DLR),34,23/09/2020,,ϙ3
-Bank (DLR),1,13/12/2019,,ϙ1
-Beckton (DLR),18,23/09/2020,,ϙ3
-Beckton Park (DLR),15,23/09/2020,,ϙ3
-Blackwall (DLR),8,23/09/2020,,ϙ3
-Bow Church (DLR),31,23/09/2020,,ϙ3
-Canary Wharf (DLR),5,13/12/2019,,ϙ1
-Canning Town (DLR),10,23/09/2020,,ϙ3
-Crossharbour (DLR),38,23/09/2020,,ϙ3
-Custom House for ExCeL (DLR),12,23/09/2020,,ϙ3
-Cutty Sark for Maritime Greenwich (DLR),41,23/09/2020,,ϙ3
-Cyprus (DLR),16,23/09/2020,,ϙ3
-Deptford Bridge (DLR),43,23/09/2020,,ϙ3
-Devons Road (DLR),32,23/09/2020,,ϙ3
-East India (DLR),9,23/09/2020,,ϙ3
-Elverson Road (DLR),44,23/09/2020,,ϙ3
-Gallions Reach (DLR),17,23/09/2020,,ϙ3
-Greenwich (DLR),42,23/09/2020,,ϙ3
-Heron Quays (DLR),36,23/09/2020,,ϙ3
-Island Gardens (DLR),40,23/09/2020,,ϙ3
-King George V (DLR),22,23/09/2020,,ϙ3
-Langdon Park (DLR),33,23/09/2020,,ϙ3
-Lewisham (DLR),45,23/09/2020,,ϙ3
-Limehouse (DLR),3,13/12/2019,,ϙ1
-London City Airport (DLR),21,23/09/2020,,ϙ3
-Mudchute (DLR),39,23/09/2020,,ϙ3
-Pontoon Dock (DLR),20,23/09/2020,,ϙ3
-Poplar (DLR),7,23/09/2020,,ϙ3
-Prince Regent (DLR),13,23/09/2020,,ϙ3
-Pudding Mill Lane (DLR),30,23/09/2020,,ϙ3
-Royal Albert (DLR),14,23/09/2020,,ϙ3
-Royal Victoria (DLR),11,23/09/2020,,ϙ3
-Shadwell (DLR),2,13/12/2019,,ϙ1
-South Quay (DLR),37,23/09/2020,,ϙ3
-Star Lane (DLR),24,23/09/2020,,ϙ3
-Stratford (DLR),28,23/09/2020,,ϙ3
-Stratford High Street (DLR),27,23/09/2020,,ϙ3
-Stratford Int'l (DLR),29,23/09/2020,,ϙ3
-Tower Gateway (DLR),6,23/09/2020,,ϙ3
-West Ham (DLR),25,23/09/2020,,ϙ3
-West India Quay (DLR),35,23/09/2020,,ϙ3
-West Silvertown (DLR),19,23/09/2020,,ϙ3
-Westferry (DLR),4,13/12/2019,,ϙ1
-Woolwich Arsenal (DLR),23,23/09/2020,,ϙ3
-Acton Central,5,01/02/2020,North London,ϙ2
-Bruce Grove,10,01/02/2020,Lea Valley,ϙ2
-Clapham Junction,13,02/02/2020,North London,ϙ2
-Gunnersbury,7,01/02/2020,North London,ϙ2
-Imperial Wharf,12,02/02/2020,North London,ϙ2
-Kensington (Olympia),2,13/12/2019,North London,ϙ1
-Kew Gardens,8,01/02/2020,North London,ϙ2
-Richmond,9,01/02/2020,North London,ϙ2
-Seven Sisters,11,01/02/2020,Lea Valley,ϙ2
-Shepherd's Bush,3,13/12/2019,North London,ϙ1
-South Acton,6,01/02/2020,North London,ϙ2
-West Brompton,1,13/12/2019,North London,ϙ1
-Willesden Junction,4,01/02/2020,North London,ϙ2
-Acton Main Line,2,13/12/2019,,ϙ1
-Ealing Broadway,3,13/12/2019,,ϙ1
-Paddington,1,13/12/2019,,ϙ1
+Station Name,Station No.,First Date,Line,Edition
 Aldgate,60,31/01/2020,Circle,ϙ2
 Angel,101,23/09/2020,Northern,ϙ3
 Arsenal,81,01/02/2020,Piccadilly,ϙ2
@@ -104,7 +43,7 @@ Dollis Hill,45,14/12/2019,Jubilee,ϙ1
 Ealing Broadway,4,13/12/2019,Central,ϙ1
 Earl's Court,26,13/12/2019,District,ϙ1
 East Acton,7,13/12/2019,Central,ϙ1
-Edgware Road (Bakerloo),107,23/09/2020,Bakerloo,ϙ3
+Edgware Road,107,23/09/2020,Bakerloo,ϙ3
 Elephant & Castle,104,23/09/2020,Northern,ϙ3
 Embankment,17,13/12/2019,"District 
  			Bakerloo 
