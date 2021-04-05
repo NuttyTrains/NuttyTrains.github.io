@@ -81,3 +81,5 @@ var x = setInterval(function() {
   }
 
 },1);
+
+// This is 50% of the banner change - post-exams, I will change it to 100%, by permanently replacing the chockclock with "Welcome to NT - the next train at platform DAI will be..."
