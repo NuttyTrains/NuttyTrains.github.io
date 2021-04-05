@@ -9,6 +9,7 @@
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
         <script src="./resources/js/papaParse/papaparse.js"></script>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
         <style>
             #mapid { height: 100%; }
         </style>
@@ -18,22 +19,36 @@
         <div id="mapid"></div>
     </body>
     <script>
-        var mymap = L.map('mapid').setView([51.505, -0.09], 11);
+        var mymap = L.map('mapid').setView([51.505, -0.09], 10);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            maxZoom: 18,
+            maxZoom: 15,
             id: 'mapbox/streets-v11',
             tileSize: 512,
             zoomOffset: -1,
             accessToken: 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw'
         }).addTo(mymap);
 
-        stations = Papa.parse('./data/tubeStations.csv', {
-            download: true,
-            // rest of config ...
-        })
-        console.log(stations)
-        var marker = L.marker([51.5, -0.09]).addTo(mymap);
+        d3.text("./data/tubeStations.csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data);
+                console.log(parsedCSV)
+                console.log(parsedCSV.length)
+                    // console.log(parsedCSV[i][8]);
+                    // console.log(parsedCSV[i][9]);
+                    // L.marker([parsedCSV[i][9], parsedCSV[i][8]]).addTo(mymap);
+                    // console.log('Added marker ' + i + ' at ' + parsedCSV[i][8] + ', ' + parsedCSV[i][9] )
+                    d3.text("./data/tubeVisited.csv", function(data) {
+                        var Visited = d3.csv.parseRows(data);
+                        const arrayColumn = (arr, n) => arr.map(x => x[n]);
+                        // console.log(arrayColumn(Visited, 0));
+                        for (i = 1; i < parsedCSV.length; i++) {
+                            if (arrayColumn(Visited, 0).includes(parsedCSV[i][2])) {
+                                L.marker([parsedCSV[i][9], parsedCSV[i][8]]).addTo(mymap);
+                                console.log('Added marker ' + i + ' at ' + parsedCSV[i][8] + ', ' + parsedCSV[i][9]);
+                            }
+                        }
+                    });
+            });
         
     </script>
 </html>
