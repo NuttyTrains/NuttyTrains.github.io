@@ -64,6 +64,7 @@
   text-decoration: none;
   display: block;
   text-align: left;
+  z-index: 5;
 }
 
 /* Add a grey background color to dropdown links on hover */
