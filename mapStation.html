@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title> Test </title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+        <script src="./resources/js/papaParse/papaparse.js"></script>
+        <style>
+            #mapid { height: 100%; }
+        </style>
+    </head>
+    <body>
+        <p> This is a test </p>
+        <div id="mapid"></div>
+    </body>
+    <script>
+        var mymap = L.map('mapid').setView([51.505, -0.09], 11);
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw'
+        }).addTo(mymap);
+
+        stations = Papa.parse('./data/tubeStations.csv', {
+            download: true,
+            // rest of config ...
+        })
+        console.log(stations)
+        var marker = L.marker([51.5, -0.09]).addTo(mymap);
+        
+    </script>
+</html>
