@@ -21,15 +21,15 @@ var x = setInterval(function() {
   var b = 152/1000;
 
   var chock = a * Math.exp(b * (days2+2));
-  var chock2 = Math.floor(chock/1000000000000000000000);
+  var chock2 = Math.floor(chock/1000000000000000000000000);
   
 
   if (DG1 > 86400+43200) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " sextillion chock cases. ϝ1 begins in " + daysDG1 + " days!"
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " septillion chock cases. ϝ1 begins in " + daysDG1 + " days!"
   }
 
   else if (DG1 > 43200) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " sextillion chock cases. ϝ1 is tomorrow!";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " septillion chock cases. ϝ1 is tomorrow!";
   }
 
   else if (DG1 > 16200) {
@@ -77,7 +77,7 @@ var x = setInterval(function() {
   }
 
   else {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " sextillion chock cases. Reality is an illusion, the universe is a hologram, buy toilet roll!";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " septillion chock cases. Reality is an illusion, the universe is a hologram, buy toilet roll!";
   }
 
 },1);
