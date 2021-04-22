@@ -1,22 +1,22 @@
 var countDownDate = new Date("Mar 05, 2020 08:00:00").getTime();
-var Digamma1 = new Date("Apr 14, 2021 12:51:00").getTime();
+var Phase3 = new Date("May 17, 2021 00:00:00").getTime();
+var Phase4 = new Date("Jun 21, 2021 00:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = (now - countDownDate)/1000;
-  var DG1 = (Digamma1 - now)/1000;
-    
+  var P3 = (Phase3 - now)/1000;
+  var P4 = (Phase4 - now)/1000;
+   
   var days = Math.floor(distance / (86400));
   var hours = Math.floor((distance % (86400)) / (3600));
   var minutes = Math.floor((distance % (3600)) / (60));
   var seconds = Math.floor((distance % (60)));
   var days2 = distance / (86400);
-    
-  var daysDG1 = Math.ceil((DG1 - 43200) / (86400));
-  var hoursDG1 = Math.floor((DG1 % (86400)) / (3600));
-  var minutesDG1 = Math.floor((DG1 % (3600)) / (60));
-  var secondsDG1 = Math.floor((DG1 % (60)));
 
+  var days3 = Math.ceil(P3 / (86400));
+  var days4 = Math.ceil(P4 / (86400));
+  
   var a = 315.9848724;
   var b = 152/1000;
 
@@ -24,60 +24,36 @@ var x = setInterval(function() {
   var chock2 = Math.floor(chock/1000000000000000000000000);
   
 
-  if (DG1 > 86400+43200) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " septillion chock cases. ϝ1 begins in " + daysDG1 + " days!"
+  if (days3 > 1) {
+    document.getElementById("countdown").innerHTML = "<small>Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Indoor restaurants and pubs open in " + days3 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!</small>";
   }
-
-  else if (DG1 > 43200) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " septillion chock cases. ϝ1 is tomorrow!";
+    
+  else if (days3 = 1) {
+    document.getElementById("countdown").innerHTML = "<small>Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Indoor restaurants and pubs open tomorrow! Reality is an illusion, the universe is a hologram, buy toilet roll!</small>";
   }
-
-  else if (DG1 > 16200) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! ϝ1 begins in: " + hoursDG1 + "h " + minutesDG1 + "m " + secondsDG1 + "s ";
+    
+  else if (days3 > -7) {
+    document.getElementById("countdown").innerHTML = "Welcome to NT! Indoor restaurants and pubs are now open! Go out and enjoy!";
   }
-
-  else if (DG1 > 12600) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! Matthew is on his way to PAD and James is heading to CBN: ϝ1 begins in: " + hoursDG1 + "h " + minutesDG1 + "m " + secondsDG1 + "s ";
+    
+  else if (days4 > 10) {
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Lockdown fully ends in " + days4 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!";
   }
-
-  else if (DG1 > 6600) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! We're off! Matthew is travelling to Brizzle and James to Plymouth! ϝ1 begins in: " + hoursDG1 + "h " + minutesDG1 + "m " + secondsDG1 + "s ";
+    
+  else if (days4 > 1) {
+    document.getElementById("countdown").innerHTML = "<small>Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Lockdown fully ends, and James travels to Oxford in " + days4 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!</small>";
   }
-
-  else if (DG1 > 3600) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! Matthew is currently waiting in Brizzle and James is travelling to Exeter! ϝ1 begins in: " + hoursDG1 + "h " + minutesDG1 + "m " + secondsDG1 + "s ";
+    
+  else if (days4 = 1) {
+    document.getElementById("countdown").innerHTML = "<small>Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Lockdown fully ends and James travels to Oxford tomorrow! Reality is an illusion, the universe is a hologram, buy toilet roll!</small>";
   }
-
-  else if (DG1 > 0) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! We are both closing in on Taunton! ϝ1 begins in: " + minutesDG1 + "m " + secondsDG1 + "s!";
-  }
-
-  else if (DG1 > -4800) {
-    document.getElementById("countdown").innerHTML = "IT IS NT TIME!!! Matthew and James are in Taunton!";
-  }
-
-  else if (DG1 > -6600) {
-    document.getElementById("countdown").innerHTML = "IT IS NT TIME!!! Matthew and James are travelling to Weston-super-mare!";
-  }
-
-  else if (DG1 > -8400) {
-    document.getElementById("countdown").innerHTML = "IT IS NT TIME!!! Matthew and James are in Weston-super-mare!";
-  }
-
-  else if (DG1 > -10800) {
-    document.getElementById("countdown").innerHTML = "IT IS NT TIME!!! Matthew and James are travelling to Brizzle!";
-  }
-
-  else if (DG1 > -18000) {
-    document.getElementById("countdown").innerHTML = "IT IS NT TIME!!! Matthew and James are in Brizzle!";
-  }
-
-  else if (DG1 > -36000) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! We are both travelling home from ϝ1";
+    
+  else if (days4 > -5) {
+    document.getElementById("countdown").innerHTML = "<small>The next train to arrive at PLATFORM DAI will be the LATE JUNE service to OXFORD/LONDON, calling at INSANITY, DEPRESSION, MASOCHISM, PIZZA EXPRESS, THE COUNCIL ESTATE, and CHOCK</small>";
   }
 
   else {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " septillion chock cases. Reality is an illusion, the universe is a hologram, buy toilet roll!";
+    document.getElementById("countdown").innerHTML = "Farewell ChockClock, you've been a friend throughout. BBB! Reality is an illusion, the universe is a hologram, buy toilet roll! - ChockClock, 2020-2021";
   }
 
 },1);
