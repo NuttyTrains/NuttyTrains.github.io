@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
 	crossorigin=""/>
@@ -979,12 +980,13 @@ d3.text("./data/tubeStations.csv", function(data) {
             // console.log(arrayColumn(Visited, 0));
             if (arrayColumn(Visited, 0).includes(parsedCSV[i][2])) {
                 L.marker([parsedCSV[i][9], parsedCSV[i][8]], {
-                    title: 'tube',
                     name: Visited[N][0],
                     station: Visited[N][1],
                     date: Visited[N][2],
                     line: Visited[N][3],
-                    edition: Visited[N][4]
+                    edition: Visited[N][4],
+                    title: 'We visited ' + this.options.name + ', on the ' + this.options.line.split(' ').join(', ') + 
+                            ' line(s) during ' + _.uniq(this.options.edition.split(' ')).join(' and ') + ' (' + this.options.date + '). ',
                 }).on('click', onMapClick).addTo(mymap);
                 // console.log('Added marker ' + i + ' at ' + parsedCSV[i][8] + ', ' + parsedCSV[i][9]);
                 var popup = L.popup();
@@ -993,7 +995,7 @@ d3.text("./data/tubeStations.csv", function(data) {
                         .setLatLng(e.latlng)
                         .setContent(
                             'We visited ' + this.options.name + ', on the ' + this.options.line.split(' ').join(', ') + 
-                            ' line(s) during ' + uniq(this.options.edition.split(' ')).join(' and ') + ' (' + this.options.date + '). '
+                            ' line(s) during ' + _.uniq(this.options.edition.split(' ')).join(' and ') + ' (' + this.options.date + '). '
                             )
                         .openOn(mymap);
                 }
