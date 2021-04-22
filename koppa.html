@@ -980,13 +980,12 @@ d3.text("./data/tubeStations.csv", function(data) {
             // console.log(arrayColumn(Visited, 0));
             if (arrayColumn(Visited, 0).includes(parsedCSV[i][2])) {
                 L.marker([parsedCSV[i][9], parsedCSV[i][8]], {
+                    title: Visited[N][0],
                     name: Visited[N][0],
                     station: Visited[N][1],
                     date: Visited[N][2],
                     line: Visited[N][3],
-                    edition: Visited[N][4],
-                    title: 'We visited ' + this.options.name + ', on the ' + this.options.line.split(' ').join(', ') + 
-                            ' line(s) during ' + _.uniq(this.options.edition.split(' ')).join(' and ') + ' (' + this.options.date + '). ',
+                    edition: Visited[N][4]
                 }).on('click', onMapClick).addTo(mymap);
                 // console.log('Added marker ' + i + ' at ' + parsedCSV[i][8] + ', ' + parsedCSV[i][9]);
                 var popup = L.popup();
