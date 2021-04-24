@@ -31,7 +31,7 @@ var x = setInterval(function() {
   
 
   if (Khours > -1) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! Koppa 4 begins in " + Khours + "h, " + Kminutes + "m, and " + Kseconds + "s!";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! Koppa 4 begins in " + Khours + "h, " + Kminutes + "m and " + Kseconds + "s!";
   }
 
   else if (Khours > -7) {
