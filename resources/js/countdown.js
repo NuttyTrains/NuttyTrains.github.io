@@ -1,10 +1,12 @@
 var countDownDate = new Date("Mar 05, 2020 08:00:00").getTime();
+var Koppa4 = new Date("Apr 24, 2021 12:00:00").getTime();
 var Phase3 = new Date("May 17, 2021 00:00:00").getTime();
 var Phase4 = new Date("Jun 21, 2021 00:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = (now - countDownDate)/1000;
+  var K4 = (Koppa4 - now)/1000;
   var P3 = (Phase3 - now)/1000;
   var P4 = (Phase4 - now)/1000;
    
@@ -13,6 +15,10 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (3600)) / (60));
   var seconds = Math.floor((distance % (60)));
   var days2 = distance / (86400);
+
+  var Khours = Math.floor((K4 % (86400)) / (3600));
+  var Kminutes = Math.floor((K4 % (3600)) / (60));
+  var Kseconds = Math.floor((K4 % (60)));
 
   var days3 = Math.ceil(P3 / (86400));
   var days4 = Math.ceil(P4 / (86400));
@@ -24,7 +30,15 @@ var x = setInterval(function() {
   var chock2 = Math.floor(chock/1000000000000000000000000);
   
 
-  if (days3 > 1) {
+  if (Khours > -1) {
+    document.getElementById("countdown").innerHTML = "Welcome to NT! Koppa 4 begins in " + Khours + "h, " + Kminutes + "m, and " + Kseconds + "s!";
+  }
+
+  else if (Khours > -7) {
+    document.getElementById("countdown").innerHTML = "<big>It is NT time!!! Koppa 4 is live!!!</big>";
+  }
+
+  else if (days3 > 1) {
     document.getElementById("countdown").innerHTML = "<small>Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Indoor restaurants and pubs open in " + days3 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!</small>";
   }
     
