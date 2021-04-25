@@ -14,7 +14,7 @@ FID,OBJECTID,NAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 12,90,Euston Square,529417,182393,"Metropolitan, Circle, Hammersmith & City",London Underground,1,-0.134270582,51.52512499
 13,91,Great Portland Street,528838,182180,"Metropolitan, Circle, Hammersmith & City",London Underground,1,-0.142685711,51.52333822
 14,92,Baker Street,527955,182064,"Metropolitan, Bakerloo, Circle, Jubilee, Hammersmith & City",London Underground,1,-0.155454387,51.52249387
-15,93,Edgware Road (Circle Line),527220,181697,Circle,London Underground,1,-0.166170742,51.51936413
+15,93,Edgware Road (DC),527220,181697,Circle,London Underground,1,-0.166170742,51.51936413
 16,94,Paddington,526704,181198,"Hammersmith & City, District, Circle, Bakerloo",London Underground,1,-0.173789485,51.51499491
 17,95,Bayswater,525843,180823,"District, Circle",London Underground,1,-0.186322701,51.51181507
 18,96,High Street Kensington,525578,179494,"District, Circle",London Underground,1,-0.190607248,51.49993492
@@ -49,7 +49,7 @@ FID,OBJECTID,NAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 47,228,Piccadilly Circus,529613,180666,"Bakerloo, Piccadilly",London Underground,1,-0.132081484,51.50955061
 48,229,Charing Cross,530058,180378,"Bakerloo, Northern",London Underground,1,-0.125777173,51.50686754
 49,231,Lambeth North,531134,179456,Bakerloo,London Underground,1,-0.110624882,51.49833058
-50,233,Edgware Road (Bakerloo),527047,181759,Bakerloo,London Underground,1,-0.168645951,51.51996099
+50,233,Edgware Road (B),527047,181759,Bakerloo,London Underground,1,-0.168645951,51.51996099
 51,236,Marylebone,527459,181957,Bakerloo,London Underground,1,-0.162637346,51.52165079
 52,237,Regent's Park,528699,182113,Bakerloo,London Underground,1,-0.144708117,51.52277011
 53,238,Sloane Square,528091,178655,"District, Circle",London Underground,1,-0.15473274,51.49182524
@@ -101,7 +101,7 @@ FID,OBJECTID,NAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 99,234,Maida Vale,525940,182762,Bakerloo,London Underground,2,-0.184228557,51.52922219
 100,235,Kilburn Park,525358,183328,Bakerloo,London Underground,2,-0.192420271,51.53444139
 101,240,Ravenscourt Park,522571,178722,District,London Underground,2,-0.234181724,51.49365752
-102,241,Hammersmith,523461,178503,"District, Piccadilly",London Underground,2,-0.22144689,51.49148885
+102,241,Hammersmith (PD),523461,178503,"District, Piccadilly",London Underground,2,-0.22144689,51.49148885
 103,295,Kilburn,524583,184645,Jubilee,London Underground,2,-0.203115567,51.54644842
 104,297,West Hampstead,525592,184653,Jubilee,London Underground,2,-0.188568627,51.54629707
 105,298,Swiss Cottage,526664,184335,Jubilee,London Underground,2,-0.173237239,51.54319998

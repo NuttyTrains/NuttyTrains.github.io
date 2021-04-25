@@ -60,12 +60,14 @@ Willesden Junction,4,01/02/2020,North London,ϙ2
 Acton Main Line,2,13/12/2019,CrossLizPurp,ϙ1
 Ealing Broadway,3,13/12/2019,CrossLizPurp,ϙ1
 Paddington,1,13/12/2019,CrossLizPurp,ϙ1
+Acton Town,112,24/04/2021,Piccadilly,ϙ4 
 Aldgate,60,31/01/2020,Circle,ϙ2
 Angel,101,23/09/2020,Northern,ϙ3
 Arsenal,81,01/02/2020,Piccadilly,ϙ2
 Baker Street,40,13/12/2019,Circle Bakerloo Metropolitan Jubilee,ϙ1 ϙ1 ϙ1 ϙ1
 Bank,54,31/01/2020,Central W&C Northern,ϙ2 ϙ2 ϙ3
 Barbican,99,23/09/2020,Circle Metropolitan,ϙ3 ϙ3
+Barons Court,110,24/04/2021,Piccadilly,ϙ4 
 Bayswater,97,02/02/2020,Circle,ϙ2
 Bermondsey,21,13/12/2019,Jubilee,ϙ1
 Bethnal Green,62,31/01/2020,Central,ϙ2
@@ -84,9 +86,10 @@ Clapham North,93,01/02/2020,Northern,ϙ2
 Covent Garden,96,01/02/2020,Piccadilly,ϙ2
 Dollis Hill,45,14/12/2019,Jubilee,ϙ1
 Ealing Broadway,4,13/12/2019,Central,ϙ1
-Earl's Court,26,13/12/2019,District,ϙ1
+Ealing Common,113,24/04/2021,Piccadilly,ϙ4
+Earl's Court,26,13/12/2019,District Piccadilly,ϙ1 ϙ4
 East Acton,7,13/12/2019,Central,ϙ1
-Edgware Road (Bakerloo),107,23/09/2020,Bakerloo,ϙ3
+Edgware Road (B),107,23/09/2020,Bakerloo,ϙ3
 Elephant & Castle,104,23/09/2020,Northern,ϙ3
 Embankment,17,13/12/2019,District Bakerloo Northern,ϙ1 ϙ1 ϙ1
 Euston,88,01/02/2020,Victoria,ϙ2
@@ -94,9 +97,12 @@ Euston Square,38,13/12/2019,Circle Metropolitan,ϙ1 ϙ2
 Farringdon,100,23/09/2020,Metropolitan,ϙ3
 Finchley Road,42,14/12/2019,Metropolitan Jubilee,ϙ1 ϙ1
 Finsbury Park,82,01/02/2020,Piccadilly Victoria,ϙ2 ϙ2
-Gloucester Road,25,13/12/2019,Circle District,ϙ1 ϙ1
+Gloucester Road,25,13/12/2019,Circle District Piccadilly,ϙ1 ϙ1 ϙ4
 Great Portland Street,39,13/12/2019,Circle Metropolitan,ϙ1 ϙ1
-Green Park,51,31/01/2020,Jubilee Victoria,ϙ2 ϙ2
+Green Park,51,31/01/2020,Jubilee Victoria Piccadilly,ϙ2 ϙ2 ϙ4
+Greenford,117,24/04/2021,Central,ϙ4
+Hammersmith (PD),111,24/04/2021,Piccadilly,ϙ4
+Hanger Lane,115,24/04/2021,Central,ϙ4 
 Harlesden,69,01/02/2020,Bakerloo,ϙ2
 Harrow & Wealdstone,75,01/02/2020,Bakerloo,ϙ2
 Harrow-on-the-Hill,76,01/02/2020,Metropolitan,ϙ2
@@ -105,11 +111,13 @@ Highbury & Islington,87,01/02/2020,Victoria,ϙ2
 Holborn,35,13/12/2019,Central Piccadilly,ϙ1 ϙ1
 Holland Park,10,13/12/2019,Central,ϙ1
 Holloway Road,80,01/02/2020,Piccadilly,ϙ2
+Hyde Park Corner,108,24/04/2021,Piccadilly,ϙ4 
 Kennington,95,01/02/2020,Northern,ϙ2
 Kensington (Olympia),67,01/02/2020,District,ϙ2
 Kenton,74,01/02/2020,Bakerloo,ϙ2
 Kilburn,47,14/12/2019,Jubilee,ϙ1
 King's Cross St. Pancras,37,13/12/2019,Piccadilly Circle Metropolitan Victoria,ϙ1 ϙ1 ϙ2 ϙ2
+Knightsbridge,109,24/04/2021,Piccadilly,ϙ4 
 Lancaster Gate,28,13/12/2019,Central,ϙ1
 Leicester Square,34,13/12/2019,Northern Piccadilly,ϙ1 ϙ2
 Leyton,65,01/02/2020,Central,ϙ2
@@ -123,6 +131,8 @@ Monument,58,31/01/2020,District Circle,ϙ2 ϙ3
 Moorgate,98,23/09/2020,Circle Metropolitan Northern,ϙ3 ϙ3 ϙ3
 Neasden,44,14/12/2019,Jubilee,ϙ1
 North Acton,6,13/12/2019,Central,ϙ1
+North Ealing,114,24/04/2021,Piccadilly,ϙ4
+Northolt,118,24/04/2021,Central,ϙ4 
 North Wembley,72,01/02/2020,Bakerloo,ϙ2
 Northwick Park,77,01/02/2020,Metropolitan,ϙ2
 Notting Hill Gate,2,05/12/2016,Circle Central District,α2 α2 ϙ2
@@ -130,17 +140,20 @@ Old Street,102,23/09/2020,Northern,ϙ3
 Oval,94,01/02/2020,Northern,ϙ2
 Oxford Circus,31,13/12/2019,Central Bakerloo Victoria,ϙ1 ϙ1 ϙ2
 Paddington (Praed St),1,05/12/2016,Circle Bakerloo,α2 ϙ3
-Piccadilly Circus,32,13/12/2019,Bakerloo,ϙ1
+Perivale,116,24/04/2021,Central,ϙ4 
+Piccadilly Circus,32,13/12/2019,Bakerloo Piccadilly,ϙ1 ϙ4
 Pimlico,90,01/02/2020,Victoria,ϙ2
 Preston Road,78,01/02/2020,Metropolitan,ϙ2
 Queensway,11,13/12/2019,Central,ϙ1
 Regent's Park,41,13/12/2019,Bakerloo,ϙ1
+Ruislip Gardens,120,24/04/2021,Central,ϙ4 
 Russell Square,36,13/12/2019,Piccadilly,ϙ1
 Seven Sisters,83,01/02/2020,Victoria,ϙ2
 Shepherd's Bush,9,13/12/2019,Central,ϙ1
 Sloane Square,13,13/12/2019,District Circle,ϙ1 ϙ1
-South Kensington,12,13/12/2019,District Circle,ϙ1 ϙ1
+South Kensington,12,13/12/2019,District Circle Piccadilly,ϙ1 ϙ1 ϙ4
 South Kenton,73,01/02/2020,Bakerloo,ϙ2
+South Ruislip,119,24/04/2021,Central,ϙ4 
 Southwark,23,13/12/2019,Jubilee,ϙ1
 St James's Park,15,13/12/2019,District Circle,ϙ1 ϙ1
 St John's Wood,50,14/12/2019,Jubilee,ϙ1
@@ -164,6 +177,7 @@ West Acton,5,13/12/2019,Central,ϙ1
 West Brompton,27,13/12/2019,District,ϙ1
 West Hampstead,48,14/12/2019,Jubilee,ϙ1
 Westminster,16,13/12/2019,District Jubilee Circle,ϙ1 ϙ1 ϙ1
+West Ruislip,121,24/04/2021,Central,ϙ4 
 White City,8,13/12/2019,Central,ϙ1
 Willesden Green,46,14/12/2019,Jubilee,ϙ1
 Willesden Junction,68,01/02/2020,Bakerloo,ϙ2
