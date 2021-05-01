@@ -173,3 +173,25 @@ function ChockNumber() {
   var x = document.getElementById("Chock").rows.length -1;
     return "We have visited " + x + " Stations during The Chock<sup>TM</sup>";
 }
+
+function BethMore() {
+  var bethdots = document.getElementById("bethdots");
+  var bethmoreText = document.getElementById("bethmore");
+  var bethbtnText = document.getElementById("BethMoreBtn");
+
+  if (bethdots.style.display === "none") {
+    bethdots.style.display = "inline";
+    bethbtnText.innerHTML = "Show Beth Adventures"; 
+    bethmoreText.style.display = "none";
+  } 
+  else {
+    bethdots.style.display = "none";
+    bethbtnText.innerHTML = "Hide Beth Adventures"; 
+    bethmoreText.style.display = "inline";
+  }
+}
+
+function BethNumber() {
+  var x = document.getElementById("Beth").rows.length -1;
+    return "We have been on " + x + " Beth Adventures";
+}

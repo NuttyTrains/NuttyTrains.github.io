@@ -36,6 +36,7 @@ $(function(){
   $("#steammore").load("stations/steam.html #SteamStations");
   $("#ikeamore").load("stations/ikea.html #IKEA");
   $("#chockmore").load("stations/¬stations.html #Chock");
+  $("#bethmore").load("stations/beth.html #Beth");
 });
 </script>
 	
@@ -281,6 +282,27 @@ However, now that local, non-public-transport travel is once again permitted, I 
     <button onclick="ChockMore()" id="ChockMoreBtn">Show Chock Station List</button>
     <span id="chockmore">
      </span>
+
+<br><br>
+<p>Sometimes, we go on adventures that are so shit, they don't even deserve a proper write-up: they aren't even worthy of the title <a href="./aleph.html">aleph</a>. 
+But they are kind of funny, and we'd like to document these too. So, we introduce the Beth (ℶ) Adventures: Shitty little ramblings that we dump in a CSV (coming soon) 
+because we can't be bothered to write them up properly. Coming soon to a pub/tube train/pub/dodgy street corner/pub near you!</p>
+    <ol>
+      <li> To qualify as a Beth (ℶ) adventure, it must:
+  <ul> 
+    <li> Be nutty </li>
+    <li> Be slightly shit </li>
+    <li> Involve a train? (Optional) </li>
+  </ul>
+    </ol>
+
+<p id="BethNo">We have been on 0 Beth Adventures</p>
+    <span id="bethdots"></span>
+
+    <button onclick="BethMore()" id="BethMoreBtn">Show Beth Adventures</button>
+    <span id="bethmore">
+    </span>
+
 	 </div> 
 
 
@@ -319,6 +341,7 @@ function myFunction() {
 //  document.getElementById("SteamNo").innerHTML = SteamStationNumber();
 //  document.getElementById("IkeaNo").innerHTML = IkeaNumber();
 //  document.getElementById("ChockNo").innerHTML = ChockNumber();
+//  document.getElementById("BethNo").innerHTML = BethNumber();
 }
 
 // When the user clicks on <span> (x), close the modal
