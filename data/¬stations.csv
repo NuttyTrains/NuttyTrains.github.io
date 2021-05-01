@@ -1,60 +1,60 @@
-¬Station Name,¬Station No.,J/M?,Date,Transport Method,Did You Get Chocked?
-Lelant,1,J,09/06/20,Masochism,I bleddy well hope not
-Neath,2,M,07/07/20,Walking,No?
-Skewen,3,J&M,24/07/20,R0=1,We had ice cream?
-Briton Ferry,4,J&M,24/07/20,R0=1,"Nope, just lung cancer"
-Pontrhydyfen,5,M,23/08/20,Cycling over a hill,There was no station to get chocked in
-Cynonville Halt,6,M,23/08/20,Fucking killing myself,Dying is coronavirus with fewer steps
-Dyffryn Rhondda Halt,7,M,23/08/20,"Cycle up Cimla Hill, he said","It'll be fun, he said"
-Cymmer,8,M,23/08/20,Why do I do this to myself?,I wish I had
-Lydney Town,9,J&M,05/09/20,Waved at the Steam Train!,We had plenty of waves back!
-St Mary's Halt,10,J&M,05/09/20,Walked from the Steam Train!,Nope!
-Neath Riverside,11,M,09/09/20,Walking,I hope not
-Neath Canalside,12,M,09/09/20,Walking,No?
-North Acton,13,M,16/09/20,Walking in boiling heat,"No, only dehydration"
-East Acton,14,M,16/09/20,Walking in boiling heat,"No, only dehydration"
-White City,15,M,16/09/20,Walking in boiling heat,"No, only dehydration"
-Wood Lane,16,M,16/09/20,Walking in boiling heat,"No, only dehydration"
-Shepherd's Bush,17,M,16/09/20,Walking in boiling heat,"No, only dehydration"
-Shepherd's Bush (Mainline),18,M,16/09/20,Walking in boiling heat,"No, only dehydration"
-Willesden Junction,19,M,17/09/20,"Pure, unadulterated embarrassment",I hope not!
-Stratford High Street,20,M,19/09/20,Accident,Buy life insurance today!
-West Acton,21,M,22/09/20,Walking,No?
-North Ealing,22,M,22/09/20,Walking,No?
-Ealing Broadway,23,M,22/09/20,Walking,No?
-Helston,24,J,01/11/20,???,I bleddy well hope not
-Carbis Bay,25,J,12/11/20,???,I bleddy well hope not
-Ravenscourt Park,26,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Hammersmith (C),27,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Hammersmith (D&P),28,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Kensington Olympia,29,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-High Street Kensington,30,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Gloucester Road,31,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-South Kensington,32,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Brompton Road,33,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Knightsbridge,34,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Hyde Park Corner,35,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Green Park,36,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Piccadilly Circus,37,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Leicester Square,38,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Covent Garden,39,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Holborn,40,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Chancery Lane,41,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-City Thameslink,42,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-St Pauls,43,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Bank,44,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Liverpool Street (Tube),45,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Liverpool Street (NR),46,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Tottenham Court Road,47,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Oxford Circus,48,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Bond Street,49,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Marble Arch,50,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Lancaster Gate,51,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Queensway,52,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Bayswater,53,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Notting Hill Gate,54,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Holland Park,55,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Shepherd's Bush Market,56,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Acton Central,57,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Acton Main Line,58,M,13/11/20,Megawalk,"I'm dead, it doesn't matter"
-Port Talbot Parkway,59,M,30/12/20,Cycling,Perhaps...
+¬Station Name,¬Station No.,J/M?,Transport Method,Date,Did You Get Chocked?
+Lelant,1,J,Masochism,09/06/2020,I bleddy well hope not
+Neath,2,M,Walking,07/07/2020,No?
+Skewen,3,J&M,R0=1,24/07/2020,We had ice cream?
+Briton Ferry,4,J&M,R0=1,24/07/2020,"Nope, just lung cancer"
+Pontrhydyfen,5,M,Cycling over a hill,23/08/2020,There was no station to get chocked in
+Cynonville Halt,6,M,Fucking killing myself,23/08/2020,Dying is coronavirus with fewer steps
+Dyffryn Rhondda Halt,7,M,"Cycle up Cimla Hill, he said",23/08/2020,"It'll be fun, he said"
+Cymmer,8,M,Why do I do this to myself?,23/08/2020,I wish I had
+Lydney Town,9,J&M,Waved at the Steam Train!,05/09/2020,We had plenty of waves back!
+St Mary's Halt,10,J&M,Walked from the Steam Train!,05/09/2020,Nope!
+Neath Riverside,11,M,Walking,09/09/2020,I hope not
+Neath Canalside,12,M,Walking,09/09/2020,No?
+North Acton,13,M,Walking in boiling heat,16/09/2020,"No, only dehydration"
+East Acton,14,M,Walking in boiling heat,16/09/2020,"No, only dehydration"
+White City,15,M,Walking in boiling heat,16/09/2020,"No, only dehydration"
+Wood Lane,16,M,Walking in boiling heat,16/09/2020,"No, only dehydration"
+Shepherd's Bush,17,M,Walking in boiling heat,16/09/2020,"No, only dehydration"
+Shepherd's Bush (Mainline),18,M,Walking in boiling heat,16/09/2020,"No, only dehydration"
+Willesden Junction,19,M,"Pure, unadulterated embarrassment",17/09/2020,I hope not!
+Stratford High Street,20,M,Accident,19/09/2020,Buy life insurance today!
+West Acton,21,M,Walking,22/09/2020,No?
+North Ealing,22,M,Walking,22/09/2020,No?
+Ealing Broadway,23,M,Walking,22/09/2020,No?
+Helston,24,J,???,01/11/2020,I bleddy well hope not
+Carbis Bay,25,J,???,12/11/2020,I bleddy well hope not
+Ravenscourt Park,26,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Hammersmith (C),27,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Hammersmith (D&P),28,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Kensington Olympia,29,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+High Street Kensington,30,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Gloucester Road,31,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+South Kensington,32,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Brompton Road,33,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Knightsbridge,34,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Hyde Park Corner,35,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Green Park,36,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Piccadilly Circus,37,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Leicester Square,38,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Covent Garden,39,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Holborn,40,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Chancery Lane,41,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+City Thameslink,42,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+St Pauls,43,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Bank,44,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Liverpool Street (Tube),45,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Liverpool Street (NR),46,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Tottenham Court Road,47,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Oxford Circus,48,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Bond Street,49,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Marble Arch,50,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Lancaster Gate,51,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Queensway,52,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Bayswater,53,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Notting Hill Gate,54,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Holland Park,55,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Shepherd's Bush Market,56,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Acton Central,57,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Acton Main Line,58,M,Megawalk,13/11/2020,"I'm dead, it doesn't matter"
+Port Talbot Parkway,59,M,Cycling,30/12/2020,Perhaps...
