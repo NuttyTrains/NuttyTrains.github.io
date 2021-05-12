@@ -1,6 +1,6 @@
 var countDownDate = new Date("Mar 05, 2020 08:00:00").getTime();
 var Phase3 = new Date("May 17, 2021 00:00:00").getTime();
-var Phase4 = new Date("Jun 21, 2021 00:00:00").getTime();
+var Phase4 = new Date("Jun 19, 2021 00:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
@@ -33,23 +33,23 @@ var x = setInterval(function() {
   }
     
   else if (days3 > -7) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! Indoor restaurants and pubs are now open! Go out and enjoy!";
-  }
-    
-  else if (days4 > 10) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Lockdown fully ends in " + days4 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! Indoor restaurants and pubs are now open! Go out and enjoy... after exams!";
   }
     
   else if (days4 > 1) {
-    document.getElementById("countdown").innerHTML = "<small>Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Lockdown fully ends, and James travels to Oxford in " + days4 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!</small>";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Koppa 5 in " + days4 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!";
   }
-    
+      
   else if (days4 = 1) {
-    document.getElementById("countdown").innerHTML = "<small>Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Lockdown fully ends and James travels to Oxford tomorrow! Reality is an illusion, the universe is a hologram, buy toilet roll!</small>";
+    document.getElementById("countdown").innerHTML = "The next train to arrive at PLATFORM DAI will be the KOPPA 5 service to LONDON tomorrow! Reality is an illusion, the universe is a hologram, buy toilet roll!";
   }
     
-  else if (days4 > -5) {
-    document.getElementById("countdown").innerHTML = "<small>The next train to arrive at PLATFORM DAI will be the LATE JUNE service to OXFORD/LONDON, calling at INSANITY, DEPRESSION, MASOCHISM, PIZZA EXPRESS, THE COUNCIL ESTATE, and CHOCK</small>";
+  else if (days4 > -3) {
+    document.getElementById("countdown").innerHTML = "<small>The next train to arrive at PLATFORM DAI will be the KOPPA 5 service to LONDON, calling at INSANITY, DEPRESSION, MASOCHISM, PIZZA EXPRESS, THE COUNCIL ESTATE, and CHOCK</small>";
+  }
+    
+  else if (days4 > -7) {
+    document.getElementById("countdown").innerHTML = "<small>The next train to arrive at PLATFORM DAI will be the XI 1 service to OXFORD, calling at PAIN, MISERY, TORYLAND, BANANA TREE, and REVERENCE OF OUR GLORIOUS ETERNAL LEADER</small>";
   }
 
   else {
