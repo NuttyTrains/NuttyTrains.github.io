@@ -28,7 +28,7 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "<small>Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Indoor restaurants and pubs open in " + days3 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!</small>";
   }
     
-  else if (days3 = 1) {
+  else if (days3 == 1) {
     document.getElementById("countdown").innerHTML = "<small>Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Indoor restaurants and pubs open tomorrow! Reality is an illusion, the universe is a hologram, buy toilet roll!</small>";
   }
     
@@ -40,7 +40,7 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Koppa 5 in " + days4 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!";
   }
       
-  else if (days4 = 1) {
+  else if (days4 == 1) {
     document.getElementById("countdown").innerHTML = "The next train to arrive at PLATFORM DAI will be the KOPPA 5 service to LONDON tomorrow! Reality is an illusion, the universe is a hologram, buy toilet roll!";
   }
     
