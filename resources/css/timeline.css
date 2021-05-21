@@ -20,13 +20,21 @@
 }
 
 .timeline::before {
-  background-color: black;
+  background-color: white;
   content: '';
   height: 100%;
   left: 50%;
   position: absolute;
   top: 0;
-  width: 3px;
+  width: 0px;
+  border-style: dotted;
+  border-left-color: black;
+  border-right-color: black;
+  border-left-width: 2.5px;
+  border-right-width: 2.5px;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 2px;
 }
 
 .timeline::after {
