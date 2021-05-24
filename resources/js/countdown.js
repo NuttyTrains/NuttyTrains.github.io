@@ -37,7 +37,7 @@ var x = setInterval(function() {
   }
     
   else if (days4 > 1) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " octillion cases of chock. Koppa 5 in " + days4 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " octillion cases of chock. Koppa 5 is in " + days4 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!";
   }
       
   else if (days4 == 1) {
