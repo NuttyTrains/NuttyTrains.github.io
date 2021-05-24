@@ -21,15 +21,15 @@ var x = setInterval(function() {
   var b = 152/1000;
 
   var chock = a * Math.exp(b * (days2+2));
-  var chock2 = Math.floor(chock/1000000000000000000000000);
+  var chock2 = Math.floor(chock/1000000000000000000000000000);
   
 
   if (days3 > 1) {
-    document.getElementById("countdown").innerHTML = "<small>Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Indoor restaurants and pubs open in " + days3 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!</small>";
+    document.getElementById("countdown").innerHTML = "<small>Welcome to NT! The UK has " + chock2 + " octillion cases of chock. Indoor restaurants and pubs open in " + days3 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!</small>";
   }
     
   else if (days3 == 1) {
-    document.getElementById("countdown").innerHTML = "<small>Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Indoor restaurants and pubs open tomorrow! Reality is an illusion, the universe is a hologram, buy toilet roll!</small>";
+    document.getElementById("countdown").innerHTML = "<small>Welcome to NT! The UK has " + chock2 + " octillion cases of chock. Indoor restaurants and pubs open tomorrow! Reality is an illusion, the universe is a hologram, buy toilet roll!</small>";
   }
     
   else if (days3 > -7) {
@@ -37,7 +37,7 @@ var x = setInterval(function() {
   }
     
   else if (days4 > 1) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " septillion cases of chock. Koppa 5 in " + days4 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " octillion cases of chock. Koppa 5 in " + days4 + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!";
   }
       
   else if (days4 == 1) {
