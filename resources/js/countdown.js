@@ -14,7 +14,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (60)));
   var days2 = distance / (86400);
 
-  var days5 = Math.ceil(K5 / (86400));
+  var days5 = Math.floor(K5 / (86400));
   var hours5 = Math.ceil(K5 / (3600));
   var elapsed5 = -1 * hours5;
   var hours1 = Math.ceil(X1 / (3600));
