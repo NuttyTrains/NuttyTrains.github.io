@@ -32,7 +32,7 @@ var x = setInterval(function() {
   }
  
   else if (hours5 > 0) {
-    document.getElementById("countdown").innerHTML = "<small>The train arriving at PLATFORM DAI in " + hours5 + "is the KOPPA 5 service to LONDON, calling at INSANITY, DEPRESSION, MASOCHISM, PIZZA EXPRESS, THE COUNCIL ESTATE, and CHOCK</small>";
+    document.getElementById("countdown").innerHTML = "<small>The train arriving at PLATFORM DAI in " + hours5 + " hours is the KOPPA 5 service to LONDON, calling at INSANITY, DEPRESSION, MASOCHISM, PIZZA EXPRESS, THE COUNCIL ESTATE, and CHOCK</small>";
   }
  
   else if (hours5 > -1) {
@@ -60,7 +60,7 @@ var x = setInterval(function() {
   }
 
   else if (hours1 > 0) {
-    document.getElementById("countdown").innerHTML = "<small>The train arriving at PLATFORM DAI in " + hours1 + "is the XI 1 service to OXFORD, calling at PAIN, MISERY, TORYLAND, BANANA TREE, and REVERENCE OF OUR GLORIOUS ETERNAL LEADER</small>";
+    document.getElementById("countdown").innerHTML = "<small>The train arriving at PLATFORM DAI in " + hours1 + " hours is the XI 1 service to OXFORD, calling at PAIN, MISERY, TORYLAND, BANANA TREE, and REVERENCE OF OUR GLORIOUS ETERNAL LEADER</small>";
   }
 
   else if (hours1 > -1) {
