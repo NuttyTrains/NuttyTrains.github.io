@@ -16,6 +16,7 @@ Bond Street,Bond Street,30,13/12/2019,Central Jubilee,ϙ1 ϙ1
 Borough,Borough,103,23/09/2020,Northern,ϙ3
 Brixton,Brixton,105,23/09/2020,Victoria,ϙ3
 Caledonian Road,Caledonian Road,79,01/02/2020,Piccadilly,ϙ2
+Camden Town,Camden Town Arrr Shtuden Oldin En,124,19/06/2021,Northern,ϙ5
 Canada Water,Canada Water,20,13/12/2019,Jubilee,ϙ1
 Canary Wharf,Canary Wharf,19,13/12/2019,Jubilee,ϙ1
 Cannon Street,Cannon Street,57,31/01/2020,District Circle,ϙ2 ϙ3
@@ -31,12 +32,13 @@ East Acton,East Acton,7,13/12/2019,Central,ϙ1
 Edgware Road (B),Edgware Road (B),107,23/09/2020,Bakerloo,ϙ3
 Elephant & Castle,Elephant & Castle,104,23/09/2020,Northern,ϙ3
 Embankment,Embankment,17,13/12/2019,District Bakerloo Northern,ϙ1 ϙ1 ϙ1
-Euston,Euston,88,01/02/2020,Victoria,ϙ2
+Euston,Euston,88,01/02/2020,Victoria Northern,ϙ2 ϙ5
 Euston Square,Euston Square,38,13/12/2019,Circle Metropolitan,ϙ1 ϙ2
 Farringdon,Farringdon,100,23/09/2020,Metropolitan,ϙ3
 Finchley Road,Finchley Road,42,14/12/2019,Metropolitan Jubilee,ϙ1 ϙ1
 Finsbury Park,Finsbury Park,82,01/02/2020,Piccadilly Victoria,ϙ2 ϙ2
 Gloucester Road,Gloucester Road,25,13/12/2019,Circle District Piccadilly,ϙ1 ϙ1 ϙ4
+Goodge Street,Goodge Street,122,19/06/2021,Northern,ϙ5
 Great Portland Street,Great Portland Street,39,13/12/2019,Circle Metropolitan,ϙ1 ϙ1
 Green Park,Green Park,51,31/01/2020,Jubilee Victoria Piccadilly,ϙ2 ϙ2 ϙ4
 Greenford,Greenford,117,24/04/2021,Central,ϙ4
@@ -67,6 +69,7 @@ Marble Arch,Marble Arch,29,13/12/2019,Central,ϙ1
 Marylebone,Marylebone,106,23/09/2020,Bakerloo,ϙ3
 Mile End,Mile End,63,31/01/2020,Central,ϙ2
 Monument,Monument,58,31/01/2020,District Circle,ϙ2 ϙ3
+Mornington Crescent,Mornington Crescent,123,19/06/2021,Northern,ϙ5
 Moorgate,Moorgate (Au Revoir),98,23/09/2020,Circle Metropolitan Northern,ϙ3 ϙ3 ϙ3
 Neasden,Neasden,44,14/12/2019,Jubilee,ϙ1
 North Acton,North Acton,6,13/12/2019,Central,ϙ1
@@ -108,7 +111,7 @@ Tower Hill,Tower Hill,59,31/01/2020,District Circle,ϙ2 ϙ2
 Vauxhall,Vauxhall,91,01/02/2020,Victoria,ϙ2
 Victoria,Victoria,14,13/12/2019,District Circle Victoria,ϙ1 ϙ1 ϙ2
 Walthamstow Central,Walthamstow Central,86,01/02/2020,Victoria,ϙ2
-Warren Street,Warren Street,89,01/02/2020,Victoria,ϙ2
+Warren Street,Warren Street,89,01/02/2020,Victoria Northern,ϙ2 ϙ5
 Waterloo,Waterloo,24,13/12/2019,Jubilee W&C Bakerloo,ϙ1 ϙ2 ϙ2
 Wembley Central,Wembley Central,71,01/02/2020,Bakerloo,ϙ2
 Wembley Park,Wembley Park,43,14/12/2019,Metropolitan Jubilee,ϙ1 ϙ1
