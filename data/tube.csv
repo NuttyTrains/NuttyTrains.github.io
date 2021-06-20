@@ -1,5 +1,5 @@
 Fake Name,Station Name,Station No.,First Date,Line,Edition
-Acton Town,Acton Town,112,24/04/2021,Piccadilly,ϙ4 
+Acton Town,Acton Town,112,24/04/2021,Piccadilly District,ϙ4 ϙ5
 Aldgate,Aldgate,60,31/01/2020,Circle,ϙ2
 Angel,Angel,101,23/09/2020,Northern,ϙ3
 Arsenal,Arsenal,81,01/02/2020,Piccadilly,ϙ2
@@ -25,8 +25,8 @@ Charing Cross,Charing Cross,33,13/12/2019,Bakerloo Northern,ϙ1 ϙ1
 Clapham North,Clapham North,93,01/02/2020,Northern,ϙ2
 Covent Garden,Covent Garden,96,01/02/2020,Piccadilly,ϙ2
 Dollis Hill,Dollis Hill,45,14/12/2019,Jubilee,ϙ1
-Ealing Broadway,Ealing Broadway,4,13/12/2019,Central,ϙ1
-Ealing Common,Ealing Common,113,24/04/2021,Piccadilly,ϙ4
+Ealing Broadway,Ealing Broadway,4,13/12/2019,Central District,ϙ1 ϙ5
+Ealing Common,Ealing Common,113,24/04/2021,Piccadilly District,ϙ4 ϙ5
 Earl's Court,Earl's Court,26,13/12/2019,District Piccadilly,ϙ1 ϙ4
 East Acton,East Acton,7,13/12/2019,Central,ϙ1
 Edgware Road (B),Edgware Road (B),107,23/09/2020,Bakerloo,ϙ3
