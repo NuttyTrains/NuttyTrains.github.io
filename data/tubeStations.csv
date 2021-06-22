@@ -14,7 +14,7 @@ FID,OBJECTID,NAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 12,90,Euston Square,529417,182393,"Metropolitan, Circle, Hammersmith & City",London Underground,1,-0.134270582,51.52512499
 13,91,Great Portland Street,528838,182180,"Metropolitan, Circle, Hammersmith & City",London Underground,1,-0.142685711,51.52333822
 14,92,Baker Street,527955,182064,"Metropolitan, Bakerloo, Circle, Jubilee, Hammersmith & City",London Underground,1,-0.155454387,51.52249387
-15,93,Edgware Road (DC),527220,181697,Circle,London Underground,1,-0.166170742,51.51936413
+15,93,Edgware Road (CD),527220,181697,Circle,London Underground,1,-0.166170742,51.51936413
 16,94,Paddington,526704,181198,"Hammersmith & City, District, Circle, Bakerloo",London Underground,1,-0.173789485,51.51499491
 17,95,Bayswater,525843,180823,"District, Circle",London Underground,1,-0.186322701,51.51181507
 18,96,High Street Kensington,525578,179494,"District, Circle",London Underground,1,-0.190607248,51.49993492
@@ -137,7 +137,7 @@ FID,OBJECTID,NAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 135,248,Stepney Green,535621,182136,"District, Hammersmith & City",London Underground,2,-0.044974603,51.52135166
 136,250,Whitechapel,534645,181850,"District, Hammersmith & City",London Underground,2,-0.059154123,51.51902202
 137,251,Bow Road,537090,182736,"District, Hammersmith & City",London Underground,2,-0.02358427,51.52639287
-138,287,St. John's Wood,526735,183391,Jubilee,London Underground,2,-0.172545248,51.53469852
+138,287,St John's Wood,526735,183391,Jubilee,London Underground,2,-0.172545248,51.53469852
 139,290,Canada Water,535457,179467,Jubilee,London Underground,2,-0.048372238,51.49740822
 140,291,Bermondsey,534460,179416,Jubilee,London Underground,2,-0.062745893,51.49718984
 141,292,Canary Wharf,537677,180140,Jubilee,London Underground,2,-0.016134819,51.50291749
@@ -372,7 +372,7 @@ FID,OBJECTID,NAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 370,432,Avenue Road,535745,169322,n/a,Tramlink,4,-0.048118188,51.40615963
 371,433,Beckenham Road,536190,169660,n/a,Tramlink,4,-0.04159356,51.40909636
 372,434,Beckenham Junction (Tramlink),537365,169843,n/a,Tramlink,4,-0.024636241,51.41045194
-373,447,Woolwich Arsenal (DLR),543731,178811,n/a,DLR,4,0.070492592,51.48946942
+373,447,Woolwich Arsenal,543731,178811,n/a,DLR,4,0.070492592,51.48946942
 374,348,Penge West,534942,170503,n/a,London Overground,4,-0.059203378,51.41696823
 375,349,Anerley,534617,169899,n/a,London Overground,4,-0.06410424,51.411617
 376,352,South Kenton,517316,187081,n/a,London Overground,4,-0.307068904,51.56990367
@@ -431,7 +431,7 @@ FID,OBJECTID,NAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 429,126,Epping,546209,201538,Central,London Underground,6,0.115641374,51.69306818
 430,27,Elm Park,552542,185716,District,London Underground,6,0.200311564,51.54920911
 431,28,Hornchurch,553944,186240,District,London Underground,6,0.220754707,51.55353835
-432,29,Heathrow Terminals 1-2-3,507586,175840,Piccadilly,London Underground,6,-0.450857772,51.47079421
+432,29,Heathrow Central,507586,175840,Piccadilly,London Underground,6,-0.450857772,51.47079421
 433,30,Upminster Bridge,555088,186770,District,London Underground,6,0.237476635,51.55798569
 434,75,West Ruislip,508379,186796,Central,London Underground,6,-0.436073394,51.56913097
 435,199,Upminster,556146,186868,District,London Underground,6,0.252767235,51.55857711
