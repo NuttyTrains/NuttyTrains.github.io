@@ -137,7 +137,7 @@ FID,OBJECTID,NAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 135,248,Stepney Green,535621,182136,"District, Hammersmith & City",London Underground,2,-0.044974603,51.52135166
 136,250,Whitechapel,534645,181850,"District, Hammersmith & City",London Underground,2,-0.059154123,51.51902202
 137,251,Bow Road,537090,182736,"District, Hammersmith & City",London Underground,2,-0.02358427,51.52639287
-138,287,St John's Wood,526735,183391,Jubilee,London Underground,2,-0.172545248,51.53469852
+138,287,St. John's Wood,526735,183391,Jubilee,London Underground,2,-0.172545248,51.53469852
 139,290,Canada Water,535457,179467,Jubilee,London Underground,2,-0.048372238,51.49740822
 140,291,Bermondsey,534460,179416,Jubilee,London Underground,2,-0.062745893,51.49718984
 141,292,Canary Wharf,537677,180140,Jubilee,London Underground,2,-0.016134819,51.50291749
