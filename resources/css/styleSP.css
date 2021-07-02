@@ -212,6 +212,12 @@ h6 {
   padding-right: 1%;
 }
 
+#box35 {
+  width: 35%;
+  clear: right;
+  float: right;
+}
+
 #box55 {
   width: 55%;
   clear: none;

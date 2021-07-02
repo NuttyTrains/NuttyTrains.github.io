@@ -65,7 +65,8 @@
 .timeline .timeline-item .timeline-icon-sampi, 
 .timeline .timeline-item .timeline-icon-koppa,
 .timeline .timeline-item .timeline-icon-r0,
-.timeline .timeline-item .timeline-icon-digamma {
+.timeline .timeline-item .timeline-icon-digamma,
+.timeline .timeline-item .timeline-icon-xi {
   border-radius: 50%;
   height: 50px;
   left: 50%;
@@ -99,6 +100,10 @@
 
 .timeline .timeline-item .timeline-icon-digamma {
   background-color: #014702;
+}
+
+.timeline .timeline-item .timeline-icon-xi {
+  background-color: #ff7b00;
 }
 
 .timeline .timeline-item .timeline-icon-aleph {
