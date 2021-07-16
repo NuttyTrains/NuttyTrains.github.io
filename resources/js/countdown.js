@@ -22,15 +22,15 @@ var x = setInterval(function() {
   
 
   if (daysF > 1) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " octillion cases of chock. All restrictions end in " + daysF + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " octillion cases of chock. 'All' restrictions end in " + daysF + " days! Reality is an illusion, the universe is a hologram, buy toilet roll!";
   }
  
   else if (daysF == 1) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " octillion cases of chock. All restrictions end tomorrow! Reality is an illusion, the universe is a hologram, buy toilet roll!";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The UK has " + chock2 + " octillion cases of chock. 'All' restrictions end tomorrow! Reality is an illusion, the universe is a hologram, buy toilet roll!";
   }
  
   else if (daysF > -3) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! All chock restrictions have ended! Reality is an illusion, the universe is a hologram, buy toilet roll!";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! 'All' chock restrictions have ended! Reality is an illusion, the universe is a hologram, buy toilet roll!";
   }
  
   else if (daysF > -14) {
