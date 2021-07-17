@@ -31,16 +31,23 @@
 $(function(){
   $("#nav-placeholder").load("nav.html");
   //$("#more").load("data/stations.csv");
-  $("#tubemore").load("stations/tube.html #TubeStations");
-  $("#dlrmore").load("stations/dlr.html #DLRStations");
-  $("#orangemore").load("stations/orange.html #OrangeStations");
-  $("#purpmore").load("stations/purp.html #PurpStations");
-  $("#steammore").load("stations/steam.html #SteamStations");
-  $("#ikeamore").load("stations/ikea.html #IKEA");
-  $("#bethmore").load("stations/beth.html #Beth");
+  //$("#tubemore").load("stations/tube.html #TubeStations");
+  //$("#dlrmore").load("stations/dlr.html #DLRStations");
+  //$("#orangemore").load("stations/orange.html #OrangeStations");
+  //$("#purpmore").load("stations/purp.html #PurpStations");
+  //$("#steammore").load("stations/steam.html #SteamStations");
+  //$("#ikeamore").load("stations/ikea.html #IKEA");
+  //$("#bethmore").load("stations/beth.html #Beth");
 });
 
 getAjax("data/stations.csv", "#more");
+getAjax("data/tube.csv", "#tubemore");
+getAjax("data/dlr.csv", "#dlrmore");
+getAjax("data/orange.csv", "#orangemore");
+getAjax("data/purp.csv", "#purpmore");
+getAjax("data/steam.csv", "#steammore");
+getAjax("data/ikea.csv", "#ikeamore");
+getAjax("data/beth.csv", "#bethmore");
 </script>
 	
   <body onload = "myFunction()">
