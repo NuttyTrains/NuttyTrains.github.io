@@ -16,6 +16,7 @@
 	<script src="./resources/js/parallax/parallax.min.js"></script>
 	<script src="./resources/js/countdown.js"></script>
 	<script src="./resources/js/stationstuff.js"></script>
+	<script src="./resources/js/table.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   </head>
   <header>
@@ -28,7 +29,8 @@
 <script>
 $(function(){
   $("#nav-placeholder").load("nav.html");
-  $("#more").load("stations/stations.html #Stations");
+  CSVTable("data/stations.csv", "#more");
+  //$("#more").load("stations/stations.html #Stations");
   $("#tubemore").load("stations/tube.html #TubeStations");
   $("#dlrmore").load("stations/dlr.html #DLRStations");
   $("#orangemore").load("stations/orange.html #OrangeStations");
@@ -262,7 +264,7 @@ dump in a CSV (coming soon) because we can't be bothered to write them up proper
   </ul>
     </ol>
 
-<p id="BethNo">We have been on 9 Beth Adventure(s)</p>
+<p id="BethNo">We have been on 10 Beth Adventure(s)</p>
     <span id="bethdots"></span>
 
     <button onclick="BethMore()" id="BethMoreBtn">Show Beth Adventures</button>
