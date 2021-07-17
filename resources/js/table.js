@@ -1,5 +1,4 @@
 function CSVTable(csv, div){
-    var divtable = document.getElementById(div);
         var lines = csv.split("\n"), output = [], i;
 
         output.push("<tr><th>" 
@@ -14,5 +13,36 @@ function CSVTable(csv, div){
         output = "<table><tbody>" 
                     + output.join("") + "</tbody></table>";
 
-        divtable.innerHTML = output;}
+        div.innerHTML = output;}
+
+
+
+function CSVTable2(csv) {
+    var TableLines = csv.split(/\r\n|\n/);
+    var headers = TableLines[0].split(',');
+    var lines = [];
+
+    for (var i=1; i<TableLines.length; i++) {
+        var data = TableLines[i].split(',');
+        if (data.length == headers.length) {
+
+            var tarr = [];
+            for (var j=0; j<headers.length; j++) {
+                tarr.push(headers[j]+":"+data[j]);
+            }
+            lines.push(tarr);
+        }
+    }
+}
     
+function arrayToTable(tableData) {
+    var table = $('<table></table>');
+    $(tableData).each(function (i, rowData) {
+        var row = $('<tr></tr>');
+        $(rowData).each(function (j, cellData) {
+            row.append($('<td>'+cellData+'</td>'));
+        });
+        table.append(row);
+    });
+    return table;
+}
