@@ -16,7 +16,7 @@
 	<script src="./resources/js/parallax/parallax.min.js"></script>
 	<script src="./resources/js/countdown.js"></script>
 	<script src="./resources/js/stationstuff.js"></script>
-	<script src="./resources/js/table.js"></script>
+	<!--<script src="./resources/js/table.js"></script>-->
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="js/papaparse.min.js"></script>
   </head>
@@ -30,7 +30,7 @@
 <script>
 $(function(){
   $("#nav-placeholder").load("nav.html");
-  $("#more").load("data/stations.csv");
+  //$("#more").load("data/stations.csv");
   $("#tubemore").load("stations/tube.html #TubeStations");
   $("#dlrmore").load("stations/dlr.html #DLRStations");
   $("#orangemore").load("stations/orange.html #OrangeStations");
@@ -38,11 +38,20 @@ $(function(){
   $("#steammore").load("stations/steam.html #SteamStations");
   $("#ikeamore").load("stations/ikea.html #IKEA");
   $("#bethmore").load("stations/beth.html #Beth");
-  //$('#more').load(arrayToTable(Papa.parse("data/stations.csv", {complete: function(results) { }})));
-  ;
+  $('#more').load(arrayToTable(Papa.parse("data/stations.csv", {complete: function(results) { }})));
 });
 
-//CSVTable("data/stations.csv", "#more");
+function arrayToTable(tableData) {
+    var table = $('<table></table>');
+    $(tableData).each(function (i, rowData) {
+        var row = $('<tr></tr>');
+        $(rowData).each(function (j, cellData) {
+            row.append($('<td>'+cellData+'</td>'));
+        });
+        table.append(row);
+    });
+    return table;
+}
 </script>
 	
   <body onload = "myFunction()">
