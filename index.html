@@ -30,7 +30,7 @@
 <script>
 $(function(){
   $("#nav-placeholder").load("nav.html");
-  $("#more").load(CSVTable("data/stations.csv"));
+  //$("#more").load(CSVTable("data/stations.csv"));
   $("#tubemore").load("stations/tube.html #TubeStations");
   $("#dlrmore").load("stations/dlr.html #DLRStations");
   $("#orangemore").load("stations/orange.html #OrangeStations");
@@ -38,7 +38,7 @@ $(function(){
   $("#steammore").load("stations/steam.html #SteamStations");
   $("#ikeamore").load("stations/ikea.html #IKEA");
   $("#bethmore").load("stations/beth.html #Beth");
-  //$('#more').load(arrayToTable(Papa.parse("data/stations.csv", {complete: function(results) { }})));
+  $('#more').load(arrayToTable(Papa.parse("data/stations.csv", {complete: function(results) { }})));
   ;
 });
 
