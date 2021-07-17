@@ -9,3 +9,13 @@ function arrayToTable(tableData) {
     });
     return table;
 }
+
+function getAjax(CSV, Div) {
+    $.ajax({
+        type: "GET",
+        url: CSV,
+        success: function (data) {
+            $(Div).append(arrayToTable(Papa.parse(data).data));
+        }
+    });
+  }

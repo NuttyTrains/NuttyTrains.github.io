@@ -38,18 +38,7 @@ $(function(){
   $("#steammore").load("stations/steam.html #SteamStations");
   $("#ikeamore").load("stations/ikea.html #IKEA");
   $("#bethmore").load("stations/beth.html #Beth");
-  //$("#more").append(arrayToTable(Papa.parse("data/stations.csv", {download: true, complete: function(results) {}}).data));
 });
-
-function getAjax(CSV, Div) {
-    $.ajax({
-        type: "GET",
-        url: CSV,
-        success: function (data) {
-            $(Div).append(arrayToTable(Papa.parse(data).data));
-        }
-    });
-  }
 
 getAjax("data/stations.csv", "#more");
 </script>
