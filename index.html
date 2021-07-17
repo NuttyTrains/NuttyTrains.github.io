@@ -41,17 +41,17 @@ $(function(){
   //$("#more").append(arrayToTable(Papa.parse("data/stations.csv", {download: true, complete: function(results) {}}).data));
 });
 
-function getAjax() {
+function getAjax(CSV) {
     $.ajax({
         type: "GET",
-        url: "data/stations.csv",
+        url: CSV,
         success: function (data) {
             $('#more').append(arrayToTable(Papa.parse(data).data));
         }
     });
   }
 
-getAjax();
+getAjax("data/stations.csv");
 </script>
 	
   <body onload = "myFunction()">
