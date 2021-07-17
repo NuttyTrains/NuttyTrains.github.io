@@ -38,7 +38,7 @@ $(function(){
   $("#steammore").load("stations/steam.html #SteamStations");
   $("#ikeamore").load("stations/ikea.html #IKEA");
   $("#bethmore").load("stations/beth.html #Beth");
-  $("#more").append(arrayToTable(Papa.parse("data/stations.csv", {download: true,}).data));
+  $("#more").append(arrayToTable(Papa.parse("data/stations.csv", {download: true, complete: function(results) {}}).data));
 });
 
 
