@@ -38,17 +38,17 @@ $(function(){
   $("#steammore").load("stations/steam.html #SteamStations");
   $("#ikeamore").load("stations/ikea.html #IKEA");
   $("#bethmore").load("stations/beth.html #Beth");
-  //$('#more').load(arrayToTable(Papa.parse("data/stations.csv", {complete: function(results) { }})));
+  $("#more").append(arrayToTable(Papa.parse("data/stations.csv").data));
 });
 
 
-$.ajax({
-        type: "GET",
-        url: "data/stations.csv",
-        success: function (data) {
-            $('#more').append(arrayToTable(Papa.parse(data).data));
-        }
-    });
+//$.ajax({
+//        type: "GET",
+//        url: "data/stations.csv",
+//        success: function (data) {
+//            $('#more').append(arrayToTable(Papa.parse(data).data));
+//        }
+//    });
 
 function arrayToTable(tableData) {
     var table = $('<table></table>');
