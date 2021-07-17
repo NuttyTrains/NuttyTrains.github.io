@@ -16,7 +16,9 @@
 	<script src="./resources/js/parallax/parallax.min.js"></script>
 	<script src="./resources/js/chockclock2.js"></script>
 	<script src="./resources/js/stationstuff.js"></script>
+	<script src="./resources/js/table.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
   </head>
   <header>
       <h1>
@@ -28,8 +30,9 @@
 <script>
 $(function(){
   $("#nav3-placeholder").load("nav3.html");
-  $("#chockmore").load("stations/¬stations.html #Chock");
 });
+
+getAjax("data/¬stations.csv", "#chockmore");
 </script>
 	
   <body onload = "myFunction()">
