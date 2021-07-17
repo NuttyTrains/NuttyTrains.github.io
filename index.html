@@ -29,7 +29,6 @@
 <script>
 $(function(){
   $("#nav-placeholder").load("nav.html");
-  CSVTable("data/stations.csv", "#more");
   //$("#more").load("stations/stations.html #Stations");
   $("#tubemore").load("stations/tube.html #TubeStations");
   $("#dlrmore").load("stations/dlr.html #DLRStations");
@@ -39,6 +38,8 @@ $(function(){
   $("#ikeamore").load("stations/ikea.html #IKEA");
   $("#bethmore").load("stations/beth.html #Beth");
 });
+
+CSVTable("data/stations.csv", "#more");
 </script>
 	
   <body onload = "myFunction()">
