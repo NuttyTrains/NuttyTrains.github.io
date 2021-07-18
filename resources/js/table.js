@@ -3,11 +3,16 @@ function arrayToTable(tableData, Num) {
     $(tableData).each(function (i, rowData) {
         var row = $('<tr></tr>');
         $(rowData).each(function (j, cellData) {
-            if (j<Num){
-            row.append($('<td>'+cellData+'</td>'));
+            if (i == 0){
+                row.append($('<th>'+cellData+'</th>'));
             }
-            else{
-            row.append($('<td>'+cellData.split("//").join('<br>')+'</td>'));
+            else {
+                if (j<Num){
+                row.append($('<td>'+cellData+'</td>'));
+                }
+                else{
+                row.append($('<td>'+cellData.split("//").join('<br>')+'</td>'));
+                }
             }
         });
         table.append(row);
