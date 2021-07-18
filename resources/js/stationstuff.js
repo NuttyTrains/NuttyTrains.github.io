@@ -14,20 +14,21 @@ function More2() {
     moreText.style.display = "inline";
   }
 }
-function More(dots, moreText, btnText, writing) {
-  //var dots = document.getElementById("dots");
-  //var moreText = document.getElementById("more");
-  //var btnText = document.getElementById("MoreBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Show " + writing; 
-    moreText.style.display = "none";
+function More(dots, moreText, btnText, writing) {
+  var dots1 = document.getElementById(dots);
+  var moreText1 = document.getElementById(moreText);
+  var btnText1 = document.getElementById(btnText);
+
+  if (dots1.style.display === "none") {
+    dots1.style.display = "inline";
+    btnText1.innerHTML = "Show " + writing; 
+    moreText1.style.display = "none";
   } 
   else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Hide " + writing; 
-    moreText.style.display = "inline";
+    dots1.style.display = "none";
+    btnText1.innerHTML = "Hide " + writing; 
+    moreText1.style.display = "inline";
   }
 }
 
