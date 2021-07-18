@@ -25,8 +25,9 @@ function getAjax(CSV, Div, Num, Div2, No1, No2) {
         type: "GET",
         url: CSV,
         success: function (data) {
-            $(Div).append(arrayToTable(Papa.parse(data).data, Num));
-            $(Div2).append(tableLength(Papa.parse(data).data, No1, No2));
+            Table = Papa.parse(data).data
+            $(Div).append(arrayToTable(Table, Num));
+            $(Div2).append(tableLength(Table, No1, No2));
         }
     });
   }
