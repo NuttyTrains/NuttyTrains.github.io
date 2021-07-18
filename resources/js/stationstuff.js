@@ -1,4 +1,4 @@
-function More() {
+function More2() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("MoreBtn");
@@ -14,10 +14,10 @@ function More() {
     moreText.style.display = "inline";
   }
 }
-function More2(dots, moreText, btnText, writing) {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("MoreBtn");
+function More(dots, moreText, btnText, writing) {
+  //var dots = document.getElementById("dots");
+  //var moreText = document.getElementById("more");
+  //var btnText = document.getElementById("MoreBtn");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";

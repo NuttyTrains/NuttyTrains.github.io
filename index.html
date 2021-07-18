@@ -117,7 +117,7 @@ getAjax("data/beth.csv", "#bethmore", 6, "#BethNo", "We have been on ", " Beth A
 
     <span id="dots"></span>
  
-    <button onclick="More2('#dots', '#more', '#MoreBtn', 'Station List')" id="MoreBtn">Show Station List</button>
+    <button onclick="More('#dots', '#more', '#MoreBtn', 'Station List')" id="MoreBtn">Show Station List</button>
     <span id="more">
     </span>
 
@@ -171,28 +171,28 @@ getAjax("data/beth.csv", "#bethmore", 6, "#BethNo", "We have been on ", " Beth A
 
     <span id="tubedots"></span>
  
-    <button onclick="TubeMore()" id="TubeMoreBtn">Show Tube Station List</button>
+    <button onclick="More('#tubedots', '#tubemore', '#TubeMoreBtn', 'Tube Station List')" id="TubeMoreBtn">Show Tube Station List</button>
     <span id="tubemore">
      </span>
 
 <br><br>
 <span id="dlrdots"></span>
  
-    <button onclick="DLRMore()" id="DLRMoreBtn" class="complete">Show DLR Station List</button>
+    <button onclick="More('#dlrdots', '#dlrmore', '#DLRMoreBtn', 'DLR Station List')" id="DLRMoreBtn" class="complete">Show DLR Station List</button>
     <span id="dlrmore">
      </span>
 
 <br><br>
 <span id="orangedots"></span>
  
-    <button onclick="OrangeMore()" id="OrangeMoreBtn">Show Overground Station List</button>
+    <button onclick="More('#orangedots', '#orangemore', '#OrangeMoreBtn', 'Overground Station List')" id="OrangeMoreBtn">Show Overground Station List</button>
     <span id="orangemore">
      </span>
 
 <br><br>
 <span id="purpdots"></span>
  
-    <button onclick="PurpMore()" id="PurpMoreBtn">Show Purple Station List</button>
+    <button onclick="More('#purpdots', '#purpmore', '#PurpMoreBtn', 'Purple Station List')" id="PurpMoreBtn">Show Purple Station List</button>
     <span id="purpmore">
      </span>
 
@@ -215,7 +215,7 @@ before! But realistically, this is just an excuse to ride more steam trains.</p>
 <p id="SteamNo"></p>
     <span id="steamdots"></span>
  
-    <button onclick="SteamMore()" id="SteamMoreBtn">Show Heritage Station List</button>
+    <button onclick="More('#steamdots', '#steammore', '#SteamMoreBtn', 'Heritage Station List')" id="SteamMoreBtn">Show Heritage Station List</button>
     <span id="steammore">
      </span>
 
@@ -247,7 +247,7 @@ before! But realistically, this is just an excuse to ride more steam trains.</p>
 <p id="IkeaNo"></p>
     <span id="ikeadots"></span>
  
-    <button onclick="IkeaMore()" id="IkeaMoreBtn">Show IKEA List</button>
+    <button onclick="More('#ikeadots', '#ikeamore', '#IkeaMoreBtn', 'IKEA List')" id="IkeaMoreBtn">Show IKEA List</button>
     <span id="ikeamore">
      </span>
 
@@ -268,7 +268,7 @@ dump in a CSV (coming soon) because we can't be bothered to write them up proper
 <p id="BethNo"></p>
     <span id="bethdots"></span>
 
-    <button onclick="BethMore()" id="BethMoreBtn">Show Beth Adventures</button>
+    <button onclick="More('#bethdots', '#bethmore', '#BethMoreBtn', 'Beth Adventures')" id="BethMoreBtn">Show Beth Adventures</button>
     <span id="bethmore">
     </span>
 
