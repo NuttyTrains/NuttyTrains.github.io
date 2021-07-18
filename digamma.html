@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"/>
 	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
-	<script src="./resources/js/collapsible.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   </head>
   <header>
@@ -164,6 +163,22 @@ $(function(){
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </center> <br>
   <center><iframe frameborder="0" height="720px" width="1280px" src="https://www.youtube.com/embed/F8sjgiwHyK8" allowfullscreen></iframe> </center>
 </div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+</script>
 
 </body>
 </html>
