@@ -32,14 +32,14 @@ $(function(){
   $("#nav-placeholder").load("nav.html");
 });
 
-getAjax("data/stations.csv", "#more", 6);
-getAjax("data/tube.csv", "#tubemore", 4);
-getAjax("data/dlr.csv", "#dlrmore", 6);
-getAjax("data/orange.csv", "#orangemore", 4);
-getAjax("data/purp.csv", "#purpmore", 6);
-getAjax("data/steam.csv", "#steammore", 6);
-getAjax("data/ikea.csv", "#ikeamore", 3);
-getAjax("data/beth.csv", "#bethmore", 6);
+getAjax("data/stations.csv", "#more", 6, "#StationNo", "We have visited ", " Stations");
+getAjax("data/tube.csv", "#tubemore", 4, "#TubeNo", "We have visited ", " Tube Stations");
+getAjax("data/dlr.csv", "#dlrmore", 6, "#DLRNo", "We have visited ", " DLR Stations");
+getAjax("data/orange.csv", "#orangemore", 4, "#OrangeNo", "We have visited ", " Overground Stations");
+getAjax("data/purp.csv", "#purpmore", 6, "#PurpNo", "We have visited ", " Lizzie Line Stations");
+getAjax("data/steam.csv", "#steammore", 6, "#SteamNo", "We have visited ", " Heritage Railway Stations");
+getAjax("data/ikea.csv", "#ikeamore", 3, "#IkeaNo", "We have visited ", " IKEAs");
+getAjax("data/beth.csv", "#bethmore", 6, "#BethNo", "We have been on ", " Beth Adventures");
 </script>
 	
   <body onload = "myFunction()">
@@ -112,7 +112,7 @@ getAjax("data/beth.csv", "#bethmore", 6);
   </div>
 
 	<div id="box100">  
-    <p id="StationNo" class="LatestNR">We have visited 202 Stations</p>
+    <p id="StationNo"></p>
   </div>
 
     <span id="dots"></span>
@@ -163,10 +163,10 @@ getAjax("data/beth.csv", "#bethmore", 6);
 </div>
 
 <div id="box100">
-<p id="TubeStationNo">We have visited 160 Tube Stations</p>
-<p id="DLRStationNo">We have visited 45 DLR Stations</p>
-<p id="OrangeStationNo">We have visited 13 Overground Stations</p>
-<p id="PurpStationNo">We have visited 5 Lizzie Line Stations</p>
+<p id="TubeNo"></p>
+<p id="DLRNo"></p>
+<p id="OrangeNo"></p>
+<p id="PurpNo"></p>
 </div>
 
     <span id="tubedots"></span>
@@ -212,7 +212,7 @@ before! But realistically, this is just an excuse to ride more steam trains.</p>
 	    <li> We must also take a photo of our locomotive </li>
     </ol>
 
-<p id="SteamNo">We have visited 3 Heritage Railway Stations</p>
+<p id="SteamNo"></p>
     <span id="steamdots"></span>
  
     <button onclick="SteamMore()" id="SteamMoreBtn">Show Heritage Station List</button>
@@ -244,7 +244,7 @@ before! But realistically, this is just an excuse to ride more steam trains.</p>
      <li> We are allowed to leave in the manner in which we arrived, or take the bus. That doesn't matter </li>
     </ol>
 
-<p id="IkeaNo">We have visited 2 IKEAs</p>
+<p id="IkeaNo"></p>
     <span id="ikeadots"></span>
  
     <button onclick="IkeaMore()" id="IkeaMoreBtn">Show IKEA List</button>
@@ -265,7 +265,7 @@ dump in a CSV (coming soon) because we can't be bothered to write them up proper
   </ul>
     </ol>
 
-<p id="BethNo">We have been on 10 Beth Adventure(s)</p>
+<p id="BethNo"></p>
     <span id="bethdots"></span>
 
     <button onclick="BethMore()" id="BethMoreBtn">Show Beth Adventures</button>

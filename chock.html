@@ -32,7 +32,7 @@ $(function(){
   $("#nav3-placeholder").load("nav3.html");
 });
 
-getAjax("data/¬stations.csv", "#chockmore", 6);
+getAjax("data/¬stations.csv", "#chockmore", 6, "#ChockNo", "We visited ", " ¬Stations");
 </script>
 	
   <body onload = "myFunction()">
@@ -85,7 +85,7 @@ a plan... well, Matthew did, at 2am, on a walk. Now that local, non-public-trans
      </li>
     </ol>
 
-<p id="ChockNo">We visited 59 ¬Stations</p>
+<p id="ChockNo"></p>
     <span id="chockdots"></span>
  
     <button onclick="ChockMore()" id="ChockMoreBtn">Show Chock Station List</button>

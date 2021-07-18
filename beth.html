@@ -31,7 +31,7 @@ $(function(){
   $("#nav-placeholder").load("nav.html");
 });
 
-getAjax("data/beth.csv", "#bethmore", 6);
+getAjax("data/beth.csv", "#bethmore", 6, "#BethNo", "We have been on ", " Beth Adventures");
 </script>
   <body>
     <h1 class= "spacing"> Beth Adventures </h1>
@@ -42,7 +42,7 @@ getAjax("data/beth.csv", "#bethmore", 6);
         because we can't be bothered to write them up properly. Coming soon to a pub/tube train/pub/dodgy street corner/pub near you!
       </p>
         
-        <p id="BethNo">We have been on 10 Beth Adventure(s)</p>
+        <p id="BethNo"></p>
             <span id="bethdots"></span>
         
             <button onclick="BethMore()" id="BethMoreBtn">Show Beth Adventures</button>

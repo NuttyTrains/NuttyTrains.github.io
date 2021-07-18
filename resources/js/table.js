@@ -15,39 +15,18 @@ function arrayToTable(tableData, Num) {
     return table;
 }
 
-function getAjax(CSV, Div, Num) {
+function tableLength(tableData, No1, No2) {
+    No = tableData.length - 1
+    return No1 + No + No2;
+}
+
+function getAjax(CSV, Div, Num, Div2, No1, No2) {
     $.ajax({
         type: "GET",
         url: CSV,
         success: function (data) {
             $(Div).append(arrayToTable(Papa.parse(data).data, Num));
-        }
-    });
-  }
-
-function arrayToTable45(tableData) {
-    var table = $('<table></table>');
-    $(tableData).each(function (i, rowData) {
-        var row = $('<tr></tr>');
-        $(rowData).each(function (j, cellData) {
-            if (j<4){
-            row.append($('<td>'+cellData+'</td>'));
-            }
-            else{
-            row.append($('<td>'+cellData.split("//").join('<br>')+'</td>'));
-            }
-        });
-        table.append(row);
-    });
-    return table;
-}
-
-function getAjax45(CSV, Div) {
-    $.ajax({
-        type: "GET",
-        url: CSV,
-        success: function (data) {
-            $(Div).append(arrayToTable45(Papa.parse(data).data));
+            $(Div2).append(tableLength(Papa.parse(data).data, No1, No2));
         }
     });
   }
