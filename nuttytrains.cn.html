@@ -33,7 +33,7 @@ $(function(){
   $("#nav2-placeholder").load("nav2.html");
 });
 
-getAjax("data/stations.csv", "#more", 6, "#StationNo", "We have visited ", " 不好猫s");
+getAjax("data/stations.csv", "#cnmore", 6, "#CNStationNo", "We have visited ", " 不好猫s");
 </script>
 	
   <body onload = "myFunction()">
@@ -70,7 +70,7 @@ getAjax("data/stations.csv", "#more", 6, "#StationNo", "We have visited ", " 不
      <li> 不好猫, 不好猫. </li>
     </ol> 
 	  
-    <p id="StationNo"></p>
+    <p id="CNStationNo"></p>
     <span id="cndots"> </span>
  
     <button onclick="More('cndots', 'cnmore', 'CNMoreBtn', '不好猫')" id="CNMoreBtn">Show 不好猫</button>
