@@ -14,10 +14,21 @@ function More() {
     moreText.style.display = "inline";
   }
 }
+function More2(dots, moreText, btnText, writing) {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("MoreBtn");
 
-function StationNumber() {
-  var x = document.getElementById("Stations").rows.length -1;
-    return "We have visited " + x + " stations";
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Show " + writing; 
+    moreText.style.display = "none";
+  } 
+  else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Hide " + writing; 
+    moreText.style.display = "inline";
+  }
 }
 
 function TubeMore() {
@@ -37,11 +48,6 @@ function TubeMore() {
   }
 }
 
-function TubeStationNumber() {
-  var x = document.getElementById("TubeStations").rows.length -1;
-    return "We have visited " + x + " Tube Stations";
-}
-
 function DLRMore() {
   var dlrdots = document.getElementById("dlrdots");
   var dlrmoreText = document.getElementById("dlrmore");
@@ -57,11 +63,6 @@ function DLRMore() {
     dlrbtnText.innerHTML = "Hide DLR Station List"; 
     dlrmoreText.style.display = "inline";
   }
-}
-
-function DLRStationNumber() {
-  var x = document.getElementById("DLRStations").rows.length -1;
-    return "We have visited " + x + " DLR Stations";
 }
 
 function OrangeMore() {
@@ -81,11 +82,6 @@ function OrangeMore() {
   }
 }
 
-function OrangeStationNumber() {
-  var x = document.getElementById("OrangeStations").rows.length -1;
-    return "We have visited " + x + " Overground Stations";
-}
-
 function PurpMore() {
   var purpdots = document.getElementById("purpdots");
   var purpmoreText = document.getElementById("purpmore");
@@ -101,11 +97,6 @@ function PurpMore() {
     purpbtnText.innerHTML = "Hide Purple Station List"; 
     purpmoreText.style.display = "inline";
   }
-}
-
-function PurpStationNumber() {
-  var x = document.getElementById("PurpStations").rows.length -1;
-    return "We have visited " + x + " Elizabeth Line Stations";
 }
 
 function SteamMore() {
@@ -125,11 +116,6 @@ function SteamMore() {
   }
 }
 
-function SteamStationNumber() {
-  var x = document.getElementById("SteamStations").rows.length -1;
-    return "We have visited " + x + " Heritage Stations";
-}
-
 function IkeaMore() {
   var ikeadots = document.getElementById("ikeadots");
   var ikeamoreText = document.getElementById("ikeamore");
@@ -145,11 +131,6 @@ function IkeaMore() {
     ikeabtnText.innerHTML = "Hide IKEA List"; 
     ikeamoreText.style.display = "inline";
   }
-}
-
-function IkeaNumber() {
-  var x = document.getElementById("IKEA").rows.length -1;
-    return "We have visited " + x + " IKEAs";
 }
 
 function ChockMore() {
@@ -169,11 +150,6 @@ function ChockMore() {
   }
 }
 
-function ChockNumber() {
-  var x = document.getElementById("Chock").rows.length -1;
-    return "We have visited " + x + " Stations during The Chock<sup>TM</sup>";
-}
-
 function BethMore() {
   var bethdots = document.getElementById("bethdots");
   var bethmoreText = document.getElementById("bethmore");
@@ -189,9 +165,4 @@ function BethMore() {
     bethbtnText.innerHTML = "Hide Beth Adventures"; 
     bethmoreText.style.display = "inline";
   }
-}
-
-function BethNumber() {
-  var x = document.getElementById("Beth").rows.length -1;
-    return "We have been on " + x + " Beth Adventures";
 }
