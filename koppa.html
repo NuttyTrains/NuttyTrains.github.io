@@ -1233,8 +1233,8 @@ d3.text("./data/tubeStations.csv", function(data) {
 								popup
 									.setLatLng(e.latlng)
 									.setContent(
-										'We visited ' + this.options.name + ', on the ' + this.options.line.split(' ').join(', ') + 
-										' line(s) during ' + _.uniq(this.options.edition.split(' ')).join(' and ') + ' (' + this.options.date + '). '
+										'We visited ' + this.options.name + ', on the ' + this.options.line.split('/').join(', ') + 
+										' line(s) during ' + _.uniq(this.options.edition.split('/')).join(' and ') + ' (' + this.options.date + '). '
 										)
 									// Nota Optime! This is going to backfire horribly once we have the separate CSVs for each mode - you will need to come back and fix this!
 									.openOn(mymap);
