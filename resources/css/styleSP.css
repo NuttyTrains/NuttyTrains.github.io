@@ -73,6 +73,13 @@ ol, ul {
   display: none;
 }
 
+#more tr td:nth-child(0), #more th:nth-child(0), #more tr td:nth-child(3), #more th:nth-child(3), #tubemore tr td:nth-child(0), #tubemore th:nth-child(0), 
+#dlrmore tr td:nth-child(0), #dlrmore th:nth-child(0), #dlrmore tr td:nth-child(4), #dlrmore th:nth-child(4), #orangemore tr td:nth-child(0), #orangemore th:nth-child(0), 
+#purpmore tr td:nth-child(0), #purpmore th:nth-child(0), #purpmore tr td:nth-child(4), #purpmore th:nth-child(4), #cnmore tr td:nth-child(0), #cnmore th:nth-child(0) {
+  display: none !important;
+  visibility: hidden !important;
+}
+
 button {
   background-color: rgba(105,254,50,1); 
   border: none;
