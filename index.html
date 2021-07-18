@@ -32,14 +32,14 @@ $(function(){
   $("#nav-placeholder").load("nav.html");
 });
 
-getAjax("data/stations.csv", "#more");
-getAjax45("data/tube.csv", "#tubemore");
-getAjax("data/dlr.csv", "#dlrmore");
-getAjax45("data/orange.csv", "#orangemore");
-getAjax("data/purp.csv", "#purpmore");
-getAjax("data/steam.csv", "#steammore");
-getAjax("data/ikea.csv", "#ikeamore");
-getAjax("data/beth.csv", "#bethmore");
+getAjax("data/stations.csv", "#more", 6);
+getAjax("data/tube.csv", "#tubemore", 4);
+getAjax("data/dlr.csv", "#dlrmore", 6);
+getAjax("data/orange.csv", "#orangemore", 4);
+getAjax("data/purp.csv", "#purpmore", 6);
+getAjax("data/steam.csv", "#steammore", 6);
+getAjax("data/ikea.csv", "#ikeamore", 3);
+getAjax("data/beth.csv", "#bethmore", 6);
 </script>
 	
   <body onload = "myFunction()">
