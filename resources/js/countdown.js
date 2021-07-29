@@ -1,4 +1,4 @@
-var Xi2 = new Date("Jul 29, 2021 12:00:00").getTime();
+var Xi2 = new Date("Jul 29, 2021 13:00:00").getTime();
 var Koppa6 = new Date("Aug 1, 2021 11:00:00").getTime();
 
 var x = setInterval(function() {
