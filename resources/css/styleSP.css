@@ -64,9 +64,13 @@ th,td {
 
 ol, ul {
   font-family: Raleway;
-  font-size: 1.25em;
+  font-size: 1.3em;
   line-height: 200%;
   color: rgb(42, 55, 69);
+}
+
+ol ul {
+  font-size: 1em;
 }
 
 #more, #tubemore, #dlrmore, #orangemore, #purpmore, #ikeamore, #chockmore, #steammore, #bethmore, #cnmore {
