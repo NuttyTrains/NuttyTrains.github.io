@@ -1,55 +1,39 @@
-var Xi2 = new Date("Jul 29, 2021 13:00:00").getTime();
-var Koppa6 = new Date("Aug 1, 2021 11:00:00").getTime();
+var Xi3 = new Date("Aug 14, 2021 09:00:00").getTime();
+var Koppa7 = new Date("Aug 15, 2021 10:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
-  var distanceX2 = (Xi2 - now)/1000;
-  var distanceK6 = (Koppa6 - now)/1000;
+  var distanceX3 = (Xi3 - now)/1000;
+  var distanceK7 = (Koppa7 - now)/1000;
 
-  var daysX2 = Math.ceil(distanceX2 / (86400));
-  var hoursX2 = Math.ceil(distanceX2 / (3600));
-  var elapsedX2 = -1*hoursX2;
-  var hoursK6 = Math.ceil(distanceK6 / (3600));
-  var elapsedK6 = -1*hoursK6;
+  var daysX3 = Math.ceil(distanceX3 / (86400));
+  var hoursX3 = Math.ceil(distanceX3 / (3600));
+  var elapsedX3 = -1*hoursX3;
+  var hoursK7 = Math.ceil(distanceK7 / (3600));
+  var elapsedK7 = -1*hoursK7;
 
-  if (daysX2 > 1) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The next train to arrive at PLATFORM DAI in " + daysX2 + " days is the XI 2 service to OXFORD, calling at ISIS, PUNTING, WOZZA, and THE MIDNIGHT TRAIN.";
+  if (daysX3 > 1) {
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The next train to arrive at PLATFORM DAI in " + daysX3 + " days is the XI 3 service to CAMBRIDGE, calling at LONDON, SOME PLACES ON THE WAY TO CAMBRIDGE, DEPRESSION, and DEATH.";
   }
  
-  else if (hoursX2 > 0) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The train arriving at PLATFORM DAI in " + hoursX2 + " hours is the XI 2 service to OXFORD, calling at ISIS, PUNTING, WOZZA, and THE MIDNIGHT TRAIN.";
+  else if (hoursX3 > 0) {
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The train arriving at PLATFORM DAI in " + hoursX3 + " hours is the XI 3 service to CAMBRIDGE, calling at LONDON, SOME PLACES ON THE WAY TO CAMBRIDGE, DEPRESSION, and DEATH.";
   }
  
-  else if (hoursX2 > -4) {
-    document.getElementById("countdown").innerHTML = "We are " + elapsedX2 + " hours into XI 2! The train arriving at PLATFORM DAI is the XI 2 service to OXFORD, calling at ISIS, CYCLING, and ISLIP (AGAIN).";
+  else if (hoursX3 > -10) {
+    document.getElementById("countdown").innerHTML = "We are " + elapsedX3 + " hours into XI 3! The train arriving at PLATFORM DAI is the XI 3 service to CAMBRIDGE, calling at LONDON, SOME PLACES ON THE WAY TO CAMBRIDGE, DEPRESSION, and DEATH.";
   }
 
-  else if (hoursX2 > -9) {
-    document.getElementById("countdown").innerHTML = "We are " + elapsedX2 + " hours into XI 2! The train arriving at PLATFORM DAI is the XI 2 service to HEREFORD, calling at JEZZA'S FARM, SHITTY LITTLE COTSWOLDS STATIONS and WOZZA.";
+  else if (hoursK7 > 0) {
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The train arriving at PLATFORM DAI in " + hoursK7 + " hours is the KOPPA 7 service to SOMEWHERE ELSE IN LONDON, calling SAAAAF A DA RIVVA at TRAMS, IKEA and BOWIS BIKES.";
   }
 
-  else if (hoursX2 > -13) {
-    document.getElementById("countdown").innerHTML = "We are " + elapsedX2 + " hours into XI 2! The train arriving at PLATFORM DAI is the XI 2 service back to OXFORD, calling at WOZZA, JEZZA'S FARM, and THE MIDNIGHT TRAIN.";
-  }
- 
-  else if (hoursX2 > -20) {
-    document.getElementById("countdown").innerHTML = "We are " + elapsedX2 + " hours into XI 2! The train arriving at PLATFORM DAI is the XI 2 service to SLEEP, calling at SLEEP, SLEEP and SLEEP.";
-  }
- 
-  else if (hoursX2 > -30) {
-    document.getElementById("countdown").innerHTML = "We are " + elapsedX2 + " hours into XI 2! The train arriving at PLATFORM DAI is the XI 2 service to OXFORD, calling at ISIS, PUNTING and DIDCOT (MAYBE).";
-  }
-
-  else if (hoursK6 > 0) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The train arriving at PLATFORM DAI in " + hoursK6 + " hours is the KOPPA 6 service to SOMEWHERE IN LONDON, calling at BOWIS, DEL BOY, GLORIOUS LEADER KIM, and MAYBE SOME OTHER PLACES, IDK.";
-  }
-
-  else if (hoursK6 > -8) {
-    document.getElementById("countdown").innerHTML = "We are " + elapsedK6 + " hours into KOPPA 6! The train arriving at PLATFORM DAI is the KOPPA 6 service to SOMEWHERE IN LONDON, calling at BOWIS, DEL BOY, GLORIOUS LEADER KIM, and MAYBE SOME OTHER PLACES, IDK.";
+  else if (hoursK7 > -8) {
+    document.getElementById("countdown").innerHTML = "We are " + elapsedK7 + " hours into KOPPA 6! The train arriving at PLATFORM DAI is the KOPPA 7 service to SOMEWHERE ELSE IN LONDON, calling SAAAAF A DA RIVVA at TRAMS, IKEA and BOWIS BIKES.";
   }
 
   else {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The next train to arrive at PLATFORM DAI is the XI 3 service to CAMBRIDGE, calling at DEPRESSION, DEPRESSION, DEPRESSION and DEATH.";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The next train to arrive at PLATFORM DAI is the XI 4 service to CAMBRIDGE, calling at HONESTLY, FUCK KNOWS - HOW ARE WE ALREADY ON XI 4?";
   }
 
 },1);
