@@ -73,13 +73,14 @@ ol ul {
   font-size: 1em;
 }
 
-#more, #tubemore, #dlrmore, #orangemore, #purpmore, #ikeamore, #chockmore, #steammore, #bethmore, #cnmore {
+#more, #tubemore, #dlrmore, #orangemore, #purpmore, #trammore, #ikeamore, #chockmore, #steammore, #bethmore, #cnmore {
   display: none;
 }
 
 #more tr td:nth-child(1), #more th:nth-child(1), #more tr td:nth-child(4), #more th:nth-child(4), #tubemore tr td:nth-child(1), #tubemore th:nth-child(1), 
 #dlrmore tr td:nth-child(1), #dlrmore th:nth-child(1), #dlrmore tr td:nth-child(5), #dlrmore th:nth-child(5), #orangemore tr td:nth-child(1), #orangemore th:nth-child(1), 
-#purpmore tr td:nth-child(1), #purpmore th:nth-child(1), #purpmore tr td:nth-child(5), #purpmore th:nth-child(5), #cnmore tr td:nth-child(1), #cnmore th:nth-child(1) {
+#purpmore tr td:nth-child(1), #purpmore th:nth-child(1), #purpmore tr td:nth-child(5), #purpmore th:nth-child(5), #trammore tr td:nth-child(1), #trammore th:nth-child(1), 
+#trammore tr td:nth-child(5), #trammore th:nth-child(5), #cnmore tr td:nth-child(1), #cnmore th:nth-child(1) {
   display: none !important;
   visibility: hidden !important;
 }
