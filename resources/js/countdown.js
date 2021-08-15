@@ -25,15 +25,15 @@ var x = setInterval(function() {
   }
 
   else if (hoursK7 > 0) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The train arriving at PLATFORM DAI in " + hoursK7 + " hours is the KOPPA 7 service to SOMEWHERE ELSE IN LONDON, calling SAAAAF A DA RIVVA at TRAMS, IKEA and BOWIS BIKES.";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The train arriving at PLATFORM DAI in " + hoursK7 + " hours is the KOPPA 7 service to SAAAAF LONDON, calling at NORTHERN LINE, TRAMS, CROYDON, and IKEA";
   }
 
   else if (hoursK7 > -8) {
-    document.getElementById("countdown").innerHTML = "We are " + elapsedK7 + " hours into KOPPA 6! The train arriving at PLATFORM DAI is the KOPPA 7 service to SOMEWHERE ELSE IN LONDON, calling SAAAAF A DA RIVVA at TRAMS, IKEA and BOWIS BIKES.";
+    document.getElementById("countdown").innerHTML = "We are " + elapsedK7 + " hours into KOPPA 7! The train arriving at PLATFORM DAI is the KOPPA 7 service to SAAAAF LONDON, calling at NORTHERN LINE, TRAMS, CROYDON, and IKEA.";
   }
 
   else {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The next train to arrive at PLATFORM DAI is the XI 4 service to CAMBRIDGE, calling at HONESTLY, FUCK KNOWS - HOW ARE WE ALREADY ON XI 4?";
+    document.getElementById("countdown").innerHTML = "Welcome to NT!";
   }
 
 },1);
