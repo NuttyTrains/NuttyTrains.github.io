@@ -38,6 +38,7 @@ getAjax("data/dlr.csv", "#dlrmore", 6, "#DLRNo", "We have visited ", " DLR Stati
 getAjax("data/orange.csv", "#orangemore", 4, "#OrangeNo", "We have visited ", " Overground Stations");
 getAjax("data/purp.csv", "#purpmore", 6, "#PurpNo", "We have visited ", " Lizzie Line Stations");
 getAjax("data/tram.csv", "#trammore", 6, "#TramNo", "We have visited ", " Tramlink Stations");
+getAjax("data/metro.csv", "#metromore", 6, "#MetroNo", "We have visited ", " Metro Stations");
 getAjax("data/steam.csv", "#steammore", 6, "#SteamNo", "We have visited ", " Heritage Railway Stations");
 getAjax("data/ikea.csv", "#ikeamore", 3, "#IkeaNo", "We have visited ", " IKEAs");
 getAjax("data/beth.csv", "#bethmore", 6, "#BethNo", "We have been on ", " Beth Adventures");
@@ -169,7 +170,7 @@ getAjax("data/beth.csv", "#bethmore", 6, "#BethNo", "We have been on ", " Beth A
      </li>
      <li> During peak hours, we ought to alight, switch carriages, and catch the next train </li>
      <li> We are allowed to use public transport (other than trains), to arrive or leave a station, but not both. We must arrive or leave on a train. </li>
-     <li> We are allowed to use any TfL heavy/light rail/tram service, provided we validly tick off the station. </li>
+     <li> We are allowed to use any TfL train/tram service, provided we validly tick off the station. </li>
      <li> These rules apply to: 
 	<ul> 
 	  <li> London Underground </li>
@@ -226,6 +227,37 @@ getAjax("data/beth.csv", "#bethmore", 6, "#BethNo", "We have been on ", " Beth A
     <button onclick="More('tramdots', 'trammore', 'TramMoreBtn', 'Tramlink Station List')" id="TramMoreBtn">Show Tramlink Station List</button>
     <span id="trammore">
     </span>
+
+
+<br><br>
+<p>Having separate rules for non-National rail services is all fine and dandy for London, but as we started to venture deeper into the north, we started meeting all sorts 
+  of weird and wonderful trams, metro and even tube services! What should we do with them? Well this is NT, of course we need to have separate rules/tables for them! 
+  To try and stop James' brain from exploding, Matthew has agreed to combine all the below metros into one giant frankentable. Good luck working this one out.</p>
+    
+  <ol>
+    <li> These rules are very similar to tube rules. To say we visited a metro station we must:
+      <ul> 
+        <li> Be on a train/tram that stops at the station </li>
+        <li> Take a photograph/video of the station sign </li>
+        <li> Touch the platform (unless exempt) </li>
+      </ul>
+   </li>
+   <li> We must arrive or leave on a train/tram. </li>
+   <li> We must take photos of ourselves in front of the station sign, when we arrive at notable stations (eg. termini)</li>
+   <li> Birmingham rules:
+      <ul> 
+        <li> The trams do not stop for long enough, so here we are exempt from touching the platform </li>
+      </ul>
+   </li>
+   <li> This table will be organised by city, and within each city, the stations will be organised numerically </li>
+  </ol> 
+
+<p id="MetroNo"></p>
+    <span id="metrodots"> </span>
+ 
+    <button onclick="More('metrodots', 'metromore', 'MetroMoreBtn', 'Metro Station List')" id="MetroMoreBtn">Show Metro Station List</button>
+    <span id="metromore">
+     </span>
 
 
 <br><br>
