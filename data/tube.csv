@@ -101,7 +101,7 @@ Heathrow Terminal 5,Heathrow Terminal 5,134,20/06/2021,Piccadilly,ϙ5
 Hendon Central,Hendon Central,198,29/08/2021,Northern,ϙ8
 High Barnet,High Barnet,214,29/08/2021,Northern,ϙ8
 Highgate,Highgate,207,29/08/2021,Northern,ϙ8
-High Street Kensington,HSK,66,01/02/2020,District,ϙ2
+High Street Kensington,HSK,66,01/02/2020,District//Circle,ϙ2//ϙ2
 Highbury & Islington,Highbury & Islington,87,01/02/2020,Victoria,ϙ2
 Holborn,Holborn,35,13/12/2019,Central//Piccadilly,ϙ1//ϙ1
 Holland Park,Holland Park,10,13/12/2019,Central,ϙ1
@@ -120,7 +120,7 @@ Kew Gardens,Kew Gardens,140,20/06/2021,District,ϙ5
 Kilburn,Kilburn,47,14/12/2019,Jubilee,ϙ1
 Kilburn Park,Kilburn Park,144,20/06/2021,Bakerloo,ϙ5
 Kingsbury,Kingsbury,191,29/08/2021,Jubilee,ϙ8
-King's Cross St. Pancras,King's Cross St Pancras,37,13/12/2019,Piccadilly//Circle//Metropolitan//Victoria//H&C,ϙ1//ϙ1//ϙ2//ϙ2//ϙ8
+King's Cross St. Pancras,King's Cross St Pancras,37,13/12/2019,Piccadilly//Circle//Metropolitan//Victoria//Northern//H&C,ϙ1//ϙ1//ϙ2//ϙ2//ϙ3//ϙ8
 Knightsbridge,Knightsbridge,109,24/04/2021,Piccadilly,ϙ4 
 Ladbroke Grove,Ladbroke Grove,154,20/06/2021,Circle,ϙ5
 Lambeth North,Lambeth North,185,15/08/2021,Bakerloo,ϙ7
@@ -133,7 +133,7 @@ Liverpool Street,Liverpool Street,61,31/01/2020,Circle//Central//Metropolitan//H
 London Bridge,London Bridge,22,13/12/2019,Jubilee//Northern,ϙ1//ϙ3
 Loughton,Loughton,220,30/08/2021,Central,ϙ8
 Maida Vale,Maida Vale,155,20/06/2021,Bakerloo,ϙ5
-Mansion House,Mansion House,56,31/01/2020,District,ϙ2
+Mansion House,Mansion House,56,31/01/2020,District//Circle,ϙ2//ϙ8
 Marble Arch,Marble Arch,29,13/12/2019,Central,ϙ1
 Marylebone,Marylebone,106,23/09/2020,Bakerloo,ϙ3
 Mile End,Mile End,63,31/01/2020,Central//District//H&C,ϙ2//ϙ8//ϙ8
@@ -160,7 +160,7 @@ Old Street,Old Street,102,23/09/2020,Northern,ϙ3
 Osterley,Osterley,128,20/06/2021,Piccadilly,ϙ5
 Oval,Oval,94,01/02/2020,Northern,ϙ2
 Oxford Circus,Oxford Circus,31,13/12/2019,Central//Bakerloo//Victoria,ϙ1//ϙ1//ϙ2
-Paddington (Met),Paddington (Legit),151,20/06/2021,Circle,ϙ5
+Paddington (Met),Paddington (Met),151,20/06/2021,Circle,ϙ5
 Paddington (Praed St),Paddington (Praed St),1,05/12/2016,Circle//Bakerloo,α2//ϙ3
 Parsons Green,Parsons Green,171,15/08/2021,District,ϙ7
 Perivale,Perivale,116,24/04/2021,Central,ϙ4 
@@ -204,7 +204,7 @@ Stanmore,Stanmore,194,29/08/2021,Jubilee,ϙ8
 Stepney Green,Stepney Green,236,30/08/2021,District//H&C,ϙ8//ϙ8
 Stockwell,Stockwell,92,01/02/2020,Victoria//Northern,ϙ2//ϙ2
 Stonebridge Park,Stonebridge Park,70,01/02/2020,Bakerloo,ϙ2
-Stratford,Stratford,64,31/01/2020,Central,ϙ2
+Stratford,Stratford,64,31/01/2020,Central//Jubilee,ϙ2//ϙ5
 Swiss Cottage,Swiss Cottage,49,14/12/2019,Jubilee,ϙ1
 Temple,Temple,18,13/12/2019,District//Circle,ϙ1//ϙ8
 Theydon Bois,Theydon Bois,222,30/08/2021,Central,ϙ8
@@ -226,7 +226,7 @@ Walthamstow Central,Walthamstow Central,86,01/02/2020,Victoria,ϙ2
 Wanstead,Wanstead,233,30/08/2021,Central,ϙ8
 Warren Street,Warren Street,89,01/02/2020,Victoria//Northern,ϙ2//ϙ5
 Warwick Avenue,Warwick Avenue,146,20/06/2021,Bakerloo,ϙ5
-Waterloo,Waterloo,24,13/12/2019,Jubilee//W&C//Bakerloo,ϙ1//ϙ2//ϙ2
+Waterloo,Waterloo,24,13/12/2019,Jubilee//W&C//Northern//Bakerloo,ϙ1//ϙ2//ϙ2//ϙ2
 Watford,Watford Met,161,01/08/2021,Metropolitan,ϙ6
 Wembley Central,Wembley Central,71,01/02/2020,Bakerloo,ϙ2
 Wembley Park,Wembley Park,43,14/12/2019,Metropolitan//Jubilee,ϙ1//ϙ1
