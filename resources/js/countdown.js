@@ -1,35 +1,23 @@
-var Xi4 = new Date("Aug 28, 2021 10:00:00").getTime();
-var Koppa8 = new Date("Aug 29, 2021 12:00:00").getTime();
+var Sampi7 = new Date("Sep 03, 2021 11:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
-  var distanceX4 = (Xi4 - now)/1000;
-  var distanceK8 = (Koppa8 - now)/1000;
+  var distanceS7 = (Sampi7 - now)/1000;
 
-  var daysX4 = Math.ceil(distanceX4 / (86400));
-  var hoursX4 = Math.ceil(distanceX4 / (3600));
-  var elapsedX4 = -1*hoursX4;
-  var hoursK8 = Math.ceil(distanceK8 / (3600));
-  var elapsedK8 = -1*hoursK8;
+  var daysS7 = Math.ceil(distanceS7 / (86400));
+  var hoursS7 = Math.ceil(distanceS7 / (3600));
+  var elapsedS7 = -1*hoursS7;
 
-  if (daysX4 > 1) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The next train to arrive at PLATFORM DAI in " + daysX4 + " days is the XI 4 service to BRUMMY, calling at OXFORD, WOZZA, STUPID TINY TRAIN, and CAT.";
+  if (daysS7 > 1) {
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The next train to arrive at PLATFORM DAI in " + daysS7 + " days is the SAMPI 7 service to GILFACH FARGOED, calling at TREHERBERT, PONTYPRIDD OFF-LICENCE, CAERPHILTHY CRACK-DEN and <a href='https://www.redbubble.com/i/shower-curtain/Pacer-Memorial-by-NuttyTrains/78376475.YH6LW'>THE PACER MEMORIAL<sup>TM</sup></a>";
   }
  
-  else if (hoursX4 > 0) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The train arriving at PLATFORM DAI in " + hoursX4 + " hours is the XI 4 service to BRUMMY, calling at OXFORD, WOZZA, STUPID TINY TRAIN, and CAT.";
+  else if (hoursS7 > 0) {
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The train arriving at PLATFORM DAI in " + hoursS7 + " hours is the SAMPI 7 service to GILFACH FARGOED, calling at TREHERBERT, PONTYPRIDD OFF-LICENCE, CAERPHILTHY CRACK-DEN and <a href='https://www.redbubble.com/i/shower-curtain/Pacer-Memorial-by-NuttyTrains/78376475.YH6LW'>THE PACER MEMORIAL<sup>TM</sup></a>";
   }
  
-  else if (hoursX4 > -13) {
-    document.getElementById("countdown").innerHTML = "We are " + elapsedX4 + " hours into XI 4! The train arriving at PLATFORM DAI is the XI 4 service to BRUMMY, calling at OXFORD, WOZZA, STUPID TINY TRAIN, and CAT.";
-  }
-
-  else if (hoursK8 > 0) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! The train arriving at PLATFORM DAI in " + hoursK8 + " hours is the KOPPA 8 service to ABANDONMENT, calling at MYSTERY TERMINUS 1, MYSTERY TERMINUS 2, BIKES, EAST LONDON, and SOME OTHER STUFF, IDK";
-  }
-
-  else if (hoursK8 > -48) {
-    document.getElementById("countdown").innerHTML = "We are " + elapsedK8 + " hours into KOPPA 8! The train arriving at PLATFORM DAI is the KOPPA 8 service to ABANDONMENT, calling at MYSTERY TERMINUS 1, MYSTERY TERMINUS 2, BIKES, EAST LONDON, and SOME OTHER STUFF, IDK";
+  else if (hoursS7 > -10) {
+    document.getElementById("countdown").innerHTML = "We are " + elapsedS7 + " hours into XI 4! The train arriving at PLATFORM DAI is the SAMPI 7 service to GILFACH FARGOED, calling at TREHERBERT, PONTYPRIDD OFF-LICENCE, CAERPHILTHY CRACK-DEN and <a href='https://www.redbubble.com/i/shower-curtain/Pacer-Memorial-by-NuttyTrains/78376475.YH6LW'>THE PACER MEMORIAL<sup>TM</sup></a>";
   }
 
   else {
