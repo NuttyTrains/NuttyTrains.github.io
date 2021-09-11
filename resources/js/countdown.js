@@ -20,8 +20,12 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "We are " + elapsedS7 + " hours into XI 4! The train arriving at PLATFORM DAI is the SAMPI 7 service to GILFACH FARGOED, calling at TREHERBERT, PONTYPRIDD OFF-LICENCE, CAERPHILTHY CRACK-DEN and <a href='https://www.redbubble.com/i/shower-curtain/Pacer-Memorial-by-NuttyTrains/78376475.YH6LW'>THE PACER MEMORIAL<sup>TM</sup></a>";
   }
 
+  //else {
+  //  document.getElementById("countdown").innerHTML = "Welcome to NT!";
+  //}
+
   else {
-    document.getElementById("countdown").innerHTML = "Welcome to NT!";
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The next train to arrive at PLATFORM DAI is the KOPPA 9 service to THE DLR, calling at LEWISHAM, STRATFORD, KING GEORGE V, GALLIONS REACH, BANK and MAYBE SOMEWHERE AFTER, IDK";
   }
 
 },60000);
