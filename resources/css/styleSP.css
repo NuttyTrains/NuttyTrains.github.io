@@ -224,6 +224,12 @@ h6 {
   padding-right: 1%;
 }
 
+#box30 {
+  width: 30%;
+  clear: none;
+  float: left;
+}
+
 #box35 {
   width: 35%;
   clear: right;
@@ -256,4 +262,13 @@ h6 {
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+
+.nexttrain, .nexttrain td, .nexttrain th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-collapse: collapse;
+  overflow: hidden;
+  padding: 10px 5px;
 }
