@@ -16,7 +16,9 @@
 	<script src="./resources/js/parallax/parallax.min.js"></script>
 	<script src="./resources/js/stationstuff.js"></script>
 	<script src="./resources/js/chockclock1.js"></script>
+	<script src="./resources/js/table.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 </head>
       
   <header>
@@ -29,8 +31,9 @@
 <script>
 $(function(){
   $("#nav2-placeholder").load("nav2.html");
-  $("#more").load("stations/stations.cn.html #Stations");
 });
+
+getAjax("data/stations.csv", "#cnmore", 6, "#CNStationNo", "We have visited ", " 不好猫s");
 </script>
 	
   <body onload = "myFunction()">
@@ -67,17 +70,17 @@ $(function(){
      <li> 不好猫, 不好猫. </li>
     </ol> 
 	  
-    <p id="StationNo"></p>
-    <span id="dots"></span>
+    <p id="CNStationNo"></p>
+    <span id="cndots"> </span>
  
-    <button onclick="More()" id="MoreBtn">Show 不好猫</button>
-    <span id="more">
+    <button onclick="More('cndots', 'cnmore', 'CNMoreBtn', '不好猫')" id="CNMoreBtn">Show 不好猫</button>
+    <span id="cnmore">
     </span>
 </div>
 
 
 <br><br>
-<center><img src="./resources/photos/NT I-XV.png" width="100%">
+<center><img src="./resources/photos/NT I-XXVIII.png" width="100%">
   <br><br>
   <img src="./resources/photos/NN2.gif" height="62px">
   <img src="./resources/photos/IE.gif" height="62px">
@@ -119,6 +122,6 @@ CV2.innerHTML = "不好猫";
 </script>
 
 <audio autoplay loop>
-<source src="./resources/Chinese Anthem.mp3" type="audio/mp3"></audio>
+<source src="./resources/audio/Chinese Anthem.mp3" type="audio/mp3"></audio>
 </body>
 </html>

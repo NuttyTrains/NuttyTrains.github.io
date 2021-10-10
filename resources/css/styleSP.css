@@ -64,13 +64,25 @@ th,td {
 
 ol, ul {
   font-family: Raleway;
-  font-size: 1.25em;
+  font-size: 1.3em;
   line-height: 200%;
   color: rgb(42, 55, 69);
 }
 
-#more, #tubemore, #dlrmore, #orangemore, #purpmore, #ikeamore, #chockmore, #steammore {
+ol ul {
+  font-size: 1em;
+}
+
+#more, #tubemore, #dlrmore, #orangemore, #purpmore, #trammore, #metromore, #ikeamore, #chockmore, #steammore, #bethmore, #cnmore {
   display: none;
+}
+
+#more tr td:nth-child(1), #more th:nth-child(1), #more tr td:nth-child(4), #more th:nth-child(4), #tubemore tr td:nth-child(1), #tubemore th:nth-child(1), 
+#dlrmore tr td:nth-child(1), #dlrmore th:nth-child(1), #dlrmore tr td:nth-child(5), #dlrmore th:nth-child(5), #orangemore tr td:nth-child(1), #orangemore th:nth-child(1), 
+#purpmore tr td:nth-child(1), #purpmore th:nth-child(1), #purpmore tr td:nth-child(5), #purpmore th:nth-child(5), #trammore tr td:nth-child(1), #trammore th:nth-child(1), 
+#trammore tr td:nth-child(5), #trammore th:nth-child(5), #metromore tr td:nth-child(1), #metromore th:nth-child(1), #cnmore tr td:nth-child(1), #cnmore th:nth-child(1) {
+  display: none !important;
+  visibility: hidden !important;
 }
 
 button {
@@ -174,11 +186,11 @@ h6 {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  background-color: #55c8c3;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 10px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 60%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -212,6 +224,18 @@ h6 {
   padding-right: 1%;
 }
 
+#box30 {
+  width: 30%;
+  clear: none;
+  float: left;
+}
+
+#box35 {
+  width: 35%;
+  clear: right;
+  float: right;
+}
+
 #box55 {
   width: 55%;
   clear: none;
@@ -227,4 +251,24 @@ h6 {
 #box100 {
   width: 100%;
   clear: both;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.nexttrain, .nexttrain td, .nexttrain th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-collapse: collapse;
+  overflow: hidden;
+  padding: 10px 5px;
 }

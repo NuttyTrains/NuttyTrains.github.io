@@ -20,13 +20,21 @@
 }
 
 .timeline::before {
-  background-color: black;
+  background-color: white;
   content: '';
   height: 100%;
   left: 50%;
   position: absolute;
   top: 0;
-  width: 3px;
+  width: 0px;
+  border-style: dotted;
+  border-left-color: black;
+  border-right-color: black;
+  border-left-width: 2.5px;
+  border-right-width: 2.5px;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 2px;
 }
 
 .timeline::after {
@@ -57,7 +65,8 @@
 .timeline .timeline-item .timeline-icon-sampi, 
 .timeline .timeline-item .timeline-icon-koppa,
 .timeline .timeline-item .timeline-icon-r0,
-.timeline .timeline-item .timeline-icon-digamma {
+.timeline .timeline-item .timeline-icon-digamma,
+.timeline .timeline-item .timeline-icon-xi {
   border-radius: 50%;
   height: 50px;
   left: 50%;
@@ -93,6 +102,10 @@
   background-color: #014702;
 }
 
+.timeline .timeline-item .timeline-icon-xi {
+  background-color: #ff7b00;
+}
+
 .timeline .timeline-item .timeline-icon-aleph {
   background-color: black;
   border-radius: 50%;
@@ -117,8 +130,11 @@
   top: 14px;
 }
 
-.timeline .timeline-item .timeline-content {
-  padding: 20px;
+.timeline .timeline-item .timeline-content{
+  padding-top: 0px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: right;
   transition: all 0.25s ease-in;
   width: 45%;

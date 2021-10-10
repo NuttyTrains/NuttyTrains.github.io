@@ -25,6 +25,8 @@
 <script>
 $(function(){
   $("#nav-placeholder").load("nav.html");
+  $("#Digamma1").load("digamma/digamma1.html");
+  $("#Digamma2").load("digamma/digamma2.html");
 });
 </script>
 	
@@ -33,31 +35,34 @@ $(function(){
 	  <div class="intro">
 <p> With James stuck down in Kernow during chockdown 3, and Matthew having just moved back to London, the picture looked bleak as exams started looming - how were we going 
   to have an NT adventure before the summer? Matthew didn't have the time to come down to Kernow, and James didn't have the time to come to London. So between us, we 
-  hatched a plan to meet up somewhere in the middle, something we'd never really had to do before. Cue the Digammma Adventures:
+  hatched a plan to meet up somewhere in the middle, something we'd never really had to do before. Cue the Digamma Adventures:
 </p>
+<center><img src="./resources/photos/Digamma Map.png" width="25%"></center>
 </div>
-<button type="button" class="collapsible"> ϝ1: Trains don't stop Camborne Wednesdays! </button>
-<div class="content">
-<p> The next train to arrive at PLATFORM DAI will be the DIGAMMA 1 service to BRIZZLE, calling at TAUNTON, WESTON-SUPER-MARE, ANTI-POLICE VIOLENCE-PROTEST, and CHOCK. 
-  PLATFORM DAI for the DIGAMMA 1 service to BRIZZLE.
-	</p>
-  <center><img src="./resources/photos/Digamma 1 Plan.jpg" width="70%"></center>
+
+
+<button type="button" class="collapsible"> ϝ1: That sounds like a cheap porno </button>
+<div id="Digamma1" class="content">
 </div>
-	
+
+<button type="button" class="collapsible"> ϝ2: You could even call it a PILgrimage</button>
+<div id="Digamma2" class="content">
+</div>
+
 <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
 </script>
 
 </body>

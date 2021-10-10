@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Beth Adventures</title>
+    <link rel="icon" type="image/png" href="./resources/photos/PacerCrop.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  	<link rel="stylesheet" type="text/css" href="./resources/css/collapsible.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
+	<script src="./resources/js/stationstuff.js"></script>
+	<script src="./resources/js/table.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+      
+  <header>
+      <h1>
+	<div id="nav-placeholder">
+	      </div>
+      </h1>
+  </header>
+	
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+
+getAjax("data/beth.csv", "#bethmore", 6, "#BethNo", "We have been on ", " Beth Adventures");
+</script>
+  <body>
+    <h1 class= "spacing"> Beth Adventures </h1>
+	  <div class="intro">
+      <p>
+        Sometimes, we go on adventures that are so shit, they don't even deserve a proper write-up: they aren't even worthy of the title <a href="./aleph.html">aleph</a>. 
+        But they are kind of funny, and we'd like to document these too. So, we introduce the Beth (ℶ) Adventures: Shitty little ramblings that we dump in a CSV (coming soon) 
+        because we can't be bothered to write them up properly. Coming soon to a pub/tube train/pub/dodgy street corner/pub near you!
+      </p>
+        
+        <p id="BethNo"></p>
+            <span id="bethdots"> </span>
+        
+            <button onclick="More('bethdots', 'bethmore', 'BethMoreBtn', 'Beth Adventures')" id="BethMoreBtn">Show Beth Adventures</button>
+            <span id="bethmore">
+            </span>
+            <br><br>
+        <center><iframe frameborder="0" height="720px" width="1280px" src="https://www.youtube.com/embed/-JrTtrpVQyo" allowfullscreen></iframe> </center>
+            <br><br>
+        <center><iframe frameborder="0" height="720px" width="1280px" src="https://www.youtube.com/embed/JRwyHsUCRDU" allowfullscreen></iframe> </center>
+</div>        
+</body>
+</html>

@@ -16,7 +16,9 @@
 	<script src="./resources/js/parallax/parallax.min.js"></script>
 	<script src="./resources/js/countdown.js"></script>
 	<script src="./resources/js/stationstuff.js"></script>
+	<script src="./resources/js/table.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
   </head>
   <header>
       <h1>
@@ -28,15 +30,18 @@
 <script>
 $(function(){
   $("#nav-placeholder").load("nav.html");
-  $("#more").load("stations/stations.html #Stations");
-  $("#tubemore").load("stations/tube.html #TubeStations");
-  $("#dlrmore").load("stations/dlr.html #DLRStations");
-  $("#orangemore").load("stations/orange.html #OrangeStations");
-  $("#purpmore").load("stations/purp.html #PurpStations");
-  $("#steammore").load("stations/steam.html #SteamStations");
-  $("#ikeamore").load("stations/ikea.html #IKEA");
-  $("#chockmore").load("stations/¬stations.html #Chock");
 });
+
+getAjax("data/stations.csv", "#more", 6, "#StationNo", "We have visited ", " Stations");
+getAjax("data/tube.csv", "#tubemore", 4, "#TubeNo", "We have visited ", " Tube Stations");
+getAjax("data/dlr.csv", "#dlrmore", 6, "#DLRNo", "We have visited ", " DLR Stations");
+getAjax("data/orange.csv", "#orangemore", 4, "#OrangeNo", "We have visited ", " Overground Stations");
+getAjax("data/purp.csv", "#purpmore", 6, "#PurpNo", "We have visited ", " Lizzie Line Stations");
+getAjax("data/tram.csv", "#trammore", 6, "#TramNo", "We have visited ", " Tramlink Stations");
+getAjax("data/metro.csv", "#metromore", 6, "#MetroNo", "We have visited ", " Metro Stations");
+getAjax("data/steam.csv", "#steammore", 6, "#SteamNo", "We have visited ", " Heritage Railway Stations");
+getAjax("data/ikea.csv", "#ikeamore", 3, "#IkeaNo", "We have visited ", " IKEAs");
+getAjax("data/beth.csv", "#bethmore", 6, "#BethNo", "We have been on ", " Beth Adventures");
 </script>
 	
   <body onload = "myFunction()">
@@ -49,20 +54,28 @@ $(function(){
 <!-- Trigger/Open The Modal/ChockClock -->
 <button id="countdown"></button>
 
-<!-- The Modal 
+<!-- The Modal -->
 <div id="myModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>I must note that we are NOT train spotters, but instead Railway enthusiasts</p>
+    <center>
+      <p>
+        Welcome to Nutty Trains! BUY BUY BUY!
+      </p>
+      <script type="text/javascript" src="https://www.redbubble.com/assets/external_portfolio.js"></script>
+<script id="rb-xzfcxvzx" type="text/javascript">new RBExternalPortfolio('www.redbubble.com', 'nuttytrains', 2, 3).renderIframe();</script>
+</center>
   </div>
-</div>-->
+</div>
 
 <div class = "text">
   <div id="box20">
 	  <a href="https://twitter.com/NuttyTrains"><img width="100%" src="./resources/photos/PacerTwit.png"></a>
+	  <a href="https://www.youtube.com/channel/UClR0hSe8ki-Wn9PD-2_gHdQ"><img width="100%" src="./resources/photos/PacerYT.png"></a>
+    <img width="100%" src="./resources/photos/Merthyr Tydfil.jpg">
   </div>
   <div id="box25">
-	  <img width="100%" src="./resources/photos/NewNTLogo.png">
+	  <img width="100%" src="./resources/photos/NT Logo 5.png">
   </div>
   <div id="box55">
     <p> Welcome to Nutty Trains! <br>
@@ -84,34 +97,51 @@ $(function(){
     </p>
   </div>
 
-  <div id="box100"></div>
-  <div id="box20">
-    <img width="100%" src="./resources/photos/Merthyr Tydfil.jpg">
-  </div>
-
   <div id="box80">
     <ol>
       <li> To say we visited a station we must:
-	<ul> 
-	  <li> Be on a train that stops at the station </li>
-	  <li> Touch the platform </li>
-          <li> Take a photograph of the station sign </li>
-	  <li> (Optional due to short platforms) Run between the carriage doors (James' Job) </li>
-	</ul>
+        <ul> 
+          <li> Be on a train that stops at the station </li>
+          <li> Take a photograph/video of the station sign </li>
+          <li> Touch the platform </li>
+          <li> Be unblindfolded </li>
+        </ul>
+     </li>
+     <li> Where we deem it amusing, we additionally have the option to:
+        <ul> 
+          <li> Run down the platform to take a photograph/video of the nearest sign (James' Job) </li>
+        </ul>
      </li>
      <li> We are allowed to use public transport (other than trains), to arrive or leave a station, but not both. We must arrive or leave on a train. </li>
-     <li> We are allowed to use parlimentary trains and heritage railways, as long as we validly tick off the station. </li>
-     <li> We must take photos of ourselves in front of the station sign, when we arrive at notable stations (eg. termini) </li>
+     <li> We must take photos of ourselves in front of the station sign, when we arrive at notable stations (eg. termini)
+        <ul> 
+          <li> At such stations, we must film a station update video </li>
+        </ul>
+     </li>
+     <li> On Sampi 1, we applied the Queen Street Clause:
+        <ul> 
+          <li> We must switch between different sets of doors at every station </li>
+        </ul>
+     </li>
+     <li> From Xi 2 onwards, we can invoke the Angry Conductor Clause where applicable:
+        <ul> 
+          <li> This allows us to neglect stepping down onto the platform. </li>
+          <li> The station can be ticked off as visited provided that the doors open at the station, even if we did not open them ourselves. </li>
+          <li> If there are no passengers dis/embarking, we must open the doors ourselves </li>
+          <li> We must still take a photograph/video of the station sign </li>
+        </ul>
+     </li>
+     <li> These rules apply to National Rail services only. TfL, metro and heritage railways all have similar, but seperate rules. </li>
     </ol> 
   </div>
 
 	<div id="box100">  
-    <p id="StationNo" class="LatestNR">We have visited 181 Stations</p>
+    <p id="StationNo"></p>
   </div>
 
-    <span id="dots"></span>
+    <span id="dots"> </span>
  
-    <button onclick="More()" id="MoreBtn">Show Station List</button>
+    <button onclick="More('dots', 'more', 'MoreBtn', 'Station List')" id="MoreBtn">Show Station List</button>
     <span id="more">
     </span>
 
@@ -141,53 +171,93 @@ $(function(){
      </li>
      <li> During peak hours, we ought to alight, switch carriages, and catch the next train </li>
      <li> We are allowed to use public transport (other than trains), to arrive or leave a station, but not both. We must arrive or leave on a train. </li>
-     <li> We are allowed to use any TfL heavy/light rail service (excluding Tramlink), provided we validly tick off the station. </li>
+     <li> We are allowed to use any TfL train/tram service, provided we validly tick off the station. </li>
      <li> These rules apply to: 
 	<ul> 
 	  <li> London Underground </li>
 	  <li> DLR </li>
 	  <li> London Overground </li>
-	  <li> TfL Rail/Elizabeth Line </li>
+	  <li> Lizzie Line </li>
+	  <li> Tramlink </li>
 	</ul>
      </li>
-     <li> Our station table will be organised alphabetically, as opposed to numerically, to allow for the provision of multiple lines at each station </li>
+     <li> Our tube + orange tables will be organised alphabetically, not numerically, to allow for the provision of multiple lines at each station </li>
      <li> These rules do not apply to National Rail services in the Oyster PAYG zone. These rules apply only to TfL services. </li>
      <li> Further explanation of the rules can be found deep in the back-end of the website </li>
     </ol> 
 </div>
 
 <div id="box100">
-<p id="TubeStationNo">We have visited 107 Tube Stations</p>
-<p id="DLRStationNo">We have visited 45 DLR Stations</p>
-<p id="OrangeStationNo">We have visited 13 Stations</p>
-<p id="PurpStationNo">We have visited 3 Stations</p>
+<p id="TubeNo"></p>
+<p id="DLRNo"></p>
+<p id="OrangeNo"></p>
+<p id="PurpNo"></p>
+<p id="TramNo"></p>
 </div>
 
-    <span id="tubedots"></span>
+    <span id="tubedots"> </span>
  
-    <button onclick="TubeMore()" id="TubeMoreBtn">Show Tube Station List</button>
+    <button onclick="More('tubedots', 'tubemore', 'TubeMoreBtn', 'Tube Station List')" id="TubeMoreBtn">Show Tube Station List</button>
     <span id="tubemore">
      </span>
 
 <br><br>
-<span id="dlrdots"></span>
+<span id="dlrdots"> </span>
  
-    <button onclick="DLRMore()" id="DLRMoreBtn" class="complete">Show DLR Station List</button>
+    <button onclick="More('dlrdots', 'dlrmore', 'DLRMoreBtn', 'DLR Station List')" id="DLRMoreBtn" class="complete">Show DLR Station List</button>
     <span id="dlrmore">
      </span>
 
 <br><br>
-<span id="orangedots"></span>
+<span id="orangedots"> </span>
  
-    <button onclick="OrangeMore()" id="OrangeMoreBtn">Show Overground Station List</button>
+    <button onclick="More('orangedots', 'orangemore', 'OrangeMoreBtn', 'Overground Station List')" id="OrangeMoreBtn">Show Overground Station List</button>
     <span id="orangemore">
      </span>
 
 <br><br>
-<span id="purpdots"></span>
+<span id="purpdots"> </span>
  
-    <button onclick="PurpMore()" id="PurpMoreBtn">Show Purple Station List</button>
+    <button onclick="More('purpdots', 'purpmore', 'PurpMoreBtn', 'Purple Station List')" id="PurpMoreBtn">Show Purple Station List</button>
     <span id="purpmore">
+     </span>
+
+<br><br>
+<span id="tramdots"> </span>
+
+    <button onclick="More('tramdots', 'trammore', 'TramMoreBtn', 'Tramlink Station List')" id="TramMoreBtn">Show Tramlink Station List</button>
+    <span id="trammore">
+    </span>
+
+
+<br><br>
+<p>Having separate rules for non-National rail services is all fine and dandy for London, but as we started to venture deeper into the north, we started meeting all sorts 
+  of weird and wonderful trams, metro and even tube services! What should we do with them? Well this is NT, of course we need to have separate rules/tables for them! 
+  To try and stop James' brain from exploding, Matthew has agreed to combine all the below metros into one giant frankentable. Good luck working this one out.</p>
+    
+  <ol>
+    <li> These rules are very similar to tube rules. To say we visited a metro station we must:
+      <ul> 
+        <li> Be on a train/tram that stops at the station </li>
+        <li> Take a photograph/video of the station sign </li>
+        <li> Touch the platform (unless exempt) </li>
+      </ul>
+   </li>
+   <li> We must arrive or leave on a train/tram. </li>
+   <li> We must take photos of ourselves in front of the station sign, when we arrive at notable stations (eg. termini)</li>
+   <li> Birmingham rules:
+      <ul> 
+        <li> The trams do not stop for long enough, so here we are exempt from touching the platform </li>
+      </ul>
+   </li>
+   <li> This table will be organised by city, and within each city, the stations will be organised numerically </li>
+  </ol> 
+
+<p id="MetroNo"></p>
+    <span id="metrodots"> </span>
+ 
+    <button onclick="More('metrodots', 'metromore', 'MetroMoreBtn', 'Metro Station List')" id="MetroMoreBtn">Show Metro Station List</button>
+    <span id="metromore">
      </span>
 
 
@@ -206,10 +276,10 @@ before! But realistically, this is just an excuse to ride more steam trains.</p>
 	    <li> We must also take a photo of our locomotive </li>
     </ol>
 
-<p id="SteamNo">We have visited 3 Heritage Railway Stations</p>
-    <span id="steamdots"></span>
+<p id="SteamNo"></p>
+    <span id="steamdots"> </span>
  
-    <button onclick="SteamMore()" id="SteamMoreBtn">Show Heritage Station List</button>
+    <button onclick="More('steamdots', 'steammore', 'SteamMoreBtn', 'Heritage Station List')" id="SteamMoreBtn">Show Heritage Station List</button>
     <span id="steammore">
      </span>
 
@@ -238,54 +308,39 @@ before! But realistically, this is just an excuse to ride more steam trains.</p>
      <li> We are allowed to leave in the manner in which we arrived, or take the bus. That doesn't matter </li>
     </ol>
 
-<p id="IkeaNo">We have visited 2 IKEAs</p>
-    <span id="ikeadots"></span>
+<p id="IkeaNo"></p>
+    <span id="ikeadots"> </span>
  
-    <button onclick="IkeaMore()" id="IkeaMoreBtn">Show IKEA List</button>
+    <button onclick="More('ikeadots', 'ikeamore', 'IkeaMoreBtn', 'IKEA List')" id="IkeaMoreBtn">Show IKEA List</button>
     <span id="ikeamore">
      </span>
 
 
 <br><br>
-<center><p>IT'S CHOCK TIME!!!</p></center>
-<p>Thanks to The Chock<sup>TM</sup>, we have been unable to go on any adventures since ϙ2, which is shocking. Even as lockdowns relax, trains are reserved for 
-essential journeys only, and as much as we'd like it to be, S Wales - Cornwall or vice versa isn't quite an essential journey. We'd either get nicked or get chocked. 
-However, now that local, non-public-transport travel is once again permitted, I propose that we try and visit our local stations (at a social distance) <i>without
-</i> using trains! As ever, here are the rules:</p>
+<p>Sometimes, we go on adventures that are so shit, they don't even deserve a proper write-up: they aren't even worthy of the title <a href="./aleph.html">aleph</a>. 
+But they are kind of funny, and we'd like to document these too. So, we introduce the <a href="./beth.html">Beth (ℶ) Adventures</a>: Shitty little ramblings that we 
+dump in a CSV (coming soon) because we can't be bothered to write them up properly. Coming soon to a pub/tube train/pub/dodgy street corner/pub near you!</p>
     <ol>
-      <li> To flatten the curve we must:
-	<ul> 
-	  <li> Stay at Home </li>
-	  <li> Protect the NHS </li>
-	  <li> Save Lives </li>
-	  <li> Or alternatively, just take logs of both sides - that'll probably work </li>
-	</ul>
-     </li>
-      <li> To ¬visit a station we must:
-	<ul> 
-    <li> Get to, and leave the station <i>without</i> using trains </li>
-	  <li> Approach the station at a social distance </li>
-	  <li> Look around furtively, making sure to appear suspicious </li>
-	  <li> Take a shitty photo of the station </li>
-	  <li> Attempt to upload said shitty photo to Twitter </li>
-	  <li> Have Twitter reject the shitty photo </li>
-	  <li> Try again, and upload crappy screenshot of the shitty photo to Twitter </li>
-	  <li> Get ¬chocked </li>
-	</ul>
-     </li>
+      <li> To qualify as a Beth (ℶ) adventure, it must:
+  <ul> 
+    <li> Be nutty </li>
+    <li> Be slightly shit </li>
+    <li> Involve a train? (Optional) </li>
+  </ul>
     </ol>
 
-<p id="ChockNo">We have visited 59 ¬Stations</p>
-    <span id="chockdots"></span>
- 
-    <button onclick="ChockMore()" id="ChockMoreBtn">Show Chock Station List</button>
-    <span id="chockmore">
-     </span>
+<p id="BethNo"></p>
+    <span id="bethdots"> </span>
+
+    <button onclick="More('bethdots', 'bethmore', 'BethMoreBtn', 'Beth Adventures')" id="BethMoreBtn">Show Beth Adventures</button>
+    <span id="bethmore">
+    </span>
+
 	 </div> 
 
 
 <br><br>
-<center><img src="./resources/photos/NT I-XV.png" width="100%">
+<center><img src="./resources/photos/NT I-XXVIII.png" width="100%">
 <br><br>
 <img src="./resources/photos/WWW.gif" height="62px">
 <img src="./resources/photos/HTML2.png" height="62px">
@@ -311,14 +366,6 @@ var span = document.getElementsByClassName("close")[0];
 
 function myFunction() {
   modal.style.display = "block";
-//  document.getElementById("StationNo").innerHTML = StationNumber();
-//  document.getElementById("TubeStationNo").innerHTML = TubeStationNumber();
-//  document.getElementById("DLRStationNo").innerHTML = DLRStationNumber();
-//  document.getElementById("OrangeStationNo").innerHTML = OrangeStationNumber();
-//  document.getElementById("PurpStationNo").innerHTML = PurpStationNumber();
-//  document.getElementById("SteamNo").innerHTML = SteamStationNumber();
-//  document.getElementById("IkeaNo").innerHTML = IkeaNumber();
-//  document.getElementById("ChockNo").innerHTML = ChockNumber();
 }
 
 // When the user clicks on <span> (x), close the modal

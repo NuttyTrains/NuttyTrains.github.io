@@ -7,6 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 /* Links inside the navbar */
@@ -24,7 +25,7 @@
 .dropdown {
   overflow: hidden;
   float: left;
-  padding: 0vh 2vw;
+  padding: 0vh 0vw;
 }
 
 /* Dropdown button */
@@ -52,18 +53,19 @@
   font-family: Raleway;
   min-width: 20vw;
   box-shadow: 0.5em 0.2em 1em 0.5em rgba(0,0,0,0.2);
-  z-index: 1;
-  font-size: 2.5vw; 
+  z-index: 5;
+  font-size: 2vw; 
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 2vh 2vw;
+  padding: 1.5vh 2vw;
   text-decoration: none;
   display: block;
   text-align: left;
+  z-index: 5;
 }
 
 /* Add a grey background color to dropdown links on hover */

@@ -16,7 +16,9 @@
 	<script src="./resources/js/parallax/parallax.min.js"></script>
 	<script src="./resources/js/chockclock2.js"></script>
 	<script src="./resources/js/stationstuff.js"></script>
+	<script src="./resources/js/table.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
   </head>
   <header>
       <h1>
@@ -28,8 +30,9 @@
 <script>
 $(function(){
   $("#nav3-placeholder").load("nav3.html");
-  $("#chockmore").load("stations/¬stations.html #Chock");
 });
+
+getAjax("data/¬stations.csv", "#chockmore", 6, "#ChockNo", "We visited ", " ¬Stations");
 </script>
 	
   <body onload = "myFunction()">
@@ -58,7 +61,7 @@ The chock had just about affected our plans during Koppa 2, but would come to do
 BBB's first lockdown (shocking, I know), as lockdown relaxed, trains were still reserved for essential journeys only, and S Wales - Cornwall or vice versa isn't 
 quite an essential journey - we'd either get nicked or get chocked if we had tried to meet up, being in different parts of the country. So we decided to come up with 
 a plan... well, Matthew did, at 2am, on a walk. Now that local, non-public-transport travel is once again permitted, he decided to try and visit our local stations 
-(at a social distance) <i>without</i> using trains, thereby creating a new type of NT goal: ¬stations! As ever, here are the rules:</p>
+(at a social distance) <i>without</i> using trains, thereby creating a new type of NT goal: ¬stations! As ever, here were the rules:</p>
     <ol>
       <li> To flatten the curve we must:
 	<ul> 
@@ -82,10 +85,10 @@ a plan... well, Matthew did, at 2am, on a walk. Now that local, non-public-trans
      </li>
     </ol>
 
-<p id="ChockNo">We have visited 59 ¬Stations</p>
-    <span id="chockdots"></span>
+<p id="ChockNo"></p>
+    <span id="chockdots"> </span>
  
-    <button onclick="ChockMore()" id="ChockMoreBtn">Show Chock Station List</button>
+    <button onclick="More('chockdots', 'chockmore', 'ChockMoreBtn', 'Chock Station List')" id="ChockMoreBtn">Show Chock Station List</button>
     <span id="chockmore">
      </span>
      <br><br>
@@ -93,8 +96,14 @@ a plan... well, Matthew did, at 2am, on a walk. Now that local, non-public-trans
      <p>
        After a stroke of luck though, James was able to come up to Wales in early July, so 2020 wasn't a complete waste. We managed to get 7 adventures done in the 
        summer, and these were some of our best yet, even though we had greatly toned down the trains aspect and focused more on the destinations. 
-       <a href="r0.html">Here</a> is the real list of our adventures that summer, and <a href="r0.html">here</a> is an... <strong>improved</strong> list.
+       <a href="r0.html">Here</a> is the real list of our adventures that summer, and <a href="ruwu.html">here</a> is an... <strong>improved</strong> list.
+       <br><br>
+       ¬Stations originally seemed like an amusing little idea, but after Matthew unilaterally decided that ex-stations also counted, this quickly became a huge 
+       problem. Deciding what was, and what was not a ¬station made Matthew's brain hurt, and so we unceremoniously decided to kill it off. It turns out that the 
+       list cuts off quite nicely at a shit station on the penultimate day of a shit year. What a nice ¬ending to chock.
      </p>
+     
+    <center><iframe frameborder="0" height="720px" width="1280px" src="https://www.youtube.com/embed/wxr_Gbcnml8" allowfullscreen></iframe> </center> <br>
 	 </div> 
 
 
