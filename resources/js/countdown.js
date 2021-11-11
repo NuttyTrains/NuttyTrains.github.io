@@ -140,4 +140,4 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "Welcome to NT!";
   }
 
-},60000);
+},1000);
