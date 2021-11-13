@@ -6,7 +6,7 @@ top-notch NT-quality code! Much of our attention has shifted towards our twitter
 looking for our central repository, you have come to the right place. Our best tweets, most of our videos, and all of our in-depth write-ups can be found here, as well 
 as much much more in the back-end (if you know where to look). [Please don't look].
 
-# Where to find us:
+## Where to find us:
 Web: https://nuttytrains.net/  
 Twitter: <a href="https://twitter.com/NuttyTrains">@NuttyTrains</a>  
 Youtube: <a href="https://www.youtube.com/channel/UClR0hSe8ki-Wn9PD-2_gHdQ">NuttyTrains</a>  
