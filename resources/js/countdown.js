@@ -1,9 +1,13 @@
+var Aleph26 = new Date("Nov 20, 2021 07:00:00").getTime();
+var Aleph27 = new Date("Nov 24, 2021 13:00:00").getTime();
 var Koppa9 = new Date("Dec 01, 2021 10:00:00").getTime();
 var Xmas = new Date("Dec 25, 2021 00:00:00").getTime();
 var NYE = new Date("Jan 01, 2022 00:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
+  var distanceA26 = (Aleph26 - now)/1000;
+  var distanceA27 = (Aleph27 - now)/1000;
   var distanceK9 = (Koppa9 - now)/1000;
   var distanceX = (Xmas - now)/1000;
   var distance22 = (NYE - now)/1000;
@@ -11,7 +15,15 @@ var x = setInterval(function() {
   //var daysK9 = Math.ceil(distanceK9 / 86400);
   //var hoursK9 = Math.ceil(distanceK9 / 3600);
   //var elapsedK9 = -1*hoursK9;
-  var daysK9 = Math.floor(distanceK9 / 86400);
+  var daysA26 = Math.floor(distanceA26 / 86400);
+  var hoursA26 = Math.floor((distanceA26 % 86400) / 3600);
+  var minsA26 = Math.floor((distanceA26 % 3600) / 60);
+  var secsA26 = Math.floor(distanceA26 % 60);
+  var daysA27 = Math.floor(distanceA27 / 86400);
+  var hoursA27 = Math.floor((distanceA27 % 86400) / 3600);
+  var minsA27 = Math.floor((distanceA27 % 3600) / 60);
+  var secsA27 = Math.floor(distanceA27 % 60);
+  var daysK9 = Math.floor(distanceA27 / 86400);
   var hoursK9 = Math.floor((distanceK9 % 86400) / 3600);
   var minsK9 = Math.floor((distanceK9 % 3600) / 60);
   var secsK9 = Math.floor(distanceK9 % 60);
@@ -36,7 +48,31 @@ var x = setInterval(function() {
     //document.getElementById("countdown").innerHTML = "We are " + elapsedK9 + " hours into KOPPA 9! The train arriving at PLATFORM DAI is the KOPPA 9 service to BATTERSEA POWER STATION STATION, calling at COCKFOSTERS, HAMMERSMITH, BROMPTON and NINE ELMS";
   //}
 
-  if (daysK9 > 0) {
+  if (daysA26 > 0) {
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The Nutty Trains Advent Calendar goes live in " + daysK9 + " days, " + hoursK9 + " hours, " + minsK9 + " minutes and " + secsK9 + " seconds! The next train to arrive at PLATFORM DAI in " + daysA26 + " days is the ALEPH 26 service to OKEHAMPTON";
+  }
+
+  else if (daysA26 == 0) {
+    document.getElementById("countdown").innerHTML = "The train arriving at PLATFORM DAI in " + hoursA26 + " hours, " + minsA26 + " minutes and " + secsA26 + " seconds is the ALEPH 26 service to OKEHAMPTON! The Nutty Trains Advent Calendar goes live in " + daysK9 + " days, " + hoursK9 + " hours, " + minsK9 + " minutes and " + secsK9 + " seconds!";
+  }
+
+  else if (hoursA26 > -12) {
+    document.getElementById("countdown").innerHTML = "Welcome to Aleph 26! James is currently riding the Okehampton line and pestering Geoff and Vicki! The Nutty Trains Advent Calendar goes live in " + daysK9 + " days, " + hoursK9 + " hours, " + minsK9 + " minutes and " + secsK9 + " seconds!";
+  }
+
+  else if (daysA27 > 0) {
+    document.getElementById("countdown").innerHTML = "Welcome to NT! The Nutty Trains Advent Calendar goes live in " + daysK9 + " days, " + hoursK9 + " hours, " + minsK9 + " minutes and " + secsK9 + " seconds! The next train to arrive at PLATFORM DAI in " + daysA27 + " days is the ALEPH 27 service to AYLESBURY";
+  }
+
+  else if (daysA27 == 0) {
+    document.getElementById("countdown").innerHTML = "The train arriving at PLATFORM DAI in " + hoursA27 + " hours, " + minsA27 + " minutes and " + secsA27 + " seconds is the ALEPH 27 service to AYLESBURY! The Nutty Trains Advent Calendar goes live in " + daysK9 + " days, " + hoursK9 + " hours, " + minsK9 + " minutes and " + secsK9 + " seconds!";
+  }
+
+  else if (hoursA27 > -7) {
+    document.getElementById("countdown").innerHTML = "Welcome to Aleph 27! Matthew is currently exploring the Chiltern Depot with RailSoc in Aylesbury! The Nutty Trains Advent Calendar goes live in " + daysK9 + " days, " + hoursK9 + " hours, " + minsK9 + " minutes and " + secsK9 + " seconds!";
+  }
+
+  else if (daysK9 > 0) {
     document.getElementById("countdown").innerHTML = "Welcome to NT! The Nutty Trains Advent Calendar goes live in " + daysK9 + " days, " + hoursK9 + " hours, " + minsK9 + " minutes and " + secsK9 + " seconds!";
   }
 
