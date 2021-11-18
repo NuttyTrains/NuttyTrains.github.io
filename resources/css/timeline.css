@@ -66,7 +66,9 @@
 .timeline .timeline-item .timeline-icon-koppa,
 .timeline .timeline-item .timeline-icon-r0,
 .timeline .timeline-item .timeline-icon-digamma,
-.timeline .timeline-item .timeline-icon-xi {
+.timeline .timeline-item .timeline-icon-xi,
+.timeline .timeline-item .timeline-icon-epsilon,
+.timeline .timeline-item .timeline-icon-ntci {
   border-radius: 50%;
   height: 50px;
   left: 50%;
@@ -83,7 +85,7 @@
 }
 
 .timeline .timeline-item .timeline-icon-beta {
-  background-color: #ffc10f;
+  background-color: #ff08e8;
 }
 
 .timeline .timeline-item .timeline-icon-sampi {
@@ -104,6 +106,17 @@
 
 .timeline .timeline-item .timeline-icon-xi {
   background-color: #ff7b00;
+}
+
+.timeline .timeline-item .timeline-icon-epsilon {
+  background-color: #ffc10f;
+}
+
+.timeline .timeline-item .timeline-icon-ntci {
+  background: url(../photos/Kernow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
 }
 
 .timeline .timeline-item .timeline-icon-aleph {
