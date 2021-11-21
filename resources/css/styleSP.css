@@ -272,3 +272,26 @@ h6 {
   overflow: hidden;
   padding: 10px 5px;
 }
+
+#adventcalendar th{
+  text-align: right;
+  vertical-align: bottom;
+  color: #dddddd;
+  font-size: 3em;
+}
+
+#adventcalendar th iframe{
+  border-radius: 1em;
+  width: 7.2em;
+  height: 4em;
+}
+
+#adventcalendar tr:nth-child(even) th:nth-child(even),
+#adventcalendar tr:nth-child(odd) th:nth-child(odd) {
+  background-color: #ff0000;
+}
+
+#adventcalendar tr:nth-child(even) th:nth-child(odd),
+#adventcalendar tr:nth-child(odd) th:nth-child(even) {
+  background-color: #009900;
+}
