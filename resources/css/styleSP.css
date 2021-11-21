@@ -273,14 +273,14 @@ h6 {
   padding: 10px 5px;
 }
 
-#adventcalendar th{
+#adventcalendar th {
   text-align: right;
   vertical-align: bottom;
   color: #dddddd;
   font-size: 3em;
 }
 
-#adventcalendar th iframe{
+#adventcalendar th iframe {
   border-radius: 1em;
   width: 7.2em;
   height: 4em;
@@ -294,4 +294,22 @@ h6 {
 #adventcalendar tr:nth-child(even) th:nth-child(odd),
 #adventcalendar tr:nth-child(odd) th:nth-child(even) {
   background-color: #009900;
+}
+
+#smallvid{
+  border-radius: 1em;
+  width: 19.2em;
+  height: 10.8em;
+}
+
+#medvid{
+  border-radius: 2em;
+  width: 38.4em;
+  height: 21.6em;
+}
+
+#largevid{
+  border-radius: 3em;
+  width: 57.6em;
+  height: 32.4em;
 }

@@ -56,7 +56,7 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "The train arriving at PLATFORM DAI in " + hoursA26 + " hours, " + minsA26 + " minutes and " + secsA26 + " seconds is the ALEPH 26 service to OKEHAMPTON! The Nutty Trains Advent Calendar goes live in " + daysK9 + " days, " + hoursK9 + " hours, " + minsK9 + " minutes and " + secsK9 + " seconds!";
   }
 
-  else if (hoursA26 > -12) {
+  else if ((daysA26 == -1) && (hoursA26 > -12)) {
     document.getElementById("countdown").innerHTML = "Welcome to Aleph 26! James is currently riding the Okehampton line and pestering Geoff and Vicki! The Nutty Trains Advent Calendar goes live in " + daysK9 + " days, " + hoursK9 + " hours, " + minsK9 + " minutes and " + secsK9 + " seconds!";
   }
 
@@ -68,7 +68,7 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "The train arriving at PLATFORM DAI in " + hoursA27 + " hours, " + minsA27 + " minutes and " + secsA27 + " seconds is the ALEPH 27 service to AYLESBURY! The Nutty Trains Advent Calendar goes live in " + daysK9 + " days, " + hoursK9 + " hours, " + minsK9 + " minutes and " + secsK9 + " seconds!";
   }
 
-  else if (hoursA27 > -7) {
+  else if ((daysA27 == -1) && (hoursA27 > -7)) {
     document.getElementById("countdown").innerHTML = "Welcome to Aleph 27! Matthew is currently exploring the Chiltern Depot with RailSoc in Aylesbury! The Nutty Trains Advent Calendar goes live in " + daysK9 + " days, " + hoursK9 + " hours, " + minsK9 + " minutes and " + secsK9 + " seconds!";
   }
 
