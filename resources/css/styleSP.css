@@ -298,18 +298,18 @@ h6 {
 
 #smallvid{
   border-radius: 1em;
-  width: 19.2em;
-  height: 10.8em;
+  width: 20vmax;
+  height: 23vmin;
 }
 
 #medvid{
   border-radius: 2em;
-  width: 38.4em;
-  height: 21.6em;
+  width: 40vmax;
+  height: 46vmin;
 }
 
 #largevid{
   border-radius: 4em;
-  width: 76.8em;
-  height: 43.2em;
+  width: 60vmax;
+  height: 69vmin;
 }
