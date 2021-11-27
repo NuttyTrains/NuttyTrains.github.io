@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NT Santa Tracker</title>
+    <link rel="icon" type="image/png" href="./resources/photos/PacerCrop.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  	<link rel="stylesheet" type="text/css" href="./resources/css/collapsible.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+	crossorigin=""/>
+	<!-- Make sure you put this AFTER Leaflet's CSS -->
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	crossorigin=""></script>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<style>
+		#mapid { height: 70vh; width:50vw; z-index: 0; }
+	</style>
+  </head>
+  <header>
+      <h1>
+	<div id="nav2-placeholder">
+	      </div>
+      </h1>
+  </header>
+	
+<script>
+$(function(){
+  $("#nav2-placeholder").load("nav2.html");
+});
+</script>
+	
+  <body>
+    <h1 class= "spacing"> Santa Tracker </h1>
+	  <div class="intro">
+	<p>
+		Testy test, I love testing shit
+	</p>
+	<center><div id="mapid">Testy Test</div></center>
+	<div style="padding: 1em 1em 1em 1em;"></div>
+
+</div>
+</body>
+
+<script>
+function uniq(a) {
+    return a.sort().filter(function(item, pos, ary) {
+        return !pos || item != ary[pos - 1] || item != null;
+    });
+}
+
+var mymap = L.map('mapid').setView([51.555, -0.1778], 9);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'This is the NT Station Visit Map, we`ve been to all of the dots!',
+    maxZoom: 15,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw'
+}).addTo(mymap);
+
+d3.text("./data/tubeStations.csv", function(data) {
+    var parsedCSV = d3.csv.parseRows(data);
+    // console.log(parsedCSV)
+    // console.log(parsedCSV.length)
+    d3.text("./data/tube.csv", function(data2) {
+        var tubeVisited = d3.csv.parseRows(data2);
+		d3.text("./data/dlr.csv", function(data3) {
+			var dlrVisited = d3.csv.parseRows(data3);
+			d3.text("./data/orange.csv", function(data4) {
+				var orangeVisited = d3.csv.parseRows(data4);
+				d3.text("./data/purp.csv", function(data5) {
+					var purpVisited = d3.csv.parseRows(data5);
+					d3.text("./data/tram.csv", function(data6) {
+						var tramVisited = d3.csv.parseRows(data6);
+						var Visited = tubeVisited.concat(dlrVisited, orangeVisited, purpVisited, tramVisited)
+						const arrayColumn = (arr, n) => arr.map(x => x[n]);
+						for (i = 1; i < parsedCSV.length; i++) {
+							console.log(i);
+							console.log(parsedCSV[i][2]);
+							console.log(arrayColumn(Visited, 0).includes(parsedCSV[i][2]));
+							N = arrayColumn(Visited, 0).indexOf(parsedCSV[i][2]);
+							console.log(N);
+							// console.log(arrayColumn(Visited, 0));
+							if (arrayColumn(Visited, 0).includes(parsedCSV[i][2])) {
+								L.marker([parsedCSV[i][9], parsedCSV[i][8]], {
+									title: Visited[N][1],
+									name: Visited[N][0],
+									number: Visited[N][2],
+									date: Visited[N][3],
+									line: Visited[N][4],
+									edition: Visited[N][5]
+								}).on('click', onMapClick).addTo(mymap);
+								// console.log('Added marker ' + i + ' at ' + parsedCSV[i][8] + ', ' + parsedCSV[i][9]);
+								var popup = L.popup();
+								function onMapClick(e) {
+									popup
+										.setLatLng(e.latlng)
+										.setContent(
+											'We visited ' + this.options.name + ', on the ' + this.options.line.split('//').join(', ') + 
+											' line(s) during ' + _.uniq(this.options.edition.split('//')).join(' and ') + ' (' + this.options.date + '). '
+											)
+										// Nota Optime! This is going to backfire horribly once we have the separate CSVs for each mode - you will need to come back and fix this!
+										.openOn(mymap);
+								}
+							}
+						}
+						console.log(Visited);
+					});
+				});
+			});
+		});
+    });
+});         
+</script>
+</html>
