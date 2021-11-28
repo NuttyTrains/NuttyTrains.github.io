@@ -84,11 +84,11 @@ d3.text("./data/santa.csv", function(data) {
 			popup
 				.setLatLng(e.latlng)
 				.setContent(
-					'Santa visited ' + this.options.name + ', at the ' + this.options.time + '. Merry Christmas, ' + this.options.name + '!'
+					'Santa visited ' + this.options.name + ', at ' + this.options.time + '. Merry Christmas, ' + this.options.name + '!'
 					)
 				.openOn(mymap);
 		}
-		marker.classList.add("SantaTest");
+		marker.className += "SantaTest";
 	}
 });       
 </script>
