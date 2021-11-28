@@ -77,8 +77,9 @@ d3.text("./data/santa.csv", function(data) {
 		L.marker([parsedCSV[i][1], parsedCSV[i][2]], {
 			title: "Are you the hover-text?",
 			name: parsedCSV[i][0],
-			time: parsedCSV[i][3]
-		}).on('click', onMapClick, classAdd).addTo(mymap);
+			time: parsedCSV[i][3],
+			color: "#FF0000"
+		}).on('click', onMapClick).addTo(mymap);
 		var popup = L.popup();
 		function onMapClick(e) {
 			popup
