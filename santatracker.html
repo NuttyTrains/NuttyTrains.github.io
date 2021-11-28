@@ -70,7 +70,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2c
 const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/light-v10',
-  center: [51.5103, -0.1686],
+  center: [-0.1686, 51.5103],
   zoom: 12
 });
 	
@@ -113,15 +113,18 @@ d3.text("./data/santa.csv", function(data) {
 	// create a HTML element for each feature
 	const el = document.createElement('div');
 	el.className = 'SantaTest';
+	el.title = "Are you the hover-text?";
+	el.name = parsedCSV[i][0];
+	el.title = parsedCSV[i][3];
  
 	// make a marker for each feature and add it to the map
 	new mapboxgl.Marker(el)
 		//.setLngLat(feature.geometry.coordinates)
-		.setLngLat([parsedCSV[i][1], parsedCSV[i][2]])
+		.setLngLat([parsedCSV[i][2], parsedCSV[i][1]])
 		.setPopup(
 			new mapboxgl.Popup({ offset: 25 }) // add popups
 			//.setHTML(`<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`)
-			.setHTML(`'Santa visited ' + parsedCSV[i][0] + ', at ' + parsedCSV[i][3] + '. Merry Christmas, ' + parsedCSV[i][0] + '!'`)
+			.setHTML(`<p>'Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][3]}. Merry Christmas, ${parsedCSV[i][0]}!'</p>`)
 		)
 		.addTo(map);
 }
