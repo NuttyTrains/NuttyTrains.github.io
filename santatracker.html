@@ -90,17 +90,17 @@ d3.text("./data/santa.csv", function(data) {
 	el.className = 'SantaTest';
 	el.title = `Merry Christmas ${parsedCSV[i][0]}!`;
 	ell.push(el)
-	coords.push([parsedCSV[i][2], parsedCSV[i][1]])
+	coords.push(parsedCSV[i][2], parsedCSV[i][1])
 	msg.push(`Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`)
 	//el.time = parsedCSV[i][3];
 	//var y = new Date(`Nov 28, 2021 ${parsedCSV[i-1][4]}:${parsedCSV[i-1][5]}:00`).getTime();
   	var now = new Date().getTime();
-  	y.push(new Date(`Nov 28, 2021 20:32:00`).getTime());
+  	y.push(new Date(`Nov 28, 2021 20:37:00`).getTime());
 		
 setTimeout(function(i){  
 	// make a marker for each feature and add it to the map
 	new mapboxgl.Marker(ell[i-1], i)
-		.setLngLat(coords[i-1])
+		.setLngLat(coords[2*i-2],coords[2*i-1])
 		.setPopup(
 			new mapboxgl.Popup({ offset: 25 }) // add popups
 			.setHTML(`<p>${msg[i-1]}</p>`)
