@@ -73,97 +73,28 @@ const map = new mapboxgl.Map({
   center: [-0.1686, 51.5103],
   zoom: 12
 });
-	
-const geojson = {
-  type: 'FeatureCollection',
-  features: [
-    {
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [-77.032, 38.913]
-      },
-      properties: {
-        title: 'Mapbox',
-        description: 'Washington, D.C.'
-      }
-    },
-    {
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [-122.414, 37.776]
-      },
-      properties: {
-        title: 'Mapbox',
-        description: 'San Francisco, California'
-      }
-    }
-  ]
-};
-	
-
 
 d3.text("./data/santa.csv", function(data) {
     var parsedCSV = d3.csv.parseRows(data);
 	for (i = 1; i < parsedCSV.length; i++) {
 		console.log(i);
-// add markers to map
-//for (const feature of geojson.features) {
+	// add markers to map
 	// create a HTML element for each feature
 	const el = document.createElement('div');
 	el.className = 'SantaTest';
-	el.title = "Are you the hover-text?";
+	el.title = `Merry Christmas ${parsedCSV[i][0]}!`;
 	el.name = parsedCSV[i][0];
-	el.title = parsedCSV[i][3];
+	el.time = parsedCSV[i][3];
  
 	// make a marker for each feature and add it to the map
 	new mapboxgl.Marker(el)
-		//.setLngLat(feature.geometry.coordinates)
 		.setLngLat([parsedCSV[i][2], parsedCSV[i][1]])
 		.setPopup(
 			new mapboxgl.Popup({ offset: 25 }) // add popups
-			//.setHTML(`<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`)
 			.setHTML(`<p>'Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][3]}. Merry Christmas, ${parsedCSV[i][0]}!'</p>`)
 		)
 		.addTo(map);
 }
-});
-
-//var mymap = L.map('mapid').setView([51.5103, -0.1686], 12);
-//L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    //attribution: 'This is the NT Station Visit Map, we`ve been to all of the dots!',
-    //maxZoom: 15,
-    //id: 'mapbox/streets-v11',
-    //tileSize: 512,
-    //zoomOffset: -1,
-    //accessToken: ''
-//}).addTo(mymap);
-
-//d3.text("./data/santa.csv", function(data) {
-    //var parsedCSV = d3.csv.parseRows(data);
-	//const arrayColumn = (arr, n) => arr.map(x => x[n]);
-	//for (i = 1; i < parsedCSV.length; i++) {
-		//console.log(i);
-		//L.marker([parsedCSV[i][1], parsedCSV[i][2]], {
-			//title: "Are you the hover-text?",
-			//name: parsedCSV[i][0],
-			//time: parsedCSV[i][3],
-			//color: "#FF0000"
-		//}).on('click', onMapClick).addTo(mymap);
-		//var popup = L.popup();
-		//function onMapClick(e) {
-			//popup
-				//.setLatLng(e.latlng)
-				//.setContent(
-					//'Santa visited ' + this.options.name + ', at ' + this.options.time + '. Merry Christmas, ' + this.options.name + '!'
-					//)
-				//.openOn(mymap);
-		//}
-		//function classAdd(e) {
-			//e.className += "SantaTest";
-		//}
-	//}
-//});       
+});    
 </script>
 </html>
