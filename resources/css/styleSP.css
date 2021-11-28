@@ -313,3 +313,11 @@ h6 {
   width: 60vmax;
   height: 69vmin;
 }
+
+.SantaTest {
+  background-image: url('../photos/present.gif');
+  background-size: cover;
+  width: 2vw;
+  height: 1.125vh;
+  cursor: pointer;
+}
