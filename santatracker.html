@@ -19,18 +19,18 @@
     	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
 	<script src="https://d3js.org/d3.v3.min.js"></script>
 	<style>
-		#map { height: 70vh; width:70vw; z-index: 0; }
+		#santamap { height: 70vh; width:70vw; z-index: 0; }
 		
 		.SantaTest {
 		background-image: url('./resources/photos/present.gif');
 		background-size: cover;
-		width: 50px;
-		height: 50px;
+		width: 8vh;
+		height: 4.5vw;
 		cursor: pointer;
 		}
 		
 		.mapboxgl-popup {
-  			max-width: 200px;
+  			max-width: 15vw;
 		}
 
 		.mapboxgl-popup-content {
@@ -56,9 +56,9 @@ $(function(){
     <h1 class= "spacing"> Santa Tracker </h1>
 	  <div class="intro">
 	<p>
-		Testy test, I love testing shit
+		Welcome to the Nutty Trains Santa Tracker - going live, December 24th!
 	</p>
-	<center><div id="map">Testy Test</div></center>
+	<center><div id="santamap">Testy Test</div></center>
 	<div style="padding: 1em 1em 1em 1em;"></div>
 
 </div>
@@ -68,14 +68,13 @@ $(function(){
 mapboxgl.accessToken = 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw';
 	
 const map = new mapboxgl.Map({
-  container: 'map',
+  container: 'santamap',
   style: 'mapbox://styles/mapbox/streets-v11',
   center: [-0.1686, 51.5103],
   zoom: 12
 });
 
 const y = []
-//const ell = []
 const coords = []
 const msg = []
 
@@ -89,19 +88,16 @@ d3.text("./data/santa.csv", function(data) {
 	const el = document.createElement('div');
 	el.className = 'SantaTest';
 	el.title = `Merry Christmas ${parsedCSV[i][0]}!`;
-	//ell.push(el);
 	coords.push(parsedCSV[i][2], parsedCSV[i][1]);
 	console.log(parsedCSV[i][2], parsedCSV[i][1]);
-	msg.push(`Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
-	console.log(`Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
-	//el.time = parsedCSV[i][3];
+	msg.push(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
+	console.log(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	y.push(new Date(`Nov 28, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
   	var now = new Date().getTime();
   	//y.push(new Date(`Nov 28, 2021 20:57:00`).getTime());
 		
 setTimeout(function(i){  
 	// make a marker for each feature and add it to the map
-	//new mapboxgl.Marker(ell[i-1], i)
 	new mapboxgl.Marker(el)
 		.setLngLat([coords[2*i-2],coords[2*i-1]])
 		//.setLngLat([coords[0],coords[1]])
