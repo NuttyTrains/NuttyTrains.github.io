@@ -70,8 +70,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2c
 const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/light-v10',
-  center: [-96, 37.8],
-  zoom: 3
+  center: [51.5103, -0.1686],
+  zoom: 12
 });
 	
 const geojson = {
@@ -102,23 +102,30 @@ const geojson = {
   ]
 };
 	
- 
+
+
+d3.text("./data/santa.csv", function(data) {
+    var parsedCSV = d3.csv.parseRows(data);
+	for (i = 1; i < parsedCSV.length; i++) {
+		console.log(i);
 // add markers to map
-for (const feature of geojson.features) {
+//for (const feature of geojson.features) {
 	// create a HTML element for each feature
 	const el = document.createElement('div');
 	el.className = 'SantaTest';
  
 	// make a marker for each feature and add it to the map
 	new mapboxgl.Marker(el)
-		.setLngLat(feature.geometry.coordinates)
+		//.setLngLat(feature.geometry.coordinates)
+		.setLngLat([parsedCSV[i][1], parsedCSV[i][2]])
 		.setPopup(
-		new mapboxgl.Popup({ offset: 25 }) // add popups
-		.setHTML(`<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`)
+			new mapboxgl.Popup({ offset: 25 }) // add popups
+			//.setHTML(`<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`)
+			.setHTML(`'Santa visited ' + parsedCSV[i][0] + ', at ' + parsedCSV[i][3] + '. Merry Christmas, ' + parsedCSV[i][0] + '!'`)
 		)
 		.addTo(map);
 }
-
+});
 
 //var mymap = L.map('mapid').setView([51.5103, -0.1686], 12);
 //L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
