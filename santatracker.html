@@ -75,7 +75,7 @@ const map = new mapboxgl.Map({
 });
 
 const y = []
-const ell = []
+//const ell = []
 const coords = []
 const msg = []
 
@@ -89,7 +89,7 @@ d3.text("./data/santa.csv", function(data) {
 	const el = document.createElement('div');
 	el.className = 'SantaTest';
 	el.title = `Merry Christmas ${parsedCSV[i][0]}!`;
-	ell.push(el)
+	//ell.push(el)
 	coords.push(parsedCSV[i][2], parsedCSV[i][1])
 	msg.push(`Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`)
 	//el.time = parsedCSV[i][3];
@@ -99,7 +99,7 @@ d3.text("./data/santa.csv", function(data) {
 		
 setTimeout(function(i){  
 	// make a marker for each feature and add it to the map
-	new mapboxgl.Marker(ell[i-1], i)
+	new mapboxgl.Marker(el, i)
 		//.setLngLat([coords[2*i-2],coords[2*i-1]])
 		.setLngLat([coords[0],coords[1]])
 		.setPopup(
