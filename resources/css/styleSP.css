@@ -317,7 +317,7 @@ h6 {
 .SantaTest {
   background-image: url('../photos/present.gif');
   background-size: cover;
-  width: 2vw;
-  height: 1.125vh;
+  width: 2.25vw;
+  height: 4vh;
   cursor: pointer;
 }
