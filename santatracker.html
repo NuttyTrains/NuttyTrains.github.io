@@ -100,7 +100,7 @@ d3.text("./data/santa.csv", function(data) {
 setTimeout(function(i){  
 	// make a marker for each feature and add it to the map
 	new mapboxgl.Marker(ell[i-1], i)
-		.setLngLat(coords[2*i-2],coords[2*i-1])
+		.setLngLat([coords[2*i-2],coords[2*i-1]])
 		.setPopup(
 			new mapboxgl.Popup({ offset: 25 }) // add popups
 			.setHTML(`<p>${msg[i-1]}</p>`)
