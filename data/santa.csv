@@ -1,5 +1,5 @@
-City,Latitude,Longitude,Time
-London,51.51373,-0.09844,1
-Huxley,51.4989,-0.17932,2
-Kensal Green,51.52913,-0.21755,3
-Acton,51.52341,-0.25975,4
+City,Latitude,Longitude,Hour,Min
+London,51.51373,-0.09844,5,45
+Huxley,51.4989,-0.17932,5,46
+Kensal Green,51.52913,-0.21755,5,47
+Acton,51.52341,-0.25975,5,48
