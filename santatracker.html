@@ -81,8 +81,8 @@ const msg = []
 
 d3.text("./data/santa.csv", function(data) {
     var parsedCSV = d3.csv.parseRows(data);
-	//for (i = 1; i < parsedCSV.length; i++) {
-	for (i = 1; i < 3; i++) {
+	for (i = 1; i < parsedCSV.length; i++) {
+	//for (i = 1; i < 3; i++) {
 		console.log(i);
 	// add markers to map
 	// create a HTML element for each feature
