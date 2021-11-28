@@ -89,9 +89,11 @@ d3.text("./data/santa.csv", function(data) {
 	const el = document.createElement('div');
 	el.className = 'SantaTest';
 	el.title = `Merry Christmas ${parsedCSV[i][0]}!`;
-	//ell.push(el)
-	coords.push(parsedCSV[i][2], parsedCSV[i][1])
-	msg.push(`Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`)
+	//ell.push(el);
+	coords.push(parsedCSV[i][2], parsedCSV[i][1]);
+	console.log(parsedCSV[i][2], parsedCSV[i][1]);
+	msg.push(`Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
+	console.log(`Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	//el.time = parsedCSV[i][3];
 	//y.push(new Date(`Nov 28, 2021 ${parsedCSV[i-1][4]}:${parsedCSV[i-1][5]}:00`).getTime());
   	var now = new Date().getTime();
