@@ -15,16 +15,28 @@
 	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-	crossorigin=""/>
-	<!-- Make sure you put this AFTER Leaflet's CSS -->
-	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-	crossorigin=""></script>
+    	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+    	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
 	<script src="https://d3js.org/d3.v3.min.js"></script>
 	<style>
-		#mapid { height: 70vh; width:50vw; z-index: 0; }
+		#map { height: 70vh; width:70vw; z-index: 0; }
+		
+		.SantaTest {
+		background-image: url('./resources/photos/present.gif');
+		background-size: cover;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		}
+		
+		.mapboxgl-popup {
+  			max-width: 200px;
+		}
+
+		.mapboxgl-popup-content {
+  			text-align: center;
+  			font-family: 'Raleway';
+		}
 	</style>
   </head>
   <header>
@@ -46,81 +58,61 @@ $(function(){
 	<p>
 		Testy test, I love testing shit
 	</p>
-	<center><div id="mapid">Testy Test</div></center>
+	<center><div id="map">Testy Test</div></center>
 	<div style="padding: 1em 1em 1em 1em;"></div>
 
 </div>
 </body>
 
 <script>
-function uniq(a) {
-    return a.sort().filter(function(item, pos, ary) {
-        return !pos || item != ary[pos - 1] || item != null;
-    });
-}
+mapboxgl.accessToken = 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw';
+	
+const map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11',
+  center: [-0.1686, 51.5103],
+  zoom: 12
+});
 
-var mymap = L.map('mapid').setView([51.555, -0.1778], 9);
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'This is the NT Station Visit Map, we`ve been to all of the dots!',
-    maxZoom: 15,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw'
-}).addTo(mymap);
+const y = []
+//const ell = []
+const coords = []
+const msg = []
 
-d3.text("./data/tubeStations.csv", function(data) {
+d3.text("./data/santa.csv", function(data) {
     var parsedCSV = d3.csv.parseRows(data);
-    // console.log(parsedCSV)
-    // console.log(parsedCSV.length)
-    d3.text("./data/tube.csv", function(data2) {
-        var tubeVisited = d3.csv.parseRows(data2);
-		d3.text("./data/dlr.csv", function(data3) {
-			var dlrVisited = d3.csv.parseRows(data3);
-			d3.text("./data/orange.csv", function(data4) {
-				var orangeVisited = d3.csv.parseRows(data4);
-				d3.text("./data/purp.csv", function(data5) {
-					var purpVisited = d3.csv.parseRows(data5);
-					d3.text("./data/tram.csv", function(data6) {
-						var tramVisited = d3.csv.parseRows(data6);
-						var Visited = tubeVisited.concat(dlrVisited, orangeVisited, purpVisited, tramVisited)
-						const arrayColumn = (arr, n) => arr.map(x => x[n]);
-						for (i = 1; i < parsedCSV.length; i++) {
-							console.log(i);
-							console.log(parsedCSV[i][2]);
-							console.log(arrayColumn(Visited, 0).includes(parsedCSV[i][2]));
-							N = arrayColumn(Visited, 0).indexOf(parsedCSV[i][2]);
-							console.log(N);
-							// console.log(arrayColumn(Visited, 0));
-							if (arrayColumn(Visited, 0).includes(parsedCSV[i][2])) {
-								L.marker([parsedCSV[i][9], parsedCSV[i][8]], {
-									title: Visited[N][1],
-									name: Visited[N][0],
-									number: Visited[N][2],
-									date: Visited[N][3],
-									line: Visited[N][4],
-									edition: Visited[N][5]
-								}).on('click', onMapClick).addTo(mymap);
-								// console.log('Added marker ' + i + ' at ' + parsedCSV[i][8] + ', ' + parsedCSV[i][9]);
-								var popup = L.popup();
-								function onMapClick(e) {
-									popup
-										.setLatLng(e.latlng)
-										.setContent(
-											'We visited ' + this.options.name + ', on the ' + this.options.line.split('//').join(', ') + 
-											' line(s) during ' + _.uniq(this.options.edition.split('//')).join(' and ') + ' (' + this.options.date + '). '
-											)
-										// Nota Optime! This is going to backfire horribly once we have the separate CSVs for each mode - you will need to come back and fix this!
-										.openOn(mymap);
-								}
-							}
-						}
-						console.log(Visited);
-					});
-				});
-			});
-		});
-    });
-});         
+	for (i = 1; i < parsedCSV.length; i++) {
+	//for (i = 1; i < 3; i++) {
+		console.log(i);
+	// add markers to map
+	// create a HTML element for each feature
+	const el = document.createElement('div');
+	el.className = 'SantaTest';
+	el.title = `Merry Christmas ${parsedCSV[i][0]}!`;
+	//ell.push(el);
+	coords.push(parsedCSV[i][2], parsedCSV[i][1]);
+	console.log(parsedCSV[i][2], parsedCSV[i][1]);
+	msg.push(`Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
+	console.log(`Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
+	//el.time = parsedCSV[i][3];
+	y.push(new Date(`Nov 28, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
+  	var now = new Date().getTime();
+  	//y.push(new Date(`Nov 28, 2021 20:57:00`).getTime());
+		
+setTimeout(function(i){  
+	// make a marker for each feature and add it to the map
+	//new mapboxgl.Marker(ell[i-1], i)
+	new mapboxgl.Marker(el)
+		.setLngLat([coords[2*i-2],coords[2*i-1]])
+		//.setLngLat([coords[0],coords[1]])
+		.setPopup(
+			new mapboxgl.Popup({ offset: 25 }) // add popups
+			.setHTML(`<p>${msg[i-1]}</p>`)
+			//.setHTML(`<p>${msg[0]}</p>`)
+		)
+		.addTo(map);
+}, y[i-1]-now, i);
+}
+});    
 </script>
 </html>
