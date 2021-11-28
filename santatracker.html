@@ -87,9 +87,9 @@ d3.text("./data/santa.csv", function(data) {
 	el.time = parsedCSV[i][3];
 	//`Nov 28, 2021 ${parsedCSV[i][3]}:${parsedCSV[i][4]}:00`
 		
- var x = setInterval(function(parsedCSV[i], el) {
+ var x = setInterval(function(parsedCSV, el) {
   var now = new Date().getTime();
-  var y = new Date(`Nov 28, 2021 06:06:00`).getTime();
+  var y = new Date(`Nov 28, 2021 06:11:00`).getTime();
   var distance = (now - y)/1000;  
 	if (distance > 0) {	
 	// make a marker for each feature and add it to the map
