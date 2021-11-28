@@ -11,33 +11,14 @@
   	<link rel="stylesheet" type="text/css" href="./resources/css/collapsible.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/santaSP.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
-    	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
-    	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
 	<script src="https://d3js.org/d3.v3.min.js"></script>
-	<style>
-		#santamap { height: 70vh; width:70vw; z-index: 0; }
-		
-		.SantaTest {
-		background-image: url('./resources/photos/present.gif');
-		background-size: cover;
-		width: 8vh;
-		height: 4.5vw;
-		cursor: pointer;
-		}
-		
-		.mapboxgl-popup {
-  			max-width: 15vw;
-		}
-
-		.mapboxgl-popup-content {
-  			text-align: center;
-  			font-family: 'Raleway';
-		}
-	</style>
   </head>
   <header>
       <h1>
@@ -102,7 +83,7 @@ setTimeout(function(i){
 		.setLngLat([coords[2*i-2],coords[2*i-1]])
 		//.setLngLat([coords[0],coords[1]])
 		.setPopup(
-			new mapboxgl.Popup({ offset: 25 }) // add popups
+			new mapboxgl.Popup({ offset: 35 }) // add popups
 			.setHTML(`<p>${msg[i-1]}</p>`)
 			//.setHTML(`<p>${msg[0]}</p>`)
 		)

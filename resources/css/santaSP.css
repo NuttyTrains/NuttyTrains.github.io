@@ -1,0 +1,20 @@
+#santamap { height: 70vh; width:70vw; z-index: 0; }
+
+.SantaTest {
+background-image: url('../photos/present.gif');
+background-size: cover;
+width: 8vh;
+height: 4.5vw;
+cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 15vw;
+  background-color: red;
+}
+
+.mapboxgl-popup-content {
+  color: white;
+  text-align: center;
+  font-family: 'Raleway';
+}
