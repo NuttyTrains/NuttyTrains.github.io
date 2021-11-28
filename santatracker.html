@@ -78,7 +78,7 @@ d3.text("./data/santa.csv", function(data) {
 			title: "Are you the hover-text?",
 			name: parsedCSV[i][0],
 			time: parsedCSV[i][3]
-		}).on('click', onMapClick).addTo(mymap);
+		}).on('click', onMapClick, classAdd).addTo(mymap);
 		var popup = L.popup();
 		function onMapClick(e) {
 			popup
@@ -88,7 +88,9 @@ d3.text("./data/santa.csv", function(data) {
 					)
 				.openOn(mymap);
 		}
-		marker.className += "SantaTest";
+		function classAdd(e) {
+			e.className += "SantaTest";
+		}
 	}
 });       
 </script>
