@@ -95,7 +95,7 @@ d3.text("./data/santa.csv", function(data) {
 	msg.push(`Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	console.log(`Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	//el.time = parsedCSV[i][3];
-	y.push(new Date(`Nov 28, 2021 ${parsedCSV[i-1][4]}:${parsedCSV[i-1][5]}:00`).getTime());
+	y.push(new Date(`Nov 28, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
   	var now = new Date().getTime();
   	//y.push(new Date(`Nov 28, 2021 20:57:00`).getTime());
 		
