@@ -18,3 +18,7 @@ and literally nowhere else
 The NT advent calendar countdown is now live! The CSVs have been tidied up and some videos added. All write-ups pre-Xi 4 are now complete, with Xi 4 and Koppa 8 on the 
 horizon. Sampi 7, Digamma 2 and Koppa 9 are still WIP. Various Aleph write-ups also may be coming. Quite frankly, we are both dying at the moment, so serious progress 
 probably will not be made until Christmas.
+### v.1305: 'NT Santa Tracker 2.0'
+Phase 2 of the NT Santa Tracker is now live! More stops will come later, along with Santa (hopefully). The Advent Calendar is on its way, Koppa 8 is almost complete, and 
+some Alephs have been completed too. Numerous adventures are about to imminently be ticked off when the Advent Calendar videos go live next week:  
+<a href="https://www.youtube.com/playlist?list=PL_j-qqG4iXvqASbvqtkY5Zbx-wg7ydTT4">stay tuned!</a>
