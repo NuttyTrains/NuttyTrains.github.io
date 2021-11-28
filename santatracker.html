@@ -74,8 +74,6 @@ d3.text("./data/santa.csv", function(data) {
 	const arrayColumn = (arr, n) => arr.map(x => x[n]);
 	for (i = 1; i < parsedCSV.length; i++) {
 		console.log(i);
-		for (const marker of geojson.features) {
-		// Create a DOM element for each marker.
 		const el = document.createElement('div');
 		el.className = 'SantaTest';			
 		el.title: "Are you the hover-text?",
