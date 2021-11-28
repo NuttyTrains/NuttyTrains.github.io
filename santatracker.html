@@ -76,7 +76,8 @@ const map = new mapboxgl.Map({
 
 d3.text("./data/santa.csv", function(data) {
     var parsedCSV = d3.csv.parseRows(data);
-	for (i = 1; i < parsedCSV.length; i++) {
+	//for (i = 1; i < parsedCSV.length; i++) {
+	for (i = 1) {
 		console.log(i);
 	// add markers to map
 	// create a HTML element for each feature
@@ -92,10 +93,10 @@ d3.text("./data/santa.csv", function(data) {
 setTimeout(function(){  
 	// make a marker for each feature and add it to the map
 	new mapboxgl.Marker(el)
-		.setLngLat([parsedCSV[i][2], parsedCSV[i][1]])
+		.setLngLat([parsedCSV[1][2], parsedCSV[1][1]])
 		.setPopup(
 			new mapboxgl.Popup({ offset: 25 }) // add popups
-			.setHTML(`<p>'Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][3]}:${parsedCSV[i][4]}. Merry Christmas, ${parsedCSV[i][0]}!'</p>`)
+			.setHTML(`<p>'Santa visited ${parsedCSV[1][0]}, at ${parsedCSV[1][3]}:${parsedCSV[1][4]}. Merry Christmas, ${parsedCSV[1][0]}!'</p>`)
 		)
 		.addTo(map);
 }, y-now);
