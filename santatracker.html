@@ -51,7 +51,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2c
 const map = new mapboxgl.Map({
   container: 'santamap',
   style: 'mapbox://styles/mapbox/streets-v11',
-  center: [-0.1686, 51.5103],
+  center: [-0.1686, 51.5183],
   zoom: 12
 });
 
@@ -83,7 +83,7 @@ setTimeout(function(i){
 		.setLngLat([coords[2*i-2],coords[2*i-1]])
 		//.setLngLat([coords[0],coords[1]])
 		.setPopup(
-			new mapboxgl.Popup({ offset: 35 }) // add popups
+			new mapboxgl.Popup({ offset: 35 , closeButton: false }) // add popups
 			.setHTML(`<p>${msg[i-1]}</p>`)
 			//.setHTML(`<p>${msg[0]}</p>`)
 		)

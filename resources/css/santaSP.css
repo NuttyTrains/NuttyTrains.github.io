@@ -10,10 +10,10 @@ cursor: pointer;
 
 .mapboxgl-popup {
   max-width: 15vw;
-  background-color: red;
 }
 
 .mapboxgl-popup-content {
+  background-color: red;
   color: white;
   text-align: center;
   font-family: 'Raleway';
