@@ -42,7 +42,7 @@
                         console.log(arrayColumn(Visited, 0));
                         console.log(parsedCSV[1][2] + parsedCSV[1][3]);
                         for (i = 1; i < parsedCSV.length; i++) {
-                            if (arrayColumn(Visited, 0).includes(parsedCSV[i][2])) {
+                            if (arrayColumn(Visited, 0).includes(parsedCSV[i][0])) {
                                 L.marker([parsedCSV[i][2], parsedCSV[i][3]]).addTo(mymap);
                                 console.log('Added marker ' + i + ' at ' + parsedCSV[i][8] + ', ' + parsedCSV[i][9]);
                             }
