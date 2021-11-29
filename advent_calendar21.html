@@ -28,7 +28,7 @@
             accessToken: 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw'
         }).addTo(mymap);
 
-        d3.text("./data/tubeStations.csv", function(data) {
+        d3.text("./data/adventCalendar21.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
                 console.log(parsedCSV)
                 console.log(parsedCSV.length)
@@ -36,7 +36,7 @@
                     // console.log(parsedCSV[i][9]);
                     // L.marker([parsedCSV[i][9], parsedCSV[i][8]]).addTo(mymap);
                     // console.log('Added marker ' + i + ' at ' + parsedCSV[i][8] + ', ' + parsedCSV[i][9] )
-                    d3.text("./data/adventCalendar21.csv", function(data) {
+                    d3.text("./data/AC_places21.csv", function(data) {
                         var Visited = d3.csv.parseRows(data);
                         const arrayColumn = (arr, n) => arr.map(x => x[n]);
                         // console.log(arrayColumn(Visited, 0));
