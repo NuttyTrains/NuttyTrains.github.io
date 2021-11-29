@@ -41,7 +41,7 @@
                         const arrayColumn = (arr, n) => arr.map(x => x[n]);
                         console.log(arrayColumn(Visited, 0));
                         // console.log(parsedCSV[1][2] + parsedCSV[1][3]);
-                        const date1 = new Date('11/29/2021 22:10:00');
+                        const date1 = new Date('11/29/2021 22:36:00');
                         setTimeout(function(){
                             var now = new Date().getTime();
                             var diffTime = 0;
@@ -58,7 +58,7 @@
                                 color: 'red',
                                 fillColor: '#f03',
                                 fillOpacity: 0.5,
-                                radius: (500*(1 - diffTime))
+                                radius: (10000*(1 - diffTime))
                             }).addTo(mymap);
                         }, 1000);
                     });
