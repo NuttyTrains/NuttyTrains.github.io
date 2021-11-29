@@ -55,11 +55,10 @@
                             }
                         }
                             console.log(diffTime);
-                            var circle = L.circle([parsedCSV[i][3], parsedCSV[i][2]], {
+                            var circle = L.circle([parsedCSV[i][3], parsedCSV[i][2]], (10000*(1 - 1/(1 + diffTime))), {
                                 color: 'red',
                                 fillColor: '#f03',
-                                fillOpacity: 0.5,
-                                radius: (10000*(1 - 1/(1 + diffTime)))
+                                fillOpacity: 0.5
                             }).addTo(mymap).bindPopup("test");
                         }, 1000);
                     });
