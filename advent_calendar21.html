@@ -40,7 +40,7 @@
                         var Visited = d3.csv.parseRows(data);
                         const arrayColumn = (arr, n) => arr.map(x => x[n]);
                         console.log(arrayColumn(Visited, 0));
-                        console.log(parsedCSV[1][2] + parsedCSV[1][3]);
+                        // console.log(parsedCSV[1][2] + parsedCSV[1][3]);
                         const date1 = new Date('11/29/2021 22:10:00');
                         setTimeout(function(){
                             var now = new Date().getTime();
@@ -51,7 +51,8 @@
                                 L.marker([parsedCSV[i][3], parsedCSV[i][2]]).addTo(mymap);
                                 console.log('Added marker ' + i + ' at ' + parsedCSV[i][2] + ', ' + parsedCSV[i][3]);
                             }
-                            if (diffTime < 0) { diffTime = 0}
+                        }
+                        if (diffTime < 0) { diffTime = 0}
                             console.log(diffTime);
                             var circle = L.circle([parsedCSV[i][3], parsedCSV[i][2]], {
                                 color: 'red',
@@ -59,7 +60,6 @@
                                 fillOpacity: 0.5,
                                 radius: (500*(1 - diffTime))
                             }).addTo(mymap);
-                        }
                         }, 1000);
                     });
             });
