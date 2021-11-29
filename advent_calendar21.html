@@ -61,8 +61,8 @@
                             // the radius. But, I need that random number to be slowly decreasing, it will be different every
                             // time you open the browser, but illi vitae.
                             var M = (1 - 1/(1 + diffTime));
-                            var x = parsedCSV[diffDays][3] + 500 * N1 * M;
-                            var y = parsedCSV[diffDays][2] + 500 * N2 * M;
+                            var x = parseInt(parsedCSV[diffDays][3]) + 500 * N1 * M;
+                            var y = parseInt(parsedCSV[diffDays][2]) + 500 * N2 * M;
                             var d = Math.sqrt(x**2 + y**2);
                             var circle = L.circle([x, y], 500, {
                                 color: 'red',
