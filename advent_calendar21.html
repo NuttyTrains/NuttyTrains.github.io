@@ -40,7 +40,7 @@
                         var Visited = d3.csv.parseRows(data);
                         const arrayColumn = (arr, n) => arr.map(x => x[n]);
                         console.log(arrayColumn(Visited, 0));
-                        console.log(parsedCSV[0][8] + parsedCSV[i][9]);
+                        console.log(parsedCSV[0][8] + parsedCSV[0][9]);
                         for (i = 1; i < parsedCSV.length; i++) {
                             if (arrayColumn(Visited, 0).includes(parsedCSV[i][2])) {
                                 L.marker([parsedCSV[i][9], parsedCSV[i][8]]).addTo(mymap);
