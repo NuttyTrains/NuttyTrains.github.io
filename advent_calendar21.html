@@ -45,7 +45,7 @@
                         setTimeout(function(){
                             var now = new Date().getTime();
                             var diffTime = 0;
-                            if (Math.abs(date1 - now) < 0) { diffTime = 0} else {diffTime = Math.abs(now - date1)}
+                            if (date1 - now < 0) { diffTime = 0} else {diffTime = Math.abs(now - date1)}
                             const diffDays = Math.ceil(diffTime / (1000 * 60)); 
                             for (i = 1; i < diffDays+1; i++) {
                             if (arrayColumn(Visited, 0).includes(parsedCSV[i][0])) {
