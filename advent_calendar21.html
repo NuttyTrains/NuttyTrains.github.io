@@ -58,7 +58,7 @@
                                 color: 'red',
                                 fillColor: '#f03',
                                 fillOpacity: 0.5,
-                                radius: (10000/(1 + diffTime))
+                                radius: (10000*(1 - 1/(1 + diffTime)))
                             }).addTo(mymap);
                         }, 1000);
                     });
