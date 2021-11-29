@@ -54,8 +54,8 @@
                                 console.log('Added marker ' + i + ' at ' + parsedCSV[i][2] + ', ' + parsedCSV[i][3]);
                             }
                         }
-                            console.log(diffTime);
-                            var circle = L.circle([parsedCSV[i][3], parsedCSV[i][2]], (10000*(1 - 1/(1 + diffTime))), {
+                            console.log(10000*(1 - 1/(1 + diffTime)));
+                            var circle = L.circle([parsedCSV[i][3], parsedCSV[i][2]], 10000*(1 - 1/(1 + diffTime)), {
                                 color: 'red',
                                 fillColor: '#f03',
                                 fillOpacity: 0.5
