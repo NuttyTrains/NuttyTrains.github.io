@@ -47,8 +47,8 @@
                                 if (arrayColumn(parsedCSV, 0).includes(Visited[i][0])) { // I swapped these
                                     var station_index = (element) => element = Visited[i][0];
                                     var j = Visited.findIndex(station_index);
-                                    console.log([parsedCSV[j][3], parsedCSV[j][2]])
-                                    L.marker([parsedCSV[j][3], parsedCSV[j][2]]).addTo(mymap);
+                                    console.log([parsedCSV[j+1][3], parsedCSV[j+1][2]])
+                                    L.marker([parsedCSV[j+1][3], parsedCSV[j+1][2]]).addTo(mymap);
                                     console.log('Added marker ' + i + ' at ' + parsedCSV[i][2] + ', ' + parsedCSV[i][3]);
                                 } else {console.log('you buggered it')}
                             }
