@@ -43,7 +43,7 @@
                             if (date1 - now < 0) { diffTime = 0} else {diffTime = Math.abs(now - date1)}
                             const diffDays = 25; //Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
                             for (i = 1; i < diffDays+1; i++) { // remove this +1 before publishing
-                                L.marker([Visited[i][1], Visited[i][2]]).addTo(mymap);
+                                L.marker([Visited[i][1], Visited[i][2]]).addTo(mymap).bindPopup("Day " + i);
                                 console.log('Added marker ' + i + ' at ' + Visited[i][1] + ', ' + Visited[i][2]);
                             }
                             // console.log(10000*(1 - 1/(1 + diffTime)));
