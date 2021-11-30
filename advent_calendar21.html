@@ -64,6 +64,7 @@
                             var x = parseInt(parsedCSV[diffDays][3]) + 500 * N1 * M;
                             var y = parseInt(parsedCSV[diffDays][2]) + 500 * N2 * M;
                             var d = Math.sqrt(x**2 + y**2);
+                            console.log(x, y, d);
                             var circle = L.circle([x, y], 500, {
                                 color: 'red',
                                 fillColor: '#f03',
