@@ -29,6 +29,14 @@
         }).addTo(mymap);
 
         yTubeURL = ['dePsW_HM0YY', 'RXd27OjnZ-I', 'qycDxs0RlaQ'];
+        numer = ['first', 'second', 'third', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth', 'eleventh', 
+                 'twelth', 'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth', 'seventeenth', 'eighteenth', 'nineteenth',
+                 'twentieth', 'twenty first', 'twenty second', 'twenty third', 'twenty fourth', 'twenty fiffth'];
+        clues = ['Ye Old Faithful', 'Something politically incorrect', 'One of the best NT moments ever', 'Covid Insanity', 
+                 'an old friend', 'James in London', 'us going insane with our degrees', 'an art student`s wet dream', 
+                 'a random crackhead', 'proper youtube', 'NT Cooking', 'NT Cooking II', 'James getting lost', 'CAAAAAMMMMBOOOORRRRNNNNEEEEE',
+                 'Matthew getting lost', 'another old friend', 'RIP old friend', 'SPEEEEED AND POWER', 'James talking shit', 
+                 'A Steam Train Adventure', 'Matthew Falling Over', 'James getting lost', 'and some shit we haven`t filmed yet'];
 
         d3.text("./data/adventCalendar21.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
@@ -66,7 +74,7 @@
                                     color: 'red',
                                     fillColor: '#f03',
                                     fillOpacity: 0.5
-                                }).addTo(mymap).bindPopup("Day " + (parseInt(diffDays) + 1).toString());
+                                }).addTo(mymap).bindPopup("On the " + numer[diffDays] + ' day of Christmas NT gave to you... ' + clues[i]);
                                 var from = circle.getLatLng();
                                 var d = from.distanceTo([parsedCSV[diffDays][3], parsedCSV[diffDays][2]]);
                                 circle.setRadius(d * 1.5);
