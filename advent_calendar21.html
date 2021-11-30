@@ -59,8 +59,8 @@
                             var y = parseInt(parsedCSV[diffDays][2]) - 1 * N2 * M;
                             // Math.sqrt(x**2 + y**2);
                             var now = new Date();
-                            console.log(diffDays, now.getUTCHours);
-                            if (diffDays < 26 && (now.getUTCHours < 10 || now.getUTCHours > 18)) {
+                            console.log(diffDays, now.getUTCHours());
+                            if (diffDays < 26 && (now.getUTCHours() < 10 || now.getUTCHours() > 18)) {
                                 console.log('I am alive, I promise...')
                                 var circle = L.circle([x, y], 500, {
                                     color: 'red',
