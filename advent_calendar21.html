@@ -28,6 +28,8 @@
             accessToken: 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw'
         }).addTo(mymap);
 
+        yTubeURL = ['dePsW_HM0YY', 'RXd27OjnZ-I', 'qycDxs0RlaQ'];
+
         d3.text("./data/adventCalendar21.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
                     d3.text("./data/AC_Places21.csv", function(data) {
@@ -42,8 +44,8 @@
                             // console.log(date1 - now);
                             if (date1 - now < 0) { diffTime = 0} else {diffTime = Math.abs(now - date1)}
                             const diffDays = 25; //Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-                            for (i = 1; i < diffDays+1; i++) { // remove this +1 before publishing
-                                L.marker([Visited[i][1], Visited[i][2]]).addTo(mymap).bindPopup("Day " + i + ": " + Visited[i][0]);
+                            for (i = 1; i < diffDays; i++) { // remove this +1 before publishing
+                                L.marker([Visited[i][1], Visited[i][2]]).addTo(mymap).bindPopup("Day " + i + ": " + Visited[i][0] +". \n <a href=''> Video </a>");
                                 console.log('Added marker ' + i + ' at ' + Visited[i][1] + ', ' + Visited[i][2]);
                             }
                             // console.log(10000*(1 - 1/(1 + diffTime)));
