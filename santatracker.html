@@ -11,33 +11,14 @@
   	<link rel="stylesheet" type="text/css" href="./resources/css/collapsible.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/santaSP.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
-    	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
-    	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
 	<script src="https://d3js.org/d3.v3.min.js"></script>
-	<style>
-		#map { height: 70vh; width:70vw; z-index: 0; }
-		
-		.SantaTest {
-		background-image: url('./resources/photos/present.gif');
-		background-size: cover;
-		width: 50px;
-		height: 50px;
-		cursor: pointer;
-		}
-		
-		.mapboxgl-popup {
-  			max-width: 200px;
-		}
-
-		.mapboxgl-popup-content {
-  			text-align: center;
-  			font-family: 'Raleway';
-		}
-	</style>
   </head>
   <header>
       <h1>
@@ -56,9 +37,9 @@ $(function(){
     <h1 class= "spacing"> Santa Tracker </h1>
 	  <div class="intro">
 	<p>
-		Testy test, I love testing shit
+		Welcome to the Nutty Trains Santa Tracker - going live, December 24th!
 	</p>
-	<center><div id="map">Testy Test</div></center>
+	<center><div id="santamap">Testy Test</div></center>
 	<div style="padding: 1em 1em 1em 1em;"></div>
 
 </div>
@@ -68,14 +49,13 @@ $(function(){
 mapboxgl.accessToken = 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw';
 	
 const map = new mapboxgl.Map({
-  container: 'map',
+  container: 'santamap',
   style: 'mapbox://styles/mapbox/streets-v11',
-  center: [-0.1686, 51.5103],
+  center: [-0.1686, 51.5183],
   zoom: 12
 });
 
 const y = []
-//const ell = []
 const coords = []
 const msg = []
 
@@ -89,24 +69,21 @@ d3.text("./data/santa.csv", function(data) {
 	const el = document.createElement('div');
 	el.className = 'SantaTest';
 	el.title = `Merry Christmas ${parsedCSV[i][0]}!`;
-	//ell.push(el);
 	coords.push(parsedCSV[i][2], parsedCSV[i][1]);
 	console.log(parsedCSV[i][2], parsedCSV[i][1]);
-	msg.push(`Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
-	console.log(`Santa visited ${parsedCSV[i][0]}, at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
-	//el.time = parsedCSV[i][3];
+	msg.push(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
+	console.log(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	y.push(new Date(`Nov 28, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
   	var now = new Date().getTime();
   	//y.push(new Date(`Nov 28, 2021 20:57:00`).getTime());
 		
 setTimeout(function(i){  
 	// make a marker for each feature and add it to the map
-	//new mapboxgl.Marker(ell[i-1], i)
 	new mapboxgl.Marker(el)
 		.setLngLat([coords[2*i-2],coords[2*i-1]])
 		//.setLngLat([coords[0],coords[1]])
 		.setPopup(
-			new mapboxgl.Popup({ offset: 25 }) // add popups
+			new mapboxgl.Popup({ offset: 35 , closeButton: false }) // add popups
 			.setHTML(`<p>${msg[i-1]}</p>`)
 			//.setHTML(`<p>${msg[0]}</p>`)
 		)
