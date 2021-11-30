@@ -45,7 +45,7 @@
                             for (i = 1; i < diffDays+1; i++) { // remove this +1 before publishing
                                 // console.log(parsedCSV[i][0]);
                                 if (arrayColumn(parsedCSV, 0).includes(Visited[i][0])) { // I swapped these
-                                    var station_index = (element) => element = Visited[i][0];
+                                    var station_index = (element) => element == Visited[i][0];
                                     var j = parsedCSV.findIndex(station_index);
                                     console.log(parsedCSV[j+1][0]);
                                     L.marker([parsedCSV[j+1][3], parsedCSV[j+1][2]]).addTo(mymap);
