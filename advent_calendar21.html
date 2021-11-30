@@ -50,8 +50,8 @@
                             var now = new Date().getTime();
                             var diffTime = 0;
                             // console.log(date1 - now);
-                            if (date1 - now < 0) { diffTime = 0} else {diffTime = Math.abs(now - date1)}
-                            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+                            if (date1.getTime() - now < 0) { diffTime = 0} else {diffTime = Math.abs(now - date1)}
+                            var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
                             for (i = 1; i < diffDays; i++) { // remove this +1 before publishing
                                 L.marker([Visited[i][1], Visited[i][2]]).addTo(mymap).bindPopup("Day " + i + ": " + Visited[i][0] +". \n <a href='https://youtu.be/" + yTubeURL + "'> Video </a>");
                                 console.log('Added marker ' + i + ' at ' + Visited[i][1] + ', ' + Visited[i][2]);
