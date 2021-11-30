@@ -21,7 +21,7 @@
         var mymap = L.map('mapid').setView([51.505, -0.09], 10);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            maxZoom: 5,
+            maxZoom: 7,
             id: 'mapbox/streets-v11',
             tileSize: 512,
             zoomOffset: -1,
@@ -50,7 +50,7 @@
                             var now = new Date().getTime();
                             var diffTime = 0;
                             // console.log(date1 - now);
-                            if (date1.getTime() - now < 0) { diffTime = 0} else {diffTime = Math.abs(now - date1)}
+                            if (date1.getTime() - now < 0) { diffTime = 0} else {diffTime = Math.abs(now - date1.getTime())}
                             var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
                             for (i = 1; i < diffDays; i++) { // remove this +1 before publishing
                                 L.marker([Visited[i][1], Visited[i][2]]).addTo(mymap).bindPopup("Day " + i + ": " + Visited[i][0] +". \n <a href='https://youtu.be/" + yTubeURL + "'> Video </a>");
