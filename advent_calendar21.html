@@ -43,12 +43,12 @@
                             if (date1 - now < 0) { diffTime = 0} else {diffTime = Math.abs(now - date1)}
                             const diffDays = 25; //Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
                             for (i = 1; i < diffDays+1; i++) { // remove this +1 before publishing
-                            if (arrayColumn(Visited, 0).includes(parsedCSV[i][0])) {
                                 console.log(parsedCSV[i][0]);
-                                L.marker([parsedCSV[i][3], parsedCSV[i][2]]).addTo(mymap);
-                                console.log('Added marker ' + i + ' at ' + parsedCSV[i][2] + ', ' + parsedCSV[i][3]);
-                            } else {console.log('you buggered it')}
-                        }
+                                if (arrayColumn(Visited, 0).includes(parsedCSV[i][0])) {
+                                    L.marker([parsedCSV[i][3], parsedCSV[i][2]]).addTo(mymap);
+                                    console.log('Added marker ' + i + ' at ' + parsedCSV[i][2] + ', ' + parsedCSV[i][3]);
+                                } else {console.log('you buggered it')}
+                            }
                             // console.log(10000*(1 - 1/(1 + diffTime)));
                             // right, now I want the circle to be off-centre by a bit, so... I need to add a random number
                             // to the x and the y and the to make sure that the point is still in the circle I add that to 
