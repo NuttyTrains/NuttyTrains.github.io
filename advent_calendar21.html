@@ -15,10 +15,10 @@
     </head>
     <body>
         <p> This is an advent calendar </p>
-        <div id="mapid"></div>
+        <div id="AC_map"></div>
     </body>
     <script>
-        var mymap = L.map('mapid').setView([51.505, -0.09], 10);
+        var mymap = L.map('AC_map').setView([51.505, -0.09], 10);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
             maxZoom: 15,
@@ -55,7 +55,7 @@
                             // time you open the browser, but illi vitae.
                             var M = (1 - 1/(1 + diffTime));
                             console.log(diffDays);
-                            var x = parseInt(parsedCSV[diffDays][3]) + 3 * N1 * M;
+                            var x = parseInt(parsedCSV[diffDays][3]) + 1 * N1 * M;
                             var y = parseInt(parsedCSV[diffDays][2]) - 1 * N2 * M;
                             // Math.sqrt(x**2 + y**2);
                             console.log(x, y, d);
