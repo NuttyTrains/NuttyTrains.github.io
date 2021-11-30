@@ -64,7 +64,8 @@
                                 fillColor: '#f03',
                                 fillOpacity: 0.5
                             }).addTo(mymap).bindPopup("Day " + diffDays + 1);
-                            var d = circle.distanceTo([parsedCSV[diffDays][3], parsedCSV[diffDays][2]])
+                            var from = circle.getLatLng();
+                            var d = from.distanceTo([parsedCSV[diffDays][3], parsedCSV[diffDays][2]]);
                             circle.setRadius(d + 10);
                         }, 1000);
                     });
