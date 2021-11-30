@@ -57,14 +57,15 @@
                             console.log(diffDays);
                             var x = parseInt(parsedCSV[diffDays][3]) + 3 * N1 * M;
                             var y = parseInt(parsedCSV[diffDays][2]) - 1 * N2 * M;
-                            var d = Math.sqrt(x**2 + y**2);
+                            // Math.sqrt(x**2 + y**2);
                             console.log(x, y, d);
                             var circle = L.circle([x, y], 500, {
                                 color: 'red',
                                 fillColor: '#f03',
                                 fillOpacity: 0.5
                             }).addTo(mymap).bindPopup("Day " + diffDays + 1);
-                            circle.setRadius(100*d);
+                            var d = circle.distanceTo([parsedCSV[diffDays][3], parsedCSV[diffDays][2]])
+                            circle.setRadius(d + 10);
                         }, 1000);
                     });
             });
