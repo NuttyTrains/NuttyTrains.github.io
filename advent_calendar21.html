@@ -30,17 +30,10 @@
 
         d3.text("./data/adventCalendar21.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
-                // console.log(parsedCSV)
-                // console.log(parsedCSV.length)
-                // console.log(parsedCSV[i][8]);
-                // console.log(parsedCSV[i][9]);
-                // L.marker([parsedCSV[i][9], parsedCSV[i][8]]).addTo(mymap);
-                // console.log('Added marker ' + i + ' at ' + parsedCSV[i][8] + ', ' + parsedCSV[i][9] )
                     d3.text("./data/AC_places21.csv", function(data) {
                         var Visited = d3.csv.parseRows(data);
                         const arrayColumn = (arr, n) => arr.map(x => x[n]);
                         console.log(arrayColumn(Visited, 0));
-                        // console.log(parsedCSV[1][2] + parsedCSV[1][3]);
                         const date1 = new Date('11/31/2021 10:00:00');
                         var N1 = Math.random(); var N2 = Math.random();
                         setTimeout(function(){
@@ -61,6 +54,7 @@
                             // the radius. But, I need that random number to be slowly decreasing, it will be different every
                             // time you open the browser, but illi vitae.
                             var M = (1 - 1/(1 + diffTime));
+                            console.log(diffDays);
                             var x = parseInt(parsedCSV[diffDays][3]) + 500 * N1 * M;
                             var y = parseInt(parsedCSV[diffDays][2]) + 500 * N2 * M;
                             var d = Math.sqrt(x**2 + y**2);
