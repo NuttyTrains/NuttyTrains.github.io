@@ -91,5 +91,20 @@ setTimeout(function(i){
 }, y[i-1]-now, i);
 }
 });    
+		
+
+const ell = document.createElement('div');
+ell.className = 'SantaTest2';
+ell.title = `Ho Ho Ho!`;
+setInterval(function(){  
+	// make a marker for each feature and add it to the map
+	new mapboxgl.Marker(ell)
+		.setLngLat([-0.1686+0.2*Math.random()-0.1, 51.5183+0.2*Math.random()-0.1])
+		.setPopup(
+			new mapboxgl.Popup({ offset: 35 , closeButton: false }) // add popups
+			.setHTML(`<p>Ho Ho Ho! Merry Christmas!</p>`)
+		)
+		.addTo(map);
+}, 10000);
 </script>
 </html>
