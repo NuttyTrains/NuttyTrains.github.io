@@ -1,12 +1,12 @@
 Station,Latitude,Longitude,TLC,Owner
-Beckton,0.063442568,51.51390419,,Docklands Light Railway
+Beckton,51.51390419,0.063442568,,Docklands Light Railway
 Birmingham New Street,52.47781981,-1.900205571,BHM,Network Rail
 Bristol Temple Meads,51.44914642,-2.581315627,BRI,Network Rail
 Camborne,50.21044314,-5.297412316,CBN,Great Western Railway
 Cambridge,52.19406537,0.137456461,CBG,Greater Anglia
-Canning Town,0.009568884,51.51360991,,London Underground
+Canning Town,51.51360991,0.009568884,,London Underground
 Cardiff Central,51.47602889,-3.179302297,CDF,TfW Rail
-Chesham,-0.609421076,51.70474175,,London Underground
+Chesham,51.70474175,-0.609421076,,London Underground
 Cynghordy,52.05150224,-3.748211328,CYN,TfW Rail
 East Croydon,51.37545225,-0.092779701,ECR,Govia Thameslink Railway (Southern)
 Enfield Lock,51.67092044,-0.028532466,ENL,Greater Anglia
@@ -14,7 +14,7 @@ Ffairfach,51.87247927,-3.992860276,FFA,TfW Rail
 Islip,51.82575359,-1.238181764,ISP,Chiltern Railways
 Llandeilo,51.88534914,-3.986890668,LLL,TfW Rail
 Lydney,51.71413824,-2.530864034,LYD,TfW Rail
-North Greenwich,0.005908784,51.50002099,,London Underground
+North Greenwich,51.50002099,0.005908784,,London Underground
 Oxford,51.75349634,-1.27015353,OXF,Great Western Railway
 Pilning,51.55662952,-2.627112032,PIL,Great Western Railway
 Ryde Esplanade,50.73286857,-1.159616199,RYD,South Western Railway (Island Line)
