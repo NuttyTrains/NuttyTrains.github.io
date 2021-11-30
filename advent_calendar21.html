@@ -59,14 +59,16 @@
                             var y = parseInt(parsedCSV[diffDays][2]) - 1 * N2 * M;
                             // Math.sqrt(x**2 + y**2);
                             // console.log(x, y, d);
-                            var circle = L.circle([x, y], 500, {
-                                color: 'red',
-                                fillColor: '#f03',
-                                fillOpacity: 0.5
-                            }).addTo(mymap).bindPopup("Day " + (parseInt(diffDays) + 1).toString());
-                            var from = circle.getLatLng();
-                            var d = from.distanceTo([parsedCSV[diffDays][3], parsedCSV[diffDays][2]]);
-                            circle.setRadius(d * 1.5);
+                            if (diffTime < 26) {
+                                var circle = L.circle([x, y], 500, {
+                                    color: 'red',
+                                    fillColor: '#f03',
+                                    fillOpacity: 0.5
+                                }).addTo(mymap).bindPopup("Day " + (parseInt(diffDays) + 1).toString());
+                                var from = circle.getLatLng();
+                                var d = from.distanceTo([parsedCSV[diffDays][3], parsedCSV[diffDays][2]]);
+                                circle.setRadius(d * 1.5);
+                            }
                         }, 10);
                     });
             });
