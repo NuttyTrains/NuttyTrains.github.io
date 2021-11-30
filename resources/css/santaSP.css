@@ -3,8 +3,8 @@
 .SantaTest {
 background-image: url('../photos/present.gif');
 background-size: cover;
-width: 8vh;
-height: 4.5vw;
+width: 4.5vmax;
+height: 8vmin;
 cursor: pointer;
 }
 
@@ -17,4 +17,12 @@ cursor: pointer;
   color: white;
   text-align: center;
   font-family: 'Raleway';
+}
+
+.SantaTest2 {
+background-image: url('../photos/santa.gif');
+background-size: cover;
+width: 8vmax;
+height: 8vmin;
+cursor: pointer;
 }
