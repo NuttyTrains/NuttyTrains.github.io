@@ -46,7 +46,7 @@
                             if (arrayColumn(Visited, 0).includes(parsedCSV[i][0])) {
                                 L.marker([parsedCSV[i][3], parsedCSV[i][2]]).addTo(mymap);
                                 console.log('Added marker ' + i + ' at ' + parsedCSV[i][2] + ', ' + parsedCSV[i][3]);
-                            }
+                            } else {console.log('you buggered it')}
                         }
                             // console.log(10000*(1 - 1/(1 + diffTime)));
                             // right, now I want the circle to be off-centre by a bit, so... I need to add a random number
