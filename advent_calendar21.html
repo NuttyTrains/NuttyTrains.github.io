@@ -14,7 +14,6 @@
         </style>
     </head>
     <body>
-        <p> This is an advent calendar </p>
         <div id="mapid"></div>
     </body>
     <script>
@@ -74,7 +73,7 @@
                                     color: 'red',
                                     fillColor: '#f03',
                                     fillOpacity: 0.5
-                                }).addTo(mymap).bindPopup("On the " + numer[diffDays] + ' day of Christmas NT gave to you... ' + clues[i]);
+                                }).addTo(mymap).bindPopup("On the " + numer[diffDays - 1] + ' day of Christmas NT gave to you... ' + clues[diffDays - 1]);
                                 var from = circle.getLatLng();
                                 var d = from.distanceTo([parsedCSV[diffDays][3], parsedCSV[diffDays][2]]);
                                 circle.setRadius(d * 1.5);
