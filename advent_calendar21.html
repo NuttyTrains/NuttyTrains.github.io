@@ -10,18 +10,28 @@
         crossorigin=""></script>
         <script src="https://d3js.org/d3.v3.min.js"></script>
         <style>
-            #mapid { height: 100%; width:100% }
+            #mapid { height: 100%; width:100%; z-index: -1; }
             .floatBox {
                 position: absolute;
-                right: 10vmax; 
-                top: 10vmax;
+                right: 2vmax; 
+                top: 2vmax;
                 background-color: aliceblue;
+                z-index: 1;
+                padding: 1em;
+                width: 40%;
             }
         </style>
     </head>
     <body>
         <div class="floatBox">
-            <h1>Here is some text</h1>
+            <h1>NT Advent Calendar</h1>
+            <p>
+                Hello there! Welcome to the NT Advent Calendar. This arose out of an insane idea we had about a month ago 
+                and here it is. For a whole 25 days we will give you sweet sweet delicious content and you will enjoy it. 
+                Come back and click on the new marker everyday to see the new content. In the mean time the red circle will 
+                give you a small idea of what you will have. It marks in what area of the UK the clip was filmed and there is 
+                a cryptic clue when you click on it. You can click on this box to get rid of it.
+            </p>
         </div>
         <div id="mapid"></div>
     </body>
