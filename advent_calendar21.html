@@ -44,7 +44,7 @@
                             const diffDays = 25; //Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
                             for (i = 1; i < diffDays+1; i++) { // remove this +1 before publishing
                                 console.log(parsedCSV[i][0]);
-                                if (arrayColumn(Visited, 0).includes(parsedCSV[i][0])) {
+                                if (arrayColumn(parsedCSV, 0).includes(Visited[i][0])) {
                                     L.marker([parsedCSV[i][3], parsedCSV[i][2]]).addTo(mymap);
                                     console.log('Added marker ' + i + ' at ' + parsedCSV[i][2] + ', ' + parsedCSV[i][3]);
                                 } else {console.log('you buggered it')}
