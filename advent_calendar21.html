@@ -56,7 +56,7 @@
                             var M = (1 - 1/(1 + diffTime));
                             console.log(diffDays);
                             var x = parseInt(parsedCSV[diffDays][3]) + 3 * N1 * M;
-                            var y = parseInt(parsedCSV[diffDays][2]) - 3 * N2 * M;
+                            var y = parseInt(parsedCSV[diffDays][2]) - 1 * N2 * M;
                             var d = Math.sqrt(x**2 + y**2);
                             console.log(x, y, d);
                             var circle = L.circle([x, y], 500, {
