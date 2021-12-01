@@ -107,7 +107,7 @@ var timer = setInterval(function(i){
 	T.push(timer);
 		
 setTimeout(function(i){  
-	clearTimeout(T[i-1]);
+	clearInterval(T[i-1]);
 	T[i]
 	// make a marker for each feature and add it to the map
 	new mapboxgl.Marker(el)
