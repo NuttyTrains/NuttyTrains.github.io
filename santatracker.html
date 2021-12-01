@@ -22,14 +22,14 @@
   </head>
   <header>
       <h1>
-	<div id="nav2-placeholder">
+	<div id="nav-placeholder">
 	      </div>
       </h1>
   </header>
 	
 <script>
 $(function(){
-  $("#nav2-placeholder").load("nav2.html");
+  $("#nav-placeholder").load("nav.html");
 });
 </script>
 	
@@ -41,9 +41,8 @@ $(function(){
 	</p>
 	<center><div id="santamap">Testy Test</div></center>
 	<div style="padding: 1em 1em 1em 1em;"></div>
-
+	<p id="iter">Father Christmas has not yet started his journey - check back later!</p>
 </div>
-	  <p id="iter">Santa has not yet started his journey - check back later!</p>
 </body>
 
 <script>
@@ -66,14 +65,12 @@ d3.text("./data/santa.csv", function(data) {
 	const ell = document.createElement('div');
 	ell.className = 'SantaTest2';
 	for (i = 1; i < parsedCSV.length; i++) {
-	console.log(i);
 	// add markers to map
 	// create a HTML element for each feature
 	const el = document.createElement('div');
 	el.className = 'SantaTest';
 	el.title = `Merry Christmas ${parsedCSV[i][0]}!`;
 	coords.push(parsedCSV[i][2], parsedCSV[i][1]);
-	console.log(parsedCSV[i][2], parsedCSV[i][1]);
 	msg.push(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	console.log(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	y.push(new Date(`Dec 1, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
@@ -106,6 +103,9 @@ var timer = setInterval(function(i){
 				.setLngLat([parsedCSV[i+1][2], parsedCSV[i+1][1]])
 				.addTo(map);
 		}
+	}
+	else if (i == parsedCSV.length -1) {
+	document.getElementById("iter").innerHTML = `Father Christmas has now finished his journey! Come back in 2022! Merry Christmas!`;
 	}
 }, 1000, i);
 	
