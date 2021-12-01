@@ -92,11 +92,9 @@ var timer = setInterval(function(i){
 		if (now2 - q < 0) {
 			t = Math.floor(now2 - p);
 			console.log(t);
-			lng = parseFloat(parsedCSV[i][2] + t*((parsedCSV[i+1][2] - parsedCSV[i][2])/(q - p)));
+			lng = Number(parsedCSV[i][2]) + Number(t*((parsedCSV[i+1][2] - parsedCSV[i][2])/(q - p)));
 			console.log(lng);
-			console.log(t*((parsedCSV[i+1][2] - parsedCSV[i][2])/(q - p)));
-			console.log(parsedCSV[i][2] + t*((parsedCSV[i+1][2] - parsedCSV[i][2])/(q - p)));
-			lat = parseFloat(parsedCSV[i][1] + t*((parsedCSV[i+1][1] - parsedCSV[i][1])/(q - p)));
+			lat = Number(parsedCSV[i][1]) + Number(t*((parsedCSV[i+1][1] - parsedCSV[i][1])/(q - p)));
 			console.log(lat);
 			ell.title = `Ho Ho Ho! I am on my way to ${parsedCSV[i+1][0]}! Merry Christmas!`;
 			// make a marker for each feature and add it to the map
