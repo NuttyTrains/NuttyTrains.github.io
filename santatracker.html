@@ -61,6 +61,7 @@ const msg = []
 
 d3.text("./data/santa.csv", function(data) {
     var parsedCSV = d3.csv.parseRows(data);
+  	var now = new Date().getTime();
 	for (i = 1; i < parsedCSV.length; i++) {
 	//for (i = 1; i < 3; i++) {
 		console.log(i);
@@ -73,8 +74,7 @@ d3.text("./data/santa.csv", function(data) {
 	console.log(parsedCSV[i][2], parsedCSV[i][1]);
 	msg.push(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	console.log(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
-	y.push(new Date(`Nov 28, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
-  	var now = new Date().getTime();
+	y.push(new Date(`Dec 1, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
   	//y.push(new Date(`Nov 28, 2021 20:57:00`).getTime());
 		
 setTimeout(function(i){  
@@ -89,23 +89,38 @@ setTimeout(function(i){
 		)
 		.addTo(map);
 }, y[i-1]-now, i);
-}
-});    
+}  
 		
 
 const ell = document.createElement('div');
 ell.className = 'SantaTest2';
 ell.title = `Ho Ho Ho!`;
+	
+
 setInterval(function(){  
-	// make a marker for each feature and add it to the map
-	new mapboxgl.Marker(ell)
-		.setLngLat([-0.1686+0.2*Math.random()-0.1, 51.5183+0.2*Math.random()-0.1])
-		.setPopup(
-			new mapboxgl.Popup({ offset: 35 , closeButton: false }) // add popups
-			.setHTML(`<p>Ho Ho Ho! Merry Christmas!</p>`)
-		)
-		.addTo(map);
-		console.log('Santa');
+let k = 0;
+while (k < parsedCSV.length-1) {
+	p = new Date(`Dec 1, 2021 ${parsedCSV[k-1][4]}:${parsedCSV[k-1][5]}:00`).getTime();
+	q = new Date(`Dec 1, 2021 ${parsedCSV[k][4]}:${parsedCSV[k][5]}:00`).getTime();
+	if (now - q < 0) {
+		t = Math.floor(now - p);
+		console.log(t);
+		lng = parsedCSV[k-1][2] + t*((parsedCSV[k][2] - parsedCSV[k-1][2])/(q - p));
+		lat = parsedCSV[k-1][1] + t*((parsedCSV[k][1] - parsedCSV[k-1][1])/(q - p));
+		// make a marker for each feature and add it to the map
+		new mapboxgl.Marker(ell)
+			.setLngLat([lng, lat])
+			.setPopup(
+				new mapboxgl.Popup({ offset: 35 , closeButton: false }) // add popups
+				.setHTML(`<p>Ho Ho Ho! Merry Christmas!</p>`)
+			)
+			.addTo(map);
+			console.log('Santa');
+	}
+	else {k++;}
+}
 }, 10000);
+
+});  
 </script>
 </html>
