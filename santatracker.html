@@ -83,7 +83,9 @@ d3.text("./data/santa.csv", function(data) {
 		
 setTimeout(function(i){  
 	
-setInterval(function(i){  
+clearInterval(timer);
+	
+var timer = setInterval(function(i){  
 	if ((i > 0) && (i < parsedCSV.length -1)) {
 		p = new Date(`Dec 1, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime();
 		q = new Date(`Dec 1, 2021 ${parsedCSV[i+1][4]}:${parsedCSV[i+1][5]}:00`).getTime();
@@ -93,6 +95,9 @@ setInterval(function(i){
 			console.log(t);
 			lng = parseFloat(parsedCSV[i][2] + t*((parsedCSV[i+1][2] - parsedCSV[i][2])/(q - p)));
 			console.log(lng);
+			console.log(parsedCSV[i][2]);
+			console.log(parsedCSV[i+1][2]);
+			console.log((parsedCSV[i+1][2] - parsedCSV[i][2])/(q - p));
 			lat = parseFloat(parsedCSV[i][1] + t*((parsedCSV[i+1][1] - parsedCSV[i][1])/(q - p)));
 			console.log(lat);
 			// make a marker for each feature and add it to the map
