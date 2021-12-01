@@ -82,9 +82,9 @@
                             // if (date1.getTime() - now < 0) { diffTime = 0} else {diffTime = Math.abs(now - date1.getTime())}
                             var diffTime = Math.abs(now - date1.getTime());
                             var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-                            for (i = 1; i < diffDays; i++) { // remove this +1 before publishing
-                                L.marker([Visited[i][1], Visited[i][2]]).addTo(mymap).bindPopup("Day " + i + ": " + Visited[i][0] +". \n <a href='https://youtu.be/" + yTubeURL + "'> Video </a>");
-                                console.log('Added marker ' + i + ' at ' + Visited[i][1] + ', ' + Visited[i][2]);
+                            for (i = 0; i < diffDays; i++) { // remove this +1 before publishing
+                                L.marker([Visited[i+1][1], Visited[i+1][2]]).addTo(mymap).bindPopup("Day " + i + ": " + Visited[i+1][0] +". \n <a href='https://youtu.be/" + yTubeURL[i] + "'> Video </a>");
+                                console.log('Added marker ' + i + ' at ' + Visited[i+1][1] + ', ' + Visited[i+1][2]);
                             }
                             // console.log(10000*(1 - 1/(1 + diffTime)));
                             // right, now I want the circle to be off-centre by a bit, so... I need to add a random number
