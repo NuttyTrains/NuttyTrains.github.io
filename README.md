@@ -1,7 +1,7 @@
 # NuttyTrains.github.io
 Hello, we are James and Matthew. We are fascinated by railways and enjoy going on random, ill-planned, reckless railway adventures. Welcome to NT!  
 
-This is our website, where we co-ordinate all our nuttiness! This website represents over 2 years of hard work, and 1200 commits and counting of 
+This is our website, where we co-ordinate all our nuttiness! This website represents over 2 years of hard work, and 1400 commits and counting of 
 top-notch NT-quality code! Much of our attention has shifted towards our twitter and Youtube accounts as of late, but if you have come 
 looking for our central repository, you have come to the right place. Our best tweets, most of our videos, and all of our in-depth write-ups can be found here, as well 
 as much much more in the back-end (if you know where to look). [Please don't look].
@@ -22,3 +22,6 @@ probably will not be made until Christmas.
 Phase 2 of the NT Santa Tracker is now live! More stops will come later, along with Santa (hopefully). The Advent Calendar is on its way, Koppa 8 is almost complete, and 
 some Alephs have been completed too. Numerous adventures are about to imminently be ticked off when the Advent Calendar videos go live next week:  
 <a href="https://www.youtube.com/playlist?list=PL_j-qqG4iXvqASbvqtkY5Zbx-wg7ydTT4">stay tuned!</a>
+### v.1462: 'Perry the Platypus, how unexpected!'
+I genuinely did not expect this - we have shot up by over 200 commits in a matter of days! What the fuck has happened here? Well, I can exclusively reveal that both the 
+NT Advent Calendar and the NT Santa Tracker are now live, with only minor polishings needed. Merry Christmas!
