@@ -113,7 +113,7 @@
                                     color: 'red',
                                     fillColor: '#f03',
                                     fillOpacity: 0.5
-                                }).addTo(mymap).bindPopup("On the " + numer[diffDays - 1] + ' day of Christmas NT gave to you... ' + clues[diffDays - 1]);
+                                }).addTo(mymap).bindPopup("On the " + numer[diffDays] + ' day of Christmas NT gave to you... ' + clues[diffDays]);
                                 var from = circle.getLatLng();
                                 var d = from.distanceTo([Visited[diffDays][1], Visited[diffDays][2]]);
                                 circle.setRadius(d * 1.5);
