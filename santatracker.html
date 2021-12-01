@@ -58,7 +58,6 @@ const map = new mapboxgl.Map({
 const y = []
 const coords = []
 const msg = []
-const T = []
 
 d3.text("./data/santa.csv", function(data) {
     var parsedCSV = d3.csv.parseRows(data);
@@ -80,35 +79,35 @@ d3.text("./data/santa.csv", function(data) {
 	console.log(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	y.push(new Date(`Dec 1, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
   	//y.push(new Date(`Nov 28, 2021 20:57:00`).getTime());	
-
-var timer = setInterval(function(i){  
-	p = new Date(`Dec 1, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime();
-	q = new Date(`Dec 1, 2021 ${parsedCSV[i+1][4]}:${parsedCSV[i+1][5]}:00`).getTime();
-  	var now2 = new Date().getTime();
-	if (now2 - q < 0) {
-		t = Math.floor(now2 - p);
-		console.log(t);
-		lng = parseFloat(parsedCSV[i][2] + t*((parsedCSV[i+1][2] - parsedCSV[i][2])/(q - p)));
-		console.log(lng);
-		lat = parseFloat(parsedCSV[i][1] + t*((parsedCSV[i+1][1] - parsedCSV[i][1])/(q - p)));
-		console.log(lat);
-		// make a marker for each feature and add it to the map
-		new mapboxgl.Marker(ell)
-			.setLngLat([lng, lat])
-			.setPopup(
-				new mapboxgl.Popup({ offset: 35 , closeButton: false }) // add popups
-				.setHTML(`<p>Ho Ho Ho! Merry Christmas!</p>`)
-			)
-			.addTo(map);
-			console.log('Santa');
-	}
-}, 10000, i);
 		
-	T.push(timer);
 		
 setTimeout(function(i){  
-	clearInterval(T[i-1]);
-	T[i]
+	
+setInterval(function(i){  
+	if ((i > 0) && (i < parsedCSV.length -1)) {
+		p = new Date(`Dec 1, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime();
+		q = new Date(`Dec 1, 2021 ${parsedCSV[i+1][4]}:${parsedCSV[i+1][5]}:00`).getTime();
+  		var now2 = new Date().getTime();
+		if (now2 - q < 0) {
+			t = Math.floor(now2 - p);
+			console.log(t);
+			lng = parseFloat(parsedCSV[i][2] + t*((parsedCSV[i+1][2] - parsedCSV[i][2])/(q - p)));
+			console.log(lng);
+			lat = parseFloat(parsedCSV[i][1] + t*((parsedCSV[i+1][1] - parsedCSV[i][1])/(q - p)));
+			console.log(lat);
+			// make a marker for each feature and add it to the map
+			new mapboxgl.Marker(ell)
+				.setLngLat([lng, lat])
+				.setPopup(
+					new mapboxgl.Popup({ offset: 35 , closeButton: false }) // add popups
+					.setHTML(`<p>Ho Ho Ho! Merry Christmas!</p>`)
+				)
+				.addTo(map);
+				console.log('Santa');
+		}
+	}
+}, 10000, i);
+	
 	// make a marker for each feature and add it to the map
 	new mapboxgl.Marker(el)
 		.setLngLat([coords[2*i-2],coords[2*i-1]])
