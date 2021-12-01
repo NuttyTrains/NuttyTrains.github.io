@@ -95,6 +95,7 @@
                                 L.marker([Visited[i+1][1], Visited[i+1][2]]).addTo(mymap).bindPopup("Day " + i + ": " + Visited[i+1][0] +". \n <a href='https://youtu.be/" + yTubeURL[i] + "'> Video </a>");
                                 console.log('Added marker ' + i + ' at ' + Visited[i+1][1] + ', ' + Visited[i+1][2]);
                             }
+                            if( now.getUTCHours() > 18 ) { diffDays =  diffDays + 1;}
                             // console.log(10000*(1 - 1/(1 + diffTime)));
                             // right, now I want the circle to be off-centre by a bit, so... I need to add a random number
                             // to the x and the y and the to make sure that the point is still in the circle I add that to 
@@ -106,14 +107,14 @@
                             var y = parseInt(Visited[diffDays][2]) - 1 * N2 * M;
                             // Math.sqrt(x**2 + y**2);
                             var now = new Date();
-                            console.log(diffDays, now.getUTCHours(), x, y, Visited[diffDays][1], Visited[diffDays][2]);
+                            // console.log(diffDays, now.getUTCHours(), x, y, Visited[diffDays][1], Visited[diffDays][2]);
                             if (diffDays < 26 && (now.getUTCHours() < 10 || now.getUTCHours() > 18)) {
                                 console.log('I am alive, I promise...')
                                 var circle = L.circle([x, y], 500, {
                                     color: 'red',
                                     fillColor: '#f03',
                                     fillOpacity: 0.5
-                                }).addTo(mymap).bindPopup("On the " + numer[diffDays - 1] + ' day of Christmas NT gave to you... ' + clues[diffDays - 1]);
+                                }).addTo(mymap).bindPopup("On the " + numer[diffDays] + ' day of Christmas NT gave to you... ' + clues[diffDays]);
                                 var from = circle.getLatLng();
                                 var d = from.distanceTo([Visited[diffDays][1], Visited[diffDays][2]]);
                                 circle.setRadius(d * 1.5);
