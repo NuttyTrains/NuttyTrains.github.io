@@ -81,7 +81,7 @@ d3.text("./data/santa.csv", function(data) {
 	y.push(new Date(`Dec 1, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
   	//y.push(new Date(`Nov 28, 2021 20:57:00`).getTime());	
 
-var timer = setInterval(function(){  
+var timer = setInterval(function(i){  
 	p = new Date(`Dec 1, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime();
 	q = new Date(`Dec 1, 2021 ${parsedCSV[i+1][4]}:${parsedCSV[i+1][5]}:00`).getTime();
   	var now2 = new Date().getTime();
@@ -102,7 +102,7 @@ var timer = setInterval(function(){
 			.addTo(map);
 			console.log('Santa');
 	}
-}, 10000);
+}, 10000, i);
 		
 	T.push(timer);
 		
