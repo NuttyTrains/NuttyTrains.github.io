@@ -98,15 +98,16 @@ ell.title = `Ho Ho Ho!`;
 	
 
 setInterval(function(){  
-let k = 0;
+let k = 1;
 while (k < parsedCSV.length-1) {
-	p = new Date(`Dec 1, 2021 ${parsedCSV[k-1][4]}:${parsedCSV[k-1][5]}:00`).getTime();
-	q = new Date(`Dec 1, 2021 ${parsedCSV[k][4]}:${parsedCSV[k][5]}:00`).getTime();
-	if (now - q < 0) {
-		t = Math.floor(now - p);
+	p = new Date(`Dec 1, 2021 ${parsedCSV[k][4]}:${parsedCSV[k][5]}:00`).getTime();
+	q = new Date(`Dec 1, 2021 ${parsedCSV[k+1][4]}:${parsedCSV[k+1][5]}:00`).getTime();
+  	var now2 = new Date().getTime();
+	if (now2 - q < 0) {
+		t = Math.floor(now2 - p);
 		console.log(t);
-		lng = parsedCSV[k-1][2] + t*((parsedCSV[k][2] - parsedCSV[k-1][2])/(q - p));
-		lat = parsedCSV[k-1][1] + t*((parsedCSV[k][1] - parsedCSV[k-1][1])/(q - p));
+		lng = parsedCSV[k][2] + t*((parsedCSV[k+1][2] - parsedCSV[k][2])/(q - p));
+		lat = parsedCSV[k][1] + t*((parsedCSV[k+1][1] - parsedCSV[k][1])/(q - p));
 		// make a marker for each feature and add it to the map
 		new mapboxgl.Marker(ell)
 			.setLngLat([lng, lat])
