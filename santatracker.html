@@ -107,7 +107,9 @@ while (k < parsedCSV.length-1) {
 		t = Math.floor(now2 - p);
 		console.log(t);
 		lng = parsedCSV[k][2] + t*((parsedCSV[k+1][2] - parsedCSV[k][2])/(q - p));
+		console.log(lng);
 		lat = parsedCSV[k][1] + t*((parsedCSV[k+1][1] - parsedCSV[k][1])/(q - p));
+		console.log(lat);
 		// make a marker for each feature and add it to the map
 		new mapboxgl.Marker(ell)
 			.setLngLat([lng, lat])
