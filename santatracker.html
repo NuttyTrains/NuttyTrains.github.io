@@ -43,6 +43,7 @@ $(function(){
 	<div style="padding: 1em 1em 1em 1em;"></div>
 
 </div>
+	  <p id="iter">Santa has not yet started his journey - check back later!</p>
 </body>
 
 <script>
@@ -65,7 +66,6 @@ d3.text("./data/santa.csv", function(data) {
 	const ell = document.createElement('div');
 	ell.className = 'SantaTest2';
 	for (i = 1; i < parsedCSV.length; i++) {
-	//for (i = 1; i < 3; i++) {
 	console.log(i);
 	// add markers to map
 	// create a HTML element for each feature
@@ -77,43 +77,44 @@ d3.text("./data/santa.csv", function(data) {
 	msg.push(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	console.log(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	y.push(new Date(`Dec 1, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
-  	//y.push(new Date(`Nov 28, 2021 20:57:00`).getTime());	
 		
 		
-setTimeout(function(i){  
-	
-clearInterval(timer);
+setTimeout(function(i){
 	
 var timer = setInterval(function(i){  
 	if ((i > 0) && (i < parsedCSV.length -1)) {
 		p = new Date(`Dec 1, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime();
 		q = new Date(`Dec 1, 2021 ${parsedCSV[i+1][4]}:${parsedCSV[i+1][5]}:00`).getTime();
   		var now2 = new Date().getTime();
-		if (now2 - q < 0) {
+		if (now2 - q < -30000) {
 			t = Math.floor(now2 - p);
 			console.log(t);
-			lng = Number(parsedCSV[i][2]) + Number(t*((parsedCSV[i+1][2] - parsedCSV[i][2])/(q - p)));
-			console.log(lng);
-			lat = Number(parsedCSV[i][1]) + Number(t*((parsedCSV[i+1][1] - parsedCSV[i][1])/(q - p)));
-			console.log(lat);
+			lng = Number(parsedCSV[i][2]) + Number(t*((parsedCSV[i+1][2] - parsedCSV[i][2])/(q - p - 30000)));
+			lat = Number(parsedCSV[i][1]) + Number(t*((parsedCSV[i+1][1] - parsedCSV[i][1])/(q - p - 30000)));
 			ell.title = `Ho Ho Ho! I am on my way to ${parsedCSV[i+1][0]}! Merry Christmas!`;
+			document.getElementById("iter").innerHTML = `Father Christmas' next stop will be ${parsedCSV[i+1][0]} at ${parsedCSV[i+1][4]}:${parsedCSV[i+1][5]}! He has visited ${i} places so far! Merry Christmas!`;
 			// make a marker for each feature and add it to the map
 			new mapboxgl.Marker(ell)
 				.setLngLat([lng, lat])
 				.addTo(map);
-				console.log('Santa');
+		}
+		else if (now2 - q < 0) {
+			ell.title = `Ho Ho Ho! I am at ${parsedCSV[i+1][0]}! Merry Christmas ${parsedCSV[i+1][0]}!`;
+			document.getElementById("iter").innerHTML = `Father Christmas is at ${parsedCSV[i+1][0]}, place number ${i+1}! His next stop will be ${parsedCSV[i+2][0]} at ${parsedCSV[i+2][4]}:${parsedCSV[i+2][5]}! Merry Christmas!`;
+			// make a marker for each feature and add it to the map
+			new mapboxgl.Marker(ell)
+				.setLngLat([parsedCSV[i+1][2], parsedCSV[i+1][1]])
+				.addTo(map);
 		}
 	}
-}, 10000, i);
+}, 1000, i);
 	
 	// make a marker for each feature and add it to the map
 	new mapboxgl.Marker(el)
 		.setLngLat([coords[2*i-2],coords[2*i-1]])
-		//.setLngLat([coords[0],coords[1]])
 		.setPopup(
 			new mapboxgl.Popup({ offset: 35 , closeButton: false }) // add popups
 			.setHTML(`<p>${msg[i-1]}</p>`)
-			//.setHTML(`<p>${msg[0]}</p>`)
 		)
 		.addTo(map);
 }, y[i-1]-now, i);
