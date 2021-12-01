@@ -58,13 +58,17 @@ const map = new mapboxgl.Map({
 const y = []
 const coords = []
 const msg = []
+const T = []
 
 d3.text("./data/santa.csv", function(data) {
     var parsedCSV = d3.csv.parseRows(data);
   	var now = new Date().getTime();
+	const ell = document.createElement('div');
+	ell.className = 'SantaTest2';
+	ell.title = `Ho Ho Ho!`;
 	for (i = 1; i < parsedCSV.length; i++) {
 	//for (i = 1; i < 3; i++) {
-		console.log(i);
+	console.log(i);
 	// add markers to map
 	// create a HTML element for each feature
 	const el = document.createElement('div');
@@ -75,9 +79,36 @@ d3.text("./data/santa.csv", function(data) {
 	msg.push(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	console.log(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	y.push(new Date(`Dec 1, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
-  	//y.push(new Date(`Nov 28, 2021 20:57:00`).getTime());
+  	//y.push(new Date(`Nov 28, 2021 20:57:00`).getTime());	
+
+var timer = setInterval(function(){  
+	p = new Date(`Dec 1, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime();
+	q = new Date(`Dec 1, 2021 ${parsedCSV[i+1][4]}:${parsedCSV[i+1][5]}:00`).getTime();
+  	var now2 = new Date().getTime();
+	if (now2 - q < 0) {
+		t = Math.floor(now2 - p);
+		console.log(t);
+		lng = parseFloat(parsedCSV[i][2] + t*((parsedCSV[i+1][2] - parsedCSV[i][2])/(q - p)));
+		console.log(lng);
+		lat = parseFloat(parsedCSV[i][1] + t*((parsedCSV[i+1][1] - parsedCSV[i][1])/(q - p)));
+		console.log(lat);
+		// make a marker for each feature and add it to the map
+		new mapboxgl.Marker(ell)
+			.setLngLat([lng, lat])
+			.setPopup(
+				new mapboxgl.Popup({ offset: 35 , closeButton: false }) // add popups
+				.setHTML(`<p>Ho Ho Ho! Merry Christmas!</p>`)
+			)
+			.addTo(map);
+			console.log('Santa');
+	}
+}, 10000);
+		
+	T.push(timer);
 		
 setTimeout(function(i){  
+	clearTimeout(T[i-1]);
+	T[i]
 	// make a marker for each feature and add it to the map
 	new mapboxgl.Marker(el)
 		.setLngLat([coords[2*i-2],coords[2*i-1]])
@@ -90,39 +121,6 @@ setTimeout(function(i){
 		.addTo(map);
 }, y[i-1]-now, i);
 }  
-		
-
-const ell = document.createElement('div');
-ell.className = 'SantaTest2';
-ell.title = `Ho Ho Ho!`;
-	
-
-setInterval(function(){  
-let k = 1;
-while (k < parsedCSV.length-1) {
-	p = new Date(`Dec 1, 2021 ${parsedCSV[k][4]}:${parsedCSV[k][5]}:00`).getTime();
-	q = new Date(`Dec 1, 2021 ${parsedCSV[k+1][4]}:${parsedCSV[k+1][5]}:00`).getTime();
-  	var now2 = new Date().getTime();
-	if (now2 - q < 0) {
-		t = Math.floor(now2 - p);
-		console.log(t);
-		lng = parseInt(parsedCSV[k][2] + t*((parsedCSV[k+1][2] - parsedCSV[k][2])/(q - p)));
-		console.log(lng);
-		lat = parseInt(parsedCSV[k][1] + t*((parsedCSV[k+1][1] - parsedCSV[k][1])/(q - p)));
-		console.log(lat);
-		// make a marker for each feature and add it to the map
-		new mapboxgl.Marker(ell)
-			.setLngLat([lng, lat])
-			.setPopup(
-				new mapboxgl.Popup({ offset: 35 , closeButton: false }) // add popups
-				.setHTML(`<p>Ho Ho Ho! Merry Christmas!</p>`)
-			)
-			.addTo(map);
-			console.log('Santa');
-	}
-	else {k++;}
-}
-}, 10000);
 
 });  
 </script>
