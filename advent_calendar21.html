@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title> Advent Calendar </title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
+        <style>
+            #mapid { height: 100%; width:100%; z-index: -1; }
+            .floatBox {
+                position: absolute;
+                right: 2vmax; 
+                top: 2vmax;
+                background-color: aliceblue;
+                z-index: 1;
+                padding: 1em;
+                width: 40%;
+                font-family: Raleway;
+            }
+            #clicky {text-decoration: none; color: inherit;}
+        </style>
+    </head>
+    <body>
+        <a id="clicky" onclick="document.getElementById('mapid').style.zIndex='5';"><div class="floatBox">
+            <h1>NT Advent Calendar</h1>
+            <p>
+                Hello there! Welcome to the NT Advent Calendar. This arose out of an insane idea we had about a month ago 
+                and here it is. For a whole 25 days we will give you sweet sweet delicious content and you will enjoy it. 
+                Come back and click on the new marker everyday to see the new content. In the mean time the red circle will 
+                give you a small idea of what you will have. It marks in what area of the UK the clip was filmed and there is 
+                a cryptic clue when you click on it. You can click on this box to get rid of it.
+            </p>
+        </div></a>
+        <div id="mapid"></div>
+    </body>
+    <script>
+        var mymap = L.map('mapid').setView([51.505, -0.09], 10);
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 7,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw'
+        }).addTo(mymap);
+        mymap.attributionControl.setPrefix('');
+
+        yTubeURL = ['dePsW_HM0YY', 'RXd27OjnZ-I', 'qycDxs0RlaQ'];
+        numer = ['first', 'second', 'third', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth', 'eleventh', 
+                 'twelth', 'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth', 'seventeenth', 'eighteenth', 'nineteenth',
+                 'twentieth', 'twenty first', 'twenty second', 'twenty third', 'twenty fourth', 'twenty fiffth'];
+        clues = ['Ye Old Faithful', 'Something politically incorrect', 'One of the best NT moments ever', 'Covid Insanity', 
+                 'an old friend', 'James in London', 'us going insane with our degrees', 'an art student`s wet dream', 
+                 'a random crackhead', 'proper youtube', 'NT Cooking', 'NT Cooking II', 'James getting lost', 'CAAAAAMMMMBOOOORRRRNNNNEEEEE',
+                 'Matthew getting lost', 'another old friend', 'RIP old friend', 'SPEEEEED AND POWER', 'James talking shit', 
+                 'A Steam Train Adventure', 'Matthew Falling Over', 'James getting lost', 'and some shit we haven`t filmed yet'];
+
+        d3.text("./data/adventCalendar21.csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data);
+                    d3.text("./data/AC_Places21.csv", function(data) {
+                        var Visited = d3.csv.parseRows(data);
+                        const arrayColumn = (arr, n) => arr.map(x => x[n]);
+                        console.log(arrayColumn(Visited, 0));
+                        const date1 = new Date('12/1/2021 10:00:00');
+                        var N1 = Math.random(); var N2 = Math.random();
+                        setTimeout(function(){
+                            var now = new Date().getTime();
+                            var diffTime = 0;
+                            // console.log(date1 - now);
+                            if (date1.getTime() - now < 0) { diffTime = 0} else {diffTime = Math.abs(now - date1.getTime())}
+                            var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+                            for (i = 1; i < diffDays; i++) { // remove this +1 before publishing
+                                L.marker([Visited[i][1], Visited[i][2]]).addTo(mymap).bindPopup("Day " + i + ": " + Visited[i][0] +". \n <a href='https://youtu.be/" + yTubeURL + "'> Video </a>");
+                                console.log('Added marker ' + i + ' at ' + Visited[i][1] + ', ' + Visited[i][2]);
+                            }
+                            // console.log(10000*(1 - 1/(1 + diffTime)));
+                            // right, now I want the circle to be off-centre by a bit, so... I need to add a random number
+                            // to the x and the y and the to make sure that the point is still in the circle I add that to 
+                            // the radius. But, I need that random number to be slowly decreasing, it will be different every
+                            // time you open the browser, but illi vitae.
+                            var M = (1 - 1/(1 + diffTime));
+                            // console.log(diffDays);
+                            var x = parseInt(parsedCSV[diffDays][3]) + 1 * N1 * M;
+                            var y = parseInt(parsedCSV[diffDays][2]) - 1 * N2 * M;
+                            // Math.sqrt(x**2 + y**2);
+                            var now = new Date();
+                            console.log(diffDays, now.getUTCHours());
+                            if (diffDays < 26 && (now.getUTCHours() < 10 || now.getUTCHours() > 18)) {
+                                console.log('I am alive, I promise...')
+                                var circle = L.circle([x, y], 500, {
+                                    color: 'red',
+                                    fillColor: '#f03',
+                                    fillOpacity: 0.5
+                                }).addTo(mymap).bindPopup("On the " + numer[diffDays - 1] + ' day of Christmas NT gave to you... ' + clues[diffDays - 1]);
+                                var from = circle.getLatLng();
+                                var d = from.distanceTo([parsedCSV[diffDays][3], parsedCSV[diffDays][2]]);
+                                circle.setRadius(d * 1.5);
+                            }
+                        }, 10);
+                    });
+            });
+        
+    </script>
+</html>
