@@ -104,8 +104,8 @@
                             // time you open the browser, but illi vitae.
                             var M = (1 - 1/(1 + diffTime2));
                             console.log(M);
-                            var x = parseInt(Visited[diffDays][1]) + 1 * N1 * M**4;
-                            var y = parseInt(Visited[diffDays][2]) - 1 * N2 * M**4;
+                            var x = parseInt(Visited[diffDays][1]) + (1 * N1 * M**4);
+                            var y = parseInt(Visited[diffDays][2]) - (1 * N2 * M**4);
                             // Math.sqrt(x**2 + y**2);
                             var now = new Date();
                             console.log(diffDays, now.getUTCHours(), x, y, numer[diffDays], clues[diffDays]);
