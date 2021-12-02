@@ -26,3 +26,10 @@ width: 8vmax;
 height: 12vmin;
 cursor: pointer;
 }
+
+.SantaTest3 {
+background-image: url('../photos/star.gif');
+background-size: cover;
+width: 0.45vmax;
+height: 0.8vmin;
+}
