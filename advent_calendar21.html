@@ -108,8 +108,8 @@
                             else {var N4 = -1};
                             var M = (1 - 1/(1 + diffTime2));
                             console.log(M);
-                            var x = parseFloat(Visited[diffDays][1]) + (N3 * N1**2 * M**4);
-                            var y = parseFloat(Visited[diffDays][2]) + (N4 * N2**2 * M**4);
+                            var x = parseFloat(Visited[diffDays + 1][1]) + (N3 * N1**2 * M**4);
+                            var y = parseFloat(Visited[diffDays + 1][2]) + (N4 * N2**2 * M**4);
                             console.log((1 * N1 * M**4), (1 * N2 * M**4));
                             // Math.sqrt(x**2 + y**2);
                             var now = new Date();
