@@ -83,7 +83,7 @@
                         const arrayColumn = (arr, n) => arr.map(x => x[n]);
                         console.log(arrayColumn(Visited, 0));
                         const date1 = new Date('12/1/2021 10:00:00');
-                        var N1 = 0.25 + Math.random(); var N2 = 0.25 + Math.random();
+                        var N1 = 0.5 + Math.random(); var N2 = 0.5 + Math.random();
                         setTimeout(function(){
                             var now = new Date().getTime();
                             var diffTime = 0;
@@ -102,10 +102,14 @@
                             // to the x and the y and the to make sure that the point is still in the circle I add that to 
                             // the radius. But, I need that random number to be slowly decreasing, it will be different every
                             // time you open the browser, but illi vitae.
+                            if (parseFloat(Visited[diffDays][1]) < 51.3) {var N3 = 1}
+                            else {var N3 = -1};
+                            if (parseFloat(Visited[diffDays][2]) < -1.9) {var N4 = 1}
+                            else {var N4 = -1};
                             var M = (1 - 1/(1 + diffTime2));
                             console.log(M);
-                            var x = parseFloat(Visited[diffDays][1]) + (1 * N1 * M**4);
-                            var y = parseFloat(Visited[diffDays][2]) - (1 * N2 * M**4);
+                            var x = parseFloat(Visited[diffDays][1]) + (N3 * N1 * M**4);
+                            var y = parseFloat(Visited[diffDays][2]) + (N4 * N2 * M**4);
                             console.log((1 * N1 * M**4), (1 * N2 * M**4));
                             // Math.sqrt(x**2 + y**2);
                             var now = new Date();
