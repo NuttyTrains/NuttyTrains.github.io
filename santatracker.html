@@ -36,12 +36,8 @@ $(function(){
   <body>
     <h1 class= "spacing"> Santa Tracker </h1>
 	  <div class="intro">
-	<p>
-		Welcome to the Nutty Trains Santa Tracker - going live, December 24th!
-	</p>
+	<p id="iter">Welcome to the Nutty Trains Santa Tracker! Father Christmas has not yet started his journey - check back later!</p>
 	<center><div id="santamap">Testy Test</div></center>
-	<div style="padding: 1em 1em 1em 1em;"></div>
-	<p id="iter">Father Christmas has not yet started his journey - check back later!</p>
 	<div id="aud"></div>
 </div>
 </body>
@@ -51,10 +47,12 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2c
 	
 const map = new mapboxgl.Map({
   container: 'santamap',
-  style: 'mapbox://styles/mapbox/streets-v11',
+  style: 'mapbox://styles/mapbox/satellite-streets-v11',
   center: [20, 30],
-  zoom: 1
+  zoom: 1.5
 });
+
+map.addControl(new mapboxgl.FullscreenControl());
 
 const y = []
 const z1 = []
@@ -93,7 +91,7 @@ d3.text("./data/santa.csv", function(data) {
 	if (i < parsedCSV.length -1){
 		if (parsedCSV[i+1][0] == "Anadyr" || "Tiananmen Square" || "Tripoli" || "The Kremlin" || "London") {
 			z1.push(new Date(`Dec ${parsedCSV[i][3]}, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
-			z2.push(parsedCSV[i+1][0])
+			z2.push(parsedCSV[i+1][0]);
 		}
 	}
 		
@@ -157,9 +155,9 @@ setTimeout(function(j){
 		document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Tour de France - Kraftwerk 2.mp3" type="audio/mpeg"></audio>`;
 	}
 	else if (z2[j] == "The Kremlin") {
-		document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Commie 2.5.mp3" type="audio/mpeg"></audio>`;
+		document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Commie2.5.mp3" type="audio/mpeg"></audio>`;
 	}
-	else {
+	else if (z2[j] == "Anadyr" || "London"){
 		document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Christmas.mp3" type="audio/mpeg"></audio>`;
 	}
 }, z1[j]-now, j);
