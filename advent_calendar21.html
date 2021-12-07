@@ -58,7 +58,7 @@
         var mymap = L.map('mapid').setView([51.505, -0.09], 7);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            maxZoom: 11,
+            maxZoom: 8,
             id: 'mapbox/streets-v11',
             tileSize: 512,
             zoomOffset: -1,
@@ -66,7 +66,7 @@
         }).addTo(mymap);
         mymap.attributionControl.setPrefix('');
 
-        yTubeURL = ['dePsW_HM0YY', 'RXd27OjnZ-I', 'qycDxs0RlaQ'];
+        yTubeURL = ['dePsW_HM0YY', 'RXd27OjnZ-I', 'qycDxs0RlaQ', 'QyFGWwO02Yg', 'VccbrubV9bo', 'nuaFCuAncd8', 'b2RxXSNVjnM', 'pDH2XVNV3lU'];
         numer = ['first', 'second', 'third', 'forth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth', 'eleventh', 
                  'twelth', 'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth', 'seventeenth', 'eighteenth', 'nineteenth',
                  'twentieth', 'twenty first', 'twenty second', 'twenty third', 'twenty fourth', 'twenty fiffth'];
@@ -106,7 +106,7 @@
                             else {var N3 = -1};
                             if (parseFloat(Visited[diffDays + 1][2]) < -1.9) {var N4 = 1}
                             else {var N4 = -1};
-                            var M = (1 - 1/(1 + diffTime2));
+                            var M = (1 - 1/(1.5 + diffTime2));
                             console.log(M);
                             var x = parseFloat(Visited[diffDays + 1][1]) + (N3 * N1**2 * M**4);
                             var y = parseFloat(Visited[diffDays + 1][2]) + (N4 * N2**2 * M**4);
