@@ -37,7 +37,7 @@ height: 0.8vmin;
 .SantaTest4 {
   background-image: url('../photos/bomb.gif');
   background-size: cover;
-  width: 4.5vmax;
+  width: 4vmax;
   height: 8vmin;
   cursor: pointer;
-  }
+}

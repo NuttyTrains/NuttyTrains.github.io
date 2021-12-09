@@ -56,8 +56,6 @@ const map = new mapboxgl.Map({
 map.addControl(new mapboxgl.FullscreenControl());
 
 const y = []
-const z1 = []
-const z2 = []
 const coords = []
 const msg = []
 
@@ -85,21 +83,16 @@ d3.text("./data/santa.csv", function(data) {
 	const el = document.createElement('div');
 	if (parsedCSV[i][0] == "Penryn") {
 		el.className = 'SantaTest4';
+		el.title = `Fuck you, ${parsedCSV[i][0]}!`;
 	}
 	else {
 		el.className = 'SantaTest';
+		el.title = `Merry Christmas, ${parsedCSV[i][0]}!`;
 	}
-	el.title = `Merry Christmas, ${parsedCSV[i][0]}!`;
 	coords.push(parsedCSV[i][2], parsedCSV[i][1]);
 	msg.push(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	//console.log(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	y.push(new Date(`Dec ${parsedCSV[i][3]}, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
-	if (i < parsedCSV.length -1){
-		if (parsedCSV[i+1][0] == "Anadyr" || parsedCSV[i+1][0] == "Tiananmen Square" || parsedCSV[i+1][0] == "Tripoli" || parsedCSV[i+1][0] == "The Kremlin" || parsedCSV[i+1][0] == "London") {
-			z1.push(new Date(`Dec ${parsedCSV[i][3]}, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
-			z2.push(parsedCSV[i+1][0]);
-		}
-	}
 		
 		
 setTimeout(function(i){
@@ -125,6 +118,19 @@ var timer = setInterval(function(i){
 			new mapboxgl.Marker(elll)
 				.setLngLat([lng, lat])
 				.addTo(map);
+			
+			if (parsedCSV[i+1][0] == "Tiananmen Square") {
+				document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Chinese Anthem.mp3" type="audio/mpeg"></audio>`;
+			}
+			else if (parsedCSV[i+1][0] == "Tripoli") {
+				document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Tour de France - Kraftwerk 2.mp3" type="audio/mpeg"></audio>`;
+			}
+			else if (parsedCSV[i+1][0] == "The Kremlin") {
+				document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Commie2.5.mp3" type="audio/mpeg"></audio>`;
+			}
+			else if (parsedCSV[i+1][0] == "Anadyr" || parsedCSV[i+1][0] == "London") {
+				document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Christmas.mp3" type="audio/mpeg"></audio>`;
+			}
 		}
 		else if (now2 - q < 0) {
 			ell.title = `Ho Ho Ho! I am at ${parsedCSV[i+1][0]}! Merry Christmas ${parsedCSV[i+1][0]}!`;
@@ -152,24 +158,6 @@ var timer = setInterval(function(i){
 }, y[i-1]-now, i);
 }
 
-for (j = 0; j < z1.length; j++) {
-setTimeout(function(j){
-	if (z2[j] == "Tiananmen Square") {
-		document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Chinese Anthem.mp3" type="audio/mpeg"></audio>`;
-	}
-	else if (z2[j] == "Tripoli") {
-		document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Tour de France - Kraftwerk 2.mp3" type="audio/mpeg"></audio>`;
-	}
-	else if (z2[j] == "The Kremlin") {
-		document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Commie2.5.mp3" type="audio/mpeg"></audio>`;
-	}
-	else {
-		document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Christmas.mp3" type="audio/mpeg"></audio>`;
-	}
-}, z1[j]-now, j);
-}
-console.log(z1);
-console.log(z2);
 });  
 </script>
 </html>
