@@ -118,19 +118,6 @@ var timer = setInterval(function(i){
 			new mapboxgl.Marker(elll)
 				.setLngLat([lng, lat])
 				.addTo(map);
-			
-			if (parsedCSV[i+1][0] == "Tiananmen Square") {
-				document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Chinese Anthem.mp3" type="audio/mpeg"></audio>`;
-			}
-			else if (parsedCSV[i+1][0] == "Tripoli") {
-				document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Tour de France - Kraftwerk 2.mp3" type="audio/mpeg"></audio>`;
-			}
-			else if (parsedCSV[i+1][0] == "The Kremlin") {
-				document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Commie2.5.mp3" type="audio/mpeg"></audio>`;
-			}
-			else if (parsedCSV[i+1][0] == "Anadyr" || parsedCSV[i+1][0] == "London") {
-				document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Christmas.mp3" type="audio/mpeg"></audio>`;
-			}
 		}
 		else if (now2 - q < 0) {
 			ell.title = `Ho Ho Ho! I am at ${parsedCSV[i+1][0]}! Merry Christmas ${parsedCSV[i+1][0]}!`;
@@ -155,6 +142,21 @@ var timer = setInterval(function(i){
 			.setHTML(`<p>${msg[i-1]}</p>`)
 		)
 		.addTo(map);
+
+	if ((i > 0) && (i < parsedCSV.length -1)) {
+		if (parsedCSV[i+1][0] == "Tiananmen Square") {
+			document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Chinese Anthem.mp3" type="audio/mpeg"></audio>`;
+		}
+		else if (parsedCSV[i+1][0] == "Tripoli") {
+			document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Tour de France - Kraftwerk 2.mp3" type="audio/mpeg"></audio>`;
+		}
+		else if (parsedCSV[i+1][0] == "The Kremlin") {
+			document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Commie2.5.mp3" type="audio/mpeg"></audio>`;
+		}
+		else if (parsedCSV[i+1][0] == "Anadyr" || parsedCSV[i+1][0] == "London") {
+			document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Christmas.mp3" type="audio/mpeg"></audio>`;
+		}
+	}
 }, y[i-1]-now, i);
 }
 
