@@ -83,11 +83,11 @@ d3.text("./data/santa.csv", function(data) {
 	const el = document.createElement('div');
 	if (parsedCSV[i][0] == "Penryn") {
 		el.className = 'SantaTest4';
-		el.title = `Fuck you, ${parsedCSV[i][0]}!`;
+		el.title = `Fuck you, ${parsedCSV[i][0]}! ${parsedCSV[i][6]}`;
 	}
 	else {
 		el.className = 'SantaTest';
-		el.title = `Merry Christmas, ${parsedCSV[i][0]}!`;
+		el.title = `Merry Christmas, ${parsedCSV[i][0]}! ${parsedCSV[i][6]}`;
 	}
 	coords.push(parsedCSV[i][2], parsedCSV[i][1]);
 	msg.push(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
@@ -121,7 +121,7 @@ var timer = setInterval(function(i){
 		}
 		else if (now2 - q < 0) {
 			ell.title = `Ho Ho Ho! I am at ${parsedCSV[i+1][0]}! Merry Christmas ${parsedCSV[i+1][0]}! ${parsedCSV[i+1][6]}`;
-			document.getElementById("iter").innerHTML = `Father Christmas is at ${parsedCSV[i+1][0]}, place number ${i+1}! His next stop will be ${parsedCSV[i+2][0]} at ${parsedCSV[i+2][4]}:${parsedCSV[i+2][5]}! Merry Christmas!`;
+			document.getElementById("iter").innerHTML = `Father Christmas is at ${parsedCSV[i+1][0]}, place number ${i+1}! ${parsedCSV[i+1][6]} His next stop will be ${parsedCSV[i+2][0]} at ${parsedCSV[i+2][4]}:${parsedCSV[i+2][5]}! Merry Christmas!`;
 			// make a marker for each feature and add it to the map
 			new mapboxgl.Marker(ell)
 				.setLngLat([parsedCSV[i+1][2], parsedCSV[i+1][1]])
