@@ -3,8 +3,8 @@
 .SantaTest {
 background-image: url('../photos/present.gif');
 background-size: cover;
-width: 4.5vmax;
-height: 8vmin;
+width: 3.375vmax;
+height: 6vmin;
 cursor: pointer;
 }
 
@@ -35,9 +35,9 @@ height: 0.8vmin;
 }
 
 .SantaTest4 {
-  background-image: url('../photos/bomb.gif');
-  background-size: cover;
-  width: 4vmax;
-  height: 8vmin;
-  cursor: pointer;
+background-image: url('../photos/bomb.gif');
+background-size: cover;
+width: 3vmax;
+height: 6vmin;
+cursor: pointer;
 }
