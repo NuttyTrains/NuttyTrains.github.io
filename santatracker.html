@@ -81,16 +81,17 @@ d3.text("./data/santa.csv", function(data) {
 	// add markers to map
 	// create a HTML element for each feature
 	const el = document.createElement('div');
-	if (parsedCSV[i][0] == "Penryn" || parsedCSV[i][0] == "Carmarthen" || parsedCSV[i][0] == "DELETED" || parsedCSV[i][0] == "North Greenwich" || parsedCSV[i][0] == "Camden") {
+	if (parsedCSV[i][0] == "Penryn" || parsedCSV[i][0] == "Carmarthen" || parsedCSV[i][0] == "DELETED" || parsedCSV[i][0] == "Dangleway" || parsedCSV[i][0] == "Camden") {
 		el.className = 'SantaTest4';
 		el.title = `Fuck you, ${parsedCSV[i][0]}! ${parsedCSV[i][6]}`;
+		msg.push(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Fuck you, ${parsedCSV[i][0]}!`);
 	}
 	else {
 		el.className = 'SantaTest';
 		el.title = `Merry Christmas, ${parsedCSV[i][0]}! ${parsedCSV[i][6]}`;
+		msg.push(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	}
 	coords.push(parsedCSV[i][2], parsedCSV[i][1]);
-	msg.push(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	//console.log(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	y.push(new Date(`Dec ${parsedCSV[i][3]}, 2021 ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
 		
