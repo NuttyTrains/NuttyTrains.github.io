@@ -1,20 +1,14 @@
-var Epsilon = new Date("Dec 20 2021 11:45:00").getTime();
 var Xmas = new Date("Dec 25, 2021 00:00:00").getTime();
 var NYE = new Date("Jan 01, 2022 00:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
-  var distanceE = (Epsilon - now)/1000;
   var distanceX = (Xmas - now)/1000;
   var distance22 = (NYE - now)/1000;
 
   //var daysE = Math.ceil(distanceE / 86400);
-  var hoursE2 = Math.ceil(distanceE / 3600);
-  var elapsedE = -1*hoursE2;
-  var daysE = Math.floor(distanceE / 86400);
-  var hoursE = Math.floor((distanceE % 86400) / 3600);
-  var minsE = Math.floor((distanceE % 3600) / 60);
-  var secsE = Math.floor(distanceE % 60);
+  //var hoursE2 = Math.ceil(distanceE / 3600);
+  //var elapsedE = -1*hoursE2;
   var daysX = Math.floor(distanceX / 86400);
   var hoursX = Math.floor((distanceX % 86400) / 3600);
   var minsX = Math.floor((distanceX % 3600) / 60);
@@ -23,8 +17,6 @@ var x = setInterval(function() {
   var hours22 = Math.floor((distance22 % 86400) / 3600);
   var mins22 = Math.floor((distance22 % 3600) / 60);
   var secs22 = Math.floor(distance22 % 60);
-
-  var IoW = ["in Exeter!", "in Exeter!", "travelling to Chocky City!", "in Chocky City!", "travelling to Southampton!", "travelling to Portsmouth!", "in Portsmouth!", "in Portsmouth!", "crossing the Solent!", "on the Island Line!", "in Shanklin Premier Inn.", "in Shanklin Premier Inn.", "sleeping.", "sleeping.", "sleeping.", "sleeping.", "sleeping.", "sleeping.", "sleeping.", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "on the Isle of Wight!", "sleeping.", "sleeping.", "sleeping.", "sleeping.", "sleeping.", "sleeping.", "sleeping.", "going to see Father Christmas!", "going to see Father Christmas!", "going to see Father Christmas!", "going to see Father Christmas!", "going to see Father Christmas!", "going to see Father Christmas!", "leaving the Isle of Wight!", "crossing the Solent!", "back in Portsmouth!"]
 
   //if (daysK9 > 1) {
     //document.getElementById("countdown").innerHTML = "Welcome to NT! The next train to arrive at PLATFORM DAI in " + daysK9 + " days is the KOPPA 9 service to BATTERSEA POWER STATION STATION, calling at COCKFOSTERS, HAMMERSMITH, BROMPTON and NINE ELMS";
@@ -38,36 +30,12 @@ var x = setInterval(function() {
     //document.getElementById("countdown").innerHTML = "We are " + elapsedK9 + " hours into KOPPA 9! The train arriving at PLATFORM DAI is the KOPPA 9 service to BATTERSEA POWER STATION STATION, calling at COCKFOSTERS, HAMMERSMITH, BROMPTON and NINE ELMS";
   //}
 
-  if ((daysE > 1) && (hoursX < 14) && (hoursX > 6)) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! Check out the new <a href='https://www.youtube.com/playlist?list=PL_j-qqG4iXvqASbvqtkY5Zbx-wg7ydTT4'> Nutty Trains Advent Calendar </a> video! Christmas is in " + daysX + " days! NT Epsilon is in " + daysE + " days!";
+  if ((daysX > 5) && (hoursX < 14) && (hoursX > 6)) {
+    document.getElementById("countdown").innerHTML = "Welcome to NT! Check out the new <a href='https://www.youtube.com/playlist?list=PL_j-qqG4iXvqASbvqtkY5Zbx-wg7ydTT4'> Nutty Trains Advent Calendar </a> video! Christmas is in " + daysX + " days!";
   }
  
-  else if (daysE > 1) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! Our new Nutty Trains Advent Calendar video goes live in " + (hoursX + 10) % 24 + " hours, " + minsX + " minutes and " + secsX + " seconds! Christmas is in " + daysX + " days! NT Epsilon is in " + daysE + " days!";
-  }
-
-  else if ((daysE == 1) && (hoursX < 14) && (hoursX > 6)) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! Check out the new <a href='https://www.youtube.com/playlist?list=PL_j-qqG4iXvqASbvqtkY5Zbx-wg7ydTT4'> Nutty Trains Advent Calendar </a> video! Christmas is in " + daysX + " days! NT Epsilon is in " + daysE + " day and " + hoursE + " hours!";
-  }
- 
-  else if (daysE == 1) {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! Our new Nutty Trains Advent Calendar video goes live in " + (hoursX + 10) % 24 + " hours, " + minsX + " minutes and " + secsX + " seconds! Christmas is in " + daysX + " days! NT Epsilon is in " + daysE + " day and " + hoursE + " hours!";
-  }
-
-  else if ((daysE == 0) && (hoursX < 14) && (hoursX > 6)) {
-    document.getElementById("countdown").innerHTML = "NT Epsilon is in " + hoursE + " hours, " + minsE + " minutes and " + secsE + " seconds! Check out the new <a href='https://www.youtube.com/playlist?list=PL_j-qqG4iXvqASbvqtkY5Zbx-wg7ydTT4'> Nutty Trains Advent Calendar </a> video! Christmas is in " + daysX + " days!";
-  }
- 
-  else if (daysE == 0) {
-    document.getElementById("countdown").innerHTML = "NT Epsilon is in " + hoursE + " hours, " + minsE + " minutes and " + secsE + " seconds! Our new Nutty Trains Advent Calendar video goes live in " + (hoursX + 10) % 24 + " hours, " + minsX + " minutes and " + secsX + " seconds! Christmas is in " + daysX + " days!";
-  }
-
-  else if ((hoursE2 > -52) && (hoursX < 14) && (hoursX > 6)) {
-    document.getElementById("countdown").innerHTML = "We are " + elapsedE + " hours into NT Epsilon! We are currently " + IoW[elapsedE] + " Check out the new <a href='https://www.youtube.com/playlist?list=PL_j-qqG4iXvqASbvqtkY5Zbx-wg7ydTT4'> Nutty Trains Advent Calendar </a> video! Christmas is in " + daysX + " days!";
-  }
- 
-  else if (hoursE2 > -52) {
-    document.getElementById("countdown").innerHTML = "We are " + elapsedE + " hours into NT Epsilon! We are currently " + IoW[elapsedE] + " Our new Nutty Trains Advent Calendar video goes live in " + (hoursX + 10) % 24 + " hours, " + minsX + " minutes and " + secsX + " seconds! Christmas is in " + daysX + " days!";
+  else if (daysX > 5) {
+    document.getElementById("countdown").innerHTML = "Welcome to NT! Our new Nutty Trains Advent Calendar video goes live in " + (hoursX + 10) % 24 + " hours, " + minsX + " minutes and " + secsX + " seconds! Christmas is in " + daysX + " days!";
   }
  
   else if ((daysX > 0) && (hoursX < 14) && (hoursX > 6)) {
