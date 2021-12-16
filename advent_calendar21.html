@@ -7,7 +7,7 @@
         <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
+        <link rel="stylesheet" type="text/css" href="./resources/css/collapsible.css"/>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
         crossorigin=""/>
@@ -59,7 +59,7 @@
         var mymap = L.map('mapid').setView([51.505, -0.09], 7);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            maxZoom: 8,
+            maxZoom: 11,
             id: 'mapbox/streets-v11',
             tileSize: 512,
             zoomOffset: -1,
@@ -68,7 +68,7 @@
         mymap.attributionControl.setPrefix('');
 
         yTubeURL = ['dePsW_HM0YY', 'RXd27OjnZ-I', 'qycDxs0RlaQ', 'QyFGWwO02Yg', 'VccbrubV9bo', 'nuaFCuAncd8', 'b2RxXSNVjnM', 'pDH2XVNV3lU', '4b3Gabbqavw',
-                    'rwGVbySFVt0', 'PKXVTCAIL6g', 'EkjzggsAKNo', 'cjdrmNFDthc', 'weIm_xuLV7U', 'v7X5yjp_nqg'];
+                    'rwGVbySFVt0', 'PKXVTCAIL6g', 'EkjzggsAKNo', 'cjdrmNFDthc', 'weIm_xuLV7U', 'v7X5yjp_nqg', '3qUMLWkmIDI'];
         numer = ['first', 'second', 'third', 'forth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth', 'eleventh', 
                  'twelth', 'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth', 'seventeenth', 'eighteenth', 'nineteenth',
                  'twentieth', 'twenty first', 'twenty second', 'twenty third', 'twenty fourth', 'twenty fiffth'];
