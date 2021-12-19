@@ -145,7 +145,7 @@ var timer = setInterval(function(i){
 		.addTo(map);
 
 	if ((i > 0) && (i < parsedCSV.length -1)) {
-		if (parsedCSV[i+1][0] == "Tiananmen Square" || parsedCSV[i+1][0] == "Ürümqi") {
+		if (parsedCSV[i+1][0] == "Tiananmen Square" || parsedCSV[i+1][0] == "Wuhan" || parsedCSV[i+1][0] == "Ürümqi") {
 			document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Chinese Anthem.mp3" type="audio/mpeg"></audio>`;
 		}
 		else if (parsedCSV[i+1][0] == "Tripoli") {
@@ -160,7 +160,7 @@ var timer = setInterval(function(i){
 		else if (parsedCSV[i+1][0] == "Almaty") {
 			document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Borat.mp3" type="audio/mpeg"></audio>`;
 		}
-		else if (parsedCSV[i+1][0] == "Anadyr" || parsedCSV[i+1][0] == "Beijing" || parsedCSV[i+1][0] == "Omsk" || parsedCSV[i+1][0] == "Kathmandu" || parsedCSV[i+1][0] == "Moscow" || parsedCSV[i+1][0] == "N'Djamena" || parsedCSV[i+1][0] == "Huntsville") {
+		else if (parsedCSV[i+1][0] == "Anadyr" || parsedCSV[i+1][0] == "Beijing" || parsedCSV[i+1][0] == "Dongguan" || parsedCSV[i+1][0] == "Omsk" || parsedCSV[i+1][0] == "Kathmandu" || parsedCSV[i+1][0] == "Moscow" || parsedCSV[i+1][0] == "N'Djamena" || parsedCSV[i+1][0] == "Huntsville") {
 			document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Christmas.mp3" type="audio/mpeg"></audio>`;
 		}
 	}
