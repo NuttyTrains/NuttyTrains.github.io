@@ -110,7 +110,7 @@ d3.text("./data/santa.csv", function(data) {
 			document.getElementById("iter").innerHTML = `The reindeer are lining up, ready to take off!`;
 		}
 		else if (diff > 0) {
-			document.getElementById("iter").innerHTML = `Father Christmas is about to leave! Taking off in ${diff}`;
+			document.getElementById("iter").innerHTML = `Father Christmas is about to leave! Taking off in ${diff}.`;
 		}
 	}, 1000);
 
@@ -143,19 +143,29 @@ var timer = setInterval(function(i){
 		if (now2 - q < -30000) {
 			t = Math.floor(now2 - p);
 			//console.log(t);
-			lng = Number(parsedCSV[i][2]) + Number(t*((parsedCSV[i+1][2] - parsedCSV[i][2])/(q - p - 30000)));
+			if (i == 2) {
+				lng = Number(parsedCSV[i][2]) + Number(t*((parsedCSV[i+1][2] - parsedCSV[i][2] + 360)/(q - p - 30000)));
+				if (lng > 180) {lng = lng - 360;}
+			}
+			else if (i == 4) {
+				lng = Number(parsedCSV[i][2]) + Number(t*((parsedCSV[i+1][2] - parsedCSV[i][2] - 360)/(q - p - 30000)));
+				if (lng < -180) {lng = lng + 360;}
+			}
+			else {
+				lng = Number(parsedCSV[i][2]) + Number(t*((parsedCSV[i+1][2] - parsedCSV[i][2])/(q - p - 30000)));
+			}
 			lat = Number(parsedCSV[i][1]) + Number(t*((parsedCSV[i+1][1] - parsedCSV[i][1])/(q - p - 30000)));
 			ell.title = `Ho Ho Ho! I am on my way to ${parsedCSV[i+1][0]}! Merry Christmas!`;
 			document.getElementById("iter").innerHTML = `Father Christmas' next stop will be ${parsedCSV[i+1][0]} at ${parsedCSV[i+1][4]}:${parsedCSV[i+1][5]}! ${parsedCSV[i+1][6]} He has visited ${i} places so far! Merry Christmas!`;
-			const elll = document.createElement('div');
-			elll.className = 'SantaTest3';
+			//const elll = document.createElement('div');
+			//elll.className = 'SantaTest3';
 			// make a marker for each feature and add it to the map
 			new mapboxgl.Marker(ell)
 				.setLngLat([lng, lat])
 				.addTo(map);
-			new mapboxgl.Marker(elll)
-				.setLngLat([lng, lat])
-				.addTo(map);
+			//new mapboxgl.Marker(elll)
+				//.setLngLat([lng, lat])
+				//.addTo(map);
 		}
 		else if (now2 - q < 0) {
 			ell.title = `Ho Ho Ho! I am at ${parsedCSV[i+1][0]}! Merry Christmas ${parsedCSV[i+1][0]}! ${parsedCSV[i+1][6]}`;
