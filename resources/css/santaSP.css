@@ -1,4 +1,8 @@
-#santamap { height: 75vh; width:90vw; z-index: 0; }
+body {
+  background: rgb(4, 5, 17);
+}
+
+#santamap { height: 85vh; width:98vw; z-index: 0; }
 
 .SantaTest {
 background-image: url('../photos/present.gif');
@@ -40,4 +44,11 @@ background-size: cover;
 width: 3vmax;
 height: 6vmin;
 cursor: pointer;
+}
+
+#iter {
+  font-size: 1.6em;
+  font-family: "Hammersmith One";
+  color: white;
+  text-decoration: underline double red;
 }
