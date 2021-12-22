@@ -28,8 +28,7 @@
 </body>
 
 <script>
-const year = "2021";
-const nyear = "2022";
+const year = 2021;
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw';
 	
@@ -57,7 +56,10 @@ d3.text("./data/santa.csv", function(data) {
 		q = new Date(`Dec ${parsedCSV[1][3]}, ${year} ${parsedCSV[1][4]}:${parsedCSV[1][5]}:00`).getTime();
 		var now2 = new Date().getTime();
 		var diff = Math.floor((q - now2)/1000);
-		if (diff > 12600) {
+		if (diff > 2073600) {
+			document.getElementById("iter").innerHTML = `What are you doing here? Come back in December ${year}!`;
+		}
+		else if (diff > 12600) {
 			document.getElementById("iter").innerHTML = `This Christmas, join Nutty Trains as we track Father Christmas on his journey around the world!`;
 		}
 		else if (diff > 10800) {
@@ -164,7 +166,7 @@ var timer = setInterval(function(i){
 		}
 	}
 	else if (i == parsedCSV.length -1) {
-	document.getElementById("iter").innerHTML = `Father Christmas has now finished his journey! Come back in ${nyear}! Merry Christmas!`;
+	document.getElementById("iter").innerHTML = `Father Christmas has now finished his journey! Come back in ${year + 1}! Merry Christmas!`;
 	document.getElementById("aud").innerHTML = ` `;
 	}
 }, 1000, i);
@@ -180,22 +182,22 @@ var timer = setInterval(function(i){
 
 	if ((i > 0) && (i < parsedCSV.length -1)) {
 		if (parsedCSV[i+1][0] == "Tiananmen Square" || parsedCSV[i+1][0] == "Wuhan" || parsedCSV[i+1][0] == "Ürümqi") {
-			document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Chinese Anthem.mp3" type="audio/mpeg"></audio>`;
+			document.getElementById("aud").innerHTML = `<audio autoplay loop><source src="./resources/audio/Chinese Anthem.mp3" type="audio/mpeg"></audio>`;
 		}
 		else if (parsedCSV[i+1][0] == "Tripoli") {
-			document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Tour de France - Kraftwerk 2.mp3" type="audio/mpeg"></audio>`;
+			document.getElementById("aud").innerHTML = `<audio autoplay loop><source src="./resources/audio/Tour de France - Kraftwerk 2.mp3" type="audio/mpeg"></audio>`;
 		}
 		else if (parsedCSV[i+1][0] == "The Kremlin" || parsedCSV[i+1][0] == "Sebastopol") {
-			document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Commie2.5.mp3" type="audio/mpeg"></audio>`;
+			document.getElementById("aud").innerHTML = `<audio autoplay loop><source src="./resources/audio/Commie2.5.mp3" type="audio/mpeg"></audio>`;
 		}
 		else if (parsedCSV[i+1][0] == "Mobile") {
-			document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Sweet Home Alabama.mp3" type="audio/mpeg"></audio>`;
+			document.getElementById("aud").innerHTML = `<audio autoplay loop><source src="./resources/audio/Sweet Home Alabama.mp3" type="audio/mpeg"></audio>`;
 		}
 		else if (parsedCSV[i+1][0] == "Almaty") {
-			document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Borat.mp3" type="audio/mpeg"></audio>`;
+			document.getElementById("aud").innerHTML = `<audio autoplay loop><source src="./resources/audio/Borat.mp3" type="audio/mpeg"></audio>`;
 		}
 		else if (parsedCSV[i+1][0] == "Anadyr" || parsedCSV[i+1][0] == "Beijing" || parsedCSV[i+1][0] == "Dongguan" || parsedCSV[i+1][0] == "Omsk" || parsedCSV[i+1][0] == "Kathmandu" || parsedCSV[i+1][0] == "Sochi" || parsedCSV[i+1][0] == "Murmansk" || parsedCSV[i+1][0] == "N'Djamena" || parsedCSV[i+1][0] == "Huntsville") {
-			document.getElementById("aud").innerHTML = `<audio controls autoplay loop><source src="./resources/audio/Christmas.mp3" type="audio/mpeg"></audio>`;
+			document.getElementById("aud").innerHTML = `<audio autoplay loop><source src="./resources/audio/Christmas.mp3" type="audio/mpeg"></audio>`;
 		}
 	}
 }, y[i-1]-now, i);
