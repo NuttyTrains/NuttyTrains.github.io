@@ -18,7 +18,7 @@ cursor: pointer;
 
 .mapboxgl-popup-content {
   background-color: red;
-  color: white;
+  color: black;
   text-align: center;
   font-family: 'Raleway';
 }
