@@ -45,7 +45,6 @@ map.addControl(new mapboxgl.NavigationControl());
 const y = []
 const coords = []
 const msg = []
-//const Timer = []
 
 d3.text("./data/santa.csv", function(data) {
     var parsedCSV = d3.csv.parseRows(data);
@@ -55,7 +54,7 @@ d3.text("./data/santa.csv", function(data) {
 
 	setInterval(function(){
 		q = new Date(`Dec ${parsedCSV[1][3]}, ${year} ${parsedCSV[1][4]}:${parsedCSV[1][5]}:00`).getTime();
-		var now2 = new Date().getTime();
+		var now2 = new Date().getTime()+28454400000;
 		var diff = Math.floor((q - now2)/1000);
 		if (diff > 2073600) {
 			document.getElementById("iter").innerHTML = `What are you doing here? Come back in December ${year}!`;
@@ -121,15 +120,12 @@ d3.text("./data/santa.csv", function(data) {
 	coords.push(parsedCSV[i][2], parsedCSV[i][1]);
 	//console.log(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	y.push(new Date(`Dec ${parsedCSV[i][3]}, ${year} ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
-	//Timer.push(setInterval(santaFunc, 1000, i));
 		
 		
 	setTimeout(markerFunc, y[i-1]-now-28454400000, i);
 
 	function markerFunc(j) {
-	//clearInterval();
 	var timer = setInterval(santaFunc, 1000, j);
-	//Timer[j];
 	
 	// make a marker for each feature and add it to the map
 	new mapboxgl.Marker(el)
