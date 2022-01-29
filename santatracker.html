@@ -122,19 +122,11 @@ d3.text("./data/santa.csv", function(data) {
 	y.push(new Date(`Dec ${parsedCSV[i][3]}, ${year} ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
 		
 		
-	setTimeout(function(){
-		
-		// make a marker for each feature and add it to the map
-		new mapboxgl.Marker(el)
-			.setLngLat([coords[2*i-2],coords[2*i-1]])
-			.setPopup(
-				new mapboxgl.Popup({ offset: 35 , closeButton: false }) // add popups
-				.setHTML(`<p>${msg[i-1]}</p>`)
-			)
-			.addTo(map);
+	setTimeout(function(i){
 	
-		console.log(y[i-1]-now);
-	}, y[i-1]-now-28496446185);
+	console.log(y[i-1]-now-28508100);
+	console.log(parsedCSV[i][0]);
+	}, y[i-1]-now-28508100, i);
 }
 
 });  
