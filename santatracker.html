@@ -122,9 +122,10 @@ d3.text("./data/santa.csv", function(data) {
 	y.push(new Date(`Dec ${parsedCSV[i][3]}, ${year} ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
 		
 		
-	setTimeout(markerFunc, Number(y[i-1]-now-28508100000), i);
+	setTimeout(markerFunc, y[i-1]-now-28508100000, i);
 
 	function markerFunc(j) {
+	var timer = setInterval(santaFunc, 1000, j);
 	
 	// make a marker for each feature and add it to the map
 	new mapboxgl.Marker(el)
@@ -154,6 +155,53 @@ d3.text("./data/santa.csv", function(data) {
 		else if (parsedCSV[j+1][0] == "Anadyr" || parsedCSV[j+1][0] == "Beijing" || parsedCSV[j+1][0] == "Dongguan" || parsedCSV[j+1][0] == "Omsk" || parsedCSV[j+1][0] == "Kathmandu" || parsedCSV[j+1][0] == "Sochi" || parsedCSV[j+1][0] == "Murmansk" || parsedCSV[j+1][0] == "N'Djamena" || parsedCSV[j+1][0] == "Huntsville") {
 			document.getElementById("aud").innerHTML = `<audio autoplay loop><source src="./resources/audio/Christmas.mp3" type="audio/mpeg"></audio>`;
 		}
+	}
+	}
+
+	function santaFunc(k) {
+		if ((k > 0) && (k < parsedCSV.length -1)) {
+		p = new Date(`Dec ${parsedCSV[k][3]}, ${year} ${parsedCSV[k][4]}:${parsedCSV[k][5]}:00`).getTime();
+		q = new Date(`Dec ${parsedCSV[k][3]}, ${year} ${parsedCSV[k+1][4]}:${parsedCSV[k+1][5]}:00`).getTime();
+  		var now2 = new Date().getTime();
+		if (now2 - q < -20000) {
+			t = Math.floor(now2 - p);
+			//console.log(t);
+			if (k == 2) {
+				lng = Number(parsedCSV[k][2]) + Number(t*((parsedCSV[k+1][2] - parsedCSV[k][2] + 360)/(q - p - 20000)));
+				if (lng > 180) {lng = lng - 360;}
+			}
+			else if (k == 4) {
+				lng = Number(parsedCSV[k][2]) + Number(t*((parsedCSV[k+1][2] - parsedCSV[k][2] - 360)/(q - p - 20000)));
+				if (lng < -180) {lng = lng + 360;}
+			}
+			else {
+				lng = Number(parsedCSV[k][2]) + Number(t*((parsedCSV[k+1][2] - parsedCSV[k][2])/(q - p - 20000)));
+			}
+			lat = Number(parsedCSV[k][1]) + Number(t*((parsedCSV[k+1][1] - parsedCSV[k][1])/(q - p - 20000)));
+			ell.title = `Ho Ho Ho! I am on my way to ${parsedCSV[k+1][0]}! Merry Christmas!`;
+			document.getElementById("iter").innerHTML = `Father Christmas' next stop will be ${parsedCSV[k+1][0]} at ${parsedCSV[k+1][4]}:${parsedCSV[k+1][5]}! ${parsedCSV[k+1][6]} He has visited ${k} places so far! Merry Christmas!`;
+			//const elll = document.createElement('div');
+			//elll.className = 'SantaTest3';
+			// make a marker for each feature and add it to the map
+			new mapboxgl.Marker(ell)
+				.setLngLat([lng, lat])
+				.addTo(map);
+			//new mapboxgl.Marker(elll)
+				//.setLngLat([lng, lat])
+				//.addTo(map);
+		}
+		else if (now2 - q < 0) {
+			ell.title = `Ho Ho Ho! I am at ${parsedCSV[k+1][0]}! Merry Christmas ${parsedCSV[k+1][0]}! ${parsedCSV[k+1][6]}`;
+			document.getElementById("iter").innerHTML = `Father Christmas is at ${parsedCSV[k+1][0]}, place number ${k+1}! ${parsedCSV[k+1][6]} His next stop will be ${parsedCSV[k+2][0]} at ${parsedCSV[k+2][4]}:${parsedCSV[k+2][5]}! Merry Christmas!`;
+			// make a marker for each feature and add it to the map
+			new mapboxgl.Marker(ell)
+				.setLngLat([parsedCSV[k+1][2], parsedCSV[k+1][1]])
+				.addTo(map);
+		}
+	}
+	else if (k == parsedCSV.length -1) {
+	document.getElementById("iter").innerHTML = `Father Christmas has now finished his journey! Come back in ${year + 1}! Merry Christmas!`;
+	document.getElementById("aud").innerHTML = ` `;
 	}
 	}
 }
