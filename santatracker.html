@@ -124,9 +124,9 @@ d3.text("./data/santa.csv", function(data) {
 		
 	setTimeout(function(i){
 	
-	console.log(y[i-1]-now-28508100);
+	console.log(Number(y[i-1]-now-28508100));
 	console.log(parsedCSV[i][0]);
-	}, y[i-1]-now-28508100, i);
+	}, Number(y[i-1]-now-28508100), i);
 }
 
 });  
