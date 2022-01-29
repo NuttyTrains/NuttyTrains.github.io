@@ -45,7 +45,7 @@ map.addControl(new mapboxgl.NavigationControl());
 const y = []
 const coords = []
 const msg = []
-const Timer = []
+//const Timer = []
 
 d3.text("./data/santa.csv", function(data) {
     var parsedCSV = d3.csv.parseRows(data);
@@ -121,15 +121,15 @@ d3.text("./data/santa.csv", function(data) {
 	coords.push(parsedCSV[i][2], parsedCSV[i][1]);
 	//console.log(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Merry Christmas, ${parsedCSV[i][0]}!`);
 	y.push(new Date(`Dec ${parsedCSV[i][3]}, ${year} ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
-	Timer.push(setInterval(santaFunc, 1000, i));
+	//Timer.push(setInterval(santaFunc, 1000, i));
 		
 		
 	setTimeout(markerFunc, y[i-1]-now-28498100000, i);
 
 	function markerFunc(j) {
-	clearInterval(Timer[j-1]);
-	//var timer = setInterval(santaFunc, 1000, j);
-	Timer[j];
+	clearInterval();
+	var timer = setInterval(santaFunc, 1000, j);
+	//Timer[j];
 	
 	// make a marker for each feature and add it to the map
 	new mapboxgl.Marker(el)
