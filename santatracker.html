@@ -29,7 +29,6 @@
 
 <script>
 const year = new Date().getFullYear();
-console.log(year);
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw';
 	
@@ -134,6 +133,7 @@ d3.text("./data/santa.csv", function(data) {
 			)
 			.addTo(map);
 	
+		console.log(y[i-1]-now);
 	}, y[i-1]-now, i);
 }
 
