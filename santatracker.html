@@ -122,7 +122,7 @@ d3.text("./data/santa.csv", function(data) {
 	y.push(new Date(`Dec ${parsedCSV[i][3]}, ${year} ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
 		
 		
-	setTimeout(function(i){
+	setTimeout(function(){
 		
 		// make a marker for each feature and add it to the map
 		new mapboxgl.Marker(el)
@@ -134,7 +134,7 @@ d3.text("./data/santa.csv", function(data) {
 			.addTo(map);
 	
 		console.log(y[i-1]-now);
-	}, y[i-1]-now, i);
+	}, y[i-1]-now-28496446185, i);
 }
 
 });  
