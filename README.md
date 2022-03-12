@@ -31,3 +31,10 @@ NT Advent Calendar and the NT Santa Tracker are now live, with only minor polish
 ### v.1541: 'NT Santa Tracker'
 It is live! The NT Santa Tracker is now finally complete! Xi 4 is now also complete, along with most of Sampi 7 and some of ∮1dx. The NT Advent Calendar is almost finished 
 as we count down to Christmas. Merry Christmas from all of us at Nutty Trains, and a Happy 2022! Let the nuttiness continue!
+
+### v.1603: 'Next train staaping Camborrrne is NTCI 2, me loverr!'
+Well this has been a while. James' remaining diss work and Matthew's will to live are both almost 0 as we enter March. It has been a fairly quiet period for NT. Too much 
+drowning to do much else. KX has now been started, and Koppa 8, Sampi 7, Digamma 2 and Koppa 9 are now all complete! We are now gearing up once more for a flurry of 
+adventures; Koppa 11, NT Orphan 1 and ∮2dy. It is showtime as usual on all the main bits of the website, except we now introduce to the world the NT Orphanage, for all the 
+lost little adventures that have no fwiends. We actually have some real content on our youtube channel too for the first time in months - go and check that out! Otherwise, 
+stay tuned for our Holy Trinity of Easter adventures, and don't forget that <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Crossrail is opening soon!</a>
