@@ -68,6 +68,7 @@
 .timeline .timeline-item .timeline-icon-digamma,
 .timeline .timeline-item .timeline-icon-xi,
 .timeline .timeline-item .timeline-icon-epsilon,
+.timeline .timeline-item .timeline-icon-orphan,
 .timeline .timeline-item .timeline-icon-ntci {
   border-radius: 50%;
   height: 50px;
@@ -110,6 +111,10 @@
 
 .timeline .timeline-item .timeline-icon-epsilon {
   background-color: #ff08e8;
+}
+
+.timeline .timeline-item .timeline-icon-orphan {
+  background-color: #99ff33;
 }
 
 .timeline .timeline-item .timeline-icon-ntci {

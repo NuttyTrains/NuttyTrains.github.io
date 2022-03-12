@@ -1,7 +1,7 @@
 # NuttyTrains.github.io
 Hello, we are James and Matthew. We are fascinated by railways and enjoy going on random, ill-planned, reckless railway adventures. Welcome to NT!  
 
-This is our website, where we co-ordinate all our nuttiness! This website represents over 2 years of hard work, and 1400 commits and counting of 
+This is our website, where we co-ordinate all our nuttiness! This website represents over 2 years of hard work, and 1600 commits and counting of 
 top-notch NT-quality code! Much of our attention has shifted towards our twitter and Youtube accounts as of late, but if you have come 
 looking for our central repository, you have come to the right place. Our best tweets, most of our videos, and all of our in-depth write-ups can be found here, as well 
 as much much more in the back-end (if you know where to look). [Please don't look].
