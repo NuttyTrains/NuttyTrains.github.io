@@ -1,31 +1,34 @@
 var Crossrail = new Date("May 24, 2022 06:00:00").getTime();
+var K12 = new Date("May 28, 2022 08:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distanceCR = (Crossrail - now)/1000;
+  var distanceK12 = (K12 - now)/1000;
 
   var daysCR = Math.floor(distanceCR / 86400);
-  var hoursCR = Math.floor((distanceCR % 86400) / 3600);
-  var elapsedCR = -1 * Math.ceil(distanceCR / 3600);
-
-  //if (daysNTCI2 > 0) {
-  //  document.getElementById("countdown").innerHTML = "Oooh Arrgh! Welc'm t' Nu'y Trains! Next train staapping Camborne in " + daysNTCI2 + " days is NTCI2, me loverr! I tell e', that'd be a good service down Kernow! Fuck knows where we're 'eaded though";
-  //}
-
-  //else if (daysNTCI2 == 0) {
-  //  document.getElementById("countdown").innerHTML = "Oooh Arrgh! Welc'm t' Nu'y Trains! Next train staapping Camborne in " + hoursNTCI2 + " 'ours is NTCI2, me loverr! I tell e', that'd be a good service down Kernow! Fuck knows where we're 'eaded though";
-  //}
-
-  //else if (elapsedNTCI2 < 48) {
-  //  document.getElementById("countdown").innerHTML = "Oooh Arrgh! Welc'm t' NTCI2! We've been out and about fer " + elapsedNTCI2 + " hours now, me loverr! We'll be 'eaded to Plymouth, 'Zance, St Ives, Newquay, Penryn, Falmouth and Camborne! Let's show this shity boi 'ow we do things down Kernow! Don' ew forrget, trains don't staap Camborne Wednesdays!";
-  //}
+  var daysK12 = Math.floor(distanceK12 / 86400);
+  var hoursK12 = Math.floor((distanceK12 % 86400) / 3600);
+  var elapsedK12 = -1 * Math.ceil(distanceK12 / 3600);
 
   if (daysCR > -1) {
     document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! Crossrail opens in " + daysCR + " days, but without us being there :(";
   }
 
+  else if (daysK12 > 0) {
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The next Crossrail train will be stopping in " + daysK12 + " days! We will be calling at Paddington, Tottenham Court Road, Farringdon, Liverpool Street, Whitechapel, Canary Wharf, Custom House, Woolwich and Abbey Wood!";
+  }
+
+  else if (daysK12 == 0) {
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The next Crossrail train will be stopping in " + hoursK12 + " hours! We will be calling at Paddington, Tottenham Court Road, Farringdon, Liverpool Street, Whitechapel, Canary Wharf, Custom House, Woolwich and Abbey Wood!";
+  }
+
+  else if (elapsedK12 < 4) {
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedK12 + " hours into our Koppa 12 Crossrail adventure! We will be calling at Paddington, Tottenham Court Road, Farringdon, Liverpool Street, Whitechapel, Canary Wharf, Custom House, Woolwich and Abbey Wood!";
+  }
+
   else {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! There will be no more adventures until after exams :(";
+    document.getElementById("countdown").innerHTML = "Welcome to NT!";
   }
 
 },1000);
