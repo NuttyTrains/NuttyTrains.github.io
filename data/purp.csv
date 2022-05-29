@@ -1,6 +1,13 @@
 Fake Name,Station Name,Station No.,First Date,Line,Edition
-Paddington,Paddington,1,13/12/2019,CrossLizPurp,ϙ1
-Acton Main Line,Acton Main Line,2,13/12/2019,CrossLizPurp,ϙ1
-Ealing Broadway,Ealing Broadway,3,13/12/2019,CrossLizPurp,ϙ1
-Stratford,Stratford,4,20/06/2021,CrossLizPurp,ϙ5
-Liverpool St,Liverpool St,5,20/06/2021,CrossLizPurp,ϙ5
+Paddington,PAD,1,13/12/2019,Lizzie,ϙ1
+Acton Main Line,Acton Main Line,2,13/12/2019,Lizzie,ϙ1
+Ealing Broadway,Ealing Broadway,3,13/12/2019,Lizzie,ϙ1
+Stratford,Stratford,4,20/06/2021,Lizzie,ϙ5
+Liverpool St,Liverpool St,5,20/06/2021,Lizzie,ϙ5
+Tottenham Court Road,TCR,6,28/05/2022,Lizzie,ϙ12
+Farringdon,Farringdon,7,28/05/2022,Lizzie,ϙ12
+Whitechapel,Whitechapel,8,28/05/2022,Lizzie,ϙ12
+Canary Wharf,Canary Wharf,9,28/05/2022,Lizzie,ϙ12
+Custom House,Custom House,10,28/05/2022,Lizzie,ϙ12
+Woolwich,Woolwich,11,28/05/2022,Lizzie,ϙ12
+Abbey Wood,Abbey Wood,12,28/05/2022,Lizzie,ϙ12
