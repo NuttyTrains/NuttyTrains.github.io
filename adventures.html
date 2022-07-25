@@ -14,6 +14,18 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+	crossorigin=""/>
+	<!-- Make sure you put this AFTER Leaflet's CSS -->
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	crossorigin=""></script>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<style>
+		#mapid { height: 70vh; width:60vw; z-index: 0; }
+	</style>
   </head>
   <header>
       <h1>
@@ -738,7 +750,8 @@ $(function(){
     </div>
     <div class="timeline-content right">
        <h2 class="timeline-content-date">ϙ13 (July 2022)</h2>
-      <p> NT meets the Queen again! Let's see how many lines are closed or melted on this unlucky adventure!
+      <p> NT meets the Queen again! Let's see how many lines are closed or melted on this unlucky adventure! ... Well this turned out nothing like expected. 
+        We failed all the original objectives, and ended up on the wrong side of London entirely. All in a day's work.
       </p>
    </div>
   </div>
@@ -760,7 +773,61 @@ So just like the Victorian outcasts we are, we will now catalogue these traditio
 
 
 <br><br><br><br>
-    
+
+<center><div id="mapid">Testy Test2</div></center>
+<div style="padding: 1em 1em 1em 1em;">
+</div>
+
+<script>
+var mymap = L.map('mapid').setView([51.4, -2], 8);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'This is the NT Station Visit Map, we`ve been to all of the dots!',
+    maxZoom: 15,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw'
+}).addTo(mymap);
+
+d3.text("./data/GB_stations.csv", function(data) {
+    var parsedCSV = d3.csv.parseRows(data);
+    // console.log(parsedCSV)
+    // console.log(parsedCSV.length)
+    d3.text("./data/stations.csv", function(data2) {
+        var Visited = d3.csv.parseRows(data2);
+        const arrayColumn = (arr, n) => arr.map(x => x[n]);
+        for (i = 1; i < parsedCSV.length; i++) {
+          //console.log(i);
+          //console.log(parsedCSV[i][2]);
+          //console.log(arrayColumn(Visited, 0).includes(parsedCSV[i][2]));
+          N = arrayColumn(Visited, 0).indexOf(parsedCSV[i][0]);
+          //console.log(N);
+          // console.log(arrayColumn(Visited, 0));
+          if (arrayColumn(Visited, 0).includes(parsedCSV[i][0])) {
+            L.marker([parsedCSV[i][2], parsedCSV[i][3]], {
+              title: Visited[N][2],
+              name: Visited[N][0],
+              number: Visited[N][1],
+              date: Visited[N][4],
+              edition: Visited[N][5]
+            }).on('click', onMapClick).addTo(mymap);
+            // console.log('Added marker ' + i + ' at ' + parsedCSV[i][2] + ', ' + parsedCSV[i][3]);
+            var popup = L.popup();
+            function onMapClick(e) {
+              popup
+                .setLatLng(e.latlng)
+                .setContent(
+                  `We visited ${this.options.title}, station number ${this.options.number} during ${this.options.edition} (${this.options.date}).`
+                  )
+                // Nota Optime! This is going to backfire horribly once we have the separate CSVs for each mode - you will need to come back and fix this!
+                .openOn(mymap);
+            }
+          }
+        }
+        console.log(Visited);
+    });
+});         
+</script>
 
 
 </body>

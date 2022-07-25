@@ -38,3 +38,8 @@ drowning to do much else. KX has now been started, and Koppa 8, Sampi 7, Digamma
 adventures; Koppa 11, NT Orphan 1 and ∮2dy. It is showtime as usual on all the main bits of the website, except we now introduce to the world the NT Orphanage, for all the 
 lost little adventures that have no fwiends. We actually have some real content on our youtube channel too for the first time in months - go and check that out! Otherwise, 
 stay tuned for our Holy Trinity of Easter adventures, and don't forget that <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Crossrail is opening soon!</a>
+
+### v.1636: 'RIP Chinglish Stations and RIP Tube'
+It was a good run while it lasted, Chinglish Stations, but it is time we put this horrific experiment to bed. Let's face it, it is never going to happen. As of Koppa 13, 
+the tube is _finally_ complete, after almost 3 years of trying. ∮1dx, KX, K11 and K12 have all now been written up, leaving only ∮2dy, Ξ5 and ϙ13 on the to-do list. Please 
+watch our videos - James has made enormous progress there too, reaching Sampi 7. The summer is young yet.
