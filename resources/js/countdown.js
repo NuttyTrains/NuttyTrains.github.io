@@ -1,23 +1,23 @@
-var K13 = new Date("Jul 24, 2022 11:00:00").getTime();
+var F3 = new Date("Aug 28, 2022 08:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
-  var distanceK13 = (K13 - now)/1000;
+  var distanceF3 = (F3 - now)/1000;
 
-  var daysK13 = Math.floor(distanceK13 / 86400);
-  var hoursK13 = Math.floor((distanceK13 % 86400) / 3600);
-  var elapsedK13 = -1 * Math.ceil(distanceK13 / 3600);
+  var daysF3 = Math.floor(distanceF3 / 86400);
+  var hoursF3 = Math.floor((distanceF3 % 86400) / 3600);
+  var elapsedF3 = -1 * Math.ceil(distanceF3 / 3600);
 
-  if (daysK13 > 0) {
-    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The next train will be arriving in " + daysK13 + " days! We will be calling at Windsor, Windsor Castle and The Tower of London. Platform DAI for the KOPPA 13 service to Windsor.";
+  if (daysF3 > 0) {
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The next train will be arriving in " + daysF3 + " days! We will be calling at Didcot, Swindon, Glozza, Brizzle, Bath, Westbury, Yeovil and Weymouth. Platform DAI for the DIGAMMA 3 service to Weymouth.";
   }
 
-  else if (daysK13 == 0) {
-    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The next train will be arriving in " + hoursK13 + " hours! We will be calling at Windsor, Windsor Castle and The Tower of London. Platform DAI for the KOPPA 13 service to Windsor.";
+  else if (daysF3 == 0) {
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The next train will be arriving in " + hoursF3 + " hours! We will be calling at Didcot, Swindon, Glozza, Brizzle, Bath, Westbury, Yeovil and Weymouth. Platform DAI for the DIGAMMA 3 service to Weymouth.";
   }
 
-  else if (elapsedK13 < 9) {
-    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedK13 + " hours into Koppa 13! We will be calling at Windsor, Windsor Castle and The Tower of London. Platform DAI for the KOPPA 13 service to Windsor.";
+  else if (elapsedF3 < 17) {
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedF3 + " hours into Digamma 3! We will be calling at Didcot, Swindon, Glozza, Brizzle, Bath, Westbury, Yeovil and Weymouth. Platform DAI for the DIGAMMA 3 service to Weymouth.";
   }
 
   else {
