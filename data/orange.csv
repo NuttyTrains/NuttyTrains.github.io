@@ -1,19 +1,26 @@
 Fake Name,Station Name,Station No.,First Date,Line,Edition
 Acton Central,Acton Central,5,01/02/2020,North London,ϙ2
+Barking,Barking,68,11/09/2022,Goblin,ϙ14
+Blackhorse Road,Blackhorse Road,74,11/09/2022,Goblin,ϙ14
 Brondesbury,Brondesbury,34,29/08/2021,North London,ϙ8
 Brondesbury Park,Brondesbury Park,33,29/08/2021,North London,ϙ8
 Bruce Grove,Bruce Grove,10,01/02/2020,Lea Valley,ϙ2
 Bushey,Bushey,25,01/08/2021,Overloo,ϙ6
+Bush Hill Park,Bush Hill Park,83,11/09/2022,Lea Valley,ϙ14
 Caledonian Road & Barnsbury,Caledonian Road & Barnsbury,41,30/08/2021,North London,ϙ8
 Camden Road,Camden Road (Bye!),35,29/08/2021,North London,ϙ8
 Canada Water,Canada Water,57,09/10/2021,East London,ϙ9
 Canonbury,Canonbury,43,30/08/2021,North London,ϙ8
 Carpenders Park,Carpenders Park,24,01/08/2021,Overloo,ϙ6
+Cheshunt,Cheshunt,82,11/09/2022,Lea Valley,ϙ14
 Clapham High Street,Clapham High Street,63,30/03/2022,East London,ϙ11
 Clapham Junction,Clapham Junction,13,02/02/2020,North London,ϙ2
 Dalston Junction,Dalston Junction,49,09/10/2021,East London,ϙ9
 Dalston Kingsland,Dalston Kingsland,44,30/08/2021,North London,ϙ8
 Denmark Hill,Denmark Hill,62,30/03/2022,East London,ϙ11
+Edmonton Green,Edmonton Green,78,11/09/2022,Lea Valley,ϙ14
+Emerson Park,Emerson Park,66,11/09/2022,Romminster,ϙ14
+Enfield Town,Enfield Town,84,11/09/2022,Lea Valley,ϙ14
 Euston,Euston,31,14/08/2021,Overloo,Ξ3
 Finchley Road & Frognal,F & Frog,39,29/08/2021,North London,ϙ8
 Gospel Oak,Gospel Oak,37,29/08/2021,North London,ϙ8
@@ -37,24 +44,35 @@ Kentish Town West,Kentish Town West,36,29/08/2021,North London,ϙ8
 Kenton,Kenton Sainsburys,20,01/08/2021,Overloo,ϙ6
 Kew Gardens,Kew Gardens,8,01/02/2020,North London,ϙ2
 Kilburn High Road,Kilburn High Road,29,14/08/2021,Overloo,Ξ3
+Leyton Midland Road,Leyton Midland Road,72,11/09/2022,Goblin,ϙ14
+Leytonstone High Road,Leytonstone High Road,71,11/09/2022,Goblin,ϙ14
 New Cross,New Cross,58,30/03/2022,East London,ϙ11
 North Wembley,North Wembley,18,01/08/2021,Overloo,ϙ6
 Peckham Rye,Peckham Rye,61,30/03/2022,East London,ϙ11
 Queens Park,Queens Park,28,01/08/2021,Overloo,ϙ6
 Queens Road Peckham,Queens Road Peckham,60,30/03/2022,East London,ϙ11
 Richmond,Richmond,9,01/02/2020,North London,ϙ2
+Romford,Romford,65,11/09/2022,Romminster,ϙ14
 Rotherhithe,Rotherhithe,56,09/10/2021,East London,ϙ9
 Seven Sisters,Seven Sisters,11,01/02/2020,Lea Valley,ϙ2
 Shadwell,Shadwell,54,09/10/2021,East London,ϙ9
 Shepherd's Bush,Shepherd's Bush,3,13/12/2019,North London,ϙ1
 Shoreditch High Street,Shoreditch (Arrr Studen Central),52,09/10/2021,East London,ϙ9
 South Acton,South Acton,6,01/02/2020,North London,ϙ2
+Silver Street,Silver Street,77,11/09/2022,Lea Valley,ϙ14
+Southbury,Southbury,79,11/09/2022,Lea Valley,ϙ14
 South Hampstead,South Hampstead,30,14/08/2021,Overloo,Ξ3
 South Kenton,South Kenton,19,01/08/2021,Overloo,ϙ6
+South Tottenham,South Tottenham,75,11/09/2022,Goblin,ϙ14
 Stonebridge Park,Stonebridge Park,16,01/08/2021,Overloo,ϙ6
 Stratford,Strazza,48,30/08/2021,North London,ϙ8
 Surrey Quays,Surrey Quays,59,30/03/2022,East London,ϙ11
+Theobalds Grove,Theobalds Grove,81,11/09/2022,Lea Valley,ϙ14
+Turkey Street,Turkey Street,80,11/09/2022,Lea Valley,ϙ14
+Upminster,Upminster,67,11/09/2022,Romminster,ϙ14
+Walthamstow Queens Road,Walthamstow Queens Road,73,11/09/2022,Goblin,ϙ14
 Wandsworth Road,Wandsworth Road,64,30/03/2022,East London,ϙ11
+Wanstead Park,Wanstead Park,70,11/09/2022,Goblin,ϙ14
 Wapping,Wapping,55,09/10/2021,East London,ϙ9
 Watford High Street,Watford HS: Edge of the North,26,01/08/2021,Overloo,ϙ6
 Watford Junction,Wichawd Bwanson Junction,27,01/08/2021,Overloo,ϙ6
@@ -62,4 +80,6 @@ West Brompton,West Brompton,1,13/12/2019,North London,ϙ1
 West Hampstead,West Hampstead,40,29/08/2021,North London,ϙ8
 Wembley Central,Wembley Central,17,01/08/2021,Overloo,ϙ6
 Whitechapel,Whitechapel,53,09/10/2021,East London,ϙ9
+White Hart Lane,White Hart Lane,76,11/09/2022,Lea Valley,ϙ14
 Willesden Junction,Willesden Junction,4,01/02/2020,North London//Overloo,ϙ2//ϙ6
+Woodgrange Park,Woodgrange Park,69,11/09/2022,Goblin,ϙ14
