@@ -183,15 +183,15 @@ d3.text("./data/santa.csv", function(data) {
 			lat = Number(parsedCSV[k][1]) + Number(t*((parsedCSV[k+1][1] - parsedCSV[k][1])/(q - p - 20000)));
 			ell.title = `Ho Ho Ho! I am on my way to ${parsedCSV[k+1][0]}! Merry Christmas!`;
 			document.getElementById("iter").innerHTML = `Father Christmas' next stop will be ${parsedCSV[k+1][0]} at ${parsedCSV[k+1][4]}:${parsedCSV[k+1][5]}! ${parsedCSV[k+1][6]} He has visited ${k} places so far! Merry Christmas!`;
-			//const elll = document.createElement('div');
-			//elll.className = 'SantaTest3';
+			const elll = document.createElement('div');
+			elll.className = 'SantaTest3';
 			// make a marker for each feature and add it to the map
 			new mapboxgl.Marker(ell)
 				.setLngLat([lng, lat])
 				.addTo(map);
-			//new mapboxgl.Marker(elll)
-				//.setLngLat([lng, lat])
-				//.addTo(map);
+			new mapboxgl.Marker(elll)
+				.setLngLat([lng, lat])
+				.addTo(map);
 		}
 		else if (now2 - q < 0) {
 			ell.title = `Ho Ho Ho! I am at ${parsedCSV[k+1][0]}! Merry Christmas ${parsedCSV[k+1][0]}! ${parsedCSV[k+1][6]}`;
