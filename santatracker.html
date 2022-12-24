@@ -54,8 +54,8 @@ d3.text("./data/santa.csv", function(data) {
 
 	setInterval(function(){
 		q = new Date(`Dec ${parsedCSV[1][3]}, ${year} ${parsedCSV[1][4]}:${parsedCSV[1][5]}:00`).getTime();
-		var now2 = new Date().getTime()+28454400000;
-		//var now2 = new Date().getTime();
+		//var now2 = new Date().getTime()+28454400000;
+		var now2 = new Date().getTime();
 		var diff = Math.floor((q - now2)/1000);
 		if (diff > 2073600) {
 			document.getElementById("iter").innerHTML = `What are you doing here? Come back in December ${year}!`;
@@ -108,7 +108,7 @@ d3.text("./data/santa.csv", function(data) {
 	// add markers to map
 	// create a HTML element for each feature
 	const el = document.createElement('div');
-	if (parsedCSV[i][0] == "Penryn" || parsedCSV[i][0] == "Carmarthen" || parsedCSV[i][0] == "DELETED" || parsedCSV[i][0] == "Dangleway" || parsedCSV[i][0] == "Camden" || parsedCSV[i][0] == "Harrow-on-the-Hill" || parsedCSV[i][0] == "Wuhan") {
+	if (parsedCSV[i][0] == "Penryn" || parsedCSV[i][0] == "DELETED" || parsedCSV[i][0] == "Dangleway" || parsedCSV[i][0] == "Wuhan") {
 		el.className = 'SantaTest4';
 		el.title = `Fuck you, ${parsedCSV[i][0]}! ${parsedCSV[i][6]}`;
 		msg.push(`Santa visited ${parsedCSV[i][0]} at ${parsedCSV[i][4]}:${parsedCSV[i][5]}. Fuck you, ${parsedCSV[i][0]}!`);
@@ -164,8 +164,8 @@ d3.text("./data/santa.csv", function(data) {
 		if ((k > 0) && (k < parsedCSV.length -1)) {
 		p = new Date(`Dec ${parsedCSV[k][3]}, ${year} ${parsedCSV[k][4]}:${parsedCSV[k][5]}:00`).getTime();
 		q = new Date(`Dec ${parsedCSV[k][3]}, ${year} ${parsedCSV[k+1][4]}:${parsedCSV[k+1][5]}:00`).getTime();
-  		var now2 = new Date().getTime()+28454400000;
-  		//var now2 = new Date().getTime();
+  		//var now2 = new Date().getTime()+28454400000;
+  		var now2 = new Date().getTime();
 		if (now2 - q < -20000) {
 			t = Math.floor(now2 - p);
 			//console.log(t);
