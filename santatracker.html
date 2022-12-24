@@ -123,8 +123,8 @@ d3.text("./data/santa.csv", function(data) {
 	y.push(new Date(`Dec ${parsedCSV[i][3]}, ${year} ${parsedCSV[i][4]}:${parsedCSV[i][5]}:00`).getTime());
 		
 		
-	setTimeout(markerFunc, y[i-1]-now-28454400000, i);
-	//setTimeout(markerFunc, y[i-1]-now, i);
+	//setTimeout(markerFunc, y[i-1]-now-28454400000, i);
+	setTimeout(markerFunc, y[i-1]-now, i);
 
 	function markerFunc(j) {
 	var timer = setInterval(santaFunc, 1000, j);
