@@ -51,17 +51,16 @@ $(function(){
     <div id="Xmas22" class="content">
     </div>
 
-    <button type="button" id="audio" class="collapsible"> Xmas '23: Glory Holes </button>
+    <button type="button" onclick="play()" class="collapsible"> Xmas '23: Glory Holes </button>
     <div id="Xmas23" class="content">
     </div>
 
     <script>
       function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
+        var snd = new Audio('./resources/audio/LastCwissmaz.mp3')//wav is also supported
+        snd.play()//plays the sound
       }
     </script>
-    <audio id="audio" src="./resources/audio/LastCwissmaz.mp3"></audio>
 
     <!--<button type="button" class="collapsible"> The South Coast </button>
     <div id="South" class="content">
