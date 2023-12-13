@@ -6,7 +6,7 @@ let browserWidth;
 let browserHeight;
 
 // Specify the number of snowflakes you want visible
-let numberOfSnowflakes = 50;
+let numberOfSnowflakes = 500;
 
 // Flag to reset the position of the snowflakes
 let resetPosition = false;
@@ -55,7 +55,7 @@ class Snowflake {
     this.sign = Math.random() < 0.5 ? 1 : -1;
 
     // setting an initial opacity and size for our snowflake
-    this.element.style.opacity = (0.1 + Math.random()) / 3;
+    this.element.style.opacity = 2*(0.1 + Math.random()) / 3;
     }
 
     // The function responsible for actually moving our snowflake
