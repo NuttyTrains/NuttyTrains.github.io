@@ -25,7 +25,8 @@
 <script>
 $(function(){
   $("#nav-placeholder").load("nav.html");
-  $("#Xmas").load("NAO/xmas.html");
+  $("#Xmas22").load("NAO/xmas22.html");
+  $("#Xmas23").load("NAO/xmas23.html");
   $("#South").load("NAO/south.html");
 });
 </script>
@@ -47,8 +48,22 @@ $(function(){
 
 
     <button type="button" class="collapsible"> Xmas '22: RIP Camera Crew - I hope you packed Oxygen x </button>
-    <div id="Xmas" class="content">
+    <div id="Xmas22" class="content">
     </div>
+
+    <button type="button" id="audio" class="collapsible"> Xmas '23: Glory Holes </button>
+    <div id="Xmas22" class="content">
+    </div>
+
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+    <input type="button" value="PLAY" onclick="play()">
+    <audio id="audio" src="./resources/audio/LastCwissmaz.mp3"></audio>
 
     <!--<button type="button" class="collapsible"> The South Coast </button>
     <div id="South" class="content">
