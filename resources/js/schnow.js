@@ -31,7 +31,8 @@ reduceMotionQuery.addListener(setAccessibilityState);
 // It all starts here...
 //
 function setup() {
-    if (enableAnimations) {
+    const d = new Date();
+    if (enableAnimations && d.getMonth()==12) {
     window.addEventListener("DOMContentLoaded", generateSnowflakes, false);
     window.addEventListener("resize", setResetFlag, false);
     }

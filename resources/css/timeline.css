@@ -69,7 +69,9 @@
 .timeline .timeline-item .timeline-icon-xi,
 .timeline .timeline-item .timeline-icon-epsilon,
 .timeline .timeline-item .timeline-icon-orphan,
-.timeline .timeline-item .timeline-icon-ntci {
+.timeline .timeline-item .timeline-icon-ntci,
+.timeline .timeline-item .timeline-icon-ireland,
+.timeline .timeline-item .timeline-icon-france {
   border-radius: 50%;
   height: 50px;
   left: 50%;
@@ -119,6 +121,20 @@
 
 .timeline .timeline-item .timeline-icon-ntci {
   background: url(../photos/Kernow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
+.timeline .timeline-item .timeline-icon-ireland {
+  background: url(../photos/GuinnessFlag.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
+.timeline .timeline-item .timeline-icon-france {
+  background: url(../photos/OuiOui.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 

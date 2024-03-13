@@ -38,8 +38,11 @@
 $(function(){
   $("#nav-placeholder").load("nav.html");
   $("#Xmas22").load("NAO/xmas22.html");
+  $("#Ireland").load("NAO/ireland.html");
+  $("#SouthCoast").load("NAO/south.html");
+  $("#OuiOui1").load("NAO/OuiOuiUne.html");
   $("#Xmas23").load("NAO/xmas23.html");
-  $("#South").load("NAO/south.html");
+  $("#OuiOui2").load("NAO/OuiOuiDeux.html");
 });
 </script>
 	
@@ -60,24 +63,28 @@ $(function(){
     </div>
 
 
-    <button type="button" class="collapsible"> Xmas '22: RIP Camera Crew - I hope you packed Oxygen x </button>
+    <button type="button" onclick="play()" class="collapsible"> Xmas '22: RIP Camera Crew - I hope you packed Oxygen x </button>
     <div id="Xmas22" class="content">
     </div>
 
-    <button type="button" onclick="play()" class="collapsible"> Ireland: I thought that guy was drinking something alcoholic. No he just has down syndrome </button>
+    <button type="button" class="collapsible"> Ireland: I thought that guy was drinking something alcoholic. No he just has down syndrome </button>
     <div id="Ireland" class="content">
     </div>
 
-    <button type="button" onclick="play()" class="collapsible"> South Coast II: I'm going to do racial profiling for my dinner </button>
-    <div id="SouthCoast2" class="content">
+    <button type="button" class="collapsible"> South Coast Redux: I'm going to do racial profiling for my dinner </button>
+    <div id="SouthCoast" class="content">
+    </div>
+
+    <button type="button" class="collapsible"> Oui Oui Une: Sthop ol rhats. Remi mon ami! </button>
+    <div id="OuiOui1" class="content">
     </div>
 
     <button type="button" onclick="play()" class="collapsible"> Xmas '23: Glory Holes </button>
     <div id="Xmas23" class="content">
     </div>
 
-    <button type="button" onclick="play()" class="collapsible"> Oui Oui 1: Sthop ol rhats. Remi mon ami! </button>
-    <div id="OuiOui1" class="content">
+    <button type="button" class="collapsible"> Oui Oui Deux: Tout le vin </button>
+    <div id="OuiOui2" class="content">
     </div>
 
     <script>
