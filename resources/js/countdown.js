@@ -21,15 +21,15 @@ var x = setInterval(function() {
   }
 
   else if (elapsedOx24 < 12) {
-    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedOx24 + " hours into Digamma 4! We will be calling at Oxford et al. Platform DAI for the DIGAMMA 4 service to Salisbury.";
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedOx24 + " hours into Koppa 17! We will be calling at some random collection of stations in South London. Platform DAI for the KOPPA 17 service to SURREY.";
   }
 
   else if (elapsedOx24 < 23) {
-    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The destination of this DIGAMMA 4 service has changed. This is now a KOPPA 17 service to Surrey. We are sorry for any inconvenience this may cause to your journey.";
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The destination of this KOPPA 17 service has changed. This is now a DIGAMMA 4 service to Salisbury. We are sorry for any inconvenience this may cause to your journey.";
   }
 
   else if (elapsedOx24 < 32) {
-    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedOx24-23 + " hours into Koppa 17! We will be calling at some random collection of stations in Southwest London. Platform DAI for the KOPPA 17 service to SURREY.";
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedOx24-23 + " hours into Digamma 4! We will be calling at Oxford et al. Platform DAI for the DIGAMMA 4 service to Salisbury.";
   }
 
   else if (daysEdin > 0) {
