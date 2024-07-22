@@ -1,4 +1,4 @@
-var Ox24 = new Date("Jul 20, 2024 11:00:00").getTime();
+var Ox24 = new Date("Aug 10, 2024 10:00:00").getTime();
 var Edin = new Date("Aug 19, 2024 10:00:00").getTime();
 
 var x = setInterval(function() {
@@ -9,27 +9,28 @@ var x = setInterval(function() {
   var daysOx24 = Math.floor(distanceOx24 / 86400);
   var hoursOx24 = Math.floor((distanceOx24 % 86400) / 3600);
   var elapsedOx24 = -1 * Math.ceil(distanceOx24 / 3600);
+  var elapsedOx24b = elapsedOx24-23;
 
   var daysEdin = Math.floor(distanceEdin / 86400);
 
-  if (daysOx24 > 0) {
-    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The next train will be arriving in " + daysOx24 + " days! We will be calling at Oxford et al. Platform DAI for the DIGAMMA 4 service to Salisbury.";
+  if (daysOx24 < 5) {
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The next train will be arriving in " + daysOx24 + " days! We will be calling at Oxford et al. Platform DAI for the AUGUST 24 service to ???.";
   }
 
   else if (daysOx24 == 0) {
-    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The next train will be arriving in " + hoursOx24 + " hours! We will be calling at Oxford et al. Platform DAI for the DIGAMMA 4 service to Salisbury.";
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The next train will be arriving in " + hoursOx24 + " hours! We will be calling at Oxford et al. Platform DAI for the AUGUST 24 service to ???.";
   }
 
-  else if (elapsedOx24 < 12) {
-    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedOx24 + " hours into Koppa 17! We will be calling at some random collection of stations in South London. Platform DAI for the KOPPA 17 service to SURREY.";
+  else if (elapsedOx24 < 13) {
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedOx24 + " hours into August 24! We will be calling at ???. Platform DAI for the AUGUST 24 service to ???.";
   }
 
-  else if (elapsedOx24 < 23) {
-    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The destination of this KOPPA 17 service has changed. This is now a DIGAMMA 4 service to Salisbury. We are sorry for any inconvenience this may cause to your journey.";
+  else if (elapsedOx24 < 24) {
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The destination of this AUGUST 24 service has changed. This is now an AUGUST 24 service to ???. We are sorry for any inconvenience this may cause to your journey.";
   }
 
   else if (elapsedOx24 < 32) {
-    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedOx24-23 + " hours into Digamma 4! We will be calling at Oxford et al. Platform DAI for the DIGAMMA 4 service to Salisbury.";
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedOx24b + " hours into August 24! We will be calling at Oxford et al. Platform DAI for the AUGUST 24 service to ???.";
   }
 
   else if (daysEdin > 0) {
