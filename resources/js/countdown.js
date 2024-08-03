@@ -8,8 +8,6 @@ var x = setInterval(function() {
 
   var daysOx24 = Math.floor(distanceOx24 / 86400);
   var hoursOx24 = Math.floor((distanceOx24 % 86400) / 3600);
-  var elapsedOx24 = -1 * Math.ceil(distanceOx24 / 3600);
-  var elapsedOx24b = elapsedOx24-23;
 
   var daysEdin = Math.floor(distanceEdin / 86400);
 
@@ -21,15 +19,15 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The next train will be arriving in " + hoursOx24 + " hours! We will be calling at Oxford et al. Platform DAI for the AUGUST 24 service to ???.";
   }
 
-  else if (elapsedOx24 < 13) {
+  else if (hoursOx24 > -13) {
     document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedOx24 + " hours into August 24! We will be calling at ???. Platform DAI for the AUGUST 24 service to ???.";
   }
 
-  else if (elapsedOx24 < 24) {
+  else if (hoursOx24 > -24) {
     document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The destination of this AUGUST 24 service has changed. This is now an AUGUST 24 service to ???. We are sorry for any inconvenience this may cause to your journey.";
   }
 
-  else if (elapsedOx24 < 32) {
+  else if (hoursOx24 > -32) {
     document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedOx24b + " hours into August 24! We will be calling at Oxford et al. Platform DAI for the AUGUST 24 service to ???.";
   }
 
