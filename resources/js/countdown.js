@@ -13,7 +13,7 @@ var x = setInterval(function() {
 
   var daysEdin = Math.floor(distanceEdin / 86400);
 
-  if (daysOx24 < 3) {
+  if (daysOx24 < 3 && daysOx24 > 0) {
     document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! The next train will be arriving in " + daysOx24 + " days! We will be calling at ???. Platform DAI for the KOPPA 18 service to LONDON.";
   }
 
