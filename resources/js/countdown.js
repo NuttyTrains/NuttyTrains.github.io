@@ -7,7 +7,7 @@ var x = setInterval(function() {
   var distanceEdin = (Edin - now)/1000;
 
   var daysOx24 = Math.floor(distanceOx24 / 86400);
-  var hoursOx24 = Math.floor((distanceOx24 % 86400) / 3600);
+  var hoursOx24 = Math.floor(distanceOx24 / 3600);
   var elapsedOx24 = hoursOx24*(-1);
   var elapsedOx24b = elapsedOx24-24;
 
