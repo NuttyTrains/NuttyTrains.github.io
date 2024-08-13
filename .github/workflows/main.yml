@@ -1,19 +1,19 @@
-# name: NT-Tweet-pls
-# on:
-#   push:
-#     branches:    
-#       - master
+name: NT-Tweet-pls
+on:
+  push:
+    branches:    
+      - master
 
-# jobs:
-#   tweet:
-#     runs-on: ubuntu-latest
-#     steps: 
-#     - name: Send Tweet Action
-#       uses: ethomson/send-tweet-action@v1.0.0
-#       with:
-#         # The status ("tweet") to post to twitter.
-#         status: '${{ github.event.head_commit.message }} - Love, NT ComGit x ${{ github.event.head_commit.url }}' 
-#         consumer-key: ${{ secrets.TWITTER_CK }}
-#         consumer-secret: ${{ secrets.TWITTER_CS }}
-#         access-token: ${{ secrets.TWITTER_AT }}
-#         access-token-secret: ${{ secrets.TWITTER_AS }} # optional
+jobs:
+  tweet:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Send Tweet Action
+      uses: ethomson/send-tweet-action@v1.0.0
+      with:
+        # The status ("tweet") to post to twitter.
+        status: '${{ github.event.head_commit.message }} - Love, NT ComGit x ${{ github.event.head_commit.url }}' 
+        consumer-key: ${{ secrets.TWITTER_CK }}
+        consumer-secret: ${{ secrets.TWITTER_CS }}
+        access-token: ${{ secrets.TWITTER_AT }}
+        access-token-secret: ${{ secrets.TWITTER_AS }} # optional
