@@ -1,7 +1,7 @@
 # NuttyTrains.github.io
 Hello, we are James and Matthew. We are fascinated by railways and enjoy going on random, ill-planned, reckless railway adventures. Welcome to NT!  
 
-This is our website, where we co-ordinate all our nuttiness! This website represents over 2 years of hard work, and 1600 commits and counting of 
+This is our website, where we co-ordinate all our nuttiness! This website represents over 2 years of hard work, and 1700 commits and counting of 
 top-notch NT-quality code! Much of our attention has shifted towards our twitter and Youtube accounts as of late, but if you have come 
 looking for our central repository, you have come to the right place. Our best tweets, most of our videos, and all of our in-depth write-ups can be found here, as well 
 as much much more in the back-end (if you know where to look). [Please don't look].
@@ -47,3 +47,7 @@ watch our videos - James has made enormous progress there too, reaching Sampi 7.
 ### v.1666 'nya~~~~~~~~~~~~~'
 
 uwu, i am depwessed
+
+### v.1715 'The amnesia zone begins!'
+
+You thought we had gone, and you hoped we were dead, but NO, we soldier onwards... slowly! I have essentially not touched this website in 2 years, and it shows - I have a huge backlog of stuff to finish. I have written up the summer '24 adventures, but summer 22-spring 24 remains a massive black hole, called 'the amnesia zone'. Over the next few months, I will attempt to slowly reconstruct what the fuck we were up to, having finally started with Ξ5. Videos should hopefully return at some point too, if James has brought Gareth the hard drive on their European extravaganza/well-deserved break (RIP, Gareth was left in the land of his fathers). As we are now both doing/quitting PhDs, in very different parts of the country, the frequency of adventures has fallen off, especially as Matthew is much poorer than James and can no longer afford this - the beautiful life of a PhD candidate. Enjoy the website as I slowly drag it, kicking and screaming, into 2024.
