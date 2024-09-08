@@ -171,7 +171,7 @@
   padding-right: 20px;
   text-align: right;
   transition: all 0.25s ease-in;
-  width: 40%;
+  width: 45%;
   background: transparent;
 }
 
@@ -214,12 +214,12 @@
   .timeline .timeline-item .timeline-content {
     float: right;
     text-align: left;
-    width: 90%;
+    width: 40%;
   }
   .timeline .timeline-item .timeline-content::before, .timeline .timeline-item .timeline-content.right::before {
     border-left: 0;
     border-right: 7px solid #fefefe;
-    left: 10%;
+    left: 40%;
     margin-left: -6px;
   }
   .timeline .timeline-item .timeline-icon {
