@@ -40,6 +40,7 @@ $(function(){
   $("#Ireland").load("Europe/ireland.html");
   $("#OuiOui1").load("Europe/OuiOuiUne.html");
   $("#OuiOui2").load("Europe/OuiOuiDeux.html");
+  $("#Xmas24").load("Europe/xmas24.html");
 });
 </script>
 	
@@ -56,7 +57,7 @@ $(function(){
     </div>
 
 
-    <button type="button" class="collapsible"> Ireland: I thought that guy was drinking something alcoholic. No he just has down syndrome </button>
+    <button type="button" class="collapsible"> Ireland: I thought that guy was drinking something alcoholic. No... </button>
     <div id="Ireland" class="content">
     </div>
 
@@ -67,6 +68,17 @@ $(function(){
     <button type="button" class="collapsible"> Oui Oui Deux: Tout le vin </button>
     <div id="OuiOui2" class="content">
     </div>
+
+    <button type="button" onclick="play()" class="collapsible"> Xmas 24: Glühwein </button>
+    <div id="Xmas24" class="content">
+    </div>
+
+    <script>
+      function play() {
+        var snd = new Audio('./resources/audio/LastCwissmaz.mp3')//wav is also supported
+        snd.play()//plays the sound
+      }
+    </script>   
       
 
     <script>
