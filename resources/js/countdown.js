@@ -8,8 +8,6 @@ var x = setInterval(function() {
   var hoursXmas24 = Math.floor(distanceXmas24 / 3600);
   var elapsedXmas24 = hoursXmas24*(-1);
 
-  var daysEdin = Math.floor(distanceEdin / 86400);
-
   if (hoursXmas24 > 16 && hoursXmas24 < 72) {
     document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! James is enroute to Milan! We begin NT Xmas 24 in " + elapsedXmas24 + " hours! We will be calling at vin, glühwein and vino.";
   }
