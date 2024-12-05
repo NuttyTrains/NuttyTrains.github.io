@@ -9,12 +9,12 @@ var x = setInterval(function() {
   var elapsedXmas24 = hoursXmas24*(-1);
 
   if (hoursXmas24 > 16 && hoursXmas24 < 72) {
-    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! James is enroute to Milan! We begin NT Xmas 24 in " + elapsedXmas24 + " hours! We will be calling at vin, glühwein and vino.";
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! James is enroute to Milan! We begin NT Xmas 24 in " + hoursXmas24 + " hours! We will be calling at vin, glühwein and vino.";
   }
 
   else if (hoursXmas24 > 0 && hoursXmas24 < 24) {
     //document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! We are " + elapsedOx24 + " hours into Koppa 18! We will be calling at ???. Platform DAI for the KOPPA 18 service to LONDON.";
-    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! James and Matthew are enroute to Milan! We begin NT Xmas 24 in " + elapsedXmas24 + " hours! We will be calling at vin, glühwein and vino.";
+    document.getElementById("countdown").innerHTML = "Welcome to Nutty Trains! James and Matthew are enroute to Milan! We begin NT Xmas 24 in " + hoursXmas24 + " hours! We will be calling at vin, glühwein and vino.";
   }
 
   else if (hoursXmas24 > -3 && hoursXmas24 < 0) {
