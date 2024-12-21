@@ -32,7 +32,7 @@ reduceMotionQuery.addListener(setAccessibilityState);
 //
 function setup() {
     const d = new Date();
-    if (enableAnimations && d.getMonth()==12) {
+    if (enableAnimations) {
     window.addEventListener("DOMContentLoaded", generateSnowflakes, false);
     window.addEventListener("resize", setResetFlag, false);
     }
