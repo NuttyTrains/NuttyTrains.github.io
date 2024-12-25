@@ -71,7 +71,8 @@
 .timeline .timeline-item .timeline-icon-orphan,
 .timeline .timeline-item .timeline-icon-ntci,
 .timeline .timeline-item .timeline-icon-ireland,
-.timeline .timeline-item .timeline-icon-france {
+.timeline .timeline-item .timeline-icon-france,
+.timeline .timeline-item .timeline-icon-swiss {
   border-radius: 50%;
   height: 50px;
   left: 50%;
@@ -135,6 +136,13 @@
 
 .timeline .timeline-item .timeline-icon-france {
   background: url(../photos/OuiOui.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
+.timeline .timeline-item .timeline-icon-swiss {
+  background: url(../photos/Swiss.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
