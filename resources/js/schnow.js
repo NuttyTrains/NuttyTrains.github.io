@@ -143,7 +143,7 @@ let delta = 1;
 function moveSnowflakes(currentTime) {
     delta = (currentTime - previousTime) / frame_interval;
 
-    if (enableAnimations) {
+    if (enableAnimations && d.getMonth()==12) {
     for (let i = 0; i < snowflakes.length; i++) {
         let snowflake = snowflakes[i];
         snowflake.update(delta);

@@ -42,7 +42,7 @@ var x = setInterval(function() {
   }
 
   else {
-    document.getElementById("countdown").innerHTML = "Welcome to NT! Happy Christmas!";
+    document.getElementById("countdown").innerHTML = "Welcome to NT!";
   }
 
 },1000);
