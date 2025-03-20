@@ -72,7 +72,9 @@
 .timeline .timeline-item .timeline-icon-ntci,
 .timeline .timeline-item .timeline-icon-ireland,
 .timeline .timeline-item .timeline-icon-france,
-.timeline .timeline-item .timeline-icon-swiss {
+.timeline .timeline-item .timeline-icon-swiss,
+.timeline .timeline-item .timeline-icon-whiterose,
+.timeline .timeline-item .timeline-icon-redrose {
   border-radius: 50%;
   height: 50px;
   left: 50%;
@@ -122,27 +124,34 @@
 
 .timeline .timeline-item .timeline-icon-ntci {
   background: url(../photos/Kernow.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; 
 }
 
 .timeline .timeline-item .timeline-icon-ireland {
   background: url(../photos/GuinnessFlag.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; 
 }
 
 .timeline .timeline-item .timeline-icon-france {
   background: url(../photos/OuiOui.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; 
 }
 
 .timeline .timeline-item .timeline-icon-swiss {
   background: url(../photos/Swiss.jpg);
+}
+
+.timeline .timeline-item .timeline-icon-whiterose {
+  background: url(../photos/WhiteRose.png);
+}
+
+.timeline .timeline-item .timeline-icon-redrose {
+  background: url(../photos/RedRose.png);
+}
+
+.timeline .timeline-item .timeline-icon-ntci,
+.timeline .timeline-item .timeline-icon-ireland,
+.timeline .timeline-item .timeline-icon-france, 
+.timeline .timeline-item .timeline-icon-swiss, 
+.timeline .timeline-item .timeline-icon-whiterose, 
+.timeline .timeline-item .timeline-icon-redrose  {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
