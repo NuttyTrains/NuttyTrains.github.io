@@ -15,13 +15,13 @@
 	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel="stylesheet"/>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-	crossorigin=""/>
-	<!-- Make sure you put this AFTER Leaflet's CSS -->
-	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-	crossorigin=""></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
 	<script src="https://d3js.org/d3.v3.min.js"></script>
 	<style>
 		#mapid { height: 50vh; width:50vw; z-index: 0; }
@@ -180,7 +180,7 @@ $(function(){
 
 <br><br>	  
 	<center>
-		  <img src="https://i.imgur.com/NKg0yQE.gif" width="40%">
+		  <video width="40%" autoplay><source src="../resources/video/tube.mp4" type="video/mp4"></video>
 		  <img src="./resources/maps/Koppa 17 Tube Map.png" width="58%">
 		  <br><br>
 		  <img src="./resources/maps/Koppa 18 Map.png" width="49%">
@@ -215,13 +215,11 @@ function uniq(a) {
 }
 
 var mymap = L.map('mapid').setView([51.555, -0.1778], 9);
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'This is the NT Station Visit Map, we`ve been to all of the dots!',
-    maxZoom: 15,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoibnV0dHl0cmFpbnMiLCJhIjoiY2tuNGx3YTlhMXFlcDJ2cGNyYnJvdjc3MiJ9.muQLAtpQ9ovpOrC8xc1hOw'
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> | This is the NT Station Visit Map, we`ve been to all of the dots!',
+    maxZoom: 16,
+    tileSize: 256,
+    zoomOffset: 0,
 }).addTo(mymap);
 
 d3.text("./data/tubeStations.csv", function(data) {

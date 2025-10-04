@@ -7,11 +7,11 @@ Cathays,4,Cathays,猫干草,19/12/2018,ϡI
 Llandaf,5,Llandaf,达夫教堂,19/12/2018,ϡI
 Radyr,6,Radyr,车手,19/12/2018,ϡI
 Taffs Well,7,Taffs Well,太妃糖好,19/12/2018,ϡI
-Treforest,8,Treforest,树森林,19/12/2018,ϡI
+Trefforest,8,Treforest,树森林,19/12/2018,ϡI
 Pontypridd,9,Pontypridd,尖尖的,19/12/2018,ϡI
 Trehafod,10,Trehafod (Road Station),树有奇数,19/12/2018,ϡI
 Porth,11,Porth,贫困,19/12/2018,ϡI
-Dinas Rhondda,12,Dinas Rhondda,迪恩屁股错了,19/12/2018,ϡI
+Dinas (Rhondda),12,Dinas Rhondda,迪恩屁股错了,19/12/2018,ϡI
 Tonypandy,13,Tonypandy,消防员山姆,19/12/2018,ϡI
 Llwynypia,14,Llwynypia,没有元音镇,19/12/2018,ϡI
 Ystrad Rhondda,15,Ystrad Rhondda,错误搁浅,19/12/2018,ϡI
@@ -22,10 +22,10 @@ Treherbert,19,Treherbert,悲伤沮丧的山谷小镇,19/12/2018,ϡI
 Abercynon,20,Abercynon,山谷交界处,19/12/2018,ϡI
 Quakers Yard,21,Quakers Yard,宗教坚果盒堆场,19/12/2018,ϡI
 Merthyr Vale,22,Merthyr Vale,乐购谷,19/12/2018,ϡI
-Troed-y-Rhiw,23,Troed-y-Rhiw,无尽的联排别墅,19/12/2018,ϡI
-Pentre-bach,24,Pentre-bach,垃圾普利茅斯,19/12/2018,ϡI
+Troed-Y-Rhiw,23,Troed-y-Rhiw,无尽的联排别墅,19/12/2018,ϡI
+Pentre-Bach,24,Pentre-bach,垃圾普利茅斯,19/12/2018,ϡI
 Merthyr Tydfil,25,Merthyr Tydfil (Tesco),特斯科,19/12/2018,ϡI
-Treforest Estate,26,Nantgarw,传奇的,19/12/2018,ϡI
+Trefforest Estate,26,Nantgarw,传奇的,19/12/2018,ϡI
 Cardiff Bay,27,Cardiff Bay,运行轨道,19/12/2018,ϡI
 Bridgend,28,Bridgend,队伍的尽头,19/12/2018,ϡI
 Port Talbot Parkway,29,Port Talbot Parkway,人间地狱,19/12/2018,ϡI
@@ -35,11 +35,11 @@ Llanishen,32,Llanishen,,29/12/2018,ϡII
 Lisvane & Thornhill,33,Lisvane & Thornhill,,29/12/2018,ϡII
 Caerphilly,34,Caerphilthy,污秽,29/12/2018,ϡII
 Aber,35,Aber,河,29/12/2018,ϡII
-Energlyn & Churchill Park,36,Energlyn & Churchill Park,,29/12/2018,ϡII
+Energlyn and Churchill Park,36,Energlyn & Churchill Park,,29/12/2018,ϡII
 Llanbradach,37,Llanbradach,,29/12/2018,ϡII
 Ystrad Mynach,38,Ystrad Mynach,,29/12/2018,ϡII
 Hengoed,39,Hengoed,,29/12/2018,ϡII
-Pengham,40,Pengham,,29/12/2018,ϡII
+Pengam,40,Pengham,,29/12/2018,ϡII
 Bargoed,41,Bargoed (Broken Doors),,29/12/2018,ϡII
 Brithdir,42,Brithdir,,29/12/2018,ϡII
 Tir-Phil,43,Tir-Phil,堆填区,29/12/2018,ϡII
@@ -74,8 +74,8 @@ Ludlow,71,Ludlow,,19/04/2019,ϡIII
 Leominster,72,Leominster,,19/04/2019,ϡIII
 Hereford,73,Hereford,,19/04/2019,ϡIII
 Abergavenny,74,Abergavenny,,19/04/2019,ϡIII
-Pontypool & New Inn,75,Pontypool & New Inn,,19/04/2019,ϡIII
-Cwmbrân,76,Cwmbrân,,19/04/2019,ϡIII
+Pontypool and New Inn,75,Pontypool & New Inn,,19/04/2019,ϡIII
+Cwmbran,76,Cwmbrân,,19/04/2019,ϡIII
 Pontyclun,77,Pontyclun,,19/04/2019,ϡIII
 Llanharan,78,Llanharan,,19/04/2019,ϡIII
 Pencoed,79,Pencoed,,19/04/2019,ϡIII
@@ -88,10 +88,10 @@ Wildmill,85,Wildmill,,10/08/2019,ϡIV
 Sarn,86,Sarn,,10/08/2019,ϡIV
 Tondu,87,Tondu,,10/08/2019,ϡIV
 Garth (Bridgend County),88,Garth (Mid Glam),,10/08/2019,ϡIV
-Maesteg Ewenny Road,89,Maesteg Ewenny Road,不是阿斯达,10/08/2019,ϡIV
-Maesteg Asda,90,Maesteg Asda,阿斯达,10/08/2019,ϡIV
+Maesteg (Ewenny Road),89,Maesteg Ewenny Road,不是阿斯达,10/08/2019,ϡIV
+Maesteg,90,Maesteg Asda,阿斯达,10/08/2019,ϡIV
 Llantwit Major,91,Llantwit Major,,10/08/2019,ϡIV
-Rhoose Cardiff Airport,92,Rhoose Cardiff Airport,邓小平纪念机场,10/08/2019,ϡIV
+Rhoose Cardiff International Airport,92,Rhoose Cardiff Airport,邓小平纪念机场,10/08/2019,ϡIV
 Barry,93,Barry,,10/08/2019,ϡIV
 Barry Island,94,Barry Island,严重的忧郁症,10/08/2019,ϡIV
 Barry Docks,95,Barry Docks,,10/08/2019,ϡIV
@@ -108,18 +108,18 @@ Mountain Ash,105,Mountain Ash,,10/08/2019,ϡIV
 Fernhill,106,Fernhill,,10/08/2019,ϡIV
 Cwmbach,107,Cwmbach,,10/08/2019,ϡIV
 Aberdare,108,Aberdare,,10/08/2019,ϡIV
-Tŷ Glas,109,Tŷ Glas,,10/08/2019,ϡIV
+Ty Glas,109,Tŷ Glas,,10/08/2019,ϡIV
 Birchgrove,110,Birchgrove,,10/08/2019,ϡIV
 Rhiwbina,111,Rhiwbina,,10/08/2019,ϡIV
 Whitchurch,112,Whitchurch,,10/08/2019,ϡIV
 Coryton,113,Coryton,,10/08/2019,ϡIV
 Ninian Park,114,Ninian Park,,10/08/2019,ϡIV
-Waun Gron Park,115,Waun Gron Park,,10/08/2019,ϡIV
+Waun-gron Park,115,Waun Gron Park,,10/08/2019,ϡIV
 Fairwater,116,Fairwater,,10/08/2019,ϡIV
 Danescourt,117,Danescourt,,10/08/2019,ϡIV
 Pye Corner,118,π ∟,三点一四一五九,20/08/2019,ϡV
 Rogerstone,119,Rogerstone,,20/08/2019,ϡV
-Risca & Pontymister,120,Risca & Pontymister,尖尖的先生,20/08/2019,ϡV
+Risca and Pontymister,120,Risca & Pontymister,尖尖的先生,20/08/2019,ϡV
 Crosskeys,121,Crosskeys,,20/08/2019,ϡV
 Newbridge,122,Newbridge (Conti Fish Bar),鱼吧,20/08/2019,ϡV
 Llanhilleth,123,Llanhilleth,,20/08/2019,ϡV
@@ -133,7 +133,7 @@ Lydney,130,Lydney,美味的辐射,20/08/2019,ϡV
 Gloucester,131,Dr Foster,,20/08/2019,ϡV
 Cheltenham Spa,132,"""Cheltenham""",老大哥在看着你,20/08/2019,ϡV
 Bristol Parkway,133,Brizzle Parkway,,20/08/2019,ϡV
-Pembrey & Burry Port,134,Pembrey & Burry Port,,05/09/2019,ϡVI
+Pembrey and Burry Port,134,Pembrey & Burry Port,,05/09/2019,ϡVI
 Kidwelly,135,Kidwelly,,05/09/2019,ϡVI
 Ferryside,136,Ferryside,,05/09/2019,ϡVI
 Carmarthen,137,Carmarthen,,05/09/2019,ϡVI
@@ -152,7 +152,7 @@ Haverfordwest,149,Haverfordwest,,05/09/2019,ϡVI
 Milford Haven,150,Milford Haven (Nuclear Bunker),,05/09/2019,ϡVI
 Johnston (Pembs),151,Johnston,,05/09/2019,ϡVI
 Clunderwen,152,Clunderwen (Matthew's Initiation),,05/09/2019,ϡVI
-Fishguard & Goodwick,153,Fishguard & Goodwick,,05/09/2019,ϡVI
+Fishguard and Goodwick,153,Fishguard & Goodwick,,05/09/2019,ϡVI
 Fishguard Harbour,154,Fishguard Harbour,,05/09/2019,ϡVI
 Acton Main Line,155,AML,,13/12/2019,ϙ1
 Ealing Broadway,156,Ealing Broadway,,13/12/2019,ϙ1
@@ -182,12 +182,12 @@ London Bridge,179,London Bridge,,23/09/2020,ϙ3
 Cannon Street,180,Cannon Street,,23/09/2020,ϙ3
 Taunton,181,Taunton,,14/04/2021,ϝ1
 Bridgwater,182,Bridgwater,,14/04/2021,ϝ1
-Highbridge & Burnham,183,Highbridge & Burnham,,14/04/2021,ϝ1
+Highbridge and Burnham,183,Highbridge & Burnham,,14/04/2021,ϝ1
 Weston-Super-Mare,184,Weston-Super-Mare,,14/04/2021,ϝ1
 Weston Milton,185,Weston Milton,,14/04/2021,ϝ1
 Worle,186,Worle (Postcard Sign),,14/04/2021,ϝ1
 Yatton,187,Yatton,,14/04/2021,ϝ1
-Nailsea & Backwell,188,Nailsea & Backwell,,14/04/2021,ϝ1
+Nailsea and Backwell,188,Nailsea & Backwell,,14/04/2021,ϝ1
 Parson Street,189,Parson Street,,14/04/2021,ϝ1
 Bedminster,190,Bedminster,,14/04/2021,ϝ1
 Bristol Temple Meads,191,Brizzle Temple Meads,,14/04/2021,ϝ1
@@ -205,7 +205,7 @@ Hanborough,202,Hanborough,,29/07/2021,Ξ2
 Combe,203,Combe,,29/07/2021,Ξ2
 Finstock,204,Finstock,,29/07/2021,Ξ2
 Charlbury,205,Charlbury,,29/07/2021,Ξ2
-Ascott-under-Wychwood,206,Ascott (Angry Conductor),,29/07/2021,Ξ2
+Ascott-Under-Wychwood,206,Ascott (Angry Conductor),,29/07/2021,Ξ2
 Shipton,207,Shipton,,29/07/2021,Ξ2
 Kingham,208,Kingham,,29/07/2021,Ξ2
 Moreton-in-Marsh,209,MIM,,29/07/2021,Ξ2
@@ -227,7 +227,7 @@ Wembley Central,224,Wembley Central,,01/08/2021,ϙ6
 North Wembley,225,North Wembley,,01/08/2021,ϙ6
 South Kenton,226,South Kenton,,01/08/2021,ϙ6
 Kenton,227,Kenton Sainsburys,,01/08/2021,ϙ6
-Harrow & Wealdstone,228,Harrow & Wealdstone,,01/08/2021,ϙ6
+Harrow and Wealdstone,228,Harrow & Wealdstone,,01/08/2021,ϙ6
 Headstone Lane,229,Headstone Lane,,01/08/2021,ϙ6
 Hatch End,230,Hatch End,,01/08/2021,ϙ6
 Carpenders Park,231,Carpenders Park,,01/08/2021,ϙ6
@@ -262,7 +262,7 @@ Blakedown,259,Blakedown,,28/08/2021,Ξ4
 Hagley,260,Hagley,,28/08/2021,Ξ4
 Stourbridge Junction,261,Cat Junction,,28/08/2021,Ξ4
 Stourbridge Town,262,Stourbridge (Tiny Train) Town,,28/08/2021,Ξ4
-Lye,263,Lye,,28/08/2021,Ξ4
+Lye (West Midlands),263,Lye,,28/08/2021,Ξ4
 Cradley Heath,264,Cradley Heath,,28/08/2021,Ξ4
 Rowley Regis,265,Rowley Regis,,28/08/2021,Ξ4
 Langley Green,266,Langley Green,,28/08/2021,Ξ4
@@ -292,7 +292,7 @@ Camden Road,289,Camden Road (Bye!),,29/08/2021,ϙ8
 Kentish Town West,290,Kentish Town West,,29/08/2021,ϙ8
 Gospel Oak,291,Gospel Oak,,29/08/2021,ϙ8
 Hampstead Heath,292,Hampstead Heath,,29/08/2021,ϙ8
-Finchley Road & Frognal,293,F & Frog,,29/08/2021,ϙ8
+Finchley Road and Frognal,293,F & Frog,,29/08/2021,ϙ8
 West Hampstead,294,West Hampstead,,29/08/2021,ϙ8
 Caledonian Road & Barnsbury,295,Caledonian Road & Barnsbury,,30/08/2021,ϙ8
 Highbury & Islington,296,Highbury & Islington,,30/08/2021,ϙ8
@@ -303,7 +303,7 @@ Homerton,300,Homerton,,30/08/2021,ϙ8
 Hackney Wick,301,Hackney Wick,,30/08/2021,ϙ8
 Wraysbury,302,Wraysbury (Perseverance),,30/08/2021,ϙ8
 Staines,303,Staines,,30/08/2021,ϙ8
-Ashford,304,Ashford,,30/08/2021,ϙ8
+Ashford (Surrey),304,Ashford,,30/08/2021,ϙ8
 Feltham,305,Feltham,,30/08/2021,ϙ8
 Hounslow,306,Hounslow,,30/08/2021,ϙ8
 Vauxhall,307,Vauxhall,,30/08/2021,ϙ8
@@ -337,7 +337,7 @@ Canada Water,334,Canada Water,,09/10/2021,ϙ9
 Waterloo East,335,Waterloo East,,09/10/2021,ϙ9
 Charing Cross,336,Charing X,,09/10/2021,ϙ9
 Queenstown Road,337,Queenstown Road,,10/10/2021,ϙ9
-Elephant & Castle,338,Elephant & Castle,,10/10/2021,ϙ9
+Elephant and Castle,338,Elephant & Castle,,10/10/2021,ϙ9
 Blackfriars,339,Blackfriars!,,10/10/2021,ϙ9
 Farringdon,340,Farringdon,,10/10/2021,ϙ9
 St Pancras International,341,St Pancras Int'l (Oui Oui!),,10/10/2021,ϙ9
@@ -345,7 +345,7 @@ Exeter St Davids,342,Exeter St Davids,,20/12/2021,∮1dx
 Exeter Central,343,Exeter Central,,20/12/2021,∮1dx
 St James Park,344,St James Park (Broken Doors),,20/12/2021,∮1dx
 Polsloe Bridge,345,Polsloe Bridge,,20/12/2021,∮1dx
-Digby & Sowton,346,Digby & Sowton,,20/12/2021,∮1dx
+Digby and Sowton,346,Digby & Sowton,,20/12/2021,∮1dx
 Newcourt,347,Newcourt,,20/12/2021,∮1dx
 Topsham,348,Topsham,,20/12/2021,∮1dx
 Exton,349,Exton,,20/12/2021,∮1dx
@@ -378,7 +378,7 @@ Moorgate,375,Moorgate,,23/01/2022,ϙ10
 West Ham,376,West Ham,,23/01/2022,ϙ10
 Limehouse,377,Limehouse,,23/01/2022,ϙ10
 Fenchurch Street,378,Fenchurch Street,,23/01/2022,ϙ10
-Harrow-on-the-Hill,379,Harrow-on-the-Hill,,23/01/2022,ϙ10
+Harrow-On-The-Hill,379,Harrow-on-the-Hill,,23/01/2022,ϙ10
 Rickmansworth,380,Rickmansworth,,23/01/2022,ϙ10
 Chorleywood,381,Chorleywood,,23/01/2022,ϙ10
 Great Missenden,382,Great Missenden,,23/01/2022,ϙ10
@@ -392,7 +392,7 @@ Princes Risborough,389,Princes Risborough,,23/01/2022,ϙ10
 Saunderton,390,Saunderton,,23/01/2022,ϙ10
 High Wycombe,391,High Wycombe,,23/01/2022,ϙ10
 Beaconsfield,392,Beaconsfield,,23/01/2022,ϙ10
-Seer Green & Jordans,393,Seer Green & Jordans,,23/01/2022,ϙ10
+Seer Green and Jordans,393,Seer Green & Jordans,,23/01/2022,ϙ10
 Gerrards Cross,394,Gerrards Cross,,23/01/2022,ϙ10
 Denham Golf Club,395,Denham Golf Club,,23/01/2022,ϙ10
 Denham,396,Denham,,23/01/2022,ϙ10
@@ -413,7 +413,7 @@ Woking,410,Pizza Express,,30/03/2022,ϙ11
 West Byfleet,411,West Byfleet,,30/03/2022,ϙ11
 Byfleet & New Haw,412,Byfleet & New Haw,,30/03/2022,ϙ11
 Weybridge,413,Weybridge,,30/03/2022,ϙ11
-Walton-on-Thames,414,Walton-on-Thames,,30/03/2022,ϙ11
+Walton-On-Thames,414,Walton-on-Thames,,30/03/2022,ϙ11
 Hersham,415,Hersham,,30/03/2022,ϙ11
 Esher,416,Esher,,30/03/2022,ϙ11
 Surbiton,417,Surbiton,,30/03/2022,ϙ11
@@ -504,7 +504,7 @@ Tottenham Court Road,501,TCR,,28/05/2022,ϙ12
 Canary Wharf,502,Canary Wharf,,28/05/2022,ϙ12
 Custom House,503,Custom House,,28/05/2022,ϙ12
 Woolwich,504,Woolwich,,28/05/2022,ϙ12
-Henley-on-Thames,505,Henley,,03/07/2022,Ξ5
+Henley-On-Thames,505,Henley,,03/07/2022,Ξ5
 Wargrave,506,Wargrave,,03/07/2022,Ξ5
 Twyford,507,Twyford,,03/07/2022,Ξ5
 Maidenhead,508,Terry May Town,,03/07/2022,Ξ5
@@ -520,7 +520,7 @@ Langley,517,Langley,,03/07/2022,Ξ5
 Iver,518,Iver the Engine,,03/07/2022,Ξ5
 West Drayton,519,West Drayton,,03/07/2022,Ξ5
 Hayes and Harlington,520,Hayes and Harlington,,03/07/2022,Ξ5
-Heathrow Central,521,Heathrow Central,,03/07/2022,Ξ5
+Heathrow Terminals 2 and 3,521,Heathrow Central,,03/07/2022,Ξ5
 Heathrow Terminal 4,522,Heathrow Terminal 4,,03/07/2022,Ξ5
 Heathrow Terminal 5,523,Heathrow Terminal 5,,03/07/2022,Ξ5
 Southall,524,Southall,,03/07/2022,Ξ5
@@ -538,7 +538,7 @@ Wandsworth Town,535,Wandsworth Town,,24/07/2022,ϙ13
 Hinchley Wood,536,Hinchley Wood,,24/07/2022,ϙ13
 Claygate,537,Claygate,,24/07/2022,ϙ13
 Oxshott,538,Oxshott,,24/07/2022,ϙ13
-Cobham & Stoke D'Abernon,539,Cobham & Stoke D'Abernon,,24/07/2022,ϙ13
+Cobham and Stoke D'Abernon,539,Cobham & Stoke D'Abernon,,24/07/2022,ϙ13
 Effingham Junction,540,Effingham Junction,,24/07/2022,ϙ13
 Horsley,541,Horsley,,24/07/2022,ϙ13
 Clandon,542,Clandon,,24/07/2022,ϙ13
@@ -587,7 +587,7 @@ Coventry,584,Coventry,,31/07/2022,Ξ6
 Canley,585,Canley,,31/07/2022,Ξ6
 Tile Hill,586,Tile Hill,,31/07/2022,Ξ6
 Berkswell,587,Berkswell,,31/07/2022,Ξ6
-Hampton-in-Arden,588,Hampton-in-Arden,,31/07/2022,Ξ6
+Hampton-In-Arden,588,Hampton-in-Arden,,31/07/2022,Ξ6
 Birmingham International,589,Brummy Intl,,31/07/2022,Ξ6
 Marston Green,590,Marston Green,,31/07/2022,Ξ6
 Lea Hall,591,Lea Hall,,31/07/2022,Ξ6
@@ -605,7 +605,7 @@ Barnt Green,602,Barnt Green,,31/07/2022,Ξ6
 Alvechurch,603,Alvechurch,,31/07/2022,Ξ6
 Redditch,604,Redditch,,31/07/2022,Ξ6
 Smethwick Rolfe Street,605,Smethwick Rolfe Street,,31/07/2022,Ξ6
-Sandwell & Dudley,606,Sandwell & Dudley,,31/07/2022,Ξ6
+Sandwell and Dudley,606,Sandwell & Dudley,,31/07/2022,Ξ6
 Dudley Port,607,Dudley Port,,31/07/2022,Ξ6
 Tipton,608,Tipton,,31/07/2022,Ξ6
 Coseley,609,Coseley,,31/07/2022,Ξ6
@@ -623,7 +623,7 @@ Swindon (Wilts),620,Swindon,,28/08/2022,ϝ3
 Filton Abbey Wood,621,Filton Abbey Wood,,28/08/2022,ϝ3
 Keynsham,622,Keynsham,,28/08/2022,ϝ3
 Oldfield Park,623,Oldfield Park,,28/08/2022,ϝ3
-Bradford-on-Avon,624,Bradford-on-Avon,,28/08/2022,ϝ3
+Bradford-On-Avon,624,Bradford-on-Avon,,28/08/2022,ϝ3
 Trowbridge,625,Trowbridge,,28/08/2022,ϝ3
 Westbury,626,Westbury,,28/08/2022,ϝ3
 Frome,627,Frome,,28/08/2022,ϝ3
@@ -675,15 +675,15 @@ Crews Hill,672,Crews Hill,,11/09/2022,ϙ14
 Cuffley,673,Cuffley,,11/09/2022,ϙ14
 Bayford,674,Bayford,,11/09/2022,ϙ14
 Hertford North,675,Hertford North,,11/09/2022,ϙ14
-Watton-at-Stone,676,Watton-at-Stone,,11/09/2022,ϙ14
+Watton-At-Stone,676,Watton-at-Stone,,11/09/2022,ϙ14
 Lea Bridge,677,Lea Bridge,,11/09/2022,ϙ14
 Stratford International,678,Stratford Int'l,,11/09/2022,ϙ14
 Reading,679,Reading,,20/09/2022,Ξ7
 Shiplake,680,Shiplake,,20/09/2022,Ξ7
 Reading West,681,Reading West,,20/09/2022,Ξ7
 Theale,682,Theale,,20/09/2022,Ξ7
-Sudbury & Harrow Road,683,Sudbury & Harrow Road,,28/09/2022,ϙ15
-Sudbury Harrow Hill,684,Sudbury Harrow Hill,,28/09/2022,ϙ15
+Sudbury and Harrow Road,683,Sudbury & Harrow Road,,28/09/2022,ϙ15
+Sudbury Hill Harrow,684,Sudbury Harrow Hill,,28/09/2022,ϙ15
 South Ruislip,685,South Ruislip,,28/09/2022,ϙ15
 Greenford,686,Greenford,,28/09/2022,ϙ15
 South Greenford,687,South Greenford,,28/09/2022,ϙ15
@@ -693,7 +693,7 @@ West Ealing,690,West Ealing,,28/09/2022,ϙ15
 Bond Street,691,Bond St,,06/11/2022,ϙ16
 Tilehurst,692,Tilehurst,,03/12/2022,Ξ8
 Pangbourne,693,Pangbourne,,03/12/2022,Ξ8
-Goring & Streatley,694,Goring & Streatley,,03/12/2022,Ξ8
+Goring and Streatley,694,Goring & Streatley,,03/12/2022,Ξ8
 Cholsey,695,Cholsey,,03/12/2022,Ξ8
 Radley,696,Radley,,03/12/2022,Ξ8
 Appleford,697,Appleford,,03/12/2022,Ξ8
@@ -714,13 +714,13 @@ Sittingbourne,711,Sittingbourne,,10/12/2022,Xmas 22
 Kemsley,712,Kemsley,,10/12/2022,Xmas 22
 Swale,713,Swale,,10/12/2022,Xmas 22
 Queenborough,714,Queenborough,,10/12/2022,Xmas 22
-Sheerness-on-Sea,715,Sheerness-on-Sea,,10/12/2022,Xmas 22
+Sheerness-On-Sea,715,Sheerness-on-Sea,,10/12/2022,Xmas 22
 Faversham,716,Faversham,,10/12/2022,Xmas 22
 Whitstable,717,Whitstable,,10/12/2022,Xmas 22
 Chestfield & Swalecliff,718,Chestfield & Swalecliff,,10/12/2022,Xmas 22
 Herne Bay,719,Herne Bay,,10/12/2022,Xmas 22
-Birchington-on-Sea,720,Birchington-on-Sea,,10/12/2022,Xmas 22
-Westgate-on-Sea,721,Westgate-on-Sea,,10/12/2022,Xmas 22
+Birchington-On-Sea,720,Birchington-on-Sea,,10/12/2022,Xmas 22
+Westgate-On-Sea,721,Westgate-on-Sea,,10/12/2022,Xmas 22
 Margate,722,Margate,,10/12/2022,Xmas 22
 Broadstairs,723,Broadstairs,,10/12/2022,Xmas 22
 Dumpton Park,724,Dumpton Park,,10/12/2022,Xmas 22
@@ -885,7 +885,7 @@ Salisbury,882,Salisbury,,11/08/2024,ϝ4
 Leeds,883,Leeds,利兹,18/01/2025,White Rose 1
 Guiseley,884,Guiseley,,18/01/2025,White Rose 1
 Menston,885,Menston,,18/01/2025,White Rose 1
-Burley-in-Wharfedale,886,Burley-in-Wharfedale,,18/01/2025,White Rose 1
+Burley-In-Wharfedale,886,Burley-in-Wharfedale,,18/01/2025,White Rose 1
 Ben Rhydding,887,Ben Rhydding,,18/01/2025,White Rose 1
 Ilkley,888,Ilkley,幸运金钱镇,18/01/2025,White Rose 1
 Huddersfield,889,Huddz,,25/02/2025,White Rose 2
@@ -898,7 +898,7 @@ Morley,895,Morley,,25/02/2025,White Rose 2
 Cottingley,896,Cottingley,,25/02/2025,White Rose 2
 Kirkstall Forge,897,Kirkstall Forge,,25/02/2025,White Rose 2
 Apperley Bridge,898,Apperley Bridge,,25/02/2025,White Rose 2
-Shipley,899,Shipley,,25/02/2025,White Rose 2
+Shipley (Yorks),899,Shipley,,25/02/2025,White Rose 2
 Frizinghall,900,Frizinghall,,25/02/2025,White Rose 2
 Bradford Forster Square,901,Bradford Forster Square,,25/02/2025,White Rose 2
 Bradford Interchange,902,Bradford Interchange,,25/02/2025,White Rose 2
